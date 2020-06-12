@@ -1,1 +1,1 @@
-# Weekly food insecurity for California
+# Weekly food insecurity data for California
