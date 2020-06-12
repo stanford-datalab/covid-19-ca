@@ -1,0 +1,68 @@
+sheet,area,fips,fips_state
+US,United States,00,00
+AL,Alabama,01,01
+AK,Alaska,02,02
+AZ,Arizona,04,04
+AR,Arkansas,05,05
+CA,California,06,06
+CO,Colorado,08,08
+CT,Connecticut,09,09
+DE,Delaware,10,10
+DC,District of Columbia,11,11
+FL,Florida,12,12
+GA,Georgia,13,13
+HI,Hawaii,15,15
+ID,Idaho,16,16
+IL,Illinois,17,17
+IN,Indiana,18,18
+IA,Iowa,19,19
+KS,Kansas,20,20
+KY,Kentucky,21,21
+LA,Louisiana,22,22
+ME,Maine,23,23
+MD,Maryland,24,24
+MA,Massachusetts,25,25
+MI,Michigan,26,26
+MN,Minnesota,27,27
+MS,Mississippi,28,28
+MO,Missouri,29,29
+MT,Montana,30,30
+NE,Nebraska,31,31
+NV,Nevada,32,32
+NH,New Hampshire,33,33
+NJ,New Jersey,34,34
+NM,New Mexico,35,35
+NY,New York,36,36
+NC,North Carolina,37,37
+ND,North Dakota,38,38
+OH,Ohio,39,39
+OK,Oklahoma,40,40
+OR,Oregon,41,41
+PA,Pennsylvania,42,42
+RI,Rhode Island,44,44
+SC,South Carolina,45,45
+SD,South Dakota,46,46
+TN,Tennessee,47,47
+TX,Texas,48,48
+UT,Utah,49,49
+VT,Vermont,50,50
+VA,Virginia,51,51
+WA,Washington,53,53
+WV,West Virginia,54,54
+WI,Wisconsin,55,55
+WY,Wyoming,56,56
+Philadelphia_Metro_Area,Philadelphia-Camden-Wilmington,37980,NA
+San.Francisco_Metro_Area,San Francisco-Oakland-Berkeley,41860,06
+Atlanta_Metro_Area,Atlanta-Sandy Springs-Alpharetta,12060,13
+Dallas_Metro_Area,Dallas-Fort Worth-Arlington,19100,48
+Boston_Metro_Area,Boston-Cambridge-Newton,14460,NA
+Chicago_Metro_Area,Chicago-Naperville-Elgin,16980,NA
+Houston_Metro_Area,Houston-The Woodlands-Sugar Land,26420,48
+Los.Angeles_Metro_Area,Los Angeles-Long Beach-Anaheim,31080,06
+Seattle_Metro_Area,Seattle-Tacoma-Bellevue,42660,53
+Miami_Metro_Area,Miami-Fort Lauderdale-Pompano Beach,33100,12
+New.York_Metro_Area,New York-Newark-Jersey City,35620,NA
+Phoenix_Metro_Area,Phoenix-Mesa-Chandler,38060,04
+Riverside_Metro_Area,Riverside-San Bernardino-Ontario,40140,06
+Washington.DC_Metro_Area,Washington-Arlington-Alexandria,47900,NA
+Detroit_Metro_Area,Detroit-Warren-Dearborn,19820,26

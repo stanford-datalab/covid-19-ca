@@ -1,0 +1,140 @@
+variable,code,recode
+est_st,01,Alabama
+est_st,02,Alaska
+est_st,04,Arizona
+est_st,05,Arkansas
+est_st,06,California
+est_st,08,Colorado
+est_st,09,Connecticut
+est_st,10,Delaware
+est_st,11,District of Columbia
+est_st,12,Florida
+est_st,13,Georgia
+est_st,15,Hawaii
+est_st,16,Idaho
+est_st,17,Illinois
+est_st,18,Indiana
+est_st,19,Iowa
+est_st,20,Kansas
+est_st,21,Kentucky
+est_st,22,Louisiana
+est_st,23,Maine
+est_st,24,Maryland
+est_st,25,Massachusetts
+est_st,26,Michigan
+est_st,27,Minnesota
+est_st,28,Mississippi
+est_st,29,Missouri
+est_st,30,Montana
+est_st,31,Nebraska
+est_st,32,Nevada
+est_st,33,New Hampshire
+est_st,34,New Jersey
+est_st,35,New Mexico
+est_st,36,New York
+est_st,37,North Carolina
+est_st,38,North Dakota
+est_st,39,Ohio
+est_st,40,Oklahoma
+est_st,41,Oregon
+est_st,42,Pennsylvania
+est_st,44,Rhode Island
+est_st,45,South Carolina
+est_st,46,South Dakota
+est_st,47,Tennessee
+est_st,48,Texas
+est_st,49,Utah
+est_st,50,Vermont
+est_st,51,Virginia
+est_st,53,Washington
+est_st,54,West Virginia
+est_st,55,Wisconsin
+est_st,56,Wyoming
+est_msa,12060,Atlanta-Sandy Springs-Alpharetta
+est_msa,14460,Boston-Cambridge-Newton
+est_msa,16980,Chicago-Naperville-Elgin
+est_msa,19100,Dallas-Fort Worth-Arlington
+est_msa,19820,Detroit-Warren-Dearborn
+est_msa,26420,Houston-The Woodlands-Sugar Land
+est_msa,31080,Los Angeles-Long Beach-Anaheim
+est_msa,33100,Miami-Fort Lauderdale-Pompano Beach
+est_msa,35620,New York-Newark-Jersey City
+est_msa,37980,Philadelphia-Camden-Wilmington
+est_msa,38060,Phoenix-Mesa-Chandler
+est_msa,40140,Riverside-San Bernardino-Ontario
+est_msa,41860,San Francisco-Oakland-Berkeley
+est_msa,42660,Seattle-Tacoma-Bellevue
+est_msa,47900,Washington-Arlington-Alexandria
+est_msa,NA,Balance
+abirth_year,1,Imputed
+abirth_year,2,Not imputed
+agender,1,Imputed
+agender,2,Not imputed
+ahispanic,1,Imputed
+ahispanic,2,Not imputed
+arace,1,Imputed
+arace,2,Not imputed
+wrkloss,1,Yes
+wrkloss,2,No
+wrkloss,NA,Did not report
+expctloss,1,Yes
+expctloss,2,No
+expctloss,NA,Did not report
+prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
+prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
+prifoodsuf,3,Sometimes not enough to eat
+prifoodsuf,4,Often not enough to eat
+prifoodsuf,NA,Did not report
+curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
+curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
+curfoodsuf,3,Sometimes not enough to eat
+curfoodsuf,4,Often not enough to eat
+curfoodsuf,NA,Did not report
+foodsufrsn1,1,Couldn't afford to buy more food
+foodsufrsn1,NA,Did not report
+foodsufrsn2,1,Couldn’t get out to buy food
+foodsufrsn2,NA,Did not report
+foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food
+foodsufrsn3,NA,Did not report
+foodsufrsn4,1,Couldn’t get groceries or meals delivered to me
+foodsufrsn4,NA,Did not report
+foodsufrsn5,1,The stores didn’t have the food I wanted
+foodsufrsn5,NA,Did not report
+freefood,1,Yes
+freefood,2,No
+freefood,NA,Did not report
+wherefree1,1,Free meals through the school or other programs aimed at children
+wherefree1,NA,Did not report
+wherefree2,1,Food pantry or food bank
+wherefree2,NA,Did not report
+wherefree3,1,Home-delivered meal service like Meals on Wheels
+wherefree3,NA,Did not report
+wherefree4,1,"Church, synagogue, temple, mosque or other religious organization"
+wherefree4,NA,Did not report
+wherefree5,1,Shelter or soup kitchen
+wherefree5,NA,Did not report
+wherefree6,1,Other community program
+wherefree6,NA,Did not report
+wherefree7,1,"Family, friends, or neighbors"
+wherefree7,NA,Did not report
+foodconf,1,Not at all confident
+foodconf,2,Somewhat confident
+foodconf,3,Moderately confident
+foodconf,4,Very confident 
+foodconf,NA,Did not report
+tenure,1,Owned free and clear
+tenure,2,Owned with a mortgage or loan (including home equity loans)
+tenure,3,Rented
+tenure,4,Occupied without payment of rent
+tenure,NA,Did not report
+mortlmth,1,Yes
+mortlmth,2,No
+mortlmth,3,Payment was deferred
+mortlmth,NA,Did not report
+mortconf,1,No confidence
+mortconf,2,Slight confidence
+mortconf,3,Moderate confidence
+mortconf,4,High confidence 
+mortconf,5,Payment is/will be deferred
+mortconf,NA,Did not report
+total,NA,Total

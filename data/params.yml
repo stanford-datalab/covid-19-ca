@@ -1,0 +1,25 @@
+
+# State
+state: "California"
+
+# State FIPS
+state_fips: "06"
+
+# State map projection PROJ 
+# Omit to use default longitude - latitude projection
+state_proj: "+proj=aea +lat_1=34 +lat_2=40.5 +lat_0=0 +lon_0=-120 +x_0=0 +y_0=-4000000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs "
+
+# Start date for recent Bureau of Labor Statistics unemployment data
+date_bls: "2020-01-01"
+
+# Year for American Community Survey data
+year_acs: 2018
+
+# Year for most recent Current Population Survey Food Security Supplement
+year_cps_fss: 2018
+
+# Year for Population Estimates Program data
+year_pep: 2019
+
+# Year for Household Pulse Survey data
+year_pulse: 2020

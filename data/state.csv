@@ -1,0 +1,286 @@
+area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
+State,California,06,2020-05-28,2020-06-02,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16764865,NA,55.23056014423451
+State,California,06,2020-05-28,2020-06-02,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9169693,NA,30.20885018250931
+State,California,06,2020-05-28,2020-06-02,curfoodsuf,3,Sometimes not enough to eat,2834046,NA,9.336547778232294
+State,California,06,2020-05-28,2020-06-02,curfoodsuf,4,Often not enough to eat,522233,NA,1.7204570583654022
+State,California,06,2020-05-28,2020-06-02,curfoodsuf,NA,Did not report,1063490,NA,3.5035848366584865
+State,California,06,2020-05-28,2020-06-02,freefood,1,Yes,3502052,NA,11.53724098059185
+State,California,06,2020-05-28,2020-06-02,freefood,2,No,25618533,NA,84.39829077911399
+State,California,06,2020-05-28,2020-06-02,freefood,NA,Did not report,1233742,NA,4.064468240294163
+State,California,06,2020-05-28,2020-06-02,mortconf,1,No confidence,2139469,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortconf,2,Slight confidence,3264232,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortconf,3,Moderate confidence,4703693,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortconf,4,High confidence,10886682,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortconf,5,Payment is/will be deferred,418195,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortconf,NA,Did not report,8942056,NA,29.45891584096888
+State,California,06,2020-05-28,2020-06-02,mortlmth,1,Yes,18255436,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortlmth,2,No,2379939,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortlmth,3,Payment was deferred,648647,NA,NA
+State,California,06,2020-05-28,2020-06-02,mortlmth,NA,Did not report,4636005,NA,15.272960996286418
+State,California,06,2020-05-28,2020-06-02,total,NA,Total,30354327,NA,100
+State,California,06,2020-05-28,2020-06-02,wherefree1,1,Free meals through the school or other programs aimed at children,1705425,NA,48.697865776603535
+State,California,06,2020-05-28,2020-06-02,wherefree2,1,Food pantry or food bank,783170,NA,22.363183625895555
+State,California,06,2020-05-28,2020-06-02,wherefree3,1,Home-delivered meal service like Meals on Wheels,92162,NA,2.6316558955246996
+State,California,06,2020-05-28,2020-06-02,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",526864,NA,15.044423541973002
+State,California,06,2020-05-28,2020-06-02,wherefree5,1,Shelter or soup kitchen,27146,NA,0.7751574416417183
+State,California,06,2020-05-28,2020-06-02,wherefree6,1,Other community program,940804,NA,26.864365831465282
+State,California,06,2020-05-28,2020-06-02,wherefree7,1,"Family, friends, or neighbors",582543,NA,16.634343107989057
+State,California,06,2020-05-28,2020-06-02,wrkloss,1,Yes,15633342,NA,51.50284640235898
+State,California,06,2020-05-28,2020-06-02,wrkloss,2,No,14511056,NA,47.80556117716742
+State,California,06,2020-05-28,2020-06-02,wrkloss,NA,Did not report,209929,NA,0.6915957605961798
+State,California,06,2020-05-21,2020-05-26,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16430880,405509,54.13027338062068
+State,California,06,2020-05-21,2020-05-26,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",10051426,398401,33.11365192302835
+State,California,06,2020-05-21,2020-05-26,curfoodsuf,3,Sometimes not enough to eat,1981839,210505,6.529016644405685
+State,California,06,2020-05-21,2020-05-26,curfoodsuf,4,Often not enough to eat,1078974,289661,3.5545974913885807
+State,California,06,2020-05-21,2020-05-26,curfoodsuf,NA,Did not report,811207,126916,2.6724605605566985
+State,California,06,2020-05-21,2020-05-26,expctloss,1,Yes,13271603,493109,43.722276587390596
+State,California,06,2020-05-21,2020-05-26,expctloss,2,No,16987162,493500,55.962902307426816
+State,California,06,2020-05-21,2020-05-26,expctloss,NA,Did not report,95562,23971,0.3148211051825889
+State,California,06,2020-05-21,2020-05-26,foodconf,1,Not at all confident,2471603,272725,8.142505942027674
+State,California,06,2020-05-21,2020-05-26,foodconf,2,Somewhat confident,6674453,355960,21.988472424964307
+State,California,06,2020-05-21,2020-05-26,foodconf,3,Moderately confident,5051524,340641,16.641858523836113
+State,California,06,2020-05-21,2020-05-26,foodconf,4,Very confident,12309845,332777,40.55384080173591
+State,California,06,2020-05-21,2020-05-26,foodconf,NA,Did not report,3846902,305751,12.673322307435985
+State,California,06,2020-05-21,2020-05-26,foodsufrsn1,1,Couldn't afford to buy more food,5424777,321726,41.371857618579845
+State,California,06,2020-05-21,2020-05-26,foodsufrsn1,NA,Did not report,24929550,321726,82.12848859102479
+State,California,06,2020-05-21,2020-05-26,foodsufrsn2,1,Couldn’t get out to buy food,2030983,275994,15.489212800177578
+State,California,06,2020-05-21,2020-05-26,foodsufrsn2,NA,Did not report,28323344,275994,93.30908353629009
+State,California,06,2020-05-21,2020-05-26,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3986963,288443,30.406421402029093
+State,California,06,2020-05-21,2020-05-26,foodsufrsn3,NA,Did not report,26367364,288443,86.86525724799871
+State,California,06,2020-05-21,2020-05-26,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,1222781,244322,9.325495135043797
+State,California,06,2020-05-21,2020-05-26,foodsufrsn4,NA,Did not report,29131546,244322,95.97164105521256
+State,California,06,2020-05-21,2020-05-26,foodsufrsn5,1,The stores didn’t have the food I wanted,5089390,355931,38.81403919533167
+State,California,06,2020-05-21,2020-05-26,foodsufrsn5,NA,Did not report,25264937,355931,83.23339622061688
+State,California,06,2020-05-21,2020-05-26,freefood,1,Yes,3831577,314273,12.62283530010131
+State,California,06,2020-05-21,2020-05-26,freefood,2,No,25413727,380539,83.72357270661497
+State,California,06,2020-05-21,2020-05-26,freefood,NA,Did not report,1109023,164229,3.6535919932837135
+State,California,06,2020-05-21,2020-05-26,mortconf,1,No confidence,1823309,230348,8.69434640150476
+State,California,06,2020-05-21,2020-05-26,mortconf,2,Slight confidence,3303324,316655,15.751716051181349
+State,California,06,2020-05-21,2020-05-26,mortconf,3,Moderate confidence,4732607,343273,22.567167232563605
+State,California,06,2020-05-21,2020-05-26,mortconf,4,High confidence,10502189,348792,50.079097623059525
+State,California,06,2020-05-21,2020-05-26,mortconf,5,Payment is/will be deferred,512985,144511,2.446139151854018
+State,California,06,2020-05-21,2020-05-26,mortconf,NA,Did not report,9479913,473511,31.230844361640234
+State,California,06,2020-05-21,2020-05-26,mortlmth,1,Yes,18136001,454822,86.48049565235593
+State,California,06,2020-05-21,2020-05-26,mortlmth,2,No,2083923,229940,9.937067283344907
+State,California,06,2020-05-21,2020-05-26,mortlmth,3,Payment was deferred,620176,141501,2.9572731721723797
+State,California,06,2020-05-21,2020-05-26,mortlmth,NA,Did not report,9514228,470338,31.343893332193712
+State,California,06,2020-05-21,2020-05-26,prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,19116294,367671,62.97716399104695
+State,California,06,2020-05-21,2020-05-26,prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7467832,334623,24.602198852792174
+State,California,06,2020-05-21,2020-05-26,prifoodsuf,3,Sometimes not enough to eat,1917098,218474,6.315733769616984
+State,California,06,2020-05-21,2020-05-26,prifoodsuf,4,Often not enough to eat,975338,238086,3.213175392728701
+State,California,06,2020-05-21,2020-05-26,prifoodsuf,NA,Did not report,877765,124830,2.891727993815181
+State,California,06,2020-05-21,2020-05-26,tenure,1,Owned free and clear,3997569,301477,13.169685691739147
+State,California,06,2020-05-21,2020-05-26,tenure,2,Owned with a mortgage or loan (including home equity loans),10398498,431893,34.25705348363391
+State,California,06,2020-05-21,2020-05-26,tenure,3,Rented,10572705,459090,34.830966539140086
+State,California,06,2020-05-21,2020-05-26,tenure,4,Occupied without payment of rent,756406,198661,2.491921702177066
+State,California,06,2020-05-21,2020-05-26,tenure,NA,Did not report,4629148,349323,15.250372583309794
+State,California,06,2020-05-21,2020-05-26,total,NA,Total,30354327,0,100
+State,California,06,2020-05-21,2020-05-26,wherefree1,1,Free meals through the school or other programs aimed at children,2110934,276224,55.09309278432106
+State,California,06,2020-05-21,2020-05-26,wherefree1,NA,Did not report,28243393,276224,93.04568963610315
+State,California,06,2020-05-21,2020-05-26,wherefree2,1,Food pantry or food bank,1033298,187900,26.967960965153697
+State,California,06,2020-05-21,2020-05-26,wherefree2,NA,Did not report,29321029,187900,96.59587870357304
+State,California,06,2020-05-21,2020-05-26,wherefree3,1,Home-delivered meal service like Meals on Wheels,321954,174974,8.402659428292585
+State,California,06,2020-05-21,2020-05-26,wherefree3,NA,Did not report,30032373,174974,98.9393461395382
+State,California,06,2020-05-21,2020-05-26,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",632351,185192,16.503667809467924
+State,California,06,2020-05-21,2020-05-26,wherefree4,NA,Did not report,29721976,185192,97.91676919393501
+State,California,06,2020-05-21,2020-05-26,wherefree5,1,Shelter or soup kitchen,338131,181972,8.824846094500677
+State,California,06,2020-05-21,2020-05-26,wherefree5,NA,Did not report,30016196,181972,98.88605421200376
+State,California,06,2020-05-21,2020-05-26,wherefree6,1,Other community program,1161079,268159,30.302892556569173
+State,California,06,2020-05-21,2020-05-26,wherefree6,NA,Did not report,29193248,268159,96.17491578141761
+State,California,06,2020-05-21,2020-05-26,wherefree7,1,"Family, friends, or neighbors",1235679,263431,32.249893728712706
+State,California,06,2020-05-21,2020-05-26,wherefree7,NA,Did not report,29118648,263431,95.92914903016688
+State,California,06,2020-05-21,2020-05-26,wrkloss,1,Yes,16945502,410399,55.82565447790331
+State,California,06,2020-05-21,2020-05-26,wrkloss,2,No,13332866,410063,43.924103187596806
+State,California,06,2020-05-21,2020-05-26,wrkloss,NA,Did not report,75959,23829,0.25024233449987526
+State,California,06,2020-05-14,2020-05-19,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16680868,470639,54.95383786396392
+State,California,06,2020-05-14,2020-05-19,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",10137892,511561,33.39850629425469
+State,California,06,2020-05-14,2020-05-19,curfoodsuf,3,Sometimes not enough to eat,2495775,244932,8.222140121466376
+State,California,06,2020-05-14,2020-05-19,curfoodsuf,4,Often not enough to eat,482761,115634,1.5904205413124686
+State,California,06,2020-05-14,2020-05-19,curfoodsuf,NA,Did not report,557031,93291,1.835095179002538
+State,California,06,2020-05-14,2020-05-19,expctloss,1,Yes,13141333,475673,43.29311368307044
+State,California,06,2020-05-14,2020-05-19,expctloss,2,No,17003830,481823,56.0178136120189
+State,California,06,2020-05-14,2020-05-19,expctloss,NA,Did not report,209163,71949,0.6890727049106531
+State,California,06,2020-05-14,2020-05-19,foodconf,1,Not at all confident,2284169,288014,7.525017900274242
+State,California,06,2020-05-14,2020-05-19,foodconf,2,Somewhat confident,6583058,467015,21.687379762228613
+State,California,06,2020-05-14,2020-05-19,foodconf,3,Moderately confident,5058057,372279,16.663380310742898
+State,California,06,2020-05-14,2020-05-19,foodconf,4,Very confident,12731776,348760,41.94385901920227
+State,California,06,2020-05-14,2020-05-19,foodconf,NA,Did not report,3697267,284327,12.180363007551964
+State,California,06,2020-05-14,2020-05-19,foodsufrsn1,1,Couldn't afford to buy more food,5584928,330856,42.57963650679139
+State,California,06,2020-05-14,2020-05-19,foodsufrsn1,NA,Did not report,24769399,330856,81.60088475898887
+State,California,06,2020-05-14,2020-05-19,foodsufrsn2,1,Couldn’t get out to buy food,1700579,252856,12.965260050288265
+State,California,06,2020-05-14,2020-05-19,foodsufrsn2,NA,Did not report,28653748,252856,94.3975727985164
+State,California,06,2020-05-14,2020-05-19,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3693002,276600,28.155546129172865
+State,California,06,2020-05-14,2020-05-19,foodsufrsn3,NA,Did not report,26661325,276600,87.83368811000464
+State,California,06,2020-05-14,2020-05-19,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,680021,118117,5.184495490869064
+State,California,06,2020-05-14,2020-05-19,foodsufrsn4,NA,Did not report,29674306,118117,97.75972418205619
+State,California,06,2020-05-14,2020-05-19,foodsufrsn5,1,The stores didn’t have the food I wanted,5524305,440569,42.11744617839875
+State,California,06,2020-05-14,2020-05-19,foodsufrsn5,NA,Did not report,24830022,440569,81.80060213125955
+State,California,06,2020-05-14,2020-05-19,freefood,1,Yes,2873347,256293,9.466022610606933
+State,California,06,2020-05-14,2020-05-19,freefood,2,No,26750177,273608,88.12640500906402
+State,California,06,2020-05-14,2020-05-19,freefood,NA,Did not report,730802,117768,2.4075723803290563
+State,California,06,2020-05-14,2020-05-19,mortconf,1,No confidence,2685145,279583,12.655676603584421
+State,California,06,2020-05-14,2020-05-19,mortconf,2,Slight confidence,2604304,266798,12.27465184446148
+State,California,06,2020-05-14,2020-05-19,mortconf,3,Moderate confidence,4630369,353284,21.823942478215347
+State,California,06,2020-05-14,2020-05-19,mortconf,4,High confidence,10901647,398674,51.38184609699346
+State,California,06,2020-05-14,2020-05-19,mortconf,5,Payment is/will be deferred,356505,73901,1.6802881785237218
+State,California,06,2020-05-14,2020-05-19,mortconf,NA,Did not report,9176356,431560,30.23080164541268
+State,California,06,2020-05-14,2020-05-19,mortlmth,1,Yes,18067930,457820,85.15810447172181
+State,California,06,2020-05-14,2020-05-19,mortlmth,2,No,2065506,271560,9.735182700389611
+State,California,06,2020-05-14,2020-05-19,mortlmth,3,Payment was deferred,1020942,215114,4.81192344050148
+State,California,06,2020-05-14,2020-05-19,mortlmth,NA,Did not report,9199948,430016,30.30852391292736
+State,California,06,2020-05-14,2020-05-19,prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,19675729,468699,64.82017911319377
+State,California,06,2020-05-14,2020-05-19,prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7683694,554576,25.313341314915082
+State,California,06,2020-05-14,2020-05-19,prifoodsuf,3,Sometimes not enough to eat,1864303,230398,6.141803718143126
+State,California,06,2020-05-14,2020-05-19,prifoodsuf,4,Often not enough to eat,424245,87225,1.3976424389872404
+State,California,06,2020-05-14,2020-05-19,prifoodsuf,NA,Did not report,706355,138168,2.3270334147607743
+State,California,06,2020-05-14,2020-05-19,tenure,1,Owned free and clear,4430977,296238,14.59751461219171
+State,California,06,2020-05-14,2020-05-19,tenure,2,Owned with a mortgage or loan (including home equity loans),10124554,405331,33.35456487004572
+State,California,06,2020-05-14,2020-05-19,tenure,3,Rented,11092370,349921,36.542961707423366
+State,California,06,2020-05-14,2020-05-19,tenure,4,Occupied without payment of rent,386785,90987,1.274232083827307
+State,California,06,2020-05-14,2020-05-19,tenure,NA,Did not report,4319641,315984,14.230726726511898
+State,California,06,2020-05-14,2020-05-19,total,NA,Total,30354327,0,100
+State,California,06,2020-05-14,2020-05-19,wherefree1,1,Free meals through the school or other programs aimed at children,1109584,180594,38.61642529937306
+State,California,06,2020-05-14,2020-05-19,wherefree1,NA,Did not report,29244743,180594,96.34456044975322
+State,California,06,2020-05-14,2020-05-19,wherefree2,1,Food pantry or food bank,713211,124317,24.82159200716557
+State,California,06,2020-05-14,2020-05-19,wherefree2,NA,Did not report,29641116,124317,97.6503824882891
+State,California,06,2020-05-14,2020-05-19,wherefree3,1,Home-delivered meal service like Meals on Wheels,52876,27825,1.8402243069523097
+State,California,06,2020-05-14,2020-05-19,wherefree3,NA,Did not report,30301451,27825,99.825803951018
+State,California,06,2020-05-14,2020-05-19,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",321509,87326,11.189340642950278
+State,California,06,2020-05-14,2020-05-19,wherefree4,NA,Did not report,30032818,87326,98.9408144847605
+State,California,06,2020-05-14,2020-05-19,wherefree5,1,Shelter or soup kitchen,4722,2627,0.16433038901065064
+State,California,06,2020-05-14,2020-05-19,wherefree5,NA,Did not report,30349605,2627,99.98444444822016
+State,California,06,2020-05-14,2020-05-19,wherefree6,1,Other community program,913365,163226,31.78748551032044
+State,California,06,2020-05-14,2020-05-19,wherefree6,NA,Did not report,29440962,163226,96.99098943424967
+State,California,06,2020-05-14,2020-05-19,wherefree7,1,"Family, friends, or neighbors",375563,78437,13.07058224405254
+State,California,06,2020-05-14,2020-05-19,wherefree7,NA,Did not report,29978764,78437,98.76273572944001
+State,California,06,2020-05-14,2020-05-19,wrkloss,1,Yes,16802405,351079,55.35423214344425
+State,California,06,2020-05-14,2020-05-19,wrkloss,2,No,13463621,350730,44.354866701060445
+State,California,06,2020-05-14,2020-05-19,wrkloss,NA,Did not report,88301,22034,0.2909011554953026
+State,California,06,2020-05-07,2020-05-12,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15735975,629604,51.840960735476195
+State,California,06,2020-05-07,2020-05-12,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",10105256,538129,33.290990124361976
+State,California,06,2020-05-07,2020-05-12,curfoodsuf,3,Sometimes not enough to eat,2557855,345930,8.426658408297623
+State,California,06,2020-05-07,2020-05-12,curfoodsuf,4,Often not enough to eat,753326,242368,2.481775141927632
+State,California,06,2020-05-07,2020-05-12,curfoodsuf,NA,Did not report,1201915,251950,3.9596155899365857
+State,California,06,2020-05-07,2020-05-12,expctloss,1,Yes,12346023,618902,40.673025123807705
+State,California,06,2020-05-07,2020-05-12,expctloss,2,No,17941184,616455,59.10585482086966
+State,California,06,2020-05-07,2020-05-12,expctloss,NA,Did not report,67120,35849,0.22112005532264645
+State,California,06,2020-05-07,2020-05-12,foodconf,1,Not at all confident,2152037,357584,7.089719278639867
+State,California,06,2020-05-07,2020-05-12,foodconf,2,Somewhat confident,7092035,601779,23.36416488957155
+State,California,06,2020-05-07,2020-05-12,foodconf,3,Moderately confident,6665852,539695,21.96013659179297
+State,California,06,2020-05-07,2020-05-12,foodconf,4,Very confident,11534479,535346,37.99945483862621
+State,California,06,2020-05-07,2020-05-12,foodconf,NA,Did not report,2909925,430930,9.58652440136941
+State,California,06,2020-05-07,2020-05-12,foodsufrsn1,1,Couldn't afford to buy more food,5539721,563508,41.29054927163276
+State,California,06,2020-05-07,2020-05-12,foodsufrsn1,NA,Did not report,24814606,563508,81.74981518986685
+State,California,06,2020-05-07,2020-05-12,foodsufrsn2,1,Couldn’t get out to buy food,1396791,237419,10.41104590677943
+State,California,06,2020-05-07,2020-05-12,foodsufrsn2,NA,Did not report,28957536,237419,95.3983777107068
+State,California,06,2020-05-07,2020-05-12,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,4412690,485785,32.8901778067102
+State,California,06,2020-05-07,2020-05-12,foodsufrsn3,NA,Did not report,25941637,485785,85.46273096388711
+State,California,06,2020-05-07,2020-05-12,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,966253,191277,7.202006477991567
+State,California,06,2020-05-07,2020-05-12,foodsufrsn4,NA,Did not report,29388074,191277,96.8167546437213
+State,California,06,2020-05-07,2020-05-12,foodsufrsn5,1,The stores didn’t have the food I wanted,7286625,582513,54.31117373718999
+State,California,06,2020-05-07,2020-05-12,foodsufrsn5,NA,Did not report,23067702,582513,75.99477421725825
+State,California,06,2020-05-07,2020-05-12,freefood,1,Yes,2542276,446597,8.37533340367754
+State,California,06,2020-05-07,2020-05-12,freefood,2,No,26529982,481289,87.40098797977684
+State,California,06,2020-05-07,2020-05-12,freefood,NA,Did not report,1282069,249004,4.223678616545627
+State,California,06,2020-05-07,2020-05-12,mortconf,1,No confidence,2297440,373244,10.24419937126176
+State,California,06,2020-05-07,2020-05-12,mortconf,2,Slight confidence,3365228,463563,15.005426117292075
+State,California,06,2020-05-07,2020-05-12,mortconf,3,Moderate confidence,5263302,579235,23.468864405567373
+State,California,06,2020-05-07,2020-05-12,mortconf,4,High confidence,10986492,569035,48.988351465074786
+State,California,06,2020-05-07,2020-05-12,mortconf,5,Payment is/will be deferred,511279,140397,2.279773892808061
+State,California,06,2020-05-07,2020-05-12,mortconf,NA,Did not report,7930586,568578,26.126705286105544
+State,California,06,2020-05-07,2020-05-12,mortlmth,1,Yes,18738303,749378,83.55338640744557
+State,California,06,2020-05-07,2020-05-12,mortlmth,2,No,2297143,378332,10.242875884260645
+State,California,06,2020-05-07,2020-05-12,mortlmth,3,Payment was deferred,1387251,407187,6.1857009316584435
+State,California,06,2020-05-07,2020-05-12,mortlmth,NA,Did not report,7931629,568382,26.130142352975227
+State,California,06,2020-05-07,2020-05-12,prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,19219920,647125,63.3185500098654
+State,California,06,2020-05-07,2020-05-12,prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7008774,617669,23.089868921371306
+State,California,06,2020-05-07,2020-05-12,prifoodsuf,3,Sometimes not enough to eat,2266616,425947,7.467193755466785
+State,California,06,2020-05-07,2020-05-12,prifoodsuf,4,Often not enough to eat,643172,242917,2.118882040476514
+State,California,06,2020-05-07,2020-05-12,prifoodsuf,NA,Did not report,1215844,251181,4.005505272819996
+State,California,06,2020-05-07,2020-05-12,tenure,1,Owned free and clear,4161447,381091,13.70956729212816
+State,California,06,2020-05-07,2020-05-12,tenure,2,Owned with a mortgage or loan (including home equity loans),10175974,562269,33.52396380569903
+State,California,06,2020-05-07,2020-05-12,tenure,3,Rented,12250770,620451,40.359219986157356
+State,California,06,2020-05-07,2020-05-12,tenure,4,Occupied without payment of rent,338425,144288,1.1149157967185808
+State,California,06,2020-05-07,2020-05-12,tenure,NA,Did not report,3427712,452018,11.292333119296869
+State,California,06,2020-05-07,2020-05-12,total,NA,Total,30354327,0,100
+State,California,06,2020-05-07,2020-05-12,wherefree1,1,Free meals through the school or other programs aimed at children,1324659,289172,52.105234317969874
+State,California,06,2020-05-07,2020-05-12,wherefree1,NA,Did not report,29029668,289172,95.63601290510262
+State,California,06,2020-05-07,2020-05-12,wherefree2,1,Food pantry or food bank,1168825,351189,45.97551688299515
+State,California,06,2020-05-07,2020-05-12,wherefree2,NA,Did not report,29185502,351189,96.1493971769851
+State,California,06,2020-05-07,2020-05-12,wherefree3,1,Home-delivered meal service like Meals on Wheels,74448,49738,2.928379994522396
+State,California,06,2020-05-07,2020-05-12,wherefree3,NA,Did not report,30279879,49738,99.75473841213216
+State,California,06,2020-05-07,2020-05-12,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",259493,85471,10.207112569485377
+State,California,06,2020-05-07,2020-05-12,wherefree4,NA,Did not report,30094834,85471,99.14512029141692
+State,California,06,2020-05-07,2020-05-12,wherefree5,1,Shelter or soup kitchen,1977,2037,0.07777042017643794
+State,California,06,2020-05-07,2020-05-12,wherefree5,NA,Did not report,30352350,2037,99.99348646802079
+State,California,06,2020-05-07,2020-05-12,wherefree6,1,Other community program,397968,151132,15.654010009046804
+State,California,06,2020-05-07,2020-05-12,wherefree6,NA,Did not report,29956359,151132,98.68892447069727
+State,California,06,2020-05-07,2020-05-12,wherefree7,1,"Family, friends, or neighbors",501706,193815,19.73452708053496
+State,California,06,2020-05-07,2020-05-12,wherefree7,NA,Did not report,29852621,193815,98.34716756136618
+State,California,06,2020-05-07,2020-05-12,wrkloss,1,Yes,16490250,570865,54.32586310813473
+State,California,06,2020-05-07,2020-05-12,wrkloss,2,No,13777845,565337,45.39005289019392
+State,California,06,2020-05-07,2020-05-12,wrkloss,NA,Did not report,86232,40162,0.284084001671349
+State,California,06,2020-04-23,2020-05-05,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,17026844,354099,56.093630510818116
+State,California,06,2020-04-23,2020-05-05,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",10091597,402150,33.24599031307157
+State,California,06,2020-04-23,2020-05-05,curfoodsuf,3,Sometimes not enough to eat,2446326,247234,8.059234519206477
+State,California,06,2020-04-23,2020-05-05,curfoodsuf,4,Often not enough to eat,473068,97989,1.5584847149003516
+State,California,06,2020-04-23,2020-05-05,curfoodsuf,NA,Did not report,316492,58990,1.0426599420034788
+State,California,06,2020-04-23,2020-05-05,expctloss,1,Yes,13393174,413117,44.122784706356825
+State,California,06,2020-04-23,2020-05-05,expctloss,2,No,16796132,412621,55.33356840321864
+State,California,06,2020-04-23,2020-05-05,expctloss,NA,Did not report,165020,48622,0.543646890424533
+State,California,06,2020-04-23,2020-05-05,foodconf,1,Not at all confident,2268929,262295,7.474814010971686
+State,California,06,2020-04-23,2020-05-05,foodconf,2,Somewhat confident,6501661,432543,21.41922425552588
+State,California,06,2020-04-23,2020-05-05,foodconf,3,Moderately confident,7485271,401898,24.659651516046058
+State,California,06,2020-04-23,2020-05-05,foodconf,4,Very confident,11373367,385638,37.46868448462562
+State,California,06,2020-04-23,2020-05-05,foodconf,NA,Did not report,2725098,311816,8.97762573283076
+State,California,06,2020-04-23,2020-05-05,foodsufrsn1,1,Couldn't afford to buy more food,4651004,337527,35.746731518398555
+State,California,06,2020-04-23,2020-05-05,foodsufrsn1,NA,Did not report,25703323,337527,84.67762482934396
+State,California,06,2020-04-23,2020-05-05,foodsufrsn2,1,Couldn’t get out to buy food,1216743,176704,9.351654022332319
+State,California,06,2020-04-23,2020-05-05,foodsufrsn2,NA,Did not report,29137584,176704,95.99153418201045
+State,California,06,2020-04-23,2020-05-05,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3979879,306582,30.588590707809914
+State,California,06,2020-04-23,2020-05-05,foodsufrsn3,NA,Did not report,26374448,306582,86.88859532442916
+State,California,06,2020-04-23,2020-05-05,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,809124,135425,6.218772214479377
+State,California,06,2020-04-23,2020-05-05,foodsufrsn4,NA,Did not report,29545203,135425,97.33440354058492
+State,California,06,2020-04-23,2020-05-05,foodsufrsn5,1,The stores didn’t have the food I wanted,6421093,293528,49.35130000914274
+State,California,06,2020-04-23,2020-05-05,foodsufrsn5,NA,Did not report,23933234,293528,78.84620210632443
+State,California,06,2020-04-23,2020-05-05,freefood,1,Yes,2741033,241053,9.030124010544684
+State,California,06,2020-04-23,2020-05-05,freefood,2,No,27220255,242401,89.67504167282503
+State,California,06,2020-04-23,2020-05-05,freefood,NA,Did not report,393038,69579,1.2948343166302927
+State,California,06,2020-04-23,2020-05-05,mortconf,1,No confidence,1595463,207333,7.0296378393073216
+State,California,06,2020-04-23,2020-05-05,mortconf,2,Slight confidence,3599570,359428,15.859766976784435
+State,California,06,2020-04-23,2020-05-05,mortconf,3,Moderate confidence,5325805,307038,23.465586270649965
+State,California,06,2020-04-23,2020-05-05,mortconf,4,High confidence,11540618,442425,50.848158099416416
+State,California,06,2020-04-23,2020-05-05,mortconf,5,Payment is/will be deferred,465926,84053,2.0528799017287898
+State,California,06,2020-04-23,2020-05-05,mortconf,NA,Did not report,7826945,454937,25.785268063620077
+State,California,06,2020-04-23,2020-05-05,mortlmth,1,Yes,19842178,424065,87.42497182222898
+State,California,06,2020-04-23,2020-05-05,mortlmth,2,No,1891118,202416,8.332299816872613
+State,California,06,2020-04-23,2020-05-05,mortlmth,3,Payment was deferred,828892,149699,3.652112296315932
+State,California,06,2020-04-23,2020-05-05,mortlmth,NA,Did not report,7792139,456110,25.67060310064286
+State,California,06,2020-04-23,2020-05-05,prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,20684622,381336,68.14389945087927
+State,California,06,2020-04-23,2020-05-05,prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7015956,402267,23.113528271187135
+State,California,06,2020-04-23,2020-05-05,prifoodsuf,3,Sometimes not enough to eat,1920442,238756,6.326749099325717
+State,California,06,2020-04-23,2020-05-05,prifoodsuf,4,Often not enough to eat,450104,92563,1.482832411257777
+State,California,06,2020-04-23,2020-05-05,prifoodsuf,NA,Did not report,283203,47591,0.9329907673501007
+State,California,06,2020-04-23,2020-05-05,tenure,1,Owned free and clear,4101758,346797,13.512925940738581
+State,California,06,2020-04-23,2020-05-05,tenure,2,Owned with a mortgage or loan (including home equity loans),11004412,359676,36.253189596866804
+State,California,06,2020-04-23,2020-05-05,tenure,3,Rented,11691824,379717,38.51781687838318
+State,California,06,2020-04-23,2020-05-05,tenure,4,Occupied without payment of rent,484687,121472,1.5967652184261918
+State,California,06,2020-04-23,2020-05-05,tenure,NA,Did not report,3071646,312503,10.119302365585257
+State,California,06,2020-04-23,2020-05-05,total,NA,Total,30354327,0,100
+State,California,06,2020-04-23,2020-05-05,wherefree1,1,Free meals through the school or other programs aimed at children,1408596,160927,51.389217641627624
+State,California,06,2020-04-23,2020-05-05,wherefree1,NA,Did not report,28945731,160927,95.35948991891232
+State,California,06,2020-04-23,2020-05-05,wherefree2,1,Food pantry or food bank,821885,197250,29.984504108571084
+State,California,06,2020-04-23,2020-05-05,wherefree2,NA,Did not report,29532442,197250,97.29236209504917
+State,California,06,2020-04-23,2020-05-05,wherefree3,1,Home-delivered meal service like Meals on Wheels,203927,92713,7.439777579080226
+State,California,06,2020-04-23,2020-05-05,wherefree3,NA,Did not report,30150400,92713,99.32817885850037
+State,California,06,2020-04-23,2020-05-05,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",537211,132443,19.598857309338914
+State,California,06,2020-04-23,2020-05-05,wherefree4,NA,Did not report,29817116,132443,98.230198880317
+State,California,06,2020-04-23,2020-05-05,wherefree5,1,Shelter or soup kitchen,64585,61803,2.356230617991026
+State,California,06,2020-04-23,2020-05-05,wherefree5,NA,Did not report,30289742,61803,99.787229453221
+State,California,06,2020-04-23,2020-05-05,wherefree6,1,Other community program,885005,164221,32.287291808946264
+State,California,06,2020-04-23,2020-05-05,wherefree6,NA,Did not report,29469322,164221,97.08441751000574
+State,California,06,2020-04-23,2020-05-05,wherefree7,1,"Family, friends, or neighbors",531394,139917,19.386613364462193
+State,California,06,2020-04-23,2020-05-05,wherefree7,NA,Did not report,29822933,139917,98.24936477174424
+State,California,06,2020-04-23,2020-05-05,wrkloss,1,Yes,16177479,370895,53.29546302644288
+State,California,06,2020-04-23,2020-05-05,wrkloss,2,No,14027055,374892,46.21105487296856
+State,California,06,2020-04-23,2020-05-05,wrkloss,NA,Did not report,149793,48019,0.4934821005885656
