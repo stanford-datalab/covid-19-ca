@@ -41,16 +41,16 @@ State,California,06,2020-05-21,2020-05-26,foodconf,2,Somewhat confident,6674453,
 State,California,06,2020-05-21,2020-05-26,foodconf,3,Moderately confident,5051524,340641,16.641858523836113
 State,California,06,2020-05-21,2020-05-26,foodconf,4,Very confident,12309845,332777,40.55384080173591
 State,California,06,2020-05-21,2020-05-26,foodconf,NA,Did not report,3846902,305751,12.673322307435985
-State,California,06,2020-05-21,2020-05-26,foodsufrsn1,1,Couldn't afford to buy more food,5424777,321726,41.371857618579845
-State,California,06,2020-05-21,2020-05-26,foodsufrsn1,NA,Did not report,24929550,321726,82.12848859102479
-State,California,06,2020-05-21,2020-05-26,foodsufrsn2,1,Couldn’t get out to buy food,2030983,275994,15.489212800177578
-State,California,06,2020-05-21,2020-05-26,foodsufrsn2,NA,Did not report,28323344,275994,93.30908353629009
-State,California,06,2020-05-21,2020-05-26,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3986963,288443,30.406421402029093
-State,California,06,2020-05-21,2020-05-26,foodsufrsn3,NA,Did not report,26367364,288443,86.86525724799871
-State,California,06,2020-05-21,2020-05-26,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,1222781,244322,9.325495135043797
-State,California,06,2020-05-21,2020-05-26,foodsufrsn4,NA,Did not report,29131546,244322,95.97164105521256
-State,California,06,2020-05-21,2020-05-26,foodsufrsn5,1,The stores didn’t have the food I wanted,5089390,355931,38.81403919533167
-State,California,06,2020-05-21,2020-05-26,foodsufrsn5,NA,Did not report,25264937,355931,83.23339622061688
+State,California,06,2020-05-21,2020-05-26,foodsufrsn1_curfoodsuf_34,1,NA,2107006,243575,68.83812195813444
+State,California,06,2020-05-21,2020-05-26,foodsufrsn1_curfoodsuf_34,NA,NA,953807,205468,31.161878041865567
+State,California,06,2020-05-21,2020-05-26,foodsufrsn2_curfoodsuf_34,1,NA,550770,187150,17.994235370979414
+State,California,06,2020-05-21,2020-05-26,foodsufrsn2_curfoodsuf_34,NA,NA,2510043,283243,82.00576462902059
+State,California,06,2020-05-21,2020-05-26,foodsufrsn3_curfoodsuf_34,1,NA,785715,216479,25.670140069738633
+State,California,06,2020-05-21,2020-05-26,foodsufrsn3_curfoodsuf_34,NA,NA,2275098,255853,74.32985993026136
+State,California,06,2020-05-21,2020-05-26,foodsufrsn4_curfoodsuf_34,1,NA,680037,229833,22.21753367686185
+State,California,06,2020-05-21,2020-05-26,foodsufrsn4_curfoodsuf_34,NA,NA,2380776,237129,77.78246632313814
+State,California,06,2020-05-21,2020-05-26,foodsufrsn5_curfoodsuf_34,1,NA,660503,187476,21.579319152376627
+State,California,06,2020-05-21,2020-05-26,foodsufrsn5_curfoodsuf_34,NA,NA,2400311,280202,78.42068084762337
 State,California,06,2020-05-21,2020-05-26,freefood,1,Yes,3831577,314273,12.62283530010131
 State,California,06,2020-05-21,2020-05-26,freefood,2,No,25413727,380539,83.72357270661497
 State,California,06,2020-05-21,2020-05-26,freefood,NA,Did not report,1109023,164229,3.6535919932837135
@@ -105,16 +105,16 @@ State,California,06,2020-05-14,2020-05-19,foodconf,2,Somewhat confident,6583058,
 State,California,06,2020-05-14,2020-05-19,foodconf,3,Moderately confident,5058057,372279,16.663380310742898
 State,California,06,2020-05-14,2020-05-19,foodconf,4,Very confident,12731776,348760,41.94385901920227
 State,California,06,2020-05-14,2020-05-19,foodconf,NA,Did not report,3697267,284327,12.180363007551964
-State,California,06,2020-05-14,2020-05-19,foodsufrsn1,1,Couldn't afford to buy more food,5584928,330856,42.57963650679139
-State,California,06,2020-05-14,2020-05-19,foodsufrsn1,NA,Did not report,24769399,330856,81.60088475898887
-State,California,06,2020-05-14,2020-05-19,foodsufrsn2,1,Couldn’t get out to buy food,1700579,252856,12.965260050288265
-State,California,06,2020-05-14,2020-05-19,foodsufrsn2,NA,Did not report,28653748,252856,94.3975727985164
-State,California,06,2020-05-14,2020-05-19,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3693002,276600,28.155546129172865
-State,California,06,2020-05-14,2020-05-19,foodsufrsn3,NA,Did not report,26661325,276600,87.83368811000464
-State,California,06,2020-05-14,2020-05-19,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,680021,118117,5.184495490869064
-State,California,06,2020-05-14,2020-05-19,foodsufrsn4,NA,Did not report,29674306,118117,97.75972418205619
-State,California,06,2020-05-14,2020-05-19,foodsufrsn5,1,The stores didn’t have the food I wanted,5524305,440569,42.11744617839875
-State,California,06,2020-05-14,2020-05-19,foodsufrsn5,NA,Did not report,24830022,440569,81.80060213125955
+State,California,06,2020-05-14,2020-05-19,foodsufrsn1_curfoodsuf_34,1,NA,2530526,263054,84.95869957707772
+State,California,06,2020-05-14,2020-05-19,foodsufrsn1_curfoodsuf_34,NA,NA,448011,93919,15.041300422922262
+State,California,06,2020-05-14,2020-05-19,foodsufrsn2_curfoodsuf_34,1,NA,230084,60863,7.72474735378415
+State,California,06,2020-05-14,2020-05-19,foodsufrsn2_curfoodsuf_34,NA,NA,2748452,263063,92.27525264621585
+State,California,06,2020-05-14,2020-05-19,foodsufrsn3_curfoodsuf_34,1,NA,578126,135506,19.409730313980592
+State,California,06,2020-05-14,2020-05-19,foodsufrsn3_curfoodsuf_34,NA,NA,2400411,231023,80.59026968601941
+State,California,06,2020-05-14,2020-05-19,foodsufrsn4_curfoodsuf_34,1,NA,205294,58070,6.892458016167849
+State,California,06,2020-05-14,2020-05-19,foodsufrsn4_curfoodsuf_34,NA,NA,2773242,256367,93.10754198383215
+State,California,06,2020-05-14,2020-05-19,foodsufrsn5_curfoodsuf_34,1,NA,387384,112808,13.005864859083234
+State,California,06,2020-05-14,2020-05-19,foodsufrsn5_curfoodsuf_34,NA,NA,2591152,252392,86.99413514091675
 State,California,06,2020-05-14,2020-05-19,freefood,1,Yes,2873347,256293,9.466022610606933
 State,California,06,2020-05-14,2020-05-19,freefood,2,No,26750177,273608,88.12640500906402
 State,California,06,2020-05-14,2020-05-19,freefood,NA,Did not report,730802,117768,2.4075723803290563
@@ -169,16 +169,16 @@ State,California,06,2020-05-07,2020-05-12,foodconf,2,Somewhat confident,7092035,
 State,California,06,2020-05-07,2020-05-12,foodconf,3,Moderately confident,6665852,539695,21.96013659179297
 State,California,06,2020-05-07,2020-05-12,foodconf,4,Very confident,11534479,535346,37.99945483862621
 State,California,06,2020-05-07,2020-05-12,foodconf,NA,Did not report,2909925,430930,9.58652440136941
-State,California,06,2020-05-07,2020-05-12,foodsufrsn1,1,Couldn't afford to buy more food,5539721,563508,41.29054927163276
-State,California,06,2020-05-07,2020-05-12,foodsufrsn1,NA,Did not report,24814606,563508,81.74981518986685
-State,California,06,2020-05-07,2020-05-12,foodsufrsn2,1,Couldn’t get out to buy food,1396791,237419,10.41104590677943
-State,California,06,2020-05-07,2020-05-12,foodsufrsn2,NA,Did not report,28957536,237419,95.3983777107068
-State,California,06,2020-05-07,2020-05-12,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,4412690,485785,32.8901778067102
-State,California,06,2020-05-07,2020-05-12,foodsufrsn3,NA,Did not report,25941637,485785,85.46273096388711
-State,California,06,2020-05-07,2020-05-12,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,966253,191277,7.202006477991567
-State,California,06,2020-05-07,2020-05-12,foodsufrsn4,NA,Did not report,29388074,191277,96.8167546437213
-State,California,06,2020-05-07,2020-05-12,foodsufrsn5,1,The stores didn’t have the food I wanted,7286625,582513,54.31117373718999
-State,California,06,2020-05-07,2020-05-12,foodsufrsn5,NA,Did not report,23067702,582513,75.99477421725825
+State,California,06,2020-05-07,2020-05-12,foodsufrsn1_curfoodsuf_34,1,NA,2506063,351863,75.68486357238282
+State,California,06,2020-05-07,2020-05-12,foodsufrsn1_curfoodsuf_34,NA,NA,805118,238344,24.315136427617176
+State,California,06,2020-05-07,2020-05-12,foodsufrsn2_curfoodsuf_34,1,NA,359542,139366,10.858429767687973
+State,California,06,2020-05-07,2020-05-12,foodsufrsn2_curfoodsuf_34,NA,NA,2951639,356500,89.14157023231202
+State,California,06,2020-05-07,2020-05-12,foodsufrsn3_curfoodsuf_34,1,NA,699277,232817,21.118652913140224
+State,California,06,2020-05-07,2020-05-12,foodsufrsn3_curfoodsuf_34,NA,NA,2611905,371598,78.88134708685978
+State,California,06,2020-05-07,2020-05-12,foodsufrsn4_curfoodsuf_34,1,NA,307982,151134,9.301266447009771
+State,California,06,2020-05-07,2020-05-12,foodsufrsn4_curfoodsuf_34,NA,NA,3003200,400044,90.69873355299022
+State,California,06,2020-05-07,2020-05-12,foodsufrsn5_curfoodsuf_34,1,NA,889965,231230,26.877579031049834
+State,California,06,2020-05-07,2020-05-12,foodsufrsn5_curfoodsuf_34,NA,NA,2421216,378152,73.12242096895015
 State,California,06,2020-05-07,2020-05-12,freefood,1,Yes,2542276,446597,8.37533340367754
 State,California,06,2020-05-07,2020-05-12,freefood,2,No,26529982,481289,87.40098797977684
 State,California,06,2020-05-07,2020-05-12,freefood,NA,Did not report,1282069,249004,4.223678616545627
@@ -233,16 +233,16 @@ State,California,06,2020-04-23,2020-05-05,foodconf,2,Somewhat confident,6501661,
 State,California,06,2020-04-23,2020-05-05,foodconf,3,Moderately confident,7485271,401898,24.659651516046058
 State,California,06,2020-04-23,2020-05-05,foodconf,4,Very confident,11373367,385638,37.46868448462562
 State,California,06,2020-04-23,2020-05-05,foodconf,NA,Did not report,2725098,311816,8.97762573283076
-State,California,06,2020-04-23,2020-05-05,foodsufrsn1,1,Couldn't afford to buy more food,4651004,337527,35.746731518398555
-State,California,06,2020-04-23,2020-05-05,foodsufrsn1,NA,Did not report,25703323,337527,84.67762482934396
-State,California,06,2020-04-23,2020-05-05,foodsufrsn2,1,Couldn’t get out to buy food,1216743,176704,9.351654022332319
-State,California,06,2020-04-23,2020-05-05,foodsufrsn2,NA,Did not report,29137584,176704,95.99153418201045
-State,California,06,2020-04-23,2020-05-05,foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food,3979879,306582,30.588590707809914
-State,California,06,2020-04-23,2020-05-05,foodsufrsn3,NA,Did not report,26374448,306582,86.88859532442916
-State,California,06,2020-04-23,2020-05-05,foodsufrsn4,1,Couldn’t get groceries or meals delivered to me,809124,135425,6.218772214479377
-State,California,06,2020-04-23,2020-05-05,foodsufrsn4,NA,Did not report,29545203,135425,97.33440354058492
-State,California,06,2020-04-23,2020-05-05,foodsufrsn5,1,The stores didn’t have the food I wanted,6421093,293528,49.35130000914274
-State,California,06,2020-04-23,2020-05-05,foodsufrsn5,NA,Did not report,23933234,293528,78.84620210632443
+State,California,06,2020-04-23,2020-05-05,foodsufrsn1_curfoodsuf_34,1,NA,2257069,239997,77.31292072247487
+State,California,06,2020-04-23,2020-05-05,foodsufrsn1_curfoodsuf_34,NA,NA,662325,141843,22.687079277525143
+State,California,06,2020-04-23,2020-05-05,foodsufrsn2_curfoodsuf_34,1,NA,418724,118532,14.342851062159667
+State,California,06,2020-04-23,2020-05-05,foodsufrsn2_curfoodsuf_34,NA,NA,2500670,235878,85.65714893784035
+State,California,06,2020-04-23,2020-05-05,foodsufrsn3_curfoodsuf_34,1,NA,580204,147543,19.874123358865397
+State,California,06,2020-04-23,2020-05-05,foodsufrsn3_curfoodsuf_34,NA,NA,2339190,240809,80.12587664113461
+State,California,06,2020-04-23,2020-05-05,foodsufrsn4_curfoodsuf_34,1,NA,194925,78370,6.676908833603417
+State,California,06,2020-04-23,2020-05-05,foodsufrsn4_curfoodsuf_34,NA,NA,2724469,264758,93.3230911663966
+State,California,06,2020-04-23,2020-05-05,foodsufrsn5_curfoodsuf_34,1,NA,630085,139865,21.58273313414025
+State,California,06,2020-04-23,2020-05-05,foodsufrsn5_curfoodsuf_34,NA,NA,2289309,245325,78.41726686585976
 State,California,06,2020-04-23,2020-05-05,freefood,1,Yes,2741033,241053,9.030124010544684
 State,California,06,2020-04-23,2020-05-05,freefood,2,No,27220255,242401,89.67504167282503
 State,California,06,2020-04-23,2020-05-05,freefood,NA,Did not report,393038,69579,1.2948343166302927

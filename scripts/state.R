@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-06-12
+# Version: 2020-06-14
 
 # Libraries
 library(tidyverse)
@@ -15,10 +15,13 @@ file_weeks <- here::here("data-raw/pulse/metadata/weeks.csv")
 dir_pulse_puf <- here::here("data-raw/pulse/puf")
   # Directory with Household Pulse table data
 dir_pulse_table <- here::here("data-raw/pulse/tables")
-  # All variables
+  # Household Pulse PUF variables
+file_vars <- str_c(dir_pulse_puf, "/metadata/vars.txt")
+  # Household Pulse PUF variables to estimate for all respondents
 file_vars_all <- str_c(dir_pulse_puf, "/metadata/vars_all.txt")
-  # Variables to create estimates for
-file_vars_estimate <- str_c(dir_pulse_puf, "/metadata/vars_estimate.txt")
+  # Household Pulse PUF variables to estimate for food insecure respondents
+file_vars_curfoodsuf_34 <-
+  str_c(dir_pulse_puf, "/metadata/vars_curfoodsuf_34.txt")
   # Data recodes
 file_recodes <- str_c(dir_pulse_puf, "/metadata/recodes.csv")
   # Population data
@@ -34,11 +37,14 @@ params <- yaml::read_yaml(file_params)
 # Household Pulse weeks
 weeks <- read_csv(file_weeks)
 
-# All variables
+# Household Pulse PUF variables
+vars <- read_lines(file_vars)
+
+# Household Pulse PUF variables to estimate for all respondents
 vars_all <- read_lines(file_vars_all)
 
-# Variables to create estimates for
-vars_estimate <- read_lines(file_vars_estimate)
+# Household Pulse PUF variables to estimate for food insecure respondents
+vars_curfoodsuf_34 <- read_lines(file_vars_curfoodsuf_34)
 
 # Data recodes
 recodes <- read_csv(file_recodes, col_types = cols(.default = col_character()))
@@ -88,30 +94,25 @@ process <- function(file) {
     as.integer()
 
   # Read in raw data
-  v_wide <-
+  data <-
     read_rds(file) %>%
-    select(all_of(vars_all))
-  v_long <-
-    v_wide %>%
-    pivot_longer(
-      cols = all_of(vars_estimate),
-      names_to = "variable",
-      values_to = "code"
-    ) %>%
-    mutate(code = code %>% na_if(-88) %>% na_if(-99))
-
+    select(all_of(vars))
   assertthat::assert_that(
-    n_distinct(v_wide$week) == 1,
+    n_distinct(data$week) == 1,
     msg = message("Data does not contain one week")
   )
   assertthat::assert_that(
-    n_distinct(v_wide$est_st) == 1,
+    n_distinct(data$est_st) == 1,
     msg = message("Data does not contain one state")
+  )
+  assertthat::assert_that(
+    "curfoodsuf" %in% names(data),
+    msg = "Data does not contain variable: curfoodsuf"
   )
   assertthat::assert_that(
     (
       weeks %>%
-        filter(year == year_, week == unique(v_wide$week)) %>%
+        filter(year == year_, week == unique(data$week)) %>%
         nrow()
     ) == 1,
     msg = message("Survey week not in weeks metadata")
@@ -119,7 +120,7 @@ process <- function(file) {
 
   # Estimate number of total individuals for state
   state_total <-
-    v_wide %>%
+    data %>%
     estimate(week, est_st) %>%
     transmute(
       week,
@@ -131,24 +132,23 @@ process <- function(file) {
       area_type = "State"
     )
 
-  # Estimate number of individuals for each variable response for state
+  # Estimate number of individuals for each variable response for state and
+  # calculate percentages
   state <-
-    v_long %>%
+    data %>%
+    pivot_longer(
+      cols = all_of(vars_all),
+      names_to = "variable",
+      values_to = "code"
+    ) %>%
+    mutate(code = code %>% na_if(-88) %>% na_if(-99)) %>%
     estimate(week, est_st, variable, code) %>%
     rename(fips = est_st) %>%
-    mutate(area_type = "State")
-
-  # Combine estimates for state, calculate percentages, recode, and adjust
-  # numbers of individuals to populations for state and regions
-  state_total %>%
-    bind_rows(state) %>%
-    group_by(fips) %>%
+    mutate(area_type = "State") %>%
+    bind_rows(state_total) %>%
     mutate(
       pct =
         case_when(
-          str_detect(variable, "^foodsufrsn\\d$") & code %in% 1 ~
-            100 * n /
-            sum(n[variable == "curfoodsuf" & code %in% 2:4]),
           str_detect(variable, "^wherefree\\d$") & code %in% 1 ~
             100 * n / n[variable == "freefood" & code %in% 1],
           str_detect(variable, "^mortlmth$") & code %in% 1:3 ~
@@ -157,8 +157,48 @@ process <- function(file) {
             100 * n / sum(n[variable == "tenure" & code %in% 2:3]),
           TRUE ~ 100 * n / n[variable == "total"]
         )
+    )
+
+  # Estimate number of food insecure individuals for state
+  state_food_insecure_total <-
+    data %>%
+    filter(curfoodsuf %in% 3:4) %>%
+    estimate(week, est_st) %>%
+    transmute(
+      week,
+      fips = est_st,
+      variable = "total",
+      code = NA_integer_,
+      n,
+      n_error,
+      area_type = "State"
+    )
+
+  # Estimate number of food insecure individuals for each variable response for
+  # state and calculate percentages
+  state_food_insecure <-
+    data %>%
+    filter(curfoodsuf %in% 3:4) %>%
+    pivot_longer(
+      cols = all_of(vars_curfoodsuf_34),
+      names_to = "variable",
+      values_to = "code"
     ) %>%
-    ungroup() %>%
+    mutate(
+      variable = variable %>% str_replace("$", "_curfoodsuf_34"),
+      code = code %>% na_if(-88) %>% na_if(-99)
+    ) %>%
+    estimate(week, est_st, variable, code) %>%
+    rename(fips = est_st) %>%
+    mutate(area_type = "State") %>%
+    bind_rows(state_food_insecure_total) %>%
+    mutate(pct = 100 * n / n[variable == "total"]) %>%
+    filter(variable != "total")
+
+  # Combine estimates, recode, and adjust numbers of individuals to population
+  # for state
+  state %>%
+    bind_rows(state_food_insecure) %>%
     left_join(
       recodes %>%
         filter(variable %in% c("est_st", "est_msa")) %>%
