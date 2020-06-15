@@ -57,3 +57,8 @@ data-raw/
 *.txt
 *.xpt
 .Rproj.user
+
+# Website folders
+content/
+docs/
+
