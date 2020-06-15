@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-06-14
+# Version: 2020-06-15
 
 # Libraries
 library(tidyverse)
@@ -208,6 +208,10 @@ process <- function(file) {
     left_join(
       recodes %>%
         filter(!variable %in% c("est_st", "est_msa")) %>%
+        bind_rows(
+          .,
+          mutate(., variable = variable %>% str_replace("$", "_curfoodsuf_34"))
+        ) %>%
         transmute(
           variable,
           code = as.integer(code),
