@@ -8,41 +8,42 @@
 library(tidyverse)
 
 # Parameters
-file_params <- here::here("../california-dev/data/params.yml")
-file_counties <- here::here("../california-dev/data/counties.csv")
-file_msas <- here::here("../california-dev/data/msas.yml")
+file_params <- here::here("data/params.yml")
+file_counties <- here::here("data/counties.csv")
+file_msas <- here::here("data/msas.yml")
+
 #===============================================================================
 
 print_config <- function(dropdown, areas) {
   urls <-
-    areas %>% 
-    str_to_lower() %>% 
+    areas %>%
+    str_to_lower() %>%
     str_replace_all(" ", "-")
-  
+
   str_glue(
-    '\n[[menu.main]]\n\tparent = "{dropdown}"\n\tname = "{areas}"\n\turl = "/{urls}"', 
-  ) %>% 
-    str_c(collapse = "\n") %>% 
+    '\n[[menu.main]]\n\tparent = "{dropdown}"\n\tname = "{areas}"\n\turl = "/{urls}"',
+  ) %>%
+    str_c(collapse = "\n") %>%
     cat()
 }
 
 state <- yaml::read_yaml(file_params)$state
 
 msas <-
-  file_msas %>% 
-  yaml::read_yaml() %>% 
-  keep(~ .$state == state) %>% 
-  map_chr("msa") %>% 
-  sort() %>% 
+  file_msas %>%
+  yaml::read_yaml() %>%
+  keep(~ .$state == state) %>%
+  map_chr("msa") %>%
+  sort() %>%
   append("Balance")
 
-counties <- 
-  file_counties %>% 
-  read_csv() %>% 
-  distinct(area) %>% 
-  arrange(area) %>% 
-  pull(area) %>% 
-  str_remove(" County") 
+counties <-
+  file_counties %>%
+  read_csv() %>%
+  distinct(area) %>%
+  arrange(area) %>%
+  pull(area) %>%
+  str_remove(" County")
 
 # Copy into config.toml
 print_config("Regions", msas)
