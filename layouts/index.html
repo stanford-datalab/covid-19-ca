@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ with .GetPage "/state" }}
+{{ partial "content.html" .}}
+{{end}}
+{{ end }}

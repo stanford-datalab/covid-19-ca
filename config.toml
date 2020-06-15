@@ -1,0 +1,274 @@
+theme = "er"
+canonifyurls = true
+relativeURLs = true
+prettyURLs = false
+baseURL = "https://dcl-covid-19.github.io/california-dev"
+
+languageCode = "en-us"
+title = "California Weekly Pulse"
+toc = false
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+[[menu.main]]
+    name = "State"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Counties"
+    url = "/counties/"
+    weight = 2
+[[menu.main]]
+	parent = "Counties"
+	name = "Alameda"
+	url = "/alameda"
+[[menu.main]]
+	parent = "Counties"
+	name = "Alpine"
+	url = "/alpine"
+[[menu.main]]
+	parent = "Counties"
+	name = "Amador"
+	url = "/amador"
+[[menu.main]]
+	parent = "Counties"
+	name = "Butte"
+	url = "/butte"
+[[menu.main]]
+	parent = "Counties"
+	name = "Calaveras"
+	url = "/calaveras"
+[[menu.main]]
+	parent = "Counties"
+	name = "Colusa"
+	url = "/colusa"
+[[menu.main]]
+	parent = "Counties"
+	name = "Contra Costa"
+	url = "/contra-costa"
+[[menu.main]]
+	parent = "Counties"
+	name = "Del Norte"
+	url = "/del-norte"
+[[menu.main]]
+	parent = "Counties"
+	name = "El Dorado"
+	url = "/el-dorado"
+[[menu.main]]
+	parent = "Counties"
+	name = "Fresno"
+	url = "/fresno"
+[[menu.main]]
+	parent = "Counties"
+	name = "Glenn"
+	url = "/glenn"
+[[menu.main]]
+	parent = "Counties"
+	name = "Humboldt"
+	url = "/humboldt"
+[[menu.main]]
+	parent = "Counties"
+	name = "Imperial"
+	url = "/imperial"
+[[menu.main]]
+	parent = "Counties"
+	name = "Inyo"
+	url = "/inyo"
+[[menu.main]]
+	parent = "Counties"
+	name = "Kern"
+	url = "/kern"
+[[menu.main]]
+	parent = "Counties"
+	name = "Kings"
+	url = "/kings"
+[[menu.main]]
+	parent = "Counties"
+	name = "Lake"
+	url = "/lake"
+[[menu.main]]
+	parent = "Counties"
+	name = "Lassen"
+	url = "/lassen"
+[[menu.main]]
+	parent = "Counties"
+	name = "Los Angeles"
+	url = "/los-angeles"
+[[menu.main]]
+	parent = "Counties"
+	name = "Madera"
+	url = "/madera"
+[[menu.main]]
+	parent = "Counties"
+	name = "Marin"
+	url = "/marin"
+[[menu.main]]
+	parent = "Counties"
+	name = "Mariposa"
+	url = "/mariposa"
+[[menu.main]]
+	parent = "Counties"
+	name = "Mendocino"
+	url = "/mendocino"
+[[menu.main]]
+	parent = "Counties"
+	name = "Merced"
+	url = "/merced"
+[[menu.main]]
+	parent = "Counties"
+	name = "Modoc"
+	url = "/modoc"
+[[menu.main]]
+	parent = "Counties"
+	name = "Mono"
+	url = "/mono"
+[[menu.main]]
+	parent = "Counties"
+	name = "Monterey"
+	url = "/monterey"
+[[menu.main]]
+	parent = "Counties"
+	name = "Napa"
+	url = "/napa"
+[[menu.main]]
+	parent = "Counties"
+	name = "Nevada"
+	url = "/nevada"
+[[menu.main]]
+	parent = "Counties"
+	name = "Orange"
+	url = "/orange"
+[[menu.main]]
+	parent = "Counties"
+	name = "Placer"
+	url = "/placer"
+[[menu.main]]
+	parent = "Counties"
+	name = "Plumas"
+	url = "/plumas"
+[[menu.main]]
+	parent = "Counties"
+	name = "Riverside"
+	url = "/riverside"
+[[menu.main]]
+	parent = "Counties"
+	name = "Sacramento"
+	url = "/sacramento"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Benito"
+	url = "/san-benito"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Bernardino"
+	url = "/san-bernardino"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Diego"
+	url = "/san-diego"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Francisco"
+	url = "/san-francisco"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Joaquin"
+	url = "/san-joaquin"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Luis Obispo"
+	url = "/san-luis-obispo"
+[[menu.main]]
+	parent = "Counties"
+	name = "San Mateo"
+	url = "/san-mateo"
+[[menu.main]]
+	parent = "Counties"
+	name = "Santa Barbara"
+	url = "/santa-barbara"
+[[menu.main]]
+	parent = "Counties"
+	name = "Santa Clara"
+	url = "/santa-clara"
+[[menu.main]]
+	parent = "Counties"
+	name = "Santa Cruz"
+	url = "/santa-cruz"
+[[menu.main]]
+	parent = "Counties"
+	name = "Shasta"
+	url = "/shasta"
+[[menu.main]]
+	parent = "Counties"
+	name = "Sierra"
+	url = "/sierra"
+[[menu.main]]
+	parent = "Counties"
+	name = "Siskiyou"
+	url = "/siskiyou"
+[[menu.main]]
+	parent = "Counties"
+	name = "Solano"
+	url = "/solano"
+[[menu.main]]
+	parent = "Counties"
+	name = "Sonoma"
+	url = "/sonoma"
+[[menu.main]]
+	parent = "Counties"
+	name = "Stanislaus"
+	url = "/stanislaus"
+[[menu.main]]
+	parent = "Counties"
+	name = "Sutter"
+	url = "/sutter"
+[[menu.main]]
+	parent = "Counties"
+	name = "Tehama"
+	url = "/tehama"
+[[menu.main]]
+	parent = "Counties"
+	name = "Trinity"
+	url = "/trinity"
+[[menu.main]]
+	parent = "Counties"
+	name = "Tulare"
+	url = "/tulare"
+[[menu.main]]
+	parent = "Counties"
+	name = "Tuolumne"
+	url = "/tuolumne"
+[[menu.main]]
+	parent = "Counties"
+	name = "Ventura"
+	url = "/ventura"
+[[menu.main]]
+	parent = "Counties"
+	name = "Yolo"
+	url = "/yolo"
+[[menu.main]]
+	parent = "Counties"
+	name = "Yuba"
+	url = "/yuba"
+[[menu.main]]
+  name = "About"
+  url = "/about"
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    sitename = "Food insecurity"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.12.0"
+    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+    MathJaxVersion = "2.7.5"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"

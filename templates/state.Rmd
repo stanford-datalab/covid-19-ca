@@ -1,0 +1,317 @@
+---
+params:
+  area: ""
+title: ""
+author: 
+date: "Updated: `r Sys.Date()`"
+output: 
+  github_document:
+    toc: true
+---
+
+```{r setup, include=FALSE, out.width="100%"}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+library(sf)
+
+# Parameters
+  # Parameters for state and data
+file_data_params <- here::here("data/params.yml")
+  # Household Pulse data for state and regions
+file_hps <- here::here("data/state.csv")
+  # Population data
+file_population <- here::here("data/population.csv")
+  # Unemployment data
+file_unemployment <- here::here("data/unemployment.csv")
+  # Food insecurity estimates for counties
+file_counties <- here::here("data/counties.csv")
+  # Number of bins for maps  
+N_BINS <- 5
+  # Map colors
+MAP_COLORS <- RColorBrewer::brewer.pal(n = N_BINS, name = "YlOrRd")
+
+#===============================================================================
+
+# Parameters for state and data
+data_params <- yaml::read_yaml(file_data_params)
+
+# Population data for counties
+population <- 
+  read_csv(file_population) %>% 
+  filter(area_type == "County")
+
+# Household Pulse data for state
+hps <- 
+  read_csv(file_hps) %>% 
+  filter(area_type == "State")
+
+# Unemployment data
+unemployment <- read_csv(file_unemployment)
+
+# Food insecurity estimates for county
+counties <- read_csv(file_counties)
+
+# County boundaries for map
+if (is_null(data_params$state_proj)) {
+  county_boundaries <-
+    ussf::boundaries(geography = "county") %>% 
+    filter(STATEFP == data_params$state_fips)
+} else {
+  county_boundaries <-
+    ussf::boundaries(geography = "county") %>% 
+    st_transform(crs = data_params$state_proj) %>% 
+    filter(STATEFP == data_params$state_fips)
+}
+
+#===============================================================================
+
+# Bin variable into quantiles weighted by population
+bin_var <- function(var, population) {
+  cut(
+    var, 
+    breaks = 
+      Hmisc::wtd.quantile(
+        var,
+        probs = seq(0, 1, length.out = N_BINS + 1),
+        weights = population
+      ),
+    include.lowest = TRUE
+  )
+}
+
+# Choropleth map of variable
+choropleth <- function(data, var) {
+  county_boundaries %>% 
+    left_join(data, by = c("GEOID" = "fips")) %>% 
+    ggplot(aes(fill = {{var}})) +
+    geom_sf(size = 0.1) +
+    scale_fill_manual(
+      values = MAP_COLORS, 
+      labels = scales::label_percent(accuracy = 0.1, scale = 1)
+    ) +
+    guides(
+      fill = 
+        guide_colorsteps(show.limits = TRUE, barwidth = 15, barheight = 0.25)
+    ) +
+    theme_void() +
+    theme(legend.position = "bottom")
+}
+```
+
+## Food insecurity
+
+```{r}
+prior_food_insecurity <- 
+  hps %>%
+  filter(variable == "prifoodsuf", code %in% 3:4) %>% 
+  group_by(date_end) %>% 
+  summarize(prior_food_insecurity = sum(pct)) %>% 
+  pull(prior_food_insecurity) %>% 
+  mean()
+
+v <- 
+  hps %>% 
+  group_by(date_end) %>% 
+  summarize(
+    food_insecurity = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
+  )
+
+v %>% 
+  ggplot(aes(date_end, food_insecurity)) +
+  geom_hline(yintercept = prior_food_insecurity, color = "blue") +
+  geom_line() +
+  geom_point() +
+  annotate(
+    geom = "text",
+    x = min(v$date_end),
+    y = prior_food_insecurity,
+    label = "Food insecurity prior to Mar 13",
+    hjust = 0,
+    vjust = 1.5
+  ) +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  labs(
+    title = "Food insecurity in adults",
+    x = "Survey end date",
+    y = "Percentage of adults who are food insecure",
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+```{r}
+v <- 
+  counties %>% 
+  filter(date_end == max(date_end)) %>% 
+  group_by(area, fips, date_end, variable) %>% 
+  summarize(food_insecurity = sum(pct)) %>% 
+  ungroup() %>% 
+  left_join(population %>% select(fips, population_18p), by = "fips") %>% 
+  mutate(food_insecurity = bin_var(food_insecurity, population_18p))
+
+v %>% 
+  choropleth(food_insecurity) +
+  labs(
+    title = "Food insecurity in adults",
+    subtitle = format(max(counties$date_end), "%B %e, %Y"),
+    fill = NULL,
+    caption = 
+      "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
+  )
+```
+
+
+
+```{r}
+v <- 
+  hps %>% 
+  filter(variable == "curfoodsuf", code %in% 3:4) %>% 
+  group_by(date_end) %>% 
+  mutate(prop = n / sum(n))
+
+v %>% 
+  ggplot(aes(date_end, prop, color = fct_inorder(response))) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(0.1),
+    labels = scales::label_percent(accuracy = 1),
+    limits = c(0, NA)
+  ) +
+  scale_color_discrete(direction = -1) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Type of food insecurity in adults",
+    x = "Survey end date",
+    y = "Percentage of type of food insecurity",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+```{r}
+v <- 
+  hps %>% 
+  filter(variable == "freefood", code == 1)
+
+v %>% 
+  ggplot(aes(date_end, pct)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  labs(
+    title = 
+      "During the last 7 days, did you or anyone in\nyour household get free groceries or a free meal?",
+    x = "Survey end date",
+    y = "Percentage of adults in households that received free food",
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+```{r fig.asp=0.8}
+v <- 
+  hps %>% 
+  filter(str_detect(variable, "^wherefree"), code == 1)
+
+v %>% 
+  ggplot(aes(date_end, pct, color = fct_inorder(response))) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(10),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  guides(color = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Where did you get free groceries or free meals?",
+    x = "Survey end date",
+    y = 
+      "Percentage who received free food from this source",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+## Unemployment rate
+
+```{r}
+v <- 
+  unemployment %>% 
+  filter(area_type == "State") %>% 
+  arrange(date)
+  
+v %>% 
+  filter(area_type == "State") %>% 
+  ggplot(aes(date, unemployment_rate)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date,
+    minor_breaks = NULL,
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(2),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  labs(
+    title = "Unnemployment rate",
+    x = NULL,
+    y = "Unemployment rate",
+    caption = 
+      "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
+  )
+```
+
+```{r}
+v <-
+  unemployment %>% 
+  filter(area_type == "County", date == max(date)) %>% 
+  left_join(population %>% select(fips, population_18p), by = "fips") %>% 
+  mutate(unemployment_rate = bin_var(unemployment_rate, population_18p))
+
+v %>% 
+  choropleth(unemployment_rate) +
+  labs(
+    fill = NULL,
+    title = "Unemployment rate",
+    subtitle = format(unique(v$date), "%B %Y"),
+    caption = 
+      "Source: Bureau of Labor Statistics, Local Area Unemployment Statistics."
+  )
+```
+
