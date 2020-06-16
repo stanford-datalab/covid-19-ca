@@ -7,4 +7,4 @@ This repository contains the data and code for the [California Weekly Pulse](htt
 
 This repository is a template. It was designed to be easily replicated for other states (by changing two lines).
 
-If you have any feedback, comments, or suggestions for improvements to this site, please [email us](datalab@stanford.edu).
+If you have any feedback, comments, or suggestions for improvements to this site, please [email us](mailto:datalab@stanford.edu).
