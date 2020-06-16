@@ -2,11 +2,10 @@
 title: ""
 params:
   area: ""
-author: 
 date: "Updated: `r Sys.Date()`"
 output:
   blogdown::html_page:
-      toc: TRUE
+    toc: true
 ---
 
 ```{r setup, include=FALSE, out.width="100%"}
@@ -18,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
 
 # Parameters
-  # Household Pulse data for state and regions
+  # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
   # Unemployment data
 file_unemployment <- here::here("data/unemployment.csv")
@@ -31,19 +30,16 @@ file_counties <- here::here("data/counties.csv")
 hps <- 
   read_csv(file_hps) %>% 
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4)
-
 # Unemployment data
 unemployment <- 
   read_csv(file_unemployment) %>% 
   filter(area_type == "State" | area == params$area)
-
 # State
 state <- 
   unemployment %>% 
   filter(area_type == "State") %>% 
   distinct(area) %>% 
   pull(area)
-
 # Food insecurity estimates for county
 county <- 
   read_csv(file_counties) %>% 
@@ -65,7 +61,6 @@ v <-
       ungroup()
   ) %>% 
   mutate(area = factor(area, levels = c(params$area, state)))
-
 v %>% 
   ggplot(aes(date_end, food_insecurity, color = area)) +
   geom_line() +
@@ -91,9 +86,9 @@ v %>%
   )
 ```
 
-<br>
+The estimates of food insecurity in `r params$area` are based upon a model. The model uses the overall rate of food insecurity for the state, which is updated every week, and the unemployment rate for each county, which is updated every month. The unemployment data for a month comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insecurity estimates for such months in later reports as new unemployment data becomes available.
 
-## Unemployment rate
+## Unemployment
 
 ```{r}
 unemployment %>% 
@@ -121,3 +116,6 @@ unemployment %>%
       "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
   )
 ```
+
+The data for the most recent month is typically "preliminary" and subject to revision when the following month's data is released.
+

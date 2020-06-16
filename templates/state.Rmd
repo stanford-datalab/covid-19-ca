@@ -2,11 +2,10 @@
 params:
   area: ""
 title: ""
-author: 
 date: "Updated: `r Sys.Date()`"
 output:
   blogdown::html_page:
-      toc: TRUE
+    toc: true
 ---
 
 ```{r setup, include=FALSE, out.width="100%"}
@@ -17,12 +16,11 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Libraries
 library(tidyverse)
 library(sf)
-library(reactable)
 
 # Parameters
   # Parameters for state and data
 file_data_params <- here::here("data/params.yml")
-  # Household Pulse data for state and regions
+  # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
   # Population data
 file_population <- here::here("data/population.csv")
@@ -39,23 +37,27 @@ MAP_COLORS <- RColorBrewer::brewer.pal(n = N_BINS, name = "YlOrRd")
 
 # Parameters for state and data
 data_params <- yaml::read_yaml(file_data_params)
-
 # Population data for counties
 population <- 
   read_csv(file_population) %>% 
   filter(area_type == "County")
-
 # Household Pulse data for state
 hps <- 
   read_csv(file_hps) %>% 
   filter(area_type == "State")
-
+# Last dates for Household Pulse data
+hps_date_start <- max(hps$date_start)
+hps_date_end<- max(hps$date_end)
+# Last date for Household Pulse PUF data
+hps_puf_date_end <- 
+  hps %>% 
+  drop_na(n_error) %>% 
+  pull(date_end) %>% 
+  max()
 # Unemployment data
 unemployment <- read_csv(file_unemployment)
-
 # Food insecurity estimates for county
 counties <- read_csv(file_counties)
-
 # County boundaries for map
 if (is_null(data_params$state_proj)) {
   county_boundaries <-
@@ -83,7 +85,6 @@ bin_var <- function(var, population) {
     include.lowest = TRUE
   )
 }
-
 # Choropleth map of variable
 choropleth <- function(data, var) {
   county_boundaries %>% 
@@ -103,6 +104,19 @@ choropleth <- function(data, var) {
 }
 ```
 
+## Overview
+
+The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
+
+* Household Pulse Survey: `r format(hps_date_start, "%B %e")` - `r format(hps_date_end, "%B %e")`
+* Local Area Unemployment Statistics: `r format(max(unemployment$date), "%B")`
+
+The HPS releases data in two stages. For this reason, some time series below run through `r format(hps_puf_date_end, "%B %e")`, while others run through `r format(hps_date_end, "%B %e")`.
+
+Upon the release of new data, this report will be updated. You can sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified when the report has been updated with new data. All of the data used in this report can be found and downloaded from [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All of the code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
+
+If you have any feedback, comments, or suggestions for improvements to this site, please [email us](mailto:datalab@stanford.edu).
+
 ## Food insecurity
 
 ```{r}
@@ -113,14 +127,12 @@ prior_food_insecurity <-
   summarize(prior_food_insecurity = sum(pct)) %>% 
   pull(prior_food_insecurity) %>% 
   mean()
-
 v <- 
   hps %>% 
   group_by(date_end) %>% 
   summarize(
     food_insecurity = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
   )
-
 v %>% 
   ggplot(aes(date_end, food_insecurity)) +
   geom_hline(yintercept = prior_food_insecurity, color = "blue") +
@@ -152,28 +164,51 @@ v %>%
   )
 ```
 
-&nbsp;  
- 
-```{r}
-hps %>% 
-  group_by(date_end) %>% 
-  summarize(
-    across(
-      c(pct, n),
-      ~ sum(.[variable == "curfoodsuf" & code %in% 3:4]) %>% 
-        round(2)
-    )
-  ) %>% 
-  arrange(desc(date_end)) %>% 
-  rename(
-    `Survey end date` = date_end,
-    `Percentage of adults who are food insecure` = pct,
-    `Number of adults who are food insecure` = n
-  ) %>% 
-  reactable(showSortable = TRUE)
+The above plot contains the percentage of adults who answered this question:
+
+>  In the __last 7 days__, which of these statements best describes the food eaten in your household?
+
+with one of these two answers:
+
+> Sometimes not enough to eat  
+> Often not enough to eat
+
+The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity in children to be substantially higher than that for adults.
+<br>
+<br>
+
+```{r fig.asp=0.8}
+v <- 
+  hps %>% 
+  filter(str_detect(variable, "^foodsufrsn\\d_curfoodsuf_34$"), !is.na(code))
+v %>% 
+  ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
+    geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end %>% unique() %>% sort(),
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(10),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  guides(color = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Reasons for food insecurity in adults",
+    x = "Survey end date",
+    y = "",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
 ```
 
-<br> 
+The above plot contains the reasons for those who selected "Sometimes not enough to eat" or "Often not enough to eat". Since respondents can choose more than one reason, they sum to greater than 100%.
+<br>
+<br>
 
 ```{r}
 v <- 
@@ -184,7 +219,6 @@ v <-
   ungroup() %>% 
   left_join(population %>% select(fips, population_18p), by = "fips") %>% 
   mutate(food_insecurity = bin_var(food_insecurity, population_18p))
-
 v %>% 
   choropleth(food_insecurity) +
   labs(
@@ -196,7 +230,9 @@ v %>%
   )
 ```
 
-<br> 
+These estimates of food insecurity in `r data_params$state`'s counties are based upon a model. The model uses the overall rate of food insecurity for the state, which is updated every week, and the unemployment rate for each county, which is updated every month. The unemployment data for a month comes out later than the food insecurity data. For months where unemployment data not yet available, the model uses the latest month for which data is available.
+<br>
+<br>
 
 ```{r}
 v <- 
@@ -204,13 +240,12 @@ v <-
   filter(variable == "curfoodsuf", code %in% 3:4) %>% 
   group_by(date_end) %>% 
   mutate(prop = n / sum(n))
-
 v %>% 
   ggplot(aes(date_end, prop, color = fct_inorder(response))) +
   geom_line() +
   geom_point() +
   scale_x_date(
-    breaks = v$date_end,
+    breaks = v$date_end %>% unique() %>% sort(),
     minor_breaks = NULL,
     date_labels = "%b %e"
   ) +
@@ -230,13 +265,13 @@ v %>%
   )
 ```
 
-<br> 
+<br>
+<br>
 
 ```{r}
 v <- 
   hps %>% 
   filter(variable == "freefood", code == 1)
-
 v %>% 
   ggplot(aes(date_end, pct)) +
   geom_line() +
@@ -261,18 +296,18 @@ v %>%
 ```
 
 <br>
+<br>
 
 ```{r fig.asp=0.8}
 v <- 
   hps %>% 
   filter(str_detect(variable, "^wherefree"), code == 1)
-
 v %>% 
   ggplot(aes(date_end, pct, color = fct_inorder(response))) +
   geom_line() +
   geom_point() +
   scale_x_date(
-    breaks = v$date_end,
+    breaks = v$date_end %>% unique() %>% sort(),
     minor_breaks = NULL,
     date_labels = "%b %e"
   ) +
@@ -293,7 +328,11 @@ v %>%
   )
 ```
 
-## Unemployment rate
+Since respondents can choose more than one source of free groceries or free meals, they sum to greater than 100%.
+<br>
+<br>
+
+## Unemployment
 
 ```{r}
 v <- 
@@ -317,7 +356,7 @@ v %>%
     limits = c(0, NA)
   ) +
   labs(
-    title = "Unnemployment rate",
+    title = "Unemployment rate",
     x = NULL,
     y = "Unemployment rate",
     caption = 
@@ -325,6 +364,8 @@ v %>%
   )
 ```
 
+The data for the most recent month is typically "preliminary" and subject to revision when the following month's data is released.
+<br>
 <br>
 
 ```{r}
@@ -333,7 +374,6 @@ v <-
   filter(area_type == "County", date == max(date)) %>% 
   left_join(population %>% select(fips, population_18p), by = "fips") %>% 
   mutate(unemployment_rate = bin_var(unemployment_rate, population_18p))
-
 v %>% 
   choropleth(unemployment_rate) +
   labs(
@@ -344,4 +384,3 @@ v %>%
       "Source: Bureau of Labor Statistics, Local Area Unemployment Statistics."
   )
 ```
-
