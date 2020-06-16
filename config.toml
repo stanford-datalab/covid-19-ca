@@ -3,6 +3,7 @@ canonifyurls = true
 relativeURLs = true
 prettyURLs = false
 baseURL = "https://dcl-covid-19.github.io/california-dev"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 languageCode = "en-us"
 title = "California Weekly Pulse"
@@ -45,15 +46,15 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "Contra Costa"
-	url = "/contra-costa"
+	url = "/contra_costa"
 [[menu.main]]
 	parent = "Counties"
 	name = "Del Norte"
-	url = "/del-norte"
+	url = "/del_norte"
 [[menu.main]]
 	parent = "Counties"
 	name = "El Dorado"
-	url = "/el-dorado"
+	url = "/el_dorado"
 [[menu.main]]
 	parent = "Counties"
 	name = "Fresno"
@@ -93,7 +94,7 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "Los Angeles"
-	url = "/los-angeles"
+	url = "/los_angeles"
 [[menu.main]]
 	parent = "Counties"
 	name = "Madera"
@@ -157,43 +158,43 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "San Benito"
-	url = "/san-benito"
+	url = "/san_benito"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Bernardino"
-	url = "/san-bernardino"
+	url = "/san_bernardino"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Diego"
-	url = "/san-diego"
+	url = "/san_diego"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Francisco"
-	url = "/san-francisco"
+	url = "/san_francisco"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Joaquin"
-	url = "/san-joaquin"
+	url = "/san_joaquin"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Luis Obispo"
-	url = "/san-luis-obispo"
+	url = "/san_luis_obispo"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Mateo"
-	url = "/san-mateo"
+	url = "/san_mateo"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Barbara"
-	url = "/santa-barbara"
+	url = "/santa_barbara"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Clara"
-	url = "/santa-clara"
+	url = "/santa_clara"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Cruz"
-	url = "/santa-cruz"
+	url = "/santa_cruz"
 [[menu.main]]
 	parent = "Counties"
 	name = "Shasta"
