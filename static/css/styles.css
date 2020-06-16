@@ -141,27 +141,22 @@ table tr th, table tr td {
   display: block;
 }
 
-
 #TOC { 
   max-width: 300px; 
   overflow: hidden;
-  position: fixed;
-  right: 1rem;
+  position: absolute;
+  left: .05rem;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1650px) {
   #TOC { 
+    font-size: var(--toc-font-size);
     display: block; 
     top: 100px;
   }
 }
-@media (max-width: 1200px) { 
+@media (max-width: 1650px) { 
   #TOC { 
     display: none;
   }
 }
 #TOC ul { list-style: none; }
-
-/* CUSTOM: For email sign-up */
-#form-control {
-  font-size: 5px;
-}
