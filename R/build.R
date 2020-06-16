@@ -22,8 +22,6 @@ dir_output <- here::here("content")
 
 #===============================================================================
 
-options(blogdown.publishDir = here::here("docs"))
-
 # Counties
 counties <-
   file_counties %>%
@@ -85,4 +83,3 @@ create_page(
 template_about %>%
   read_file() %>%
   write_file(fs::path(dir_output, "about", ext = "Rmd"))
-
