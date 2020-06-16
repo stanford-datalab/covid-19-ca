@@ -85,6 +85,7 @@ bin_var <- function(var, population) {
     include.lowest = TRUE
   )
 }
+
 # Choropleth map of variable
 choropleth <- function(data, var) {
   county_boundaries %>% 
@@ -127,12 +128,14 @@ prior_food_insecurity <-
   summarize(prior_food_insecurity = sum(pct)) %>% 
   pull(prior_food_insecurity) %>% 
   mean()
+
 v <- 
   hps %>% 
   group_by(date_end) %>% 
   summarize(
     food_insecurity = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
   )
+
 v %>% 
   ggplot(aes(date_end, food_insecurity)) +
   geom_hline(yintercept = prior_food_insecurity, color = "blue") +
@@ -181,6 +184,7 @@ The HPS was not designed to measure food insecurity in children, but other surve
 v <- 
   hps %>% 
   filter(str_detect(variable, "^foodsufrsn\\d_curfoodsuf_34$"), !is.na(code))
+
 v %>% 
   ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
     geom_line() +
@@ -219,6 +223,7 @@ v <-
   ungroup() %>% 
   left_join(population %>% select(fips, population_18p), by = "fips") %>% 
   mutate(food_insecurity = bin_var(food_insecurity, population_18p))
+
 v %>% 
   choropleth(food_insecurity) +
   labs(
@@ -240,6 +245,7 @@ v <-
   filter(variable == "curfoodsuf", code %in% 3:4) %>% 
   group_by(date_end) %>% 
   mutate(prop = n / sum(n))
+
 v %>% 
   ggplot(aes(date_end, prop, color = fct_inorder(response))) +
   geom_line() +
@@ -272,6 +278,7 @@ v %>%
 v <- 
   hps %>% 
   filter(variable == "freefood", code == 1)
+
 v %>% 
   ggplot(aes(date_end, pct)) +
   geom_line() +
@@ -301,9 +308,11 @@ v %>%
 ```{r fig.asp=0.8}
 v <- 
   hps %>% 
-  filter(str_detect(variable, "^wherefree"), code == 1)
+  filter(str_detect(variable, "^wherefree"), code == 1) %>% 
+  mutate(response = str_wrap(response, width = 50))
+
 v %>% 
-  ggplot(aes(date_end, pct, color = fct_inorder(response))) +
+  ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
   geom_line() +
   geom_point() +
   scale_x_date(
@@ -374,6 +383,7 @@ v <-
   filter(area_type == "County", date == max(date)) %>% 
   left_join(population %>% select(fips, population_18p), by = "fips") %>% 
   mutate(unemployment_rate = bin_var(unemployment_rate, population_18p))
+
 v %>% 
   choropleth(unemployment_rate) +
   labs(
