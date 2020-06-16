@@ -46,15 +46,15 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "Contra Costa"
-	url = "/contra_costa"
+	url = "/contra-costa"
 [[menu.main]]
 	parent = "Counties"
 	name = "Del Norte"
-	url = "/del_norte"
+	url = "/del-norte"
 [[menu.main]]
 	parent = "Counties"
 	name = "El Dorado"
-	url = "/el_dorado"
+	url = "/el-dorado"
 [[menu.main]]
 	parent = "Counties"
 	name = "Fresno"
@@ -94,7 +94,7 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "Los Angeles"
-	url = "/los_angeles"
+	url = "/los-angeles"
 [[menu.main]]
 	parent = "Counties"
 	name = "Madera"
@@ -158,43 +158,43 @@ toc = false
 [[menu.main]]
 	parent = "Counties"
 	name = "San Benito"
-	url = "/san_benito"
+	url = "/san-benito"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Bernardino"
-	url = "/san_bernardino"
+	url = "/san-bernardino"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Diego"
-	url = "/san_diego"
+	url = "/san-diego"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Francisco"
-	url = "/san_francisco"
+	url = "/san-francisco"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Joaquin"
-	url = "/san_joaquin"
+	url = "/san-joaquin"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Luis Obispo"
-	url = "/san_luis_obispo"
+	url = "/san-luis-obispo"
 [[menu.main]]
 	parent = "Counties"
 	name = "San Mateo"
-	url = "/san_mateo"
+	url = "/san-mateo"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Barbara"
-	url = "/santa_barbara"
+	url = "/santa-barbara"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Clara"
-	url = "/santa_clara"
+	url = "/santa-clara"
 [[menu.main]]
 	parent = "Counties"
 	name = "Santa Cruz"
-	url = "/santa_cruz"
+	url = "/santa-cruz"
 [[menu.main]]
 	parent = "Counties"
 	name = "Shasta"

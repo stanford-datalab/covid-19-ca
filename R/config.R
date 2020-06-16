@@ -18,7 +18,7 @@ print_config <- function(dropdown, areas) {
   urls <-
     areas %>%
     str_to_lower() %>%
-    str_replace_all(" ", "_")
+    str_replace_all(" ", "-")
 
   str_glue(
     '\n[[menu.main]]\n\tparent = "{dropdown}"\n\tname = "{areas}"\n\turl = "/{urls}"',

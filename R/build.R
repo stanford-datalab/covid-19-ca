@@ -36,7 +36,7 @@ county_files <-
   counties %>%
   str_remove(" County$") %>%
   str_to_lower() %>%
-  str_replace_all(" ", "_") %>%
+  str_replace_all(" ", "-") %>%
   fs::path(dir_output, ., ext = "Rmd")
 
 # Templates
