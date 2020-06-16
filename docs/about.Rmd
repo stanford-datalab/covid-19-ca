@@ -1,9 +1,0 @@
----
-title: "About"
-date: "`r Sys.Date()`"
-output:
-  blogdown::html_page:
-      toc: TRUE
----
-
-## About 
