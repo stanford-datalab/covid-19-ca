@@ -17,6 +17,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Libraries
 library(tidyverse)
 library(sf)
+library(reactable)
 
 # Parameters
   # Parameters for state and data
@@ -151,6 +152,29 @@ v %>%
   )
 ```
 
+&nbsp;  
+ 
+```{r}
+hps %>% 
+  group_by(date_end) %>% 
+  summarize(
+    across(
+      c(pct, n),
+      ~ sum(.[variable == "curfoodsuf" & code %in% 3:4]) %>% 
+        round(2)
+    )
+  ) %>% 
+  arrange(desc(date_end)) %>% 
+  rename(
+    `Survey end date` = date_end,
+    `Percentage of adults who are food insecure` = pct,
+    `Number of adults who are food insecure` = n
+  ) %>% 
+  reactable()
+```
+
+<br> 
+
 ```{r}
 v <- 
   counties %>% 
@@ -172,7 +196,7 @@ v %>%
   )
 ```
 
-
+<br> 
 
 ```{r}
 v <- 
@@ -206,6 +230,8 @@ v %>%
   )
 ```
 
+<br> 
+
 ```{r}
 v <- 
   hps %>% 
@@ -233,6 +259,8 @@ v %>%
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
 ```
+
+<br>
 
 ```{r fig.asp=0.8}
 v <- 
@@ -296,6 +324,8 @@ v %>%
       "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
   )
 ```
+
+<br>
 
 ```{r}
 v <-
