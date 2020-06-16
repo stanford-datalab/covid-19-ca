@@ -170,7 +170,7 @@ hps %>%
     `Percentage of adults who are food insecure` = pct,
     `Number of adults who are food insecure` = n
   ) %>% 
-  reactable()
+  reactable(showSortable = TRUE)
 ```
 
 <br> 
