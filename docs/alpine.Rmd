@@ -1,0 +1,121 @@
+---
+title: "Alpine County"
+params: 
+  area: "Alpine County"
+author: 
+date: "Updated: `r Sys.Date()`"
+output:
+  blogdown::html_page:
+      toc: TRUE
+---
+
+```{r setup, include=FALSE, out.width="100%"}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Libraries
+library(tidyverse)
+
+# Parameters
+  # Household Pulse data for state and regions
+file_hps <- here::here("data/state.csv")
+  # Unemployment data
+file_unemployment <- here::here("data/unemployment.csv")
+  # Food insecurity estimates for counties
+file_counties <- here::here("data/counties.csv")
+
+#===============================================================================
+
+# Household Pulse data for state
+hps <- 
+  read_csv(file_hps) %>% 
+  filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4)
+
+# Unemployment data
+unemployment <- 
+  read_csv(file_unemployment) %>% 
+  filter(area_type == "State" | area == params$area)
+
+# State
+state <- 
+  unemployment %>% 
+  filter(area_type == "State") %>% 
+  distinct(area) %>% 
+  pull(area)
+
+# Food insecurity estimates for county
+county <- 
+  read_csv(file_counties) %>% 
+  filter(area == params$area)
+```
+
+## Food insecurity
+
+```{r}
+v <- 
+  bind_rows(
+    county %>% 
+      group_by(area, date_end, variable) %>% 
+      summarize(food_insecurity = sum(pct)) %>% 
+      ungroup(),
+    hps %>% 
+      group_by(area, date_end, variable) %>% 
+      summarize(food_insecurity = sum(pct)) %>% 
+      ungroup()
+  ) %>% 
+  mutate(area = factor(area, levels = c(params$area, state)))
+
+v %>% 
+  ggplot(aes(date_end, food_insecurity, color = area)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Food insecurity in adults",
+    x = "Survey end date",
+    y = "Percentage of adults who are food insecure",
+    color = NULL,
+    caption = 
+      "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
+  )
+```
+
+## Unemployment rate
+
+```{r}
+unemployment %>% 
+  mutate(area = factor(area, levels = c(params$area, state))) %>% 
+  ggplot(aes(date, unemployment_rate, color = area)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = unemployment$date,
+    minor_breaks = NULL,
+    date_labels = "%b"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(2),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Unemployment rate",
+    x = NULL,
+    y = "Unemployment rate",
+    color = NULL,
+    caption = 
+      "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
+  )
+```
