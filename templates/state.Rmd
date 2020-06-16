@@ -4,9 +4,9 @@ params:
 title: ""
 author: 
 date: "Updated: `r Sys.Date()`"
-output: 
-  github_document:
-    toc: true
+output:
+  blogdown::html_page:
+      toc: TRUE
 ---
 
 ```{r setup, include=FALSE, out.width="100%"}
