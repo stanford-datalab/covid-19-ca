@@ -114,7 +114,7 @@ The data on this site is derived from the U.S. Census Bureau [Household Pulse Su
 
 The HPS releases data in two stages. For this reason, some time series below run through `r format(hps_puf_date_end, "%B %e")`, while others run through `r format(hps_date_end, "%B %e")`.
 
-Upon the release of new data, this report will be updated. You can sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified when the report has been updated with new data. All of the data used in this report can be found and downloaded from [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All of the code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
+This report updates upon the release of new data. Sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified of updates. All data used in this report can be found and downloaded [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
 
 If you have any feedback, comments, or suggestions for improvements to this site, please [email us](mailto:datalab@stanford.edu).
 
@@ -167,7 +167,7 @@ v %>%
   )
 ```
 
-The above plot contains the percentage of adults who answered this question:
+The above plot contains the percentage of adults who answered the question:
 
 >  In the __last 7 days__, which of these statements best describes the food eaten in your household?
 
@@ -176,7 +176,7 @@ with one of these two answers:
 > Sometimes not enough to eat  
 > Often not enough to eat
 
-The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity in children to be substantially higher than that for adults.
+The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity rates among children to be substantially higher than among adults.
 <br>
 <br>
 
@@ -210,7 +210,7 @@ v %>%
   )
 ```
 
-The above plot contains the reasons for those who selected "Sometimes not enough to eat" or "Often not enough to eat". Since respondents can choose more than one reason, they sum to greater than 100%.
+The above plot contains the reasons respondents gave for selecting "Sometimes not enough to eat" or "Often not enough to eat". Respondents can choose more than one reason, so the percentages sum to greater than 100%.
 <br>
 <br>
 
@@ -235,7 +235,9 @@ v %>%
   )
 ```
 
-These estimates of food insecurity in `r data_params$state`'s counties are based upon a model. The model uses the overall rate of food insecurity for the state, which is updated every week, and the unemployment rate for each county, which is updated every month. The unemployment data for a month comes out later than the food insecurity data. For months where unemployment data not yet available, the model uses the latest month for which data is available.
+These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rate to estimate food insecurity for each county. 
+
+County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
 <br>
 <br>
 
