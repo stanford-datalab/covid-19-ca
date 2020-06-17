@@ -114,7 +114,7 @@ The data on this site is derived from the U.S. Census Bureau [Household Pulse Su
 
 The HPS releases data in two stages. For this reason, some time series below run through `r format(hps_puf_date_end, "%B %e")`, while others run through `r format(hps_date_end, "%B %e")`.
 
-This reports updates upon the release of new data. Sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified of updates. All data used in this report can be found and downloaded [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
+This report updates upon the release of new data. Sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified of updates. All data used in this report can be found and downloaded [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
 
 If you have any feedback, comments, or suggestions for improvements to this site, please [email us](mailto:datalab@stanford.edu).
 
@@ -237,7 +237,7 @@ v %>%
 
 These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rate to estimate food insecurity for each county. 
 
-The counties' unemployment rates are updated every month, but the state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
+County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
 <br>
 <br>
 
