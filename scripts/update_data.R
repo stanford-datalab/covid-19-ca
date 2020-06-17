@@ -3,6 +3,9 @@
 # Author: Bill Behrman
 # Version: 2020-06-16
 
+# Libraries
+library(tidyverse)
+
 # Parameters
   # Script to update unemployment data
 script_unemployment <- here::here("scripts/unemployment.R")

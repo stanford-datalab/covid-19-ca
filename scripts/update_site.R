@@ -1,7 +1,10 @@
 # Update site.
 
-# Author: Sara Altman, Bill Behrman
+# Authors: Sara Altman, Bill Behrman
 # Version: 2020-06-16
+
+# Libraries
+library(tidyverse)
 
 # Parameters
   # Directory for site
