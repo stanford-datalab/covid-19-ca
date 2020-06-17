@@ -227,13 +227,13 @@ type="image/x-icon"/>
 <li>Local Area Unemployment Statistics: April</li>
 </ul>
 <p>The HPS releases data in two stages. For this reason, some time series below run through May 26, while others run through June 2.</p>
-<p>Upon the release of new data, this report will be updated. You can sign up with <a href="https://forms.gle/MssCSstca6egwMDF6">this form</a> to be notified when the report has been updated with new data. All of the data used in this report can be found and downloaded from <a href="https://github.com/stanford-datalab/covid-19-ca/tree/master/data">here</a>. All of the code used to download and process the raw data and to generate this site can be found <a href="https://github.com/stanford-datalab/covid-19-ca">here</a>.</p>
+<p>This report updates upon the release of new data. Sign up with <a href="https://forms.gle/MssCSstca6egwMDF6">this form</a> to be notified of updates. All data used in this report can be found and downloaded <a href="https://github.com/stanford-datalab/covid-19-ca/tree/master/data">here</a>. All code used to download and process the raw data and to generate this site can be found <a href="https://github.com/stanford-datalab/covid-19-ca">here</a>.</p>
 <p>If you have any feedback, comments, or suggestions for improvements to this site, please <a href="mailto:datalab@stanford.edu">email us</a>.</p>
 </div>
 <div id="food-insecurity" class="section level2">
 <h2>Food insecurity</h2>
 <p><img src="../state_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>The above plot contains the percentage of adults who answered this question:</p>
+<p>The above plot contains the percentage of adults who answered the question:</p>
 <blockquote>
 <p>In the <strong>last 7 days</strong>, which of these statements best describes the food eaten in your household?</p>
 </blockquote>
@@ -242,15 +242,16 @@ type="image/x-icon"/>
 <p>Sometimes not enough to eat<br />
 Often not enough to eat</p>
 </blockquote>
-<p>The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity in children to be substantially higher than that for adults.
+<p>The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity rates among children to be substantially higher than among adults.
 <br>
 <br></p>
 <p><img src="../state_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>The above plot contains the reasons for those who selected “Sometimes not enough to eat” or “Often not enough to eat”. Since respondents can choose more than one reason, they sum to greater than 100%.
+<p>The above plot contains the reasons respondents gave for selecting “Sometimes not enough to eat” or “Often not enough to eat”. Respondents can choose more than one reason, so the percentages sum to greater than 100%.
 <br>
 <br></p>
 <p><img src="../state_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
-<p>These estimates of food insecurity in California’s counties are based upon a model. The model uses the overall rate of food insecurity for the state, which is updated every week, and the unemployment rate for each county, which is updated every month. The unemployment data for a month comes out later than the food insecurity data. For months where unemployment data not yet available, the model uses the latest month for which data is available.
+<p>These food insecurity estimates for California’s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county.</p>
+<p>County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month’s unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
 <br>
 <br></p>
 <p><img src="../state_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
