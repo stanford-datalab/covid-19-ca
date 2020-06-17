@@ -14,7 +14,7 @@ file_population <- here::here("data/population.csv")
   # Household Pulse weeks
 file_weeks <- here::here("data-raw/pulse/metadata/weeks.csv")
   # Household Pulse data for state and regions
-file_state_regions <- here::here("data/state.csv")
+file_state <- here::here("data/state.csv")
   # Unemployment data
 file_unemployment <- here::here("data/unemployment.csv")
   # Output file
@@ -34,8 +34,8 @@ population <-
 weeks <- read_csv(file_weeks)
 
 # Household Pulse food insecurity data for state and regions
-state_regions <-
-  read_csv(file_state_regions) %>%
+state <-
+  read_csv(file_state) %>%
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4) %>%
   select(-n_error, -pct)
 
@@ -60,7 +60,7 @@ unemployment <-
 
 # Determine unemployment dates closest to Household Pulse Survey dates
 dates_pulse <-
-  state_regions %>%
+  state %>%
   distinct(date_start, date_end) %>%
   arrange(date_end)
 dates_unemployment <-
@@ -88,7 +88,7 @@ distribute <- function(x, y) {
 distribute_state <- function(date_end_, data) {
 
   v <-
-    state_regions %>%
+    state %>%
     filter(date_end == date_end_) %>%
     select(date_start, variable, code, response, n_state = n)
   assertthat::assert_that(

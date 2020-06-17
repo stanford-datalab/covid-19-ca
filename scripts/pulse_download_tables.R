@@ -14,7 +14,7 @@ library(rvest)
   # Parameters for state and data
 file_params <- here::here("data/params.yml")
   # Base URL for Household Pulse table data
-url_pulse <- 
+url_pulse <-
   "https://www2.census.gov/programs-surveys/demo/tables/hhp/{params$year_pulse}"
   # CSS for data directories
 css_pulse <- "body > table"
@@ -45,16 +45,16 @@ fs::dir_create(dir_tmp)
 weeks <- read_csv(file_weeks)
 
 # Household Pulse table sheets for state
-sheets <- 
-  read_csv(file_sheets) %>% 
-  filter(fips_state == params$state_fips) %>% 
+sheets <-
+  read_csv(file_sheets) %>%
+  filter(fips_state == params$state_fips) %>%
   select(-fips_state)
 
 # Household Pulse table variables
 vars <- read_csv(file_vars, na = "")
 
 # Data recodes
-recodes <- 
+recodes <-
   read_csv(
     file_recodes,
     col_types = cols(.default = col_character()),
@@ -65,28 +65,35 @@ recodes <-
 fs::dir_create(str_glue(dir_out))
 
 # Determine weeks that have not been downloaded
-weeks_pulse <- 
-  str_glue(url_pulse) %>% 
-  read_html(css = css_pulse) %>% 
-  html_table() %>% 
-  pluck(2) %>% 
-  unlist() %>% 
-  map_chr(str_extract, pattern = "wk\\d+") %>% 
+weeks_pulse <-
+  str_glue(url_pulse) %>%
+  read_html(css = css_pulse) %>%
+  html_table() %>%
+  pluck(2) %>%
+  unlist() %>%
+  map_chr(str_extract, pattern = "wk\\d+") %>%
   discard(is.na)
-weeks_local <- 
+weeks_local <-
   fs::dir_ls(str_glue(dir_pulse, "/{params$year_pulse}")) %>%
   str_extract("wk\\d+")
 weeks_download <- setdiff(weeks_pulse, weeks_local)
+assertthat::assert_that(
+  all(
+    (weeks_download %>% str_remove("^wk") %>% as.integer()) %in%
+    (weeks %>% filter(year == params$year_pulse) %>% pull(week))
+  ),
+  msg = "Missing Pulse week metadata"
+)
 
 # Read cell from sheet
 read_cell <- function(data, category_, response_, curfoodsuf_) {
-  v <- 
-    data %>% 
+  v <-
+    data %>%
     filter(
       category == category_,
       response == response_,
       curfoodsuf == curfoodsuf_
-    ) %>% 
+    ) %>%
     pull(n)
   assertthat::assert_that(
     length(v) == 1,
@@ -97,13 +104,13 @@ read_cell <- function(data, category_, response_, curfoodsuf_) {
 
 # Read sheet for state or region
 read_sheet <- function(week, sheet) {
-  v <- 
+  v <-
     read_excel(
       path = str_glue("{dir_tmp}/{week}/food2b.xlsx"),
       col_types = "text",
       sheet = sheet,
       skip = 4
-    ) %>% 
+    ) %>%
     rename(
       response = "...1",
       Total = "...2",
@@ -112,48 +119,48 @@ read_sheet <- function(week, sheet) {
       `3` = "Sometimes not enough to eat",
       `4` = "Often not enough to eat",
       `NA` = "Did not report"
-    ) %>% 
-    filter(!str_detect(response, "^\\*"), !is.na(response)) %>% 
-    mutate(response = str_remove(response, " \\*")) %>% 
-    pivot_longer(cols = -response, names_to = "curfoodsuf", values_to = "n") %>% 
+    ) %>%
+    filter(!str_detect(response, "^\\*"), !is.na(response)) %>%
+    mutate(response = str_remove(response, " \\*")) %>%
+    pivot_longer(cols = -response, names_to = "curfoodsuf", values_to = "n") %>%
     mutate(
-      n = 
-        n %>% 
+      n =
+        n %>%
         str_replace(pattern = "^-$", replacement = "0") %>%
         as.double()
-    ) %>% 
-    group_by(response) %>% 
+    ) %>%
+    group_by(response) %>%
     mutate(
-      category = 
+      category =
         if_else(
-          first(response) == "Total" || all(is.na(n)), 
-          first(response), 
+          first(response) == "Total" || all(is.na(n)),
+          first(response),
           NA_character_
         )
-    ) %>% 
-    ungroup() %>% 
-    fill(category) %>% 
-    drop_na(n) %>% 
+    ) %>%
+    ungroup() %>%
+    fill(category) %>%
+    drop_na(n) %>%
     select(category, response, curfoodsuf, n)
-  
-  vars %>% 
+
+  vars %>%
     pmap_dfr(
       ~ tibble(
         variable = ..1,
         code = ..2,
         n = read_cell(v, ..3, ..4, ..5)
       )
-    ) %>% 
+    ) %>%
     mutate(
       week = week %>% str_remove("wk") %>% as.integer(),
       sheet = sheet,
       n_error = NA_real_,
-      pct = 
+      pct =
         case_when(
-          str_detect(variable, "^foodsufrsn\\d$") & code %in% 1 ~ 
-            100 * n / 
+          str_detect(variable, "^foodsufrsn\\d$") & code %in% 1 ~
+            100 * n /
             sum(n[variable == "curfoodsuf" & code %in% 2:4]),
-          str_detect(variable, "^wherefree\\d$") & code %in% 1 ~ 
+          str_detect(variable, "^wherefree\\d$") & code %in% 1 ~
             100 * n / n[variable == "freefood" & code %in% 1],
           str_detect(variable, "^mortlmth$") & code %in% 1:3 ~
             NA_real_,
@@ -161,15 +168,15 @@ read_sheet <- function(week, sheet) {
             NA_real_,
           TRUE ~ 100 * n / n[variable == "total"]
         )
-    ) %>% 
-    left_join(sheets, by = "sheet") %>% 
-    left_join(weeks %>% filter(year == params$year_pulse), by = "week") %>% 
+    ) %>%
+    left_join(sheets, by = "sheet") %>%
+    left_join(weeks %>% filter(year == params$year_pulse), by = "week") %>%
     left_join(
-      recodes %>% 
+      recodes %>%
         rename(response = recode),
       by = c("variable", "code")
-    ) %>% 
-    mutate(code = code %>% na_if("NA") %>% as.integer()) %>% 
+    ) %>%
+    mutate(code = code %>% na_if("NA") %>% as.integer()) %>%
     select(
       area,
       fips,
@@ -186,16 +193,16 @@ read_sheet <- function(week, sheet) {
 
 # Download data for week
 download <- function(week) {
-  
+
   cli::cat_line(cli::rule(str_glue("Downloading: {week}")))
-  
+
   # Download spreadsheet
-  file <- 
-    str_glue(url_pulse, "/{week}") %>% 
-    read_html(css = css_pulse) %>% 
-    html_table() %>% 
-    pluck(2) %>% 
-    unlist() %>% 
+  file <-
+    str_glue(url_pulse, "/{week}") %>%
+    read_html(css = css_pulse) %>%
+    html_table() %>%
+    pluck(2) %>%
+    unlist() %>%
     keep(~ str_detect(., "^food2b") & !str_detect(., "_se_"))
   url <- str_glue(url_pulse, "/{week}/{file}")
   dest <- str_glue("{dir_tmp}/{week}/food2b.xlsx")
@@ -205,16 +212,16 @@ download <- function(week) {
     result == 0L,
     msg = message("Download failed")
   )
-  
+
   # Read sheets for state, combine, and save
-  sheets$sheet %>% 
-    map_dfr(~ read_sheet(week, .)) %>% 
-    arrange(fips, variable, code) %>% 
+  sheets$sheet %>%
+    map_dfr(~ read_sheet(week, .)) %>%
+    arrange(fips, variable, code) %>%
     write_rds(str_glue(dir_out, "/{week}.rds"))
 }
 
 # Download data for weeks that have not been downloaded
-weeks_download %>% 
+weeks_download %>%
   walk(download)
 
 # Remove temporary directory
