@@ -3,9 +3,6 @@
 # Author: Bill Behrman
 # Version: 2020-06-16
 
-# Libraries
-library(tidyverse)
-
 # Parameters
   # Script to update unemployment data
 script_unemployment <- here::here("scripts/unemployment.R")
@@ -20,17 +17,22 @@ script_counties <- here::here("scripts/counties.R")
 
 #===============================================================================
 
-cli::cat_line(cli::rule(str_glue("Updating unemployment data")))
+cli::cat_line(cli::rule("Updating unemployment data"))
 source(script_unemployment)
 
-cli::cat_line(cli::rule(str_glue("Downloading new Household Pulse PUF data")))
+cli::cat_line(cli::rule("Downloading new Household Pulse PUF data"))
 source(script_pulse_download_puf)
 
-cli::cat_line(cli::rule(str_glue("Downloading new Household Pulse table data")))
+cli::cat_line(cli::rule("Downloading new Household Pulse table data"))
 source(script_pulse_download_tables)
 
-cli::cat_line(cli::rule(str_glue("Calculate state data")))
+cli::cat_line(cli::rule("Calculating state data"))
 source(script_state)
 
-cli::cat_line(cli::rule(str_glue("Calculate county data")))
+cli::cat_line(cli::rule("Calculating county data"))
 source(script_counties)
+
+cli::cat_line(cli::rule("Pushing new data to GitHub"))
+system("git add data")
+system("git commit -m 'Update data'")
+system("git push")
