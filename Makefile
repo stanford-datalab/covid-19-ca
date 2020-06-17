@@ -1,26 +1,14 @@
 # Search path
-VPATH =
+VPATH = data scripts
 
-# Processed data files
-DATA =
-
-# EDA studies
-EDA =
-
-# Reports
-REPORTS =
-
-# All targets
-all : $(DATA) $(EDA) $(REPORTS)
-
-# Data dependencies
-
-
-# EDA study and report dependencies
-
+# Targets
+.PHONY : site update_data update_site
+site : update_data update_site
+update_data :
+	Rscript scripts/update_data.R
+update_site :
+	Rscript scripts/update_site.R
 
 # Pattern rules
-%.rds : %.R
+%.csv : %.R
 	Rscript $<
-%.md : %.Rmd
-	Rscript -e 'rmarkdown::render(input = "$<", output_options = list(html_preview = FALSE))'
