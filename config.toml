@@ -2,7 +2,7 @@ theme = "er"
 canonifyurls = true
 relativeURLs = true
 prettyURLs = false
-baseURL = "https://dcl-covid-19.github.io/california-dev"
+baseURL = "https://stanford-datalab.github.io/covid-19-ca"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 languageCode = "en-us"

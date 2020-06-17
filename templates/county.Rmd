@@ -2,7 +2,7 @@
 title: ""
 params:
   area: ""
-date: "Updated: `r Sys.Date()`"
+date: "`r Sys.Date()`"
 output:
   blogdown::html_page:
     toc: true
@@ -86,7 +86,7 @@ v %>%
   )
 ```
 
-These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rate to estimate food insecurity for each county. 
+These food insecurity estimates for `r params$area`' are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. 
 
 County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insecurity estimates for such months in later reports as new unemployment data becomes available.
 

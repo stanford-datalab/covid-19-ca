@@ -2,7 +2,7 @@
 params:
   area: ""
 title: ""
-date: "Updated: `r Sys.Date()`"
+date: "`r Sys.Date()`"
 output:
   blogdown::html_page:
     toc: true
@@ -37,27 +37,34 @@ MAP_COLORS <- RColorBrewer::brewer.pal(n = N_BINS, name = "YlOrRd")
 
 # Parameters for state and data
 data_params <- yaml::read_yaml(file_data_params)
+
 # Population data for counties
 population <- 
   read_csv(file_population) %>% 
   filter(area_type == "County")
+
 # Household Pulse data for state
 hps <- 
   read_csv(file_hps) %>% 
   filter(area_type == "State")
+
 # Last dates for Household Pulse data
 hps_date_start <- max(hps$date_start)
 hps_date_end<- max(hps$date_end)
+
 # Last date for Household Pulse PUF data
 hps_puf_date_end <- 
   hps %>% 
   drop_na(n_error) %>% 
   pull(date_end) %>% 
   max()
+
 # Unemployment data
 unemployment <- read_csv(file_unemployment)
+
 # Food insecurity estimates for county
 counties <- read_csv(file_counties)
+
 # County boundaries for map
 if (is_null(data_params$state_proj)) {
   county_boundaries <-
@@ -235,7 +242,7 @@ v %>%
   )
 ```
 
-These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rate to estimate food insecurity for each county. 
+These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. 
 
 County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
 <br>
