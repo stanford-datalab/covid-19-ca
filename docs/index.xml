@@ -6,7 +6,7 @@
     <description>Recent content on California Weekly Pulse</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,20 @@
     <item>
       <title>About</title>
       <link>/about/</link>
-      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
       <description>The California Weekly Pulse site was created and is maintained by the Stanford Data Lab. If you have any feedback, comments, or suggestions for improvements to this site, please email us.</description>
+    </item>
+    
+    <item>
+      <title>California</title>
+      <link>/state/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/state/</guid>
+      <description>Overview Food insecurity Unemployment   Overview The data on this site is derived from the U.S. Census Bureau Household Pulse Survey (HPS) and the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics (LAUS). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
+ Household Pulse Survey: May 28 - June 2 Local Area Unemployment Statistics: April  The HPS releases data in two stages.</description>
     </item>
     
     <item>
@@ -68,16 +78,6 @@ County unemployment rates are updated every month, but state-level food insecuri
       <guid>/calaveras/</guid>
       <description>Food insecurity Unemployment   Food insecurity These food insecurity estimates for Calaveras County’ are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county.
 County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month’s unemployment data also comes out later than the food insecurity data.</description>
-    </item>
-    
-    <item>
-      <title>California</title>
-      <link>/state/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/state/</guid>
-      <description>Overview Food insecurity Unemployment   Overview The data on this site is derived from the U.S. Census Bureau Household Pulse Survey (HPS) and the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics (LAUS). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
- Household Pulse Survey: May 28 - June 2 Local Area Unemployment Statistics: April  The HPS releases data in two stages.</description>
     </item>
     
     <item>
