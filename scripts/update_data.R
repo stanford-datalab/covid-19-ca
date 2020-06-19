@@ -33,6 +33,6 @@ cli::cat_line(cli::rule("Calculating county data"))
 source(script_counties)
 
 cli::cat_line(cli::rule("Pushing new data to GitHub"))
-system("git add data")
+system("git add data data-raw/pulse/metadata/weeks.csv")
 system("git commit -m 'Update data'")
 system("git push")
