@@ -53,16 +53,23 @@ v <-
   bind_rows(
     county %>% 
       group_by(area, date_end, variable) %>% 
-      summarize(food_insecurity = sum(pct)) %>% 
+      summarize(
+        n = sum(n),
+        pct = sum(pct)
+      ) %>% 
       ungroup(),
     hps %>% 
       group_by(area, date_end, variable) %>% 
-      summarize(food_insecurity = sum(pct)) %>% 
+      summarize(
+        n = sum(n),
+        pct = sum(pct)
+      ) %>% 
       ungroup()
   ) %>% 
   mutate(area = factor(area, levels = c(params$area, state)))
+
 v %>% 
-  ggplot(aes(date_end, food_insecurity, color = area)) +
+  ggplot(aes(date_end, pct, color = area)) +
   geom_line() +
   geom_point() +
   scale_x_date(
@@ -84,11 +91,15 @@ v %>%
     caption = 
       "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
   )
+
+v <- 
+  v %>% 
+  filter(area == params$area, date_end == max(date_end))
 ```
 
-These food insecurity estimates for `r params$area`' are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. 
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insecurity.
 
-County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insecurity estimates for such months in later reports as new unemployment data becomes available.
+These food insecurity estimates are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. State-level food insecurity data is released every week, and county-level unemployment data is release every month. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insecurity estimates for such months in later reports as new unemployment data becomes available.
 
 ## Unemployment
 

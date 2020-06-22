@@ -127,6 +127,15 @@ If you have any feedback, comments, or suggestions for improvements to this site
 
 ## Food insecurity
 
+The plot below contains the percentage of adults who answered the question:
+
+>  In the __last 7 days__, which of these statements best describes the food eaten in your household?
+
+with one of these two answers:
+
+> Sometimes not enough to eat  
+> Often not enough to eat
+
 ```{r}
 prior_food_insecurity <- 
   hps %>%
@@ -140,11 +149,12 @@ v <-
   hps %>% 
   group_by(date_end) %>% 
   summarize(
-    food_insecurity = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
+    n = sum(n[variable == "curfoodsuf" & code %in% 3:4]),
+    pct = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
   )
 
 v %>% 
-  ggplot(aes(date_end, food_insecurity)) +
+  ggplot(aes(date_end, pct)) +
   geom_hline(yintercept = prior_food_insecurity, color = "blue") +
   geom_line() +
   geom_point() +
@@ -172,16 +182,13 @@ v %>%
     y = "Percentage of adults who are food insecure",
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
+
+v <- 
+  v %>% 
+  filter(date_end == max(date_end))
 ```
 
-The above plot contains the percentage of adults who answered the question:
-
->  In the __last 7 days__, which of these statements best describes the food eaten in your household?
-
-with one of these two answers:
-
-> Sometimes not enough to eat  
-> Often not enough to eat
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insecurity.
 
 The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity rates among children to be substantially higher than among adults.
 <br>
