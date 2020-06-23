@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-06-15
+# Version: 2020-06-23
 
 # Libraries
 library(tidyverse)
@@ -52,7 +52,7 @@ recodes <- read_csv(file_recodes, col_types = cols(.default = col_character()))
 # Population data for state
 population <-
   read_csv(file_population) %>%
-  filter(area_type %in% c("State"))
+  filter(area_type == "State")
 
 # Files with PUF raw data
 files_puf <-
