@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r message=FALSE, warning=FALSE}
 # Libraries
 library(tidyverse)
+library(leaflet)
 library(sf)
 
 # Parameters
@@ -30,8 +31,10 @@ file_unemployment <- here::here("data/unemployment.csv")
 file_counties <- here::here("data/counties.csv")
   # Number of bins for maps  
 N_BINS <- 5
-  # Map colors
-MAP_COLORS <- RColorBrewer::brewer.pal(n = N_BINS, name = "YlOrRd")
+  # Map color palette
+MAP_COLOR_PALETTE <- "YlOrRd"
+  # Map height
+MAP_HEIGHT <- 650
 
 #===============================================================================
 
@@ -50,7 +53,7 @@ hps <-
 
 # Last dates for Household Pulse data
 hps_date_start <- max(hps$date_start)
-hps_date_end<- max(hps$date_end)
+hps_date_end <- max(hps$date_end)
 
 # Last date for Household Pulse PUF data
 hps_puf_date_end <- 
@@ -66,49 +69,91 @@ unemployment <- read_csv(file_unemployment)
 counties <- read_csv(file_counties)
 
 # County boundaries for map
-if (is_null(data_params$state_proj)) {
-  county_boundaries <-
-    ussf::boundaries(geography = "county") %>% 
-    filter(STATEFP == data_params$state_fips)
-} else {
-  county_boundaries <-
-    ussf::boundaries(geography = "county") %>% 
-    st_transform(crs = data_params$state_proj) %>% 
-    filter(STATEFP == data_params$state_fips)
-}
+county_boundaries <-
+  ussf::boundaries(
+    geography = "county",
+    resolution = "5m",
+    projection = "longlat"
+  ) %>% 
+  filter(STATEFP == data_params$state_fips)
 
 #===============================================================================
 
-# Bin variable into quantiles weighted by population
-bin_var <- function(var, population) {
-  cut(
-    var, 
-    breaks = 
-      Hmisc::wtd.quantile(
-        var,
-        probs = seq(0, 1, length.out = N_BINS + 1),
-        weights = population
-      ),
-    include.lowest = TRUE
-  )
+# Month of date
+month <- function(date) {
+  format(date, "%B")
 }
 
-# Choropleth map of variable
-choropleth <- function(data, var) {
-  county_boundaries %>% 
-    left_join(data, by = c("GEOID" = "fips")) %>% 
-    ggplot(aes(fill = {{var}})) +
-    geom_sf(size = 0.1) +
-    scale_fill_manual(
-      values = MAP_COLORS, 
-      labels = scales::label_percent(accuracy = 0.1, scale = 1)
-    ) +
-    guides(
-      fill = 
-        guide_colorsteps(show.limits = TRUE, barwidth = 15, barheight = 0.25)
-    ) +
-    theme_void() +
-    theme(legend.position = "bottom")
+# Month and day of date
+month_day <- function(date) {
+  format(date, "%B %e") %>%
+    str_replace("  ", " ")
+}
+
+# Choropleth map
+choropleth <- function(data, var, population, tooltip, legend_title) {
+  
+  values <- 
+    data %>% 
+    pull({{var}})
+    
+  bins <-
+    Hmisc::wtd.quantile(
+      values,
+      weights = data %>% pull({{population}}),
+      probs = seq(0, 1, length.out = N_BINS + 1)
+    )
+
+  fill_color <- 
+    colorBin(
+      palette = MAP_COLOR_PALETTE,
+      domain = values,
+      bins = bins
+    )
+  
+  tooltips <-
+    data %>% 
+    str_glue_data(tooltip) %>% 
+    map(htmltools::HTML)
+  
+  data %>%
+    leaflet(height = MAP_HEIGHT) %>%
+    addProviderTiles(
+      provider = "MapBox",
+      options =
+        providerTileOptions(
+          id = "mapbox.light",
+          accessToken = Sys.getenv("MAPBOX_ACCESS_TOKEN")
+        )
+    ) %>%
+    addPolygons(
+      color = "black",
+      weight = 0.2,
+      opacity = 1,
+      fillColor = ~ fill_color(values),
+      fillOpacity = 1,
+      label = tooltips,
+      labelOptions =
+        labelOptions(
+          style = list("font-weight" = "normal", padding = "3px 8px"),
+          textsize = "15px",
+          direction = "auto"
+        ),
+      highlightOptions =
+        highlightOptions(
+          color = "black",
+          weight = 1.5,
+          bringToFront = TRUE
+        )
+    ) %>%
+    addLegend(
+      position = "topright",
+      pal = fill_color,
+      values = values,
+      opacity = 1,
+      labFormat = labelFormat(suffix = "%"),
+      title = legend_title
+    )
 }
 ```
 
@@ -116,10 +161,10 @@ choropleth <- function(data, var) {
 
 The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
 
-* Household Pulse Survey: `r format(hps_date_start, "%B %e")` - `r format(hps_date_end, "%B %e")`
-* Local Area Unemployment Statistics: `r format(max(unemployment$date), "%B")`
+* Household Pulse Survey: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
+* Local Area Unemployment Statistics: `r month(max(unemployment$date))`
 
-The HPS releases data in two stages. For this reason, some time series below run through `r format(hps_puf_date_end, "%B %e")`, while others run through `r format(hps_date_end, "%B %e")`.
+The HPS releases data in two stages. For this reason, some time series below run through `r month_day(hps_puf_date_end)`, while others run through `r month_day(hps_date_end)`.
 
 This report updates upon the release of new data. Sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified of updates. All data used in this report can be found and downloaded [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
 
@@ -127,7 +172,9 @@ If you have any feedback, comments, or suggestions for improvements to this site
 
 ## Food insecurity
 
-The plot below contains the percentage of adults who answered the question:
+### Rate over time
+
+The plot below contains the percentage of adults who answered this question:
 
 >  In the __last 7 days__, which of these statements best describes the food eaten in your household?
 
@@ -188,11 +235,11 @@ v <-
   filter(date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insecurity.
+In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insecurity.
 
 The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity rates among children to be substantially higher than among adults.
-<br>
-<br>
+
+### Reasons
 
 ```{r fig.asp=0.8}
 v <- 
@@ -225,35 +272,42 @@ v %>%
 ```
 
 The above plot contains the reasons respondents gave for selecting "Sometimes not enough to eat" or "Often not enough to eat". Respondents can choose more than one reason, so the percentages sum to greater than 100%.
-<br>
-<br>
+
+### Geography
+
+The map below is for the survey period that ended `r month_day(hps_date_end)`. Hover over counties for rates.
 
 ```{r}
 v <- 
-  counties %>% 
-  filter(date_end == max(date_end)) %>% 
-  group_by(area, fips, date_end, variable) %>% 
-  summarize(food_insecurity = sum(pct)) %>% 
-  ungroup() %>% 
-  left_join(population %>% select(fips, population_18p), by = "fips") %>% 
-  mutate(food_insecurity = bin_var(food_insecurity, population_18p))
+  left_join(
+    county_boundaries,
+    counties %>% 
+      filter(date_end == max(date_end)) %>% 
+      group_by(area, fips, date_end, variable) %>% 
+      summarize(food_insecurity = sum(pct)) %>% 
+      ungroup() %>% 
+      left_join(population %>% select(fips, population_18p), by = "fips"),
+    by = c("GEOID" = "fips")
+  )
 
 v %>% 
-  choropleth(food_insecurity) +
-  labs(
-    title = "Food insecurity in adults",
-    subtitle = format(max(counties$date_end), "%B %e, %Y"),
-    fill = NULL,
-    caption = 
-      "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
+  choropleth(
+    var = food_insecurity,
+    population = population_18p,
+    tooltip = 
+      "<strong>{area}</strong><br/>Food insecurity: {format(food_insecurity, trim = TRUE, nsmall = 1)}%",
+    legend_title = "Food insecurity<br/>in adults"
   )
 ```
+
+Estimated from: Census Bureau, Household Pulse Survey.  
+Bureau of Labor Statistics, Local Area Unemployment Statistics.
 
 These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. 
 
 County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
-<br>
-<br>
+
+### Severity
 
 ```{r}
 v <- 
@@ -287,8 +341,7 @@ v %>%
   )
 ```
 
-<br>
-<br>
+### Free groceries or meals
 
 ```{r}
 v <- 
@@ -359,6 +412,8 @@ Since respondents can choose more than one source of free groceries or free meal
 
 ## Unemployment
 
+### Rate over time
+
 ```{r}
 v <- 
   unemployment %>% 
@@ -390,23 +445,29 @@ v %>%
 ```
 
 The data for the most recent month is typically "preliminary" and subject to revision when the following month's data is released.
-<br>
-<br>
+
+### Geography
+
+The map below is for `r month(max(v$date))`. Hover over counties for rates.
 
 ```{r}
-v <-
-  unemployment %>% 
-  filter(area_type == "County", date == max(date)) %>% 
-  left_join(population %>% select(fips, population_18p), by = "fips") %>% 
-  mutate(unemployment_rate = bin_var(unemployment_rate, population_18p))
+v <- 
+  left_join(
+    county_boundaries,
+    unemployment %>% 
+      filter(area_type == "County", date == max(date)) %>% 
+      left_join(population %>% select(fips, population_18p), by = "fips"),
+    by = c("GEOID" = "fips")
+  )
 
 v %>% 
-  choropleth(unemployment_rate) +
-  labs(
-    fill = NULL,
-    title = "Unemployment rate",
-    subtitle = format(unique(v$date), "%B %Y"),
-    caption = 
-      "Source: Bureau of Labor Statistics, Local Area Unemployment Statistics."
+  choropleth(
+    var = unemployment_rate,
+    population = population_18p,
+    tooltip = 
+      "<strong>{area}</strong><br/>Unemployment rate: {format(unemployment_rate, trim = TRUE, nsmall = 1)}%",
+    legend_title = "Unemployment rate"
   )
 ```
+
+Source: Bureau of Labor Statistics, Local Area Unemployment Statistics.
