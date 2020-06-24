@@ -1,7 +1,7 @@
 # Update data
 
 # Author: Bill Behrman
-# Version: 2020-06-16
+# Version: 2020-06-24
 
 # Parameters
   # Script to update unemployment data
@@ -33,6 +33,6 @@ cli::cat_line(cli::rule("Calculating county data"))
 source(script_counties)
 
 cli::cat_line(cli::rule("Pushing new data to GitHub"))
-system("git add data data-raw/pulse/metadata/weeks.csv")
+system("git add -f data data-raw/pulse/metadata/weeks.csv")
 system("git commit -m 'Update data'")
 system("git push")
