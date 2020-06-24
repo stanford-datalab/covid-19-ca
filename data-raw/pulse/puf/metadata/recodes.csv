@@ -1,4 +1,39 @@
 variable,code,recode
+abirth_year,1,Imputed
+abirth_year,2,Not imputed
+agender,1,Imputed
+agender,2,Not imputed
+ahispanic,1,Imputed
+ahispanic,2,Not imputed
+ahispanic_arace,11,Imputed_Imputed
+ahispanic_arace,12,Imputed_Not imputed
+ahispanic_arace,21,Not imputed_Imputed
+ahispanic_arace,22,Not imputed_Not Imputed
+arace,1,Imputed
+arace,2,Not imputed
+curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
+curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
+curfoodsuf,3,Sometimes not enough to eat
+curfoodsuf,4,Often not enough to eat
+curfoodsuf,NA,Did not report
+egender,1,Male
+egender,2,Female
+est_msa,12060,Atlanta-Sandy Springs-Alpharetta
+est_msa,14460,Boston-Cambridge-Newton
+est_msa,16980,Chicago-Naperville-Elgin
+est_msa,19100,Dallas-Fort Worth-Arlington
+est_msa,19820,Detroit-Warren-Dearborn
+est_msa,26420,Houston-The Woodlands-Sugar Land
+est_msa,31080,Los Angeles-Long Beach-Anaheim
+est_msa,33100,Miami-Fort Lauderdale-Pompano Beach
+est_msa,35620,New York-Newark-Jersey City
+est_msa,37980,Philadelphia-Camden-Wilmington
+est_msa,38060,Phoenix-Mesa-Chandler
+est_msa,40140,Riverside-San Bernardino-Ontario
+est_msa,41860,San Francisco-Oakland-Berkeley
+est_msa,42660,Seattle-Tacoma-Bellevue
+est_msa,47900,Washington-Arlington-Alexandria
+est_msa,NA,Balance
 est_st,01,Alabama
 est_st,02,Alaska
 est_st,04,Arizona
@@ -50,46 +85,14 @@ est_st,53,Washington
 est_st,54,West Virginia
 est_st,55,Wisconsin
 est_st,56,Wyoming
-est_msa,12060,Atlanta-Sandy Springs-Alpharetta
-est_msa,14460,Boston-Cambridge-Newton
-est_msa,16980,Chicago-Naperville-Elgin
-est_msa,19100,Dallas-Fort Worth-Arlington
-est_msa,19820,Detroit-Warren-Dearborn
-est_msa,26420,Houston-The Woodlands-Sugar Land
-est_msa,31080,Los Angeles-Long Beach-Anaheim
-est_msa,33100,Miami-Fort Lauderdale-Pompano Beach
-est_msa,35620,New York-Newark-Jersey City
-est_msa,37980,Philadelphia-Camden-Wilmington
-est_msa,38060,Phoenix-Mesa-Chandler
-est_msa,40140,Riverside-San Bernardino-Ontario
-est_msa,41860,San Francisco-Oakland-Berkeley
-est_msa,42660,Seattle-Tacoma-Bellevue
-est_msa,47900,Washington-Arlington-Alexandria
-est_msa,NA,Balance
-abirth_year,1,Imputed
-abirth_year,2,Not imputed
-agender,1,Imputed
-agender,2,Not imputed
-ahispanic,1,Imputed
-ahispanic,2,Not imputed
-arace,1,Imputed
-arace,2,Not imputed
-wrkloss,1,Yes
-wrkloss,2,No
-wrkloss,NA,Did not report
 expctloss,1,Yes
 expctloss,2,No
 expctloss,NA,Did not report
-prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
-prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
-prifoodsuf,3,Sometimes not enough to eat
-prifoodsuf,4,Often not enough to eat
-prifoodsuf,NA,Did not report
-curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
-curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
-curfoodsuf,3,Sometimes not enough to eat
-curfoodsuf,4,Often not enough to eat
-curfoodsuf,NA,Did not report
+foodconf,1,Not at all confident
+foodconf,2,Somewhat confident
+foodconf,3,Moderately confident
+foodconf,4,Very confident 
+foodconf,NA,Did not report
 foodsufrsn1,1,Couldn't afford to buy more food
 foodsufrsn1,NA,Did not report
 foodsufrsn2,1,Couldn’t get out to buy food
@@ -103,6 +106,41 @@ foodsufrsn5,NA,Did not report
 freefood,1,Yes
 freefood,2,No
 freefood,NA,Did not report
+mortlmth,1,Yes
+mortlmth,2,No
+mortlmth,3,Payment was deferred
+mortlmth,NA,Did not report
+mortconf,1,No confidence
+mortconf,2,Slight confidence
+mortconf,3,Moderate confidence
+mortconf,4,High confidence 
+mortconf,5,Payment is/will be deferred
+mortconf,NA,Did not report
+prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
+prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
+prifoodsuf,3,Sometimes not enough to eat
+prifoodsuf,4,Often not enough to eat
+prifoodsuf,NA,Did not report
+rhispanic,1,"No, not of Hispanic, Latino, or Spanish origin"
+rhispanic,2,"Yes, of Hispanic, Latino, or Spanish origin"
+rhispanic_rrace,11,Non-hispanic White
+rhispanic_rrace,12,Non-hispanic Black
+rhispanic_rrace,13,Non-hispanic Asian
+rhispanic_rrace,14,Non-hispanic Other
+rhispanic_rrace,21,Hispanic White
+rhispanic_rrace,22,Hispanic Black
+rhispanic_rrace,23,Hispanic Asian
+rhispanic_rrace,24,Hispanic Other
+rrace,1,"White, Alone"
+rrace,2,"Black, Alone"
+rrace,3,"Asian, Alone"
+rrace,4,"Any other race alone, or race in combination"
+tenure,1,Owned free and clear
+tenure,2,Owned with a mortgage or loan (including home equity loans)
+tenure,3,Rented
+tenure,4,Occupied without payment of rent
+tenure,NA,Did not report
+total,NA,Total
 wherefree1,1,Free meals through the school or other programs aimed at children
 wherefree1,NA,Did not report
 wherefree2,1,Food pantry or food bank
@@ -117,24 +155,6 @@ wherefree6,1,Other community program
 wherefree6,NA,Did not report
 wherefree7,1,"Family, friends, or neighbors"
 wherefree7,NA,Did not report
-foodconf,1,Not at all confident
-foodconf,2,Somewhat confident
-foodconf,3,Moderately confident
-foodconf,4,Very confident 
-foodconf,NA,Did not report
-tenure,1,Owned free and clear
-tenure,2,Owned with a mortgage or loan (including home equity loans)
-tenure,3,Rented
-tenure,4,Occupied without payment of rent
-tenure,NA,Did not report
-mortlmth,1,Yes
-mortlmth,2,No
-mortlmth,3,Payment was deferred
-mortlmth,NA,Did not report
-mortconf,1,No confidence
-mortconf,2,Slight confidence
-mortconf,3,Moderate confidence
-mortconf,4,High confidence 
-mortconf,5,Payment is/will be deferred
-mortconf,NA,Did not report
-total,NA,Total
+wrkloss,1,Yes
+wrkloss,2,No
+wrkloss,NA,Did not report
