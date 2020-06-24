@@ -35,6 +35,11 @@ N_BINS <- 5
 MAP_COLOR_PALETTE <- "YlOrRd"
   # Map height
 MAP_HEIGHT <- 650
+  # Age group breaks
+AGE_BREAKS <- c(18, seq(29, 79, 10), Inf)
+  # Age group labels
+AGE_LABELS <- 
+  c("18 - 29", str_c(seq(30, 70, 10), " - ", seq(39, 79, 10)), "80+")
 
 #===============================================================================
 
@@ -239,40 +244,6 @@ In the most recent survey period that ended `r month_day(v$date_end)`, an estima
 
 The HPS was not designed to measure food insecurity in children, but other surveys typically find food insecurity rates among children to be substantially higher than among adults.
 
-### Reasons
-
-```{r fig.asp=0.8}
-v <- 
-  hps %>% 
-  filter(str_detect(variable, "^foodsufrsn\\d_curfoodsuf_34$"), !is.na(code))
-
-v %>% 
-  ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
-    geom_line() +
-  geom_point() +
-  scale_x_date(
-    breaks = v$date_end %>% unique() %>% sort(),
-    minor_breaks = NULL,
-    date_labels = "%b %e"
-  ) +
-  scale_y_continuous(
-    breaks = scales::breaks_width(10),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
-  ) +
-  guides(color = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom") +
-  labs(
-    title = "Reasons for food insecurity in adults",
-    x = "Survey end date",
-    y = "",
-    color = NULL,
-    caption = "Source: Census Bureau, Household Pulse Survey."
-  )
-```
-
-The above plot contains the reasons respondents gave for selecting "Sometimes not enough to eat" or "Often not enough to eat". Respondents can choose more than one reason, so the percentages sum to greater than 100%.
-
 ### Geography
 
 The map below is for the survey period that ended `r month_day(hps_date_end)`. Hover over counties for rates.
@@ -306,6 +277,211 @@ Bureau of Labor Statistics, Local Area Unemployment Statistics.
 These food insecurity estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. 
 
 County unemployment rates are updated every month, but state-level food insecurity is updated every week. Each month's unemployment data also comes out later than the food insecurity data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
+
+### Demographics
+
+```{r}
+v <- 
+  hps %>% 
+  filter(
+    date_end == hps_puf_date_end,
+    str_detect(variable, "^tbirth_year")
+  ) %>% 
+  mutate(
+    age = lubridate::year(lubridate::now()) - code,
+    age_group = 
+      cut(
+        age, 
+        breaks = AGE_BREAKS,
+        labels = AGE_LABELS,
+        include.lowest = TRUE
+      )
+  ) %>% 
+  group_by(age_group, variable) %>% 
+  summarize(n = sum(n)) %>% 
+  ungroup()
+
+overall_rate <- 
+  v %>% 
+  summarize(
+    pct = 
+      100 * sum(n[variable == "tbirth_year_curfoodsuf_34"]) / 
+      sum(n[variable == "tbirth_year"]),
+    label = "Overall food insecurity rate"
+  )
+
+v <- 
+  v %>% 
+  group_by(age_group) %>% 
+  summarize(
+    pct =
+      100 * n[variable == "tbirth_year_curfoodsuf_34"] / 
+      n[variable == "tbirth_year"]
+  )
+
+v %>% 
+  ggplot(aes(age_group, pct)) +
+  geom_hline(aes(yintercept = pct, color = label), data = overall_rate) +
+  geom_col() +
+  scale_y_continuous(
+    breaks = scales::breaks_width(2),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Food insecurity by age group",
+    subtitle = 
+      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+    x = "Age group",
+    y = "Percentage of age group that is food insecure",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+<br>
+<br>
+
+```{r}
+v <- 
+  hps %>% 
+  filter(
+    date_end == hps_puf_date_end,
+    str_detect(variable, "^egender")
+  ) 
+
+overall_rate <- 
+  v %>% 
+  summarize(
+    pct = 
+      100 * sum(n[variable == "egender_curfoodsuf_34"]) / 
+      sum(n[variable == "egender"]),
+    label = "Overall food insecurity rate"
+  )
+
+v <- 
+  v %>% 
+  group_by(response) %>% 
+  summarize(
+    pct =
+      100 * n[variable == "egender_curfoodsuf_34"] / 
+      n[variable == "egender"]
+  )
+
+v %>% 
+  ggplot(aes(response, pct)) +
+  geom_hline(aes(yintercept = pct, color = label), data = overall_rate) +
+  geom_col() +
+  scale_y_continuous(
+    breaks = scales::breaks_width(2),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Food insecurity by gender",
+    subtitle = 
+      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+    x = NULL,
+    y = "Percentage of gender that is food insecure",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+<br>
+<br>
+
+```{r}
+v <- 
+  hps %>% 
+  filter(
+    date_end == hps_puf_date_end,
+    str_detect(variable, "^rhispanic_rrace")
+  ) %>% 
+  mutate(
+    response =
+      case_when(
+        str_detect(response, "^Hispanic") ~ "Hispanic",
+        TRUE ~ response
+      )
+  ) %>% 
+  group_by(variable, response) %>% 
+  summarize(n = sum(n)) %>% 
+  ungroup()
+
+overall_rate <- 
+  v %>% 
+  summarize(
+    pct = 
+      100 * sum(n[variable == "rhispanic_rrace_curfoodsuf_34"]) / 
+      sum(n[variable == "rhispanic_rrace"]),
+    label = "Overall food insecurity rate"
+  )
+
+v <- 
+  v %>% 
+  group_by(response) %>% 
+  summarize(
+    pct =
+      100 * n[variable == "rhispanic_rrace_curfoodsuf_34"] / 
+      n[variable == "rhispanic_rrace"]
+  )
+
+v %>% 
+  ggplot(aes(fct_reorder(response, pct), pct)) +
+  geom_hline(aes(yintercept = pct, color = label), data = overall_rate) +
+  geom_col() +
+  scale_y_continuous(
+    breaks = scales::breaks_width(2),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Food insecurity by race and ethnicity",
+    subtitle = 
+      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+    x = NULL,
+    y = "Percentage of group that is food insecure",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+In the above, _Hispanic_ refers to individuals of any race. _White_, _Black_, and _Asian_ refer to individuals of that single race. And _Other_ refers to individuals of two or more races, or races other the White, Black, or Asian.
+
+### Reasons
+
+```{r fig.asp=0.8}
+v <- 
+  hps %>% 
+  filter(str_detect(variable, "^foodsufrsn\\d_curfoodsuf_34$"), !is.na(code))
+
+v %>% 
+  ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
+    geom_line() +
+  geom_point() +
+  scale_x_date(
+    breaks = v$date_end %>% unique() %>% sort(),
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(10),
+    labels = scales::label_percent(accuracy = 1, scale = 1),
+    limits = c(0, NA)
+  ) +
+  guides(color = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Reasons for food insecurity in adults",
+    x = "Survey end date",
+    y = "",
+    color = NULL,
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+The above plot contains the reasons respondents gave for selecting "Sometimes not enough to eat" or "Often not enough to eat". Respondents can choose more than one reason, so the percentages sum to greater than 100%.
 
 ### Severity
 
