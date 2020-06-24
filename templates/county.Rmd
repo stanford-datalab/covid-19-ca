@@ -21,7 +21,7 @@ library(tidyverse)
 file_hps <- here::here("data/state.csv")
   # Unemployment data
 file_unemployment <- here::here("data/unemployment.csv")
-  # Food insecurity estimates for counties
+  # Food insufficiency estimates for counties
 file_counties <- here::here("data/counties.csv")
 
 #===============================================================================
@@ -40,13 +40,13 @@ state <-
   filter(area_type == "State") %>% 
   distinct(area) %>% 
   pull(area)
-# Food insecurity estimates for county
+# Food insufficiency estimates for county
 county <- 
   read_csv(file_counties) %>% 
   filter(area == params$area)
 ```
 
-## Food insecurity
+## Food insufficiency
 
 ```{r}
 v <- 
@@ -84,9 +84,9 @@ v %>%
   ) +
   theme(legend.position = "bottom") +
   labs(
-    title = "Food insecurity in adults",
+    title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",
-    y = "Percentage of adults who are food insecure",
+    y = "Percentage of adults in households with insufficient food",
     color = NULL,
     caption = 
       "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
@@ -97,9 +97,9 @@ v <-
   filter(area == params$area, date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insecurity.
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
-These food insecurity estimates are based upon a model. The model uses the food insecurity rate for the entire state and the county unemployment rates to estimate food insecurity for each county. State-level food insecurity data is released every week, and county-level unemployment data is release every month. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insecurity estimates for such months in later reports as new unemployment data becomes available.
+These food insufficiency estimates are based upon a model. The model uses the food insufficiency rate for the entire state and the county unemployment rates to estimate food insufficiency for each county. State-level food insufficiency data is released every week, and county-level unemployment data is release every month. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insufficiency estimates for such months in later reports as new unemployment data becomes available.
 
 ## Unemployment
 
