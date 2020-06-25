@@ -234,7 +234,7 @@ v %>%
   labs(
     title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",
-    y = "Percentage of adults in households with insufficient food",
+    y = "Percentage of adults reporting food insufficiency",
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
 
@@ -336,7 +336,7 @@ v %>%
     subtitle = 
       str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
     x = "Age group",
-    y = "Percentage of age group with insufficient food",
+    y = "Percentage of age group reporting food insufficiency",
     color = NULL,
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
@@ -385,7 +385,7 @@ v %>%
     subtitle = 
       str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
     x = NULL,
-    y = "Percentage of gender with insufficient food",
+    y = "Percentage of gender reporting food insufficiency",
     color = NULL,
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
@@ -444,7 +444,7 @@ v %>%
     subtitle = 
       str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
     x = NULL,
-    y = "Percentage of group with insufficient food",
+    y = "Percentage of group reporting food insufficiency",
     color = NULL,
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
