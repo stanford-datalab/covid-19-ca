@@ -1,7 +1,7 @@
 ---
 params:
-  area: "California"
-title: "California"
+  area: ""
+title: ""
 date: "`r Sys.Date()`"
 output:
   blogdown::html_page:
