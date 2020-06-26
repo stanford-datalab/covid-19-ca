@@ -8,8 +8,12 @@ output:
     toc: true
 ---
 
-```{r setup, include=FALSE, out.width="100%"}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
 ```
 
 ```{r message=FALSE, warning=FALSE}
@@ -23,6 +27,8 @@ library(sf)
 file_data_params <- here::here("data/params.yml")
   # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
+  # CPS Food Security Supplement data
+file_cps_fss <- here::here("data/cps_fss.csv")
   # Population data
 file_population <- here::here("data/population.csv")
   # Unemployment data
@@ -66,6 +72,18 @@ hps_puf_date_end <-
   drop_na(n_error) %>% 
   pull(date_end) %>% 
   max()
+
+# Food insufficiency from most recent CPS Food Security Supplement
+cps_fss_food_insufficiency <- 
+  read_csv(file_cps_fss) %>% 
+  filter(
+    area == params$area,
+    year == max(year),
+    variable == "fsfoods",
+    str_detect(response, "(sometimes|often) not enough to eat")
+  ) %>% 
+  group_by(year) %>% 
+  summarize(pct = sum(pct))
 
 # Unemployment data
 unemployment <- read_csv(file_unemployment)
@@ -192,14 +210,6 @@ with one of these two answers:
 > Often not enough to eat
 
 ```{r}
-prior_food_insufficiency <- 
-  hps %>%
-  filter(variable == "prifoodsuf", code %in% 3:4) %>% 
-  group_by(date_end) %>% 
-  summarize(prior_food_insufficiency = sum(pct)) %>% 
-  pull(prior_food_insufficiency) %>% 
-  mean()
-
 v <- 
   hps %>% 
   group_by(date_end) %>% 
@@ -210,14 +220,15 @@ v <-
 
 v %>% 
   ggplot(aes(date_end, pct)) +
-  geom_hline(yintercept = prior_food_insufficiency, color = "blue") +
+  geom_hline(yintercept = cps_fss_food_insufficiency$pct, color = "blue") +
   geom_line() +
   geom_point() +
   annotate(
     geom = "text",
     x = min(v$date_end),
-    y = prior_food_insufficiency,
-    label = "Food insufficiency prior to Mar 13",
+    y = cps_fss_food_insufficiency$pct,
+    label = 
+      str_glue("Food insufficiency in Dec {cps_fss_food_insufficiency$year}"),
     hjust = 0,
     vjust = 1.5
   ) +
@@ -235,7 +246,7 @@ v %>%
     title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",
     y = "Percentage of adults reporting food insufficiency",
-    caption = "Source: Census Bureau, Household Pulse Survey."
+    caption = "Sources: Census Bureau, Household Pulse Survey.\nCurrent Population Survey, Food Security Supplement."
   )
 
 v <- 
