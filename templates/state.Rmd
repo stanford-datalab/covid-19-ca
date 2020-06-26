@@ -9,11 +9,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  message = FALSE,
-  warning = FALSE
-)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ```{r message=FALSE, warning=FALSE}
@@ -78,7 +74,7 @@ cps_fss_food_insufficiency <-
   read_csv(file_cps_fss) %>% 
   filter(
     area == params$area,
-    year == max(year),
+    year == min(2019, max(year)),
     variable == "fsfoods",
     str_detect(response, "(sometimes|often) not enough to eat")
   ) %>% 
