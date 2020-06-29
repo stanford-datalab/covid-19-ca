@@ -16,6 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # Libraries
 library(tidyverse)
 library(leaflet)
+library(leaflet.extras)
 library(sf)
 
 # Parameters
@@ -91,7 +92,7 @@ counties <- read_csv(file_counties)
 county_boundaries <-
   ussf::boundaries(
     geography = "county",
-    resolution = "5m",
+    resolution = "20m",
     projection = "longlat"
   ) %>% 
   filter(STATEFP == data_params$state_fips)
@@ -139,7 +140,11 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
     map(htmltools::HTML)
   
   data %>%
-    leaflet(height = MAP_HEIGHT) %>%
+    leaflet(
+      height = MAP_HEIGHT,
+      options = leafletOptions(minZoom = 5, maxZoom = 10)
+    ) %>%
+    setMapWidgetStyle(list(background = "white")) %>% 
     addProviderTiles(
       provider = "MapBox",
       options =
@@ -154,6 +159,7 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
       opacity = 1,
       fillColor = ~ fill_color(values),
       fillOpacity = 1,
+      smoothFactor = 0,
       label = tooltips,
       labelOptions =
         labelOptions(
