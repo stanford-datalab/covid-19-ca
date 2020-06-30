@@ -139,7 +139,10 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
     map(htmltools::HTML)
   
   data %>%
-    leaflet(height = MAP_HEIGHT) %>%
+    leaflet(
+      height = MAP_HEIGHT,
+      options = leafletOptions(minZoom = 3)
+    ) %>%
     setMapWidgetStyle(list(background = "white")) %>% 
     addProviderTiles(
       provider = "MapBox",
