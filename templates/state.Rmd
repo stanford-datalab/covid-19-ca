@@ -682,7 +682,7 @@ v %>%
     x = NULL,
     y = "Unemployment rate",
     caption = 
-      "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
+      "Source: Bureau of Labor Statistics, Local Area Unemployment Statistics."
   )
 ```
 
