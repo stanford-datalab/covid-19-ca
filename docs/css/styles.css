@@ -1,5 +1,8 @@
-html { font-size: 30px; }
-body { color: var(--body-text-color); background-color: var(--background-color);}
+html { font-size: 20px; }
+body {
+  color: var(--body-text-color); 
+  background-color: var(--background-color); 
+}
 .main-color { color: var(--main-color); }
 .secondary-color { color: var(--secondary-color); }
 .bg-main-color { background-color: var(--main-color); color: var(--logo-text-color); }
