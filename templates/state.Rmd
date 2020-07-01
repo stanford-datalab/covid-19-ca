@@ -17,8 +17,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(leaflet)
 library(leaflet.extras)
-library(sf)
 library(reactable)
+library(sf)
 
 # Parameters
   # Parameters for state and data
@@ -85,6 +85,27 @@ cps_fss_food_insufficiency <-
 
 # Unemployment data
 unemployment <- read_csv(file_unemployment)
+
+# Last date with statewide unemployment data
+unemployment_state_date <- 
+  unemployment %>% 
+  filter(area_type == "State") %>% 
+  pull(date) %>% 
+  max()
+
+# Last date with full county-level unemployment data
+n_counties <- 
+  unemployment %>% 
+  filter(area_type == "County") %>% 
+  pull(fips) %>% 
+  n_distinct()
+unemployment_county_date <- 
+  unemployment %>% 
+  filter(area_type == "County") %>% 
+  group_by(date) %>% 
+  filter(n() == n_counties) %>% 
+  pull(date) %>% 
+  max()
 
 # Food insufficiency estimates for county
 counties <- read_csv(file_counties)
@@ -191,7 +212,9 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
 The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
 
 * Household Pulse Survey: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
-* Local Area Unemployment Statistics: `r month(max(unemployment$date))`
+* Local Area Unemployment Statistics:
+  * Statewide data: `r month(unemployment_state_date)`
+  * County-level data: `r month(unemployment_county_date)`
 
 The HPS releases data in two stages. For this reason, some time series below run through `r month_day(hps_puf_date_end)`, while others run through `r month_day(hps_date_end)`.
 
@@ -722,7 +745,7 @@ The data for the most recent month is typically "preliminary" and subject to rev
 
 ### Geography
 
-The map below is for `r month(max(v$date))`. Hover over counties for rates.
+The map below is for `r month(unemployment_county_date)`. Hover over counties for rates.
 
 ```{r}
 v <- 
