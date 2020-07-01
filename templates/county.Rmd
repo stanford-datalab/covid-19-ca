@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r message=FALSE, warning=FALSE}
 # Libraries
 library(tidyverse)
+library(reactable)
 
 # Parameters
   # Household Pulse data for state
@@ -91,6 +92,34 @@ v %>%
     caption = 
       "Estimated from: Census Bureau, Household Pulse Survey.\nBureau of Labor Statistics, Local Area Unemployment Statistics."
   )
+```
+
+<br>
+
+```{r}
+v %>% 
+  filter(area == params$area) %>% 
+  select(date_end, n, pct) %>% 
+  mutate(
+    n = signif(n, digits = 3),
+    pct = round(pct, digits = 1)
+  ) %>% 
+  arrange(desc(date_end)) %>% 
+  rename(
+    "Survey end date" = date_end, 
+    "Adults reporting food insufficiency" = n,
+    "Percentage of adults reporting food insufficiency" = pct
+  ) %>% 
+  reactable(
+    showSortable = TRUE,
+    defaultColDef = colDef(align = "left"),
+    columns = 
+      list(
+        "Adults reporting food insufficiency" = colDef(format = colFormat(separators = TRUE)),
+        "Percentage of adults reporting food insufficiency" = 
+          colDef(format = colFormat(suffix = "%"))
+      )
+  )
 
 v <- 
   v %>% 
@@ -129,6 +158,28 @@ unemployment %>%
       "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
   )
 ```
+
+<br>
+
+```{r}
+unemployment %>% 
+  filter(area == params$area) %>% 
+  arrange(desc(date)) %>% 
+  mutate(
+    date = format(date, "%B %Y")
+  ) %>% 
+  select(
+    Month = date,
+    "Unemployment rate" = unemployment_rate
+  ) %>% 
+  reactable(
+    showSortable = TRUE,
+    defaultColDef = colDef(align = "left"),
+    columns = 
+      list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
+  )
+```
+
 
 The data for the most recent month is typically "preliminary" and subject to revision when the following month's data is released.
 
