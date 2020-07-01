@@ -264,17 +264,17 @@ v %>%
   ) %>% 
   rename(
     "Survey end date" = date_end, 
-    "Estimated adults reporting food insufficiency" = n,
-    "Estimated percentage of adults reporting food insufficiency" = pct
+    "Adults reporting food insufficiency" = n,
+    "Percentage of adults reporting food insufficiency" = pct
   ) %>% 
   reactable(
     showSortable = TRUE,
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Estimated adults reporting food insufficiency" = 
+        "Adults reporting food insufficiency" = 
           colDef(format = colFormat(separators = TRUE)),
-        "Estimated percentage of adults reporting food insufficiency" = 
+        "Percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
   )
