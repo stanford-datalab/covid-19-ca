@@ -93,6 +93,7 @@ counties <- read_csv(file_counties)
 county_boundaries <-
   ussf::boundaries(
     geography = "county",
+    resolution = "5m",
     projection = "longlat"
   ) %>% 
   filter(STATEFP == data_params$state_fips)
