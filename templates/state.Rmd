@@ -271,7 +271,8 @@ v %>%
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Adults reporting food insufficiency" = colDef(format = colFormat(separators = TRUE)),
+        "Adults reporting food insufficiency" = 
+          colDef(format = colFormat(separators = TRUE)),
         "Percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
@@ -397,7 +398,9 @@ v %>%
   labs(
     title = "Food insufficiency by age group",
     subtitle = 
-      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+      str_glue(
+        "For the survey period that ended {month_day(hps_puf_date_end)}"
+      ),
     x = "Age group",
     y = "Percentage of age group reporting food insufficiency",
     color = NULL,
@@ -446,7 +449,9 @@ v %>%
   labs(
     title = "Food insufficiency by gender",
     subtitle = 
-      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+      str_glue(
+        "For the survey period that ended {month_day(hps_puf_date_end)}"
+      ),
     x = NULL,
     y = "Percentage of gender reporting food insufficiency",
     color = NULL,
@@ -505,7 +510,9 @@ v %>%
   labs(
     title = "Food insufficiency by race and ethnicity",
     subtitle = 
-      str_glue("For the survey period that ended {month_day(hps_puf_date_end)}"),
+      str_glue(
+        "For the survey period that ended {month_day(hps_puf_date_end)}"
+      ),
     x = NULL,
     y = "Percentage of group reporting food insufficiency",
     color = NULL,

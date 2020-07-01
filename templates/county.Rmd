@@ -115,7 +115,8 @@ v %>%
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Adults reporting food insufficiency" = colDef(format = colFormat(separators = TRUE)),
+        "Adults reporting food insufficiency" = 
+          colDef(format = colFormat(separators = TRUE)),
         "Percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
