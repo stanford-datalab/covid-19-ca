@@ -126,7 +126,7 @@ v <-
   filter(area == params$area, date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
 These food insufficiency estimates are based upon a model. The model uses the food insufficiency rate for the entire state and the county unemployment rates to estimate food insufficiency for each county. State-level food insufficiency data is released every week, and county-level unemployment data is release every month. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insufficiency estimates for such months in later reports as new unemployment data becomes available.
 

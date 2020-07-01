@@ -282,7 +282,7 @@ v <-
   filter(date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$pct, digits = 1))`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
+In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
 The HPS was not designed to measure food insufficiency in children, but other surveys typically find food insufficiency rates among children to be substantially higher than among adults.
 
