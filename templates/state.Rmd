@@ -258,22 +258,23 @@ v %>%
 v %>% 
   arrange(desc(date_end)) %>% 
   mutate(
+    date_end = format(date_end, "%Y %b %d"),
     n = signif(n, digits = 3),
-    pct = round(pct, digits = 1)
+    pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
   rename(
     "Survey end date" = date_end, 
-    "Adults reporting food insufficiency" = n,
-    "Percentage of adults reporting food insufficiency" = pct
+    "Estimated adults reporting food insufficiency" = n,
+    "Estimated percentage of adults reporting food insufficiency" = pct
   ) %>% 
   reactable(
     showSortable = TRUE,
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Adults reporting food insufficiency" = 
+        "Estimated adults reporting food insufficiency" = 
           colDef(format = colFormat(separators = TRUE)),
-        "Percentage of adults reporting food insufficiency" = 
+        "Estimated percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
   )
@@ -320,11 +321,13 @@ v %>%
 v %>% 
   st_drop_geometry() %>% 
   mutate(
-    food_insufficiency = round(food_insufficiency, digits = 1)
+    food_insufficiency = 
+      format(round(food_insufficiency, digits = 1), nsmall = 1)
   ) %>% 
   select(
     "County" = NAME,
-    "Percentage of adults reporting food insufficiency" = food_insufficiency
+    "Estimated percentage of adults reporting food insufficiency" = 
+      food_insufficiency
   ) %>% 
   arrange(County) %>% 
   reactable(
@@ -332,7 +335,7 @@ v %>%
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Percentage of adults reporting food insufficiency" = 
+        "Estimated percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
   )
@@ -699,7 +702,8 @@ v %>%
 v %>% 
   arrange(desc(date)) %>% 
   mutate(
-    date = format(date, "%B %Y")
+    date = format(date, "%Y %b"),
+    unemployment_rate = format(unemployment_rate, nsmall = 1)
   ) %>% 
   select(
     Month = date,
@@ -742,8 +746,9 @@ v %>%
 <br>
 
 ```{r}
-v %>% 
+v %>%
   st_drop_geometry() %>% 
+  mutate(unemployment_rate = format(unemployment_rate, nsmall = 1)) %>% 
   select(
     "County" = NAME,
     "Unemployment rate" = unemployment_rate

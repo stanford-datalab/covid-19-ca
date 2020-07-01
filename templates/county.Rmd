@@ -101,23 +101,24 @@ v %>%
   filter(area == params$area) %>% 
   select(date_end, n, pct) %>% 
   mutate(
+    date_end = format(date_end, "%Y %b %d"),
     n = signif(n, digits = 3),
-    pct = round(pct, digits = 1)
+    pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
   arrange(desc(date_end)) %>% 
   rename(
     "Survey end date" = date_end, 
-    "Adults reporting food insufficiency" = n,
-    "Percentage of adults reporting food insufficiency" = pct
+    "Estimated adults reporting food insufficiency" = n,
+    "Estimated percentage of adults reporting food insufficiency" = pct
   ) %>% 
   reactable(
     showSortable = TRUE,
     defaultColDef = colDef(align = "left"),
     columns = 
       list(
-        "Adults reporting food insufficiency" = 
+        "Estimated adults reporting food insufficiency" = 
           colDef(format = colFormat(separators = TRUE)),
-        "Percentage of adults reporting food insufficiency" = 
+        "Estimated percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
   )
@@ -167,7 +168,8 @@ unemployment %>%
   filter(area == params$area) %>% 
   arrange(desc(date)) %>% 
   mutate(
-    date = format(date, "%B %Y")
+    date = format(date, "%Y %b"),
+    unemployment_rate = format(unemployment_rate, nsmall = 1)
   ) %>% 
   select(
     Month = date,
