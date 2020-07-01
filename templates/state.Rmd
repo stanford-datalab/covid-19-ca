@@ -259,7 +259,7 @@ v %>%
 v %>% 
   arrange(desc(date_end)) %>% 
   mutate(
-    date_end = format(date_end, "%Y %b %d"),
+    date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
     n = signif(n, digits = 3),
     pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
