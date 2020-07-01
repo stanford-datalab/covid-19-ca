@@ -155,7 +155,7 @@ unemployment %>%
     y = "Unemployment rate",
     color = NULL,
     caption = 
-      "Source: Bureau of Labor Statistics, Local Area Unemployment Statitics."
+      "Source: Bureau of Labor Statistics, Local Area Unemployment Statistics."
   )
 ```
 
