@@ -159,18 +159,6 @@ if (setequal(v$area, counties)) {
   )
 }
 
-# Restrict to months with data for all counties
-dates_complete <-
-  state_counties %>%
-  filter(area_type == "County") %>%
-  group_by(date) %>%
-  summarize(complete = setequal(area, counties)) %>%
-  filter(complete) %>%
-  pull(date)
-state_counties <-
-  state_counties %>%
-  filter(date %in% dates_complete)
-
 # Household Pulse metropolitan statistical areas for state
 msas <-
   yaml::read_yaml(file_msas) %>%
