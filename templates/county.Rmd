@@ -31,16 +31,19 @@ file_counties <- here::here("data/counties.csv")
 hps <- 
   read_csv(file_hps) %>% 
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4)
+
 # Unemployment data
 unemployment <- 
   read_csv(file_unemployment) %>% 
   filter(area_type == "State" | area == params$area)
+
 # State
 state <- 
   unemployment %>% 
   filter(area_type == "State") %>% 
   distinct(area) %>% 
   pull(area)
+
 # Food insufficiency estimates for county
 county <- 
   read_csv(file_counties) %>% 
@@ -100,12 +103,12 @@ v %>%
 v %>% 
   filter(area == params$area) %>% 
   select(date_end, n, pct) %>% 
+  arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
     n = signif(n, digits = 3),
     pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
-  arrange(desc(date_end)) %>% 
   rename(
     "Survey end date" = date_end, 
     "Estimated adults reporting food insufficiency" = n,
