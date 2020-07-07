@@ -923,3 +923,8 @@ ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
   )
 ```
 
+We modeled food insufficiency on the state unemployment rate to understand how the current situation relates to the past. The blue line shows our model. 
+
+The relationship between food insufficiency and unemployment that held between 2001 and 2018 appears to have changed during the pandemic. May 2020 experienced both high unemployment and high food insufficiency, but food insuffiency is much higher than past years would predict. 
+
+Food insufficiency data for December 2019 is not yet available, so the plot does not show 2019. 
