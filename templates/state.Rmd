@@ -17,7 +17,9 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
 library(leaflet)
 library(leaflet.extras)
+library(lubridate)
 library(reactable)
+library(rstanarm)
 library(sf)
 
 # Parameters
@@ -25,14 +27,17 @@ library(sf)
 file_data_params <- here::here("data/params.yml")
   # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
-  # CPS Food Security Supplement data
-file_cps_fss <- here::here("data/cps_fss.csv")
   # Population data
 file_population <- here::here("data/population.csv")
   # Unemployment data
 file_unemployment <- here::here("data/unemployment.csv")
   # Food insufficiency estimates for counties
 file_counties <- here::here("data/counties.csv")
+  # Unemployment and food insufficiency data from Food Security Supplement
+file_unemployment_fi_fss <- 
+  here::here("data/unemployment_food_insufficiency_fss.csv")
+  # First month for Pulse path
+FIRST_PULSE_MONTH <- ymd("2020-05-01")
   # Number of bins for maps  
 N_BINS <- 5
   # Map color palette
@@ -71,18 +76,6 @@ hps_puf_date_end <-
   pull(date_end) %>% 
   max()
 
-# Food insufficiency from most recent CPS Food Security Supplement
-cps_fss_food_insufficiency <- 
-  read_csv(file_cps_fss) %>% 
-  filter(
-    area == params$area,
-    year == min(2019, max(year)),
-    variable == "fsfoods",
-    str_detect(response, "(sometimes|often) not enough to eat")
-  ) %>% 
-  group_by(year) %>% 
-  summarize(pct = sum(pct))
-
 # Unemployment data
 unemployment <- read_csv(file_unemployment)
 
@@ -118,6 +111,69 @@ county_boundaries <-
     projection = "longlat"
   ) %>% 
   filter(STATEFP == data_params$state_fips)
+
+# State unemployment and food insufficiency data from Food Security Supplement
+unemployment_fi_fss <- 
+  file_unemployment_fi_fss %>% 
+  read_csv() %>% 
+  filter(area == params$area)
+
+# State food insufficiency from most recent Food Security Supplement
+fi_fss_last <- 
+  unemployment_fi_fss %>% 
+  transmute(
+    year = year(date),
+    pct = food_insufficiency_pct
+  ) %>% 
+  filter(year == min(2019, max(year)))
+
+# State unemployment for months of Household Pulse Survey
+unemployment_hps <- 
+  unemployment %>% 
+  filter(
+    area == "California",
+    date >= FIRST_PULSE_MONTH
+  ) %>% 
+  mutate(unemployment_rate = 100 * unemployment / labor_force) %>% 
+  select(-area_type, -status)
+
+# State food insufficiency for months of Household Pulse Survey
+fi_hps <- 
+  hps %>% 
+  filter(
+    variable == "curfoodsuf",
+    str_detect(response, "not enough to eat")
+  ) %>% 
+  group_by(area, fips, date_start, date_end) %>% 
+  summarize(across(c(n, pct), sum, .names = "food_insufficiency_{col}")) %>% 
+  ungroup()
+
+# Household Pulse Survey weeks that correspond to unemployment survey weeks
+unemployment_fi_dates <- 
+  tibble(
+    date = unemployment_hps$date,
+    date_end = 
+      make_date(year = year(date), month = month(date), day = 12L) %>% 
+      map(~ min(fi_hps$date_end[. <= fi_hps$date_end])) %>% 
+      reduce(c)
+  )
+
+# State unemployment and food insufficiency for months of Household Pulse Survey
+unemployment_fi_hps <- 
+  unemployment_fi_dates %>% 
+  left_join(unemployment_hps, by = "date") %>% 
+  left_join(fi_hps %>% select(-area, -fips), by = "date_end") %>% 
+  relocate(area, fips, date, date_start, date_end)
+
+# State unemployment and food insufficiency from Food Security Supplement and
+# for Household Pulse Survey
+unemployment_fi_all <- 
+  unemployment_fi_fss %>% 
+  select(date, unemployment_rate, food_insufficiency_pct) %>% 
+  bind_rows(
+    unemployment_fi_hps %>% 
+      select(date, unemployment_rate, food_insufficiency_pct)
+  )
 
 #===============================================================================
 
@@ -246,15 +302,15 @@ v <-
 
 v %>% 
   ggplot(aes(date_end, pct)) +
-  geom_hline(yintercept = cps_fss_food_insufficiency$pct, color = "blue") +
+  geom_hline(yintercept = fi_fss_last$pct, color = "blue") +
   geom_line() +
   geom_point() +
   annotate(
     geom = "text",
     x = min(v$date_end),
-    y = cps_fss_food_insufficiency$pct,
+    y = fi_fss_last$pct,
     label = 
-      str_glue("Food insufficiency in Dec {cps_fss_food_insufficiency$year}"),
+      str_glue("Food insufficiency in Dec {fi_fss_last$year}"),
     hjust = 0,
     vjust = 1.5
   ) +
@@ -793,3 +849,77 @@ v %>%
 
 
 Source: Bureau of Labor Statistics, Local Area Unemployment Statistics.
+
+## Unemployment and food insufficiency
+
+```{r}
+model <- 
+  stan_glm(
+    formula = food_insufficiency_pct ~ unemployment_rate, 
+    data = unemployment_fi_fss,
+    refresh = 0
+  )
+```
+
+```{r, message=FALSE}
+labels_fss <- 
+  unemployment_fi_fss %>% 
+  filter(
+    date == min(date) | 
+      unemployment == max(unemployment) |
+      food_insufficiency_n == max(food_insufficiency_n) |
+      date == max(date)
+  ) %>% 
+  mutate(
+    label = format(date, "%Y %b"), 
+    hjust = c(0.1, -0.1, -0.1, 0.1),
+    vjust = c(1.8, 0.5, 0.5, 1.8)
+  )
+
+labels_hps <- 
+  unemployment_fi_hps %>% 
+  filter(date == min(date) | date == max(date)) %>% 
+  mutate(label = format(date, "%Y %b"))
+
+ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
+  geom_path(aes(alpha = date), data = unemployment_fi_fss) +
+  geom_point(aes(alpha = date), data = unemployment_fi_fss) +
+  geom_text(
+    aes(label = label, hjust = hjust, vjust = vjust),
+    data = labels_fss
+  ) +
+  geom_path(data = unemployment_fi_hps) +
+  geom_point(data = unemployment_fi_hps) +
+  ggrepel::geom_text_repel(
+    aes(label = label),
+    data = labels_hps
+  ) +
+  geom_abline(
+    slope = coef(model)[["unemployment_rate"]],
+    intercept = coef(model)[["(Intercept)"]],
+    color = "blue"
+  ) +
+  expand_limits(y = 3) +
+  coord_fixed() +
+  scale_x_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  theme(legend.position = "none") +
+  labs(
+    title = "California unemployment and food insufficiency over time",
+    x = "Unemployment rate",
+    y = "Percentage of adults reporting food insufficiency",
+    caption = 
+      str_c(
+        "Sources: Census Bureau, Household Pulse Survey.\n",
+        "Current Population Survey, Food Security Supplement.\n",
+        "Bureau of Labor Statistics, Local Area Unemployment Statistics."
+      )
+  )
+```
+
