@@ -286,18 +286,17 @@ v %>%
     n = signif(n, digits = 3),
     pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
-  rename(
+  select(
     "Survey end date" = date_end, 
-    "Adults reporting food insufficiency" = n,
-    "Percentage of adults reporting food insufficiency" = pct
+    "Percentage of adults reporting food insufficiency" = pct,
+    "Adults reporting food insufficiency" = n
   ) %>% 
   reactable(
     showSortable = TRUE,
-    defaultColDef = colDef(align = "left"),
+    defaultColDef = 
+      colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list(
-        "Adults reporting food insufficiency" = 
-          colDef(format = colFormat(separators = TRUE)),
         "Percentage of adults reporting food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
@@ -323,7 +322,7 @@ v <-
     counties %>% 
       filter(date_end == max(date_end)) %>% 
       group_by(area, fips, date_end, variable) %>% 
-      summarize(food_insufficiency = sum(pct)) %>% 
+      summarize(across(c(n, pct), sum)) %>% 
       ungroup() %>% 
       left_join(population %>% select(fips, population_18p), by = "fips"),
     by = c("GEOID" = "fips")
@@ -331,10 +330,10 @@ v <-
 
 v %>% 
   choropleth(
-    var = food_insufficiency,
+    var = pct,
     population = population_18p,
     tooltip = 
-      "<strong>{area}</strong><br/>Food insufficiency: {format(food_insufficiency, trim = TRUE, nsmall = 1)}%",
+      "<strong>{area}</strong><br/>Food insufficiency: {format(pct, trim = TRUE, nsmall = 1)}%",
     legend_title = "Food insufficiency<br/>in adults"
   )
 ```
@@ -345,18 +344,20 @@ v %>%
 v %>% 
   st_drop_geometry() %>% 
   mutate(
-    food_insufficiency = 
-      format(round(food_insufficiency, digits = 1), nsmall = 1)
+    n = signif(n, digits = 3),
+    pct = format(round(pct, digits = 1), nsmall = 1)
   ) %>% 
   select(
     "County" = NAME,
     "Estimated percentage of adults reporting food insufficiency" = 
-      food_insufficiency
+      pct,
+    "Estimated number of adults reporting food insufficiency" = n
   ) %>% 
   arrange(County) %>% 
   reactable(
     showSortable = TRUE,
-    defaultColDef = colDef(align = "left"),
+    defaultColDef = 
+      colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list(
         "Estimated percentage of adults reporting food insufficiency" = 
@@ -731,11 +732,13 @@ v %>%
   ) %>% 
   select(
     Month = date,
-    "Unemployment rate" = unemployment_rate
+    "Unemployment rate" = unemployment_rate,
+    "Unemployment" = unemployment
   ) %>% 
   reactable(
     showSortable = TRUE,
-    defaultColDef = colDef(align = "left"),
+    defaultColDef = 
+      colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
   )
@@ -775,12 +778,14 @@ v %>%
   mutate(unemployment_rate = format(unemployment_rate, nsmall = 1)) %>% 
   select(
     "County" = NAME,
-    "Unemployment rate" = unemployment_rate
+    "Unemployment rate" = unemployment_rate,
+    "Unemployment" = unemployment
   ) %>% 
   arrange(County) %>% 
   reactable(
     showSortable = TRUE,
-    defaultColDef = colDef(align = "left"),
+    defaultColDef = 
+      colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
   )
