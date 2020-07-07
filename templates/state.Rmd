@@ -313,7 +313,7 @@ The HPS was not designed to measure food insufficiency in children, but other su
 
 ### Geography
 
-The map below is for the survey period that ended `r month_day(hps_date_end)`. Hover over counties for rates.
+The map below is for the survey period that ended `r month_day(hps_date_end)`. Hover over a county for its food insufficiency rate.
 
 ```{r}
 v <- 
@@ -369,9 +369,9 @@ v %>%
 Estimated from: Census Bureau, Household Pulse Survey.  
 Bureau of Labor Statistics, Local Area Unemployment Statistics.
 
-These food insufficiency estimates for `r data_params$state`'s counties are based upon a model. The model uses the food insufficiency rate for the entire state and the county unemployment rates to estimate food insufficiency for each county. 
+The Household Pulse Survey does not provide data at the county level, so these food insuffiency numbers are estimates from a model. Our model uses the food insuffiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
 
-County unemployment rates are updated every month, but state-level food insufficiency is updated every week. Each month's unemployment data also comes out later than the food insufficiency data. For months where unemployment data is not yet available, the model uses the latest month for which data is available.
+The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiencey data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. 
 
 ### Demographics
 
@@ -548,7 +548,7 @@ v %>%
   )
 ```
 
-In the above, _Hispanic_ refers to individuals of any race. _White_, _Black_, and _Asian_ refer to individuals of that single race. And _Other_ refers to individuals of two or more races, or races other the White, Black, or Asian.
+In the above, _Hispanic_ refers to individuals of any race. _White_, _Black_, and _Asian_ refer to individuals of that single race. _Other_ refers to individuals of two or more races, or races other the White, Black, or Asian.
 
 ### Reasons
 
@@ -683,7 +683,7 @@ v %>%
   )
 ```
 
-Since respondents can choose more than one source of free groceries or free meals, they sum to greater than 100%.
+Since respondents can choose more than one source of free groceries or free meals, the sources sum to greater than 100%.
 <br>
 <br>
 
