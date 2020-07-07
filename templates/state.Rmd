@@ -1,6 +1,6 @@
 ---
 params:
-  area: "California"
+  area: ""
 title: ""
 date: "`r Sys.Date()`"
 output:
