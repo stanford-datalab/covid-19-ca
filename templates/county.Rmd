@@ -132,7 +132,7 @@ v <-
 
 In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
 
-Because Household Pulse Survey does not provide data at the county level, these food insufficiency numbers are estimates from a model. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
+Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate the county-level food insufficiency numbers. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
 
 The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. We revise the county-level estimates for such months as new unemployment data becomes available. 
 

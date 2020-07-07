@@ -369,7 +369,7 @@ v %>%
 Estimated from: Census Bureau, Household Pulse Survey.  
 Bureau of Labor Statistics, Local Area Unemployment Statistics.
 
-Because Household Pulse Survey does not provide data at the county level, these food insufficiency numbers are estimates from a model. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
+Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate the county-level food insufficiency numbers. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
 
 The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. 
 
