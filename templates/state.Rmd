@@ -867,7 +867,7 @@ labels_fss <-
   filter(
     date == min(date) | 
       unemployment == max(unemployment) |
-      food_insufficiency_n == max(food_insufficiency_n) |
+      food_insufficiency_pct == max(food_insufficiency_pct) |
       date == max(date)
   ) %>% 
   mutate(
