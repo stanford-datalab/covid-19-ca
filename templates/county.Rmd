@@ -130,9 +130,11 @@ v <-
   filter(area == params$area, date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
 
-These food insufficiency estimates are based upon a model. The model uses the food insufficiency rate for the entire state and the county unemployment rates to estimate food insufficiency for each county. State-level food insufficiency data is released every week, and county-level unemployment data is release every month. For months where unemployment data is not yet available, the model uses the latest month for which data is available. We will revise the county-level food insufficiency estimates for such months in later reports as new unemployment data becomes available.
+Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate the county-level food insufficiency numbers. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
+
+The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. We revise the county-level estimates for such months as new unemployment data becomes available. 
 
 ## Unemployment
 
