@@ -18,6 +18,8 @@ library(tidyverse)
 library(reactable)
 
 # Parameters
+  # Parameters for state and data
+file_data_params <- here::here("data/params.yml")
   # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
   # Unemployment data
@@ -26,6 +28,9 @@ file_unemployment <- here::here("data/unemployment.csv")
 file_counties <- here::here("data/counties.csv")
 
 #===============================================================================
+
+# Parameters for state and data
+data_params <- yaml::read_yaml(file_data_params)
 
 # Household Pulse data for state
 hps <- 
