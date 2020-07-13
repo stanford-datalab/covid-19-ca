@@ -190,7 +190,10 @@ if (nrow(msas) == 0) {
     state_counties %>%
     filter(area_type == "County") %>%
     distinct(area) %>%
-    mutate(region = "Balance")
+    mutate(
+      region = "Balance",
+      fips = NA_character_
+    )
 } else {
   county_region <-
     state_counties %>%
