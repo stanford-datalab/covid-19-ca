@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-06-23
+# Version: 2020-07-13
 
 # Libraries
 library(tidyverse)
@@ -35,7 +35,17 @@ file_out <- here::here("data/state.csv")
 params <- yaml::read_yaml(file_params)
 
 # Household Pulse weeks
-weeks <- read_csv(file_weeks)
+weeks <-
+  file_weeks %>%
+  read_csv(
+    col_types =
+      cols(
+        year = col_double(),
+        week = col_double(),
+        date_start = col_date(format = ""),
+        date_end = col_date(format = "")
+      )
+  )
 
 # Household Pulse PUF variables
 vars <- read_lines(file_vars)
@@ -51,7 +61,19 @@ recodes <- read_csv(file_recodes, col_types = cols(.default = col_character()))
 
 # Population data for state
 population <-
-  read_csv(file_population) %>%
+  file_population %>%
+  read_csv(
+    col_types =
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        year = col_double(),
+        population = col_double(),
+        population_0_17 = col_double(),
+        population_18p = col_double()
+      )
+  ) %>%
   filter(area_type == "State")
 
 # Files with PUF raw data

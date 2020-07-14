@@ -1,7 +1,7 @@
 # Estimate food insecurity for counties.
 
 # Author: Sara Altman, Bill Behrman
-# Version: 2020-06-11
+# Version: 2020-07-13
 
 # Libraries
 library(tidyverse)
@@ -27,21 +27,73 @@ params <- yaml::read_yaml(file_params)
 
 # Population data for counties
 population <-
-  read_csv(file_population) %>%
+  file_population %>%
+  read_csv(
+    col_types =
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        year = col_double(),
+        population = col_double(),
+        population_0_17 = col_double(),
+        population_18p = col_double()
+      )
+  ) %>%
   filter(area_type == "County")
 
 # Household Pulse weeks
-weeks <- read_csv(file_weeks)
+weeks <-
+  file_weeks %>%
+  read_csv(
+    col_types =
+      cols(
+        year = col_double(),
+        week = col_double(),
+        date_start = col_date(format = ""),
+        date_end = col_date(format = "")
+      )
+  )
 
 # Household Pulse food insecurity data for state and regions
 state <-
-  read_csv(file_state) %>%
+  file_state %>%
+  read_csv(
+    col_types =
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        date_start = col_date(format = ""),
+        date_end = col_date(format = ""),
+        variable = col_character(),
+        code = col_double(),
+        response = col_character(),
+        n = col_double(),
+        n_error = col_double(),
+        pct = col_double()
+      )
+  ) %>%
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4) %>%
   select(-n_error, -pct)
 
 # Unemployment data for counties
 unemployment <-
-  read_csv(file_unemployment) %>%
+  file_unemployment %>%
+  read_csv(
+    col_types =
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        date = col_date(format = ""),
+        status = col_character(),
+        labor_force = col_double(),
+        employment = col_double(),
+        unemployment = col_double(),
+        unemployment_rate = col_double()
+      )
+  ) %>%
   filter(area_type == "County")
 
 # Counties in unemployment data
