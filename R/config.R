@@ -10,7 +10,7 @@ library(tidyverse)
 # Parameters
 file_params <- here::here("data/params.yml")
 file_counties <- here::here("data/counties.csv")
-file_msas <- here::here("data/msas.yml")
+# file_msas <- here::here("data/msas.yml")
 
 #===============================================================================
 
@@ -29,13 +29,13 @@ print_config <- function(dropdown, areas) {
 
 state <- yaml::read_yaml(file_params)$state
 
-msas <-
-  file_msas %>%
-  yaml::read_yaml() %>%
-  keep(~ .$state == state) %>%
-  map_chr("msa") %>%
-  sort() %>%
-  append("Balance")
+# msas <-
+#   file_msas %>%
+#   yaml::read_yaml() %>%
+#   keep(~ .$state == state) %>%
+#   map_chr("msa") %>%
+#   sort() %>%
+#   append("Balance")
 
 counties <-
   file_counties %>%
@@ -46,7 +46,7 @@ counties <-
   str_remove(" County")
 
 # Copy into config.toml
-print_config("Regions", msas)
+#print_config("Regions", msas)
 print_config("Counties", counties)
 
 
