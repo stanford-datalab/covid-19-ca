@@ -57,12 +57,40 @@ data_params <- yaml::read_yaml(file_data_params)
 
 # Population data for counties
 population <- 
-  read_csv(file_population) %>% 
+  file_population %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        year = col_double(),
+        population = col_double(),
+        population_0_17 = col_double(),
+        population_18p = col_double()
+      )
+  ) %>% 
   filter(area_type == "County")
 
 # Household Pulse data for state
 hps <- 
-  read_csv(file_hps) %>% 
+  file_hps %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        date_start = col_date(format = ""),
+        date_end = col_date(format = ""),
+        variable = col_character(),
+        code = col_double(),
+        response = col_character(),
+        n = col_double(),
+        n_error = col_double(),
+        pct = col_double()
+      )
+  ) %>% 
   filter(area_type == "State")
 
 # Last dates for Household Pulse data
@@ -77,7 +105,22 @@ hps_puf_date_end <-
   max()
 
 # Unemployment data
-unemployment <- read_csv(file_unemployment)
+unemployment <- 
+  file_unemployment %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        date = col_date(format = ""),
+        status = col_character(),
+        labor_force = col_double(),
+        employment = col_double(),
+        unemployment = col_double(),
+        unemployment_rate = col_double()
+      )
+  )
 
 # Last date with statewide unemployment data
 unemployment_state_date <- 
@@ -101,7 +144,22 @@ unemployment_county_date <-
   max()
 
 # Food insufficiency estimates for county
-counties <- read_csv(file_counties)
+counties <- 
+  file_counties %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area = col_character(),
+        fips = col_character(),
+        date_start = col_date(format = ""),
+        date_end = col_date(format = ""),
+        variable = col_character(),
+        code = col_double(),
+        response = col_character(),
+        n = col_double(),
+        pct = col_double()
+      )
+  )
 
 # County boundaries for map
 county_boundaries <-
@@ -115,7 +173,20 @@ county_boundaries <-
 # State unemployment and food insufficiency data from Food Security Supplement
 unemployment_fi_fss <- 
   file_unemployment_fi_fss %>% 
-  read_csv() %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area = col_character(),
+        fips = col_character(),
+        date = col_date(format = ""),
+        labor_force = col_double(),
+        employment = col_double(),
+        unemployment = col_double(),
+        unemployment_rate = col_double(),
+        food_insufficiency_n = col_double(),
+        food_insufficiency_pct = col_double()
+      )
+  ) %>% 
   filter(area == params$area)
 
 # State food insufficiency from most recent Food Security Supplement
@@ -131,7 +202,7 @@ fi_fss_last <-
 unemployment_hps <- 
   unemployment %>% 
   filter(
-    area == "California",
+    area == params$area,
     date >= FIRST_PULSE_MONTH
   ) %>% 
   mutate(unemployment_rate = 100 * unemployment / labor_force) %>% 
