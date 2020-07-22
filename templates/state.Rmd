@@ -882,7 +882,7 @@ v <-
   left_join(
     county_boundaries,
     unemployment %>% 
-      filter(area_type == "County", date == max(date)) %>% 
+      filter(area_type == "County", date == unemployment_county_date) %>% 
       left_join(population %>% select(fips, population_18p), by = "fips"),
     by = c("GEOID" = "fips")
   )
