@@ -1,177 +1,153 @@
 # Download population data from the U.S. Census Bureau.
 
 # Sources:
+# Household Pulse Survey (HPS)
+# https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 # Population Estimates Program (PEP) APIs:
 # https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html
-# American Community Survey 5-year (ACS) APIs:
-# https://www.census.gov/data/developers/data-sets/acs-5year.html
 
 # Author: Sara Altman, Bill Behrman
-# Version: 2020-07-14
+# Version: 2020-07-26
 
 # Libraries
 library(tidyverse)
-library(yaml)
 
 # Parameters
   # Parameters for state and data
 file_params <- here::here("data/params.yml")
-  # Request from PEP population for state
+  # PEP API base URL for age group populations
+api_pep_base <-
+  "https://api.census.gov/data/{params$year_pep}/pep/charagegroups"
+  # PEP age group populations for state
 api_pep_state <-
-  "https://api.census.gov/data/{params$year_pep}/pep/population?get=NAME,POP&for=state:{params$state_fips}"
-  # Request from PEP population for counties
+  str_c(api_pep_base, "?get=NAME,AGEGROUP,POP&for=state:{params$state_fips}")
+  # PEP age group populations for counties
 api_pep_counties <-
-  "https://api.census.gov/data/{params$year_pep}/pep/population?get=NAME,POP&for=county:*&in=state:{params$state_fips}"
-  # Request from ACS data for proportion of population 18 and older for state
-api_acs_state <-
-  "https://api.census.gov/data/{params$year_acs}/acs/acs5/subject?get=NAME,S0101_C01_001E,S0101_C01_026E&for=state:{params$state_fips}"
-  # Request from ACS data for proportion of population 18 and older for counties
-api_acs_counties <-
-  "https://api.census.gov/data/{params$year_acs}/acs/acs5/subject?get=NAME,S0101_C01_001E,S0101_C01_026E&for=county:*&in=state:{params$state_fips}"
-  # Household Pulse metropolitan statistical areas
-file_msas <- here::here("data/msas.yml")
+  str_c(
+    api_pep_base,
+    "?get=NAME,AGEGROUP,POP&for=county:*&in=state:{params$state_fips}"
+  )
+  # PEP age group recode
+recode_age_group <-
+  c(
+    "0" = "population",
+    "19" = "population_0_17",
+    "29" = "population_18p"
+  )
+  # URL for HPS PUF data
+url_hps <-
+  "https://www2.census.gov/programs-surveys/demo/datasets/hhp/2020/wk1/HPS_Week01_PUF_CSV.zip"
+  # Temporary directory
+dir_tmp <- str_glue("{tempdir()}/hps")
   # Output file
 file_out <- here::here("data/population.csv")
 
 #===============================================================================
 
-# Get parameters for state and data
-params <- read_yaml(file_params)
+# Create temporary directory
+fs::dir_create(dir_tmp)
 
-# Get population from U.S. Census Bureau through API
-get_population <- function(api_request) {
+# Get parameters for state and data
+params <- yaml::read_yaml(file_params)
+
+# Get PEP child and adult populations
+get_pep <- function(api_request, recode_age_group) {
   str_glue(api_request) %>%
     jsonlite::fromJSON() %>%
     as_tibble(.name_repair = "minimal") %>%
     janitor::row_to_names(row_number = 1) %>%
-    mutate(across(starts_with(c("POP", "S0101")), as.double))
-}
-
-# Get from PEP populations for state and counties
-population_pep <-
-  bind_rows(
-    get_population(api_pep_state) %>%
-      transmute(
-        area_type = "State",
-        area = NAME,
-        fips = state,
-        year = params$year_pep,
-        population = POP
-      ),
-    get_population(api_pep_counties) %>%
-      transmute(
-        area_type = "County",
-        area = NAME %>% str_remove(",.*"),
-        fips = str_c(state, county),
-        year = params$year_pep,
-        population = POP
-      ) %>%
-      arrange(fips)
-  )
-
-# Get from ACS proportion of population 18 and older for state and counties
-population_acs <-
-  bind_rows(
-    get_population(api_acs_state) %>%
-      transmute(
-        area = NAME,
-        fips = state,
-        prop_18p = S0101_C01_026E / S0101_C01_001E
-      ),
-    get_population(api_acs_counties) %>%
-      transmute(
-        area = NAME %>% str_remove(",.*"),
-        fips = str_c(state, county),
-        prop_18p = S0101_C01_026E / S0101_C01_001E
-      ) %>%
-      arrange(fips)
-  )
-
-# Combine PEP and ACS data for state and counties
-state_counties <-
-  population_pep %>%
-  left_join(population_acs %>% select(-area), by = "fips") %>%
-  mutate(
-    population_18p = round(prop_18p * population),
-    population_0_17 = population - population_18p
-  ) %>%
-  select(
-    area_type,
-    area,
-    fips,
-    year,
-    population,
-    population_0_17,
-    population_18p
-  )
-
-# Counties in population data
-counties <-
-  state_counties %>%
-  filter(area_type == "County") %>%
-  pull(area) %>%
-  unique() %>%
-  sort()
-
-# Household Pulse metropolitan statistical areas for state
-msas <-
-  yaml::read_yaml(file_msas) %>%
-  map_dfr(
-    ~ tibble(
-      state = .$state,
-      region = .$msa,
-      fips = .$fips,
-      area = .$counties
-    )
-  ) %>%
-  filter(state == params$state) %>%
-  select(-state)
-assertthat::assert_that(
-  all(msas$area %in% counties),
-  msg =
-    str_c(
-      c(
-        "These MSA counties do not match counties in population data:",
-        setdiff(msas$area, counties)
-      ),
-      collapse = "\n  "
-    )
-)
-
-# Partition state into regions
-if (nrow(msas) == 0) {
-  county_region <-
-    state_counties %>%
-    filter(area_type == "County") %>%
-    distinct(area) %>%
+    filter(AGEGROUP %in% names(recode_age_group)) %>%
     mutate(
-      region = "Balance",
-      fips = NA_character_
-    )
-} else {
-  county_region <-
-    state_counties %>%
-    filter(area_type == "County") %>%
-    distinct(area) %>%
-    left_join(msas, by = "area") %>%
-    replace_na(list(region = "Balance"))
+      AGEGROUP = recode(AGEGROUP, !!!recode_age_group),
+      POP = as.double(POP)
+    ) %>%
+    pivot_wider(names_from = AGEGROUP, values_from = POP)
 }
 
-# Calculate population data for MSAs and balance of state
-regions <-
-  state_counties %>%
-  filter(area_type == "County") %>%
-  select(-fips) %>%
-  left_join(county_region, by = "area") %>%
-  group_by(area = region, fips, year) %>%
-  summarize(
-    area_type = "Region",
-    across(starts_with("population"), sum)
-  ) %>%
+# Distribute x in proportion to y, round to whole numbers
+distribute <- function(x, y) {
+  assertthat::assert_that(length(x) == 1 && length(y) >= 1)
+  x <- round(x)
+  z <- round(x * y / sum(y))
+  i_max <- which.max(z)
+  z[i_max] <- x - sum(z[-i_max])
+  z
+}
+
+# Get PEP child and adult populations for state
+pep_state <-
+  get_pep(api_pep_state, recode_age_group) %>%
+  rename(area = NAME, fips = state) %>%
+  mutate(area_type = "State") %>%
   relocate(area_type)
 
-# Combine unemployment data for state, counties, and regions, and save
-state_counties %>%
-  bind_rows(regions) %>%
+# Get PEP child and adult populations counties
+pep_counties <-
+  get_pep(api_pep_counties, recode_age_group) %>%
+  mutate(
+    area_type = "County",
+    area = NAME %>% str_remove(",.*"),
+    fips = str_c(state, county)
+  ) %>%
+  select(area_type, area, fips, starts_with("population")) %>%
+  arrange(fips)
+
+# Download and unzip HPS PUF data
+dest <- str_c(dir_tmp, "/file.zip")
+result <- download.file(url = url_hps, destfile = dest, quiet = TRUE)
+assertthat::assert_that(
+  result == 0L,
+  msg = message("Download failed")
+)
+unzip(zipfile = dest, exdir = dir_tmp)
+
+# Read in HPS PUF data
+hps <-
+  fs::dir_ls(
+    path = dir_tmp,
+    regexp = str_glue("pulse{params$year_pulse}_puf_.*csv")
+  ) %>%
+  read_csv(
+    col_types =
+      cols_only(
+        WEEK = col_double(),
+        EST_ST = col_character(),
+        PWEIGHT = col_double()
+      )
+  ) %>%
+  rename_with(str_to_lower) %>%
+  filter(est_st == params$state_fips)
+stopifnot(
+  n_distinct(hps$week) == 1,
+  all(!is.na(hps$pweight)) && 0 < min(hps$pweight)
+)
+
+# Remove temporary directory
+fs::dir_delete(dir_tmp)
+
+# Calculate adult population for state used by HPS PUF
+population_18p_hps <- round(sum(hps$pweight))
+
+# Scale state populations using HPS PUF adult population
+state <-
+  pep_state %>%
+  mutate(
+    population = round(population * population_18p_hps / population_18p),
+    population_18p = population_18p_hps,
+    population_0_17 = population - population_18p
+  )
+
+# Adjust county populations to scaled state populations
+counties <-
+  pep_counties %>%
+  mutate(
+    population_0_17 = distribute(state$population_0_17, population_0_17),
+    population_18p = distribute(state$population_18p, population_18p),
+    population = population_0_17 + population_18p
+  )
+
+# Combine state and county populations and save
+state %>%
+  bind_rows(counties) %>%
   arrange(desc(area_type), fips) %>%
   write_csv(file_out)
