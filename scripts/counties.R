@@ -1,7 +1,7 @@
 # Estimate food insecurity for counties.
 
 # Author: Sara Altman, Bill Behrman
-# Version: 2020-07-13
+# Version: 2020-07-27
 
 # Libraries
 library(tidyverse)
@@ -34,7 +34,6 @@ population <-
         area_type = col_character(),
         area = col_character(),
         fips = col_character(),
-        year = col_double(),
         population = col_double(),
         population_0_17 = col_double(),
         population_18p = col_double()
@@ -186,7 +185,7 @@ unemployment %>%
     population %>% select(fips, population_18p),
     by = "fips"
   ) %>%
-  mutate(pct = (100 * n / population_18p) %>% round(digits = 1)) %>%
+  mutate(pct = (100 * n / population_18p)) %>%
   select(-population_18p) %>%
   arrange(desc(date_end), fips, variable, code) %>%
   write_csv(file_out)
