@@ -25,10 +25,12 @@ library(sf)
 # Parameters
   # Parameters for state and data
 file_data_params <- here::here("data/params.yml")
-  # Household Pulse data for state
-file_hps <- here::here("data/state.csv")
+  # Model parameters
+file_params_model <- here::here("data/params_model.yml")
   # Population data
 file_population <- here::here("data/population.csv")
+  # Household Pulse data for state
+file_hps <- here::here("data/state.csv")
   # Unemployment data
 file_unemployment <- here::here("data/unemployment.csv")
   # Food insufficiency estimates for counties
@@ -55,7 +57,10 @@ AGE_LABELS <-
 # Parameters for state and data
 data_params <- yaml::read_yaml(file_data_params)
 
-# Population data for counties
+# Parameters for model of child food insufficiency
+child_model <- yaml::read_yaml(file_params_model)$child_model
+
+# Population data for state and counties
 population <- 
   file_population %>% 
   read_csv(
@@ -64,12 +69,21 @@ population <-
         area_type = col_character(),
         area = col_character(),
         fips = col_character(),
-        year = col_double(),
         population = col_double(),
         population_0_17 = col_double(),
         population_18p = col_double()
       )
-  ) %>% 
+  )
+
+# Population of children in state
+population_0_17 <- 
+  population %>% 
+  filter(area_type == "State") %>% 
+  pull(population_0_17)
+
+# Population data for counties
+population <- 
+  population %>% 
   filter(area_type == "County")
 
 # Household Pulse data for state
@@ -367,12 +381,16 @@ v <-
   hps %>% 
   group_by(date_end) %>% 
   summarize(
-    n = sum(n[variable == "curfoodsuf" & code %in% 3:4]),
-    pct = sum(pct[variable == "curfoodsuf" & code %in% 3:4])
+    adult_pct = sum(pct[variable == "curfoodsuf" & code %in% 3:4]),
+    adult_n = sum(n[variable == "curfoodsuf" & code %in% 3:4])
+  ) %>% 
+  mutate(
+    child_pct = child_model$intercept + child_model$slope * adult_pct,
+    child_n = (child_pct / 100) * population_0_17
   )
 
 v %>% 
-  ggplot(aes(date_end, pct)) +
+  ggplot(aes(date_end, adult_pct)) +
   geom_hline(yintercept = fi_fss_last$pct, color = "blue") +
   geom_line() +
   geom_point() +
@@ -410,13 +428,13 @@ v %>%
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    n = signif(n, digits = 3),
-    pct = format(round(pct, digits = 1), nsmall = 1)
+    adult_n = signif(adult_n, digits = 3),
+    adult_pct = format(round(adult_pct, digits = 1), nsmall = 1)
   ) %>% 
   select(
     "Survey end date" = date_end, 
-    "Percentage of adults reporting food insufficiency" = pct,
-    "Adults reporting food insufficiency" = n
+    "Percentage of adults reporting food insufficiency" = adult_pct,
+    "Adults reporting food insufficiency" = adult_n
   ) %>% 
   reactable(
     showSortable = TRUE,
@@ -434,9 +452,9 @@ v <-
   filter(date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
+In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$adult_n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
-The HPS was not designed to measure food insufficiency in children, but other surveys typically find food insufficiency rates among children to be substantially higher than among adults.
+Using a model based upon data from the Current Population Survey Food Security Supplement, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(v$child_n, digits = 3), big.mark = ",")` children, experienced food insufficiency.
 
 ### Geography
 

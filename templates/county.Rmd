@@ -20,6 +20,10 @@ library(reactable)
 # Parameters
   # Parameters for state and data
 file_data_params <- here::here("data/params.yml")
+  # Model parameters
+file_params_model <- here::here("data/params_model.yml")
+  # Population data
+file_population <- here::here("data/population.csv")
   # Household Pulse data for state
 file_hps <- here::here("data/state.csv")
   # Unemployment data
@@ -31,6 +35,26 @@ file_counties <- here::here("data/counties.csv")
 
 # Parameters for state and data
 data_params <- yaml::read_yaml(file_data_params)
+
+# Parameters for model of child food insufficiency
+child_model <- yaml::read_yaml(file_params_model)$child_model
+
+# Population of children in county
+population_0_17 <-  
+  file_population %>% 
+  read_csv(
+    col_types = 
+      cols(
+        area_type = col_character(),
+        area = col_character(),
+        fips = col_character(),
+        population = col_double(),
+        population_0_17 = col_double(),
+        population_18p = col_double()
+      )
+  ) %>% 
+  filter(area == params$area) %>% 
+  pull(population_0_17)
 
 # Household Pulse data for state
 hps <- 
@@ -63,22 +87,26 @@ v <-
     county %>% 
       group_by(area, date_end, variable) %>% 
       summarize(
-        n = sum(n),
-        pct = sum(pct)
+        adult_pct = sum(pct),
+        adult_n = sum(n)
       ) %>% 
-      ungroup(),
+      ungroup() %>% 
+      mutate(
+        child_pct = child_model$intercept + child_model$slope * adult_pct,
+        child_n = (child_pct / 100) * population_0_17
+      ),
     hps %>% 
       group_by(area, date_end, variable) %>% 
       summarize(
-        n = sum(n),
-        pct = sum(pct)
+        adult_pct = sum(pct),
+        adult_n = sum(n)
       ) %>% 
       ungroup()
   ) %>% 
   mutate(area = factor(area, levels = c(params$area, state)))
 
 v %>% 
-  ggplot(aes(date_end, pct, color = area)) +
+  ggplot(aes(date_end, adult_pct, color = area)) +
   geom_line() +
   geom_point() +
   scale_x_date(
@@ -107,17 +135,17 @@ v %>%
 ```{r}
 v %>% 
   filter(area == params$area) %>% 
-  select(date_end, n, pct) %>% 
+  select(date_end, adult_n, adult_pct) %>% 
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    n = signif(n, digits = 3),
-    pct = format(round(pct, digits = 1), nsmall = 1)
+    adult_n = signif(adult_n, digits = 3),
+    adult_pct = format(round(adult_pct, digits = 1), nsmall = 1)
   ) %>% 
   select(
     "Survey end date" = date_end, 
-    "Estimated percentage of adults reporting food insufficiency" = pct,
-    "Estimated number of adults reporting food insufficiency" = n
+    "Estimated percentage of adults reporting food insufficiency" = adult_pct,
+    "Estimated number of adults reporting food insufficiency" = adult_n
   ) %>% 
   reactable(
     showSortable = TRUE,
@@ -135,11 +163,11 @@ v <-
   filter(area == params$area, date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$n, digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$adult_n, digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
 
-Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate the county-level food insufficiency numbers. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county.
+Using a model based upon data from the Current Population Survey Food Security Supplement, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(v$child_n, digits = 3), big.mark = ",")` children, experienced food insufficiency.
 
-The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. We revise the county-level estimates for such months as new unemployment data becomes available. 
+Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate county-level food insufficiency. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county. The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. We revise the county-level estimates for such months as new unemployment data becomes available. 
 
 ## Unemployment
 
