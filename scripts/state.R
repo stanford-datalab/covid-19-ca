@@ -68,7 +68,6 @@ population <-
         area_type = col_character(),
         area = col_character(),
         fips = col_character(),
-        year = col_double(),
         population = col_double(),
         population_0_17 = col_double(),
         population_18p = col_double()
