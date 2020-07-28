@@ -139,11 +139,8 @@ v %>%
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    across(.cols = ends_with("_n"), signif, digits = 3),
-    across(
-      .cols = ends_with("_pct"), 
-      ~ format(round(., digits = 1), nsmall = 1)
-    )
+    across(ends_with("_pct"), ~ format(round(., digits = 1), nsmall = 1)),
+    across(ends_with("_n"), ~ signif(round(.), digits = 3))
   ) %>% 
   select(
     "Survey end date" = date_end, 
@@ -163,9 +160,13 @@ v %>%
     columns = 
       list(
         "Estimated percentage of adults experiencing food insufficiency" = 
-          colDef(format = colFormat(suffix = "%")),
-    "Estimated percentage of children experiencing food insufficiency" = 
-      colDef(format = colFormat(suffix = "%"))
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Estimated number of adults experiencing food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE)),
+        "Estimated percentage of children experiencing food insufficiency" = 
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Estimated number of children experiencing food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE))
       )
   )
 
@@ -174,9 +175,9 @@ v <-
   filter(area == params$area, date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$adult_n, digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
+In the most recent survey period that ended `r format(v$date_end, "%B %e")`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(round(v$adult_n), digits = 3), big.mark = ",")` adults, lived in households experiencing food insufficiency.
 
-Using a model based upon data from the Current Population Survey Food Security Supplement, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(v$child_n, digits = 3), big.mark = ",")` children, experienced food insufficiency.
+Using a model based upon data from the Food Security Supplement of the Current Population Survey, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(round(v$child_n), digits = 3), big.mark = ",")` children, experienced food insufficiency.
 
 Because the Household Pulse Survey does not provide data at the county level, we use a model to estimate county-level food insufficiency. The model uses the food insufficiency rate of `r data_params$state` and the county unemployment rates to estimate food insufficiency for each county. The state-level food insufficiency data is updated more frequently than the county unemployment rates, and each month's unemployment data comes out later than the food insufficiency data. If unemployment data is not yet available for a month, the model uses the latest month for which data is available. We revise the county-level estimates for such months as new unemployment data becomes available. 
 
@@ -229,7 +230,10 @@ unemployment %>%
     defaultColDef = 
       colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
-      list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
+      list(
+        "Unemployment rate" = 
+          colDef(format = colFormat(suffix = "%", digits = 1))
+      )
   )
 ```
 

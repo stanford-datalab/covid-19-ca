@@ -342,7 +342,7 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
       pal = fill_color,
       values = values,
       opacity = 1,
-      labFormat = labelFormat(suffix = "%"),
+      labFormat = labelFormat(suffix = "%", digits = 1),
       title = legend_title
     )
 }
@@ -428,11 +428,8 @@ v %>%
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    across(.cols = ends_with("_n"), signif, digits = 3),
-    across(
-      .cols = ends_with("_pct"), 
-      ~ format(round(., digits = 1), nsmall = 1)
-    )
+    across(ends_with("_pct"), ~ format(round(., digits = 1), nsmall = 1)),
+    across(ends_with("_n"), ~ signif(round(.), digits = 3))
   ) %>% 
   select(
     "Survey end date" = date_end, 
@@ -448,9 +445,13 @@ v %>%
     columns = 
       list(
         "Percentage of adults reporting food insufficiency" = 
-          colDef(format = colFormat(suffix = "%")),
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Number of adults reporting food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE)),
         "Estimated percentage of children experiencing food insufficiency" = 
-          colDef(format = colFormat(suffix = "%"))
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Estimated number of children experiencing food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE))
       )
   )
 
@@ -459,9 +460,9 @@ v <-
   filter(date_end == max(date_end))
 ```
 
-In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(v$adult_n, digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
+In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(round(v$adult_n), digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
-Using a model based upon data from the Current Population Survey Food Security Supplement, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(v$child_n, digits = 3), big.mark = ",")` children, experienced food insufficiency.
+Using a model based upon data from the Food Security Supplement of the Current Population Survey, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(round(v$child_n), digits = 3), big.mark = ",")` children, experienced food insufficiency.
 
 ### Geography
 
@@ -479,7 +480,11 @@ v <-
         adult_n = sum(n)
       ) %>% 
       ungroup() %>% 
-      left_join(population %>% select(fips, population_18p), by = "fips"),
+      left_join(
+        population %>% 
+          select(fips, population_0_17, population_18p),
+        by = "fips"
+      ),
     by = c("GEOID" = "fips")
   ) %>% 
   mutate(
@@ -492,7 +497,7 @@ v %>%
     var = adult_pct,
     population = population_18p,
     tooltip = 
-      "<strong>{area}</strong><br/>Food insufficiency: {format(adult_pct, trim = TRUE, nsmall = 1)}%",
+      "<strong>{area}</strong><br/>Food insufficiency: {format(round(adult_pct, digits = 1), trim = TRUE)}%",
     legend_title = "Food insufficiency<br/>in adults"
   )
 ```
@@ -503,11 +508,8 @@ v %>%
 v %>% 
   st_drop_geometry() %>% 
   mutate(
-    across(.cols = ends_with("_n"), signif, digits = 3),
-    across(
-      .cols = ends_with("_pct"), 
-      ~ format(round(., digits = 1), nsmall = 1)
-    )
+    across(ends_with("_pct"), ~ format(round(., digits = 1), nsmall = 1)),
+    across(ends_with("_n"), ~ signif(round(.), digits = 3))
   ) %>% 
   select(
     "County" = NAME, 
@@ -527,8 +529,14 @@ v %>%
       colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list(
-        "Estimated percentage of adults reporting food insufficiency" = 
-          colDef(format = colFormat(suffix = "%"))
+        "Estimated percentage of adults experiencing food insufficiency" = 
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Estimated number of adults experiencing food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE)),
+        "Estimated percentage of children experiencing food insufficiency" = 
+          colDef(format = colFormat(suffix = "%", digits = 1)),
+        "Estimated number of children experiencing food insufficiency" =
+          colDef(format = colFormat(digits = 0, separators = TRUE))
       )
   )
 ```
@@ -907,7 +915,10 @@ v %>%
     defaultColDef = 
       colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
-      list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
+      list(
+        "Unemployment rate" = 
+          colDef(format = colFormat(suffix = "%", digits = 1))
+      )
   )
 ```
 
@@ -954,7 +965,10 @@ v %>%
     defaultColDef = 
       colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
-      list("Unemployment rate" = colDef(format = colFormat(suffix = "%")))
+      list(
+        "Unemployment rate" = 
+          colDef(format = colFormat(suffix = "%", digits = 1))
+      )
   )
 ```
 
