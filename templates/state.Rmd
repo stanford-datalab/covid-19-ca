@@ -428,13 +428,18 @@ v %>%
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    adult_n = signif(adult_n, digits = 3),
-    adult_pct = format(round(adult_pct, digits = 1), nsmall = 1)
+    across(.cols = ends_with("_n"), signif, digits = 3),
+    across(
+      .cols = ends_with("_pct"), 
+      ~ format(round(., digits = 1), nsmall = 1)
+    )
   ) %>% 
   select(
     "Survey end date" = date_end, 
     "Percentage of adults reporting food insufficiency" = adult_pct,
-    "Adults reporting food insufficiency" = adult_n
+    "Number of adults reporting food insufficiency" = adult_n,
+    "Estimated percentage of children experiencing food insufficiency" = child_pct,
+    "Estimated number of children experiencing food insufficiency" = child_n
   ) %>% 
   reactable(
     showSortable = TRUE,
@@ -443,6 +448,8 @@ v %>%
     columns = 
       list(
         "Percentage of adults reporting food insufficiency" = 
+          colDef(format = colFormat(suffix = "%")),
+        "Estimated percentage of children experiencing food insufficiency" = 
           colDef(format = colFormat(suffix = "%"))
       )
   )
@@ -467,18 +474,25 @@ v <-
     counties %>% 
       filter(date_end == max(date_end)) %>% 
       group_by(area, fips, date_end, variable) %>% 
-      summarize(across(c(n, pct), sum)) %>% 
+      summarize(
+        adult_pct = sum(pct),
+        adult_n = sum(n)
+      ) %>% 
       ungroup() %>% 
       left_join(population %>% select(fips, population_18p), by = "fips"),
     by = c("GEOID" = "fips")
+  ) %>% 
+  mutate(
+    child_pct = child_model$intercept + child_model$slope * adult_pct,
+    child_n = (child_pct / 100) * population_0_17
   )
 
 v %>% 
   choropleth(
-    var = pct,
+    var = adult_pct,
     population = population_18p,
     tooltip = 
-      "<strong>{area}</strong><br/>Food insufficiency: {format(pct, trim = TRUE, nsmall = 1)}%",
+      "<strong>{area}</strong><br/>Food insufficiency: {format(adult_pct, trim = TRUE, nsmall = 1)}%",
     legend_title = "Food insufficiency<br/>in adults"
   )
 ```
@@ -489,14 +503,22 @@ v %>%
 v %>% 
   st_drop_geometry() %>% 
   mutate(
-    n = signif(n, digits = 3),
-    pct = format(round(pct, digits = 1), nsmall = 1)
+    across(.cols = ends_with("_n"), signif, digits = 3),
+    across(
+      .cols = ends_with("_pct"), 
+      ~ format(round(., digits = 1), nsmall = 1)
+    )
   ) %>% 
   select(
-    "County" = NAME,
-    "Estimated percentage of adults reporting food insufficiency" = 
-      pct,
-    "Estimated number of adults reporting food insufficiency" = n
+    "County" = NAME, 
+    "Estimated percentage of adults experiencing food insufficiency" = 
+      adult_pct,
+    "Estimated number of adults experiencing food insufficiency" = 
+      adult_n,
+    "Estimated percentage of children experiencing food insufficiency" = 
+      child_pct,
+    "Estimated number of children experiencing food insufficiency" = 
+      child_n
   ) %>% 
   arrange(County) %>% 
   reactable(
@@ -1014,6 +1036,6 @@ ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
 
 We modeled food insufficiency on the state unemployment rate to understand how the current situation relates to the past. The blue line shows our model. 
 
-The relationship between food insufficiency and unemployment that held between 2001 and 2018 appears to have changed during the pandemic. May 2020 experienced both high unemployment and high food insufficiency, but food insuffiency is much higher than past years would predict. 
+The relationship between food insufficiency and unemployment that held between 2001 and 2018 appears to have changed during the pandemic. May 2020 experienced both high unemployment and high food insufficiency, but food insufficiency is much higher than past years would predict. 
 
 Food insufficiency data for December 2019 is not yet available, so the plot does not show 2019. 

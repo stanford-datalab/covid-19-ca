@@ -135,17 +135,26 @@ v %>%
 ```{r}
 v %>% 
   filter(area == params$area) %>% 
-  select(date_end, adult_n, adult_pct) %>% 
+  select(date_end, ends_with("_n"), ends_with("_pct")) %>% 
   arrange(desc(date_end)) %>% 
   mutate(
     date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
-    adult_n = signif(adult_n, digits = 3),
-    adult_pct = format(round(adult_pct, digits = 1), nsmall = 1)
+    across(.cols = ends_with("_n"), signif, digits = 3),
+    across(
+      .cols = ends_with("_pct"), 
+      ~ format(round(., digits = 1), nsmall = 1)
+    )
   ) %>% 
   select(
     "Survey end date" = date_end, 
-    "Estimated percentage of adults reporting food insufficiency" = adult_pct,
-    "Estimated number of adults reporting food insufficiency" = adult_n
+    "Estimated percentage of adults experiencing food insufficiency" = 
+      adult_pct,
+    "Estimated number of adults experiencing food insufficiency" = 
+      adult_n,
+    "Estimated percentage of children experiencing food insufficiency" = 
+      child_pct,
+    "Estimated number of children experiencing food insufficiency" = 
+      child_n
   ) %>% 
   reactable(
     showSortable = TRUE,
@@ -153,8 +162,10 @@ v %>%
       colDef(align = "left", format = colFormat(separators = TRUE)),
     columns = 
       list(
-        "Estimated percentage of adults reporting food insufficiency" = 
-          colDef(format = colFormat(suffix = "%"))
+        "Estimated percentage of adults experiencing food insufficiency" = 
+          colDef(format = colFormat(suffix = "%")),
+    "Estimated percentage of children experiencing food insufficiency" = 
+      colDef(format = colFormat(suffix = "%"))
       )
   )
 
