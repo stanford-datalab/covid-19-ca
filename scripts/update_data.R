@@ -1,7 +1,7 @@
 # Update data
 
 # Author: Bill Behrman
-# Version: 2020-06-24
+# Version: 2020-07-29
 
 # Parameters
   # Script to update unemployment data
@@ -16,6 +16,8 @@ script_state <- here::here("scripts/state.R")
 script_counties <- here::here("scripts/counties.R")
 
 #===============================================================================
+
+Sys.time()
 
 cli::cat_line(cli::rule("Updating unemployment data"))
 source(script_unemployment)
@@ -36,3 +38,5 @@ cli::cat_line(cli::rule("Pushing new data to GitHub"))
 system("git add -f data data-raw/pulse/metadata/weeks.csv")
 system("git commit -m 'Update data'")
 system("git push")
+
+Sys.time()
