@@ -1,6 +1,6 @@
 # Calculate model parameters
 
-# Author: Name
+# Author: Bill Behrman
 # Version: 2020-07-25
 
 # Libraries
