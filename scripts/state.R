@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-07-13
+# Version: 2020-07-30
 
 # Libraries
 library(tidyverse)
@@ -115,9 +115,11 @@ process <- function(file) {
     as.integer()
 
   # Read in raw data
+  data <- read_rds(file)
+  vars_data <- names(data)
   data <-
-    read_rds(file) %>%
-    select(all_of(vars))
+    data %>%
+    select(all_of(intersect(vars_data, vars)))
   assertthat::assert_that(
     n_distinct(data$week) == 1,
     msg = message("Data does not contain one week")
@@ -158,7 +160,7 @@ process <- function(file) {
   state <-
     data %>%
     pivot_longer(
-      cols = all_of(vars_all),
+      cols = all_of(intersect(vars_data, vars_all)),
       names_to = "variable",
       values_to = "code"
     ) %>%
@@ -201,7 +203,7 @@ process <- function(file) {
     data %>%
     filter(curfoodsuf %in% 3:4) %>%
     pivot_longer(
-      cols = all_of(vars_curfoodsuf_34),
+      cols = all_of(intersect(vars_data, vars_curfoodsuf_34)),
       names_to = "variable",
       values_to = "code"
     ) %>%
