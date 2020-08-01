@@ -111,12 +111,12 @@ hps <-
 hps_date_start <- max(hps$date_start)
 hps_date_end <- max(hps$date_end)
 
-# Last date for Household Pulse PUF data
-hps_puf_date_end <- 
+# Last dates for Household Pulse PUF data
+v <- 
   hps %>% 
-  drop_na(n_error) %>% 
-  pull(date_end) %>% 
-  max()
+  drop_na(n_error)
+hps_puf_date_start <- max(v$date_start)
+hps_puf_date_end <- max(hps$date_end)
 
 # Unemployment data
 unemployment <- 
@@ -352,12 +352,12 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
 
 The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
 
-* Household Pulse Survey: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
+* Household Pulse Survey: 
+  * Summary data: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
+  * Complete data: `r month_day(hps_puf_date_start)` - `r month_day(hps_puf_date_end)`
 * Local Area Unemployment Statistics:
   * Statewide data: `r month(unemployment_state_date)`
   * County-level data: `r month(unemployment_county_date)`
-
-The HPS releases data in two stages. For this reason, some time series below run through `r month_day(hps_puf_date_end)`, while others run through `r month_day(hps_date_end)`.
 
 This report updates upon the release of new data. Sign up with [this form](https://forms.gle/MssCSstca6egwMDF6) to be notified of updates. All data used in this report can be found and downloaded [here](https://github.com/stanford-datalab/covid-19-ca/tree/master/data). All code used to download and process the raw data and to generate this site can be found [here](https://github.com/stanford-datalab/covid-19-ca).
 
