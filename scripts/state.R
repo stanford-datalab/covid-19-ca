@@ -41,7 +41,9 @@ weeks <-
         year = col_double(),
         week = col_double(),
         date_start = col_date(format = ""),
-        date_end = col_date(format = "")
+        date_end = col_date(format = ""),
+        release_table = col_date(format = ""),
+        release_puf = col_date(format = "")
       )
   )
 
