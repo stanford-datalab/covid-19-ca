@@ -1036,7 +1036,8 @@ ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
   ) +
   theme(legend.position = "none") +
   labs(
-    title = "California unemployment and food insufficiency over time",
+    title = 
+      str_glue("{params$area} unemployment and food insufficiency over time"),
     x = "Unemployment rate",
     y = "Percentage of adults reporting food insufficiency",
     caption = 
