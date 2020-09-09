@@ -1,4 +1,29 @@
 area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
+State,California,06,2020-08-19,2020-08-31,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14898364,NA,49.76236196901696
+State,California,06,2020-08-19,2020-08-31,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7637247,NA,25.509341137106656
+State,California,06,2020-08-19,2020-08-31,curfoodsuf,3,Sometimes not enough to eat,2159785,NA,7.213946641742226
+State,California,06,2020-08-19,2020-08-31,curfoodsuf,4,Often not enough to eat,729873,NA,2.4378652862429937
+State,California,06,2020-08-19,2020-08-31,curfoodsuf,NA,Did not report,4513751,NA,15.076481625768592
+State,California,06,2020-08-19,2020-08-31,freefood,1,Yes,2653015,NA,8.861395300801586
+State,California,06,2020-08-19,2020-08-31,freefood,2,No,22789556,NA,76.11991053414873
+State,California,06,2020-08-19,2020-08-31,freefood,NA,Did not report,4496451,NA,15.018697505172263
+State,California,06,2020-08-19,2020-08-31,mortconf,1,No confidence,1438948,NA,NA
+State,California,06,2020-08-19,2020-08-31,mortconf,2,Slight confidence,2628808,NA,NA
+State,California,06,2020-08-19,2020-08-31,mortconf,3,Moderate confidence,3837526,NA,NA
+State,California,06,2020-08-19,2020-08-31,mortconf,4,High confidence,10264227,NA,NA
+State,California,06,2020-08-19,2020-08-31,mortconf,5,Payment is/will be deferred,261722,NA,NA
+State,California,06,2020-08-19,2020-08-31,mortconf,NA,Did not report,11507792,NA,38.43743588008439
+State,California,06,2020-08-19,2020-08-31,total,NA,Total,29939021,NA,100
+State,California,06,2020-08-19,2020-08-31,wherefree1,1,Free meals through the school or other programs aimed at children,1378134,NA,51.945955827614995
+State,California,06,2020-08-19,2020-08-31,wherefree2,1,Food pantry or food bank,989588,NA,37.30050527418805
+State,California,06,2020-08-19,2020-08-31,wherefree3,1,Home-delivered meal service like Meals on Wheels,156676,NA,5.905582893425028
+State,California,06,2020-08-19,2020-08-31,wherefree4,1,"Church, synagogue, temple, mosque or other religious organization",623298,NA,23.493949336886523
+State,California,06,2020-08-19,2020-08-31,wherefree5,1,Shelter or soup kitchen,119304,NA,4.496921427131019
+State,California,06,2020-08-19,2020-08-31,wherefree6,1,Other community program,636849,NA,24.004726697738235
+State,California,06,2020-08-19,2020-08-31,wherefree7,1,"Family, friends, or neighbors",793013,NA,29.89101079338036
+State,California,06,2020-08-19,2020-08-31,wrkloss,1,Yes,15936466,NA,53.229749897299584
+State,California,06,2020-08-19,2020-08-31,wrkloss,2,No,13838765,NA,46.223171425678885
+State,California,06,2020-08-19,2020-08-31,wrkloss,NA,Did not report,163790,NA,0.5470786770215366
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15278253,417404,52.98120266385538
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9431458,416483,32.705962575915706
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,3,Sometimes not enough to eat,3546345,332186,12.297847855637372
