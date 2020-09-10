@@ -119,7 +119,10 @@ v %>%
     labels = scales::label_percent(accuracy = 1, scale = 1),
     limits = c(0, NA)
   ) +
-  theme(legend.position = "bottom") +
+  theme(
+    axis.text.x = element_text(angle = -45, hjust = 0),
+    legend.position = "bottom"
+  ) +
   labs(
     title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",

@@ -6,7 +6,7 @@ baseURL = "https://stanford-datalab.github.io/covid-19-ca"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 languageCode = "en-us"
-title = "California Weekly Pulse"
+title = "California Pulse"
 toc = false
 
 [permalinks]

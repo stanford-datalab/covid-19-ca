@@ -116,7 +116,7 @@ v <-
   hps %>% 
   drop_na(n_error)
 hps_puf_date_start <- max(v$date_start)
-hps_puf_date_end <- max(hps$date_end)
+hps_puf_date_end <- max(v$date_end)
 
 # Unemployment data
 unemployment <- 
@@ -350,7 +350,7 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
 
 ## Overview
 
-The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is released once a week, and new LAUS data is released once a month. The most recent data used for this report are:
+The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is currently released every two weeks, and new LAUS data is released once a month. The most recent data used for this report are:
 
 * Household Pulse Survey: 
   * Summary data: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
@@ -413,6 +413,7 @@ v %>%
     labels = scales::label_percent(accuracy = 1, scale = 1),
     limits = c(0, NA)
   ) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
   labs(
     title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",
@@ -747,7 +748,10 @@ v %>%
     limits = c(0, NA)
   ) +
   guides(color = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom") +
+  theme(
+    axis.text.x = element_text(angle = -45, hjust = 0),
+    legend.position = "bottom"
+  ) +
   labs(
     title = "Reasons for food insufficiency in adults",
     x = "Survey end date",
@@ -783,7 +787,10 @@ v %>%
     limits = c(0, NA)
   ) +
   scale_color_discrete(direction = -1) +
-  theme(legend.position = "bottom") +
+  theme(
+    axis.text.x = element_text(angle = -45, hjust = 0),
+    legend.position = "bottom"
+  ) +
   labs(
     title = "Type of food insufficiency in adults",
     x = "Survey end date",
@@ -814,6 +821,7 @@ v %>%
     labels = scales::label_percent(accuracy = 1, scale = 1),
     limits = c(0, NA)
   ) +
+  theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
   labs(
     title = 
       "During the last 7 days, did you or anyone in\nyour household get free groceries or a free meal?",
@@ -847,7 +855,10 @@ v %>%
     limits = c(0, NA)
   ) +
   guides(color = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom") +
+  theme(
+    axis.text.x = element_text(angle = -45, hjust = 0),
+    legend.position = "bottom"
+  ) +
   labs(
     title = "Where did you get free groceries or free meals?",
     x = "Survey end date",

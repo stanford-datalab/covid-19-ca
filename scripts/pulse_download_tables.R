@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2020-06-10
+# Version: 2020-09-09
 
 # Libraries
 library(tidyverse)
@@ -109,7 +109,7 @@ read_sheet <- function(week, sheet) {
       path = str_glue("{dir_tmp}/{week}/food2b.xlsx"),
       col_types = "text",
       sheet = sheet,
-      skip = 4
+      skip = if_else(parse_number(week) <= 12, 4, 5)
     ) %>%
     rename(
       response = "...1",
