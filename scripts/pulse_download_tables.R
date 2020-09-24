@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2020-09-09
+# Version: 2020-09-23
 
 # Libraries
 library(tidyverse)
@@ -121,7 +121,7 @@ read_sheet <- function(week, sheet) {
       `NA` = "Did not report"
     ) %>%
     filter(!str_detect(response, "^\\*"), !is.na(response)) %>%
-    mutate(response = str_remove(response, " \\*")) %>%
+    mutate(response = str_remove(response, "[ *]*$")) %>%
     pivot_longer(cols = -response, names_to = "curfoodsuf", values_to = "n") %>%
     mutate(
       n =
@@ -148,7 +148,13 @@ read_sheet <- function(week, sheet) {
       ~ tibble(
         variable = ..1,
         code = ..2,
-        n = read_cell(v, ..3, ..4, ..5)
+        n =
+          read_cell(
+            data = v,
+            category_ = ..3,
+            response_ = ..4,
+            curfoodsuf_ = ..5
+          )
       )
     ) %>%
     mutate(
