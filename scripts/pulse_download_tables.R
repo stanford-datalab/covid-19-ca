@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2020-09-23
+# Version: 2020-10-07
 
 # Libraries
 library(tidyverse)
@@ -163,6 +163,9 @@ read_sheet <- function(week, sheet) {
       n_error = NA_real_,
       pct =
         case_when(
+          str_detect(variable, "^curfoodsuf$") & code %in% 1:4 ~
+            100 * n /
+            sum(n[variable == "curfoodsuf" & code %in% 1:4]),
           str_detect(variable, "^foodsufrsn\\d$") & code %in% 1 ~
             100 * n /
             sum(n[variable == "curfoodsuf" & code %in% 2:4]),
