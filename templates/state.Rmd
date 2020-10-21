@@ -1015,7 +1015,11 @@ labels_fss <-
 labels_hps <- 
   unemployment_fi_hps %>% 
   filter(date == min(date) | date == max(date)) %>% 
-  mutate(label = format(date, "%Y %b"))
+  mutate(
+    label = format(date, "%Y %b"),
+    hjust = c(-0.1, 1.1),
+    vjust = c(0.5, 0.5)
+  )
 
 ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
   geom_path(aes(alpha = date), data = unemployment_fi_fss) +
@@ -1026,8 +1030,8 @@ ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
   ) +
   geom_path(data = unemployment_fi_hps) +
   geom_point(data = unemployment_fi_hps) +
-  ggrepel::geom_text_repel(
-    aes(label = label),
+  geom_text(
+    aes(label = label, hjust = hjust, vjust = vjust),
     data = labels_hps
   ) +
   geom_abline(
