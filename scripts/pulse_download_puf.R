@@ -3,13 +3,15 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2020-09-23
+# Version: 2020-11-04
 
 # Libraries
 library(tidyverse)
 library(rvest)
 
 # Parameters
+  # Timeout for download
+TIMEOUT <- 600
   # Parameters for state and data
 file_params <- here::here("data/params.yml")
   # Base URL for Household Pulse PUF data
@@ -23,6 +25,9 @@ dir_tmp <- str_glue("{tempdir()}/pulse")
 dir_pulse <- here::here("data-raw/pulse/puf/{params$year_pulse}")
 
 #===============================================================================
+
+# Timeout for download
+options(timeout = TIMEOUT)
 
 # Parameters for state and data
 params <- yaml::read_yaml(file_params)
