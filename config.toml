@@ -3,22 +3,22 @@ canonifyurls = true
 relativeURLs = true
 prettyURLs = false
 baseURL = "https://stanford-datalab.github.io/covid-19-ca"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 
 languageCode = "en-us"
 title = "California Pulse"
 toc = false
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
+  post = "/:year/:month/:day/:slug/"
 [[menu.main]]
-    name = "State"
-    url = "/"
-    weight = 1
+  name = "State"
+  url = "/"
+  weight = 1
 [[menu.main]]
-    name = "Counties"
-    url = "/counties/"
-    weight = 2
+  name = "Counties"
+  url = "/counties/"
+  weight = 2
 [[menu.main]]
 	parent = "Counties"
 	name = "Alameda"
@@ -256,19 +256,19 @@ toc = false
   url = "/about"
 
 [params]
-    description = "A website built through Hugo and blogdown."
-    sitename = "Food insecurity"
+  description = "A website built through Hugo and blogdown."
+  sitename = "Food insufficiency"
 
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+  # options for highlight.js (version, additional languages, and theme)
+  highlightjsVersion = "9.12.0"
+  highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
+  highlightjsLang = ["r", "yaml"]
+  highlightjsTheme = "github"
 
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
+  MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+  MathJaxVersion = "2.7.5"
 
-    [params.logo]
+  [params.logo]
     url = "logo.png"
     width = 50
     height = 50
