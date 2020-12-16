@@ -1,700 +1,816 @@
 area,fips,date_start,date_end,variable,code,response,n,pct
-Alameda County,06001,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,67108,6.000534708195073
-Alameda County,06001,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,27063,2.419867539010003
-Alpine County,06003,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,44,5.641025641025641
-Alpine County,06003,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,18,2.3076923076923075
-Amador County,06005,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1100,3.8806180766245677
-Amador County,06005,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,444,1.5663585691102802
-Butte County,06007,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,7147,4.867102960304543
-Butte County,06007,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2882,1.962640371008492
-Calaveras County,06009,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1351,4.2234587970488935
-Calaveras County,06009,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,545,1.7037639114668
-Colusa County,06011,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,935,7.0860174308450175
-Colusa County,06011,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,377,2.857142857142857
-Contra Costa County,06013,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,44607,5.933454644128398
-Contra Costa County,06013,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,17989,2.392828829404034
-Del Norte County,06015,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,722,3.9081953015048176
-Del Norte County,06015,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,291,1.5751867489444624
-El Dorado County,06017,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5949,4.576189047608058
-El Dorado County,06017,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2399,1.8453988107600827
-Fresno County,06019,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,41156,6.8301911842804035
-Fresno County,06019,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,16597,2.754414498141264
-Glenn County,06021,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,827,4.725174265798194
-Glenn County,06021,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,334,1.9083533310478802
-Humboldt County,06023,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,4064,4.400792662457904
-Humboldt County,06023,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1639,1.7748275526005177
-Imperial County,06025,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,13050,11.984681648284033
-Imperial County,06025,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,5263,4.833362414936311
-Inyo County,06027,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,532,4.424484364604125
-Inyo County,06027,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,215,1.7880904856952762
-Kern County,06029,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,40915,7.596546602302265
-Kern County,06029,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,16500,3.0634979576680283
-Kings County,06031,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5105,5.44515908824251
-Kings County,06031,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2059,2.1961963883822384
-Lake County,06033,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2220,5.20613479667933
-Lake County,06033,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,895,2.098869659021622
-Lassen County,06035,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,513,2.4144585117898996
-Lassen County,06035,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,207,0.9742551889678542
-Los Angeles County,06037,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,681103,10.26960806487119
-Los Angeles County,06037,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,274669,4.1414337883845835
-Madera County,06039,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5197,5.418000229355407
-Madera County,06039,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2096,2.185131514475454
-Marin County,06041,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,7742,4.441359370338925
-Marin County,06041,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3122,1.791000252415154
-Mariposa County,06043,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,580,4.786268361115695
-Mariposa County,06043,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,234,1.931011718105298
-Mendocino County,06045,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2732,4.752296131366546
-Mendocino County,06045,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1102,1.9169217923740607
-Merced County,06047,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,10838,6.566972454828585
-Merced County,06047,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,4371,2.648480955901065
-Modoc County,06049,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,177,2.9583820825672738
-Modoc County,06049,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,71,1.18669563763998
-Mono County,06051,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,661,6.625902165196472
-Mono County,06051,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,267,2.6764234161988774
-Monterey County,06053,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,15312,5.671888369887725
-Monterey County,06053,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,6175,2.2873504887706835
-Napa County,06055,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,4878,5.281164064699132
-Napa County,06055,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1967,2.129571487343828
-Nevada County,06057,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,3040,4.368380968803438
-Nevada County,06057,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1226,1.76172206176086
-Orange County,06059,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,127432,6.101598178981873
-Orange County,06059,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,51390,2.4606153118359475
-Placer County,06061,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,11497,4.409170399460024
-Placer County,06061,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,4636,1.7779345891881941
-Plumas County,06063,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,530,4.060369263770781
-Plumas County,06063,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,214,1.639469853673485
-Riverside County,06065,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,102329,6.561422970013882
-Riverside County,06065,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,41267,2.646075322768354
-Sacramento County,06067,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,61754,6.182658441009745
-Sacramento County,06067,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,24904,2.493327166092993
-San Benito County,06069,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2375,6.037879750858014
-San Benito County,06069,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,958,2.4354900216092537
-San Bernardino County,06071,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,87975,6.502520072996747
-San Bernardino County,06071,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,35478,2.62229505143255
-San Diego County,06073,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,126297,5.730273303778395
-San Diego County,06073,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,50933,2.310902160632042
-San Francisco County,06075,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,42588,6.640730374309037
-San Francisco County,06075,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,17175,2.6780911096730935
-San Joaquin County,06077,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,32938,7.031708655248163
-San Joaquin County,06077,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,13283,2.8356969478311176
-San Luis Obispo County,06079,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,8397,4.278551702350987
-San Luis Obispo County,06079,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3386,1.7252799885864525
-San Mateo County,06081,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,28031,5.4572604478570845
-San Mateo County,06081,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,11304,2.200737472889889
-Santa Barbara County,06083,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,13988,4.785379754846788
-Santa Barbara County,06083,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,5641,1.9298203601008528
-Santa Clara County,06085,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,64649,5.089755066018254
-Santa Clara County,06085,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,26071,2.0525453499073754
-Santa Cruz County,06087,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,9342,5.024579671482202
-Santa Cruz County,06087,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3768,2.0266127384012993
-Shasta County,06089,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5084,4.283968822414156
-Shasta County,06089,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2050,1.7274067832315145
-Sierra County,06091,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,75,3.559563360227812
-Sierra County,06091,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,30,1.4238253440911248
-Siskiyou County,06093,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1208,4.131609549216773
-Siskiyou County,06093,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,487,1.6656406046925234
-Solano County,06095,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,17677,6.025866535765906
-Solano County,06095,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,7129,2.430186260874308
-Sonoma County,06097,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,16246,4.8487127601788345
-Sonoma County,06097,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,6551,1.9551838786120612
-Stanislaus County,06099,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,21815,6.455841922873183
-Stanislaus County,06099,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,8797,2.603348218909713
-Sutter County,06101,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,3790,6.266223566952697
-Sutter County,06101,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1529,2.527983069622869
-Tehama County,06103,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1799,4.3155975627308925
-Tehama County,06103,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,726,1.74159190135777
-Trinity County,06105,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,260,3.048065650644783
-Trinity County,06105,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,105,1.2309495896834701
-Tulare County,06107,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,20870,7.665269753587471
-Tulare County,06107,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,8416,3.0910833850595187
-Tuolumne County,06109,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1664,4.370092181631956
-Tuolumne County,06109,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,671,1.7622186621845208
-Ventura County,06111,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,30600,5.560148634038648
-Ventura County,06111,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,12340,2.242229873988135
-Yolo County,06113,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,6628,4.515386239925879
-Yolo County,06113,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2673,1.8210059473931615
-Yuba County,06115,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2669,5.566330893240735
-Yuba County,06115,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1076,2.2440509708231664
-Alameda County,06001,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,93704,8.716424130348233
-Alameda County,06001,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,24455,2.274824469688231
-Alpine County,06003,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,61,8.133333333333333
-Alpine County,06003,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,16,2.1333333333333333
-Amador County,06005,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1536,5.637110980622431
-Amador County,06005,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,401,1.4716676453317674
-Butte County,06007,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,9979,7.069633659929297
-Butte County,06007,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2604,1.8448066991137277
-Calaveras County,06009,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1887,6.1367849360954825
-Calaveras County,06009,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,492,1.6000520342124946
-Colusa County,06011,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1306,10.297248285106047
-Colusa County,06011,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,341,2.6886383347788376
-Contra Costa County,06013,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,62285,8.618924132434056
-Contra Costa County,06013,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,16256,2.249485922723738
-Del Norte County,06015,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1008,5.676314900326614
-Del Norte County,06015,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,263,1.481022637684424
-El Dorado County,06017,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,8307,6.647674074311185
-El Dorado County,06017,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2168,1.7349413016861261
-Fresno County,06019,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,57467,9.921617375390618
-Fresno County,06019,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,14998,2.589388995355743
-Glenn County,06021,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1155,6.865600665755216
-Glenn County,06021,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,301,1.7892171431968138
-Humboldt County,06023,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,5674,6.391871036059886
-Humboldt County,06023,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1481,1.668375221079431
-Imperial County,06025,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,18222,17.408999713384922
-Imperial County,06025,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,4756,4.5438043374414825
-Inyo County,06027,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,743,6.428447828344004
-Inyo County,06027,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,194,1.6784910884236026
-Kern County,06029,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,57130,11.034730525043024
-Kern County,06029,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,14910,2.8798850363800366
-Kings County,06031,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7128,7.909454061251664
-Kings County,06031,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1860,2.0639147802929427
-Lake County,06033,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3100,7.563004708580351
-Lake County,06033,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,809,1.9737002610456464
-Lassen County,06035,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,716,3.5058512461440534
-Lassen County,06035,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,187,0.9156343338392988
-Los Angeles County,06037,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,951024,14.91754148807113
-Los Angeles County,06037,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,248203,3.893254586596888
-Madera County,06039,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7257,7.870591297557589
-Madera County,06039,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1894,2.054140818185762
-Marin County,06041,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,10810,6.45138188480613
-Marin County,06041,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2821,1.683565984924893
-Mariposa County,06043,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,810,6.95338655678599
-Mariposa County,06043,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,211,1.811314275903511
-Mendocino County,06045,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3815,6.903727832066594
-Mendocino County,06045,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,996,1.8023887079261671
-Merced County,06047,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,15133,9.539027880209023
-Merced County,06047,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,3950,2.489867186071872
-Modoc County,06049,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,246,4.277516953573292
-Modoc County,06049,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,64,1.112849939141019
-Mono County,06051,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,923,9.62460896767466
-Mono County,06051,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,241,2.5130344108446296
-Monterey County,06053,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,21380,8.23888925283525
-Monterey County,06053,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,5580,2.1502807310954486
-Napa County,06055,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,6811,7.671168076407582
-Napa County,06055,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1778,2.0025454176850213
-Nevada County,06057,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,4245,6.345860615301821
-Nevada County,06057,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1108,1.6563518402248334
-Orange County,06059,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,177934,8.863157380892014
-Orange County,06059,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,46438,2.3131458993439327
-Placer County,06061,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,16053,6.404624830937534
-Placer County,06061,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,4190,1.6716737084425506
-Plumas County,06063,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,739,5.889854148402009
-Plumas County,06063,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,193,1.5382163066868575
-Riverside County,06065,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,142883,9.531131284441061
-Riverside County,06065,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,37290,2.487460968742308
-Sacramento County,06067,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,86228,8.98097006725208
-Sacramento County,06067,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,22504,2.3438761236888346
-San Benito County,06069,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3317,8.77257940810875
-San Benito County,06069,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,866,2.2903387902991192
-San Bernardino County,06071,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,122840,9.445539742931224
-San Bernardino County,06071,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,32059,2.465113632518985
-San Diego County,06073,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,176350,8.323814558533385
-San Diego County,06073,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,46025,2.172404678517148
-San Francisco County,06075,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,59466,9.646321028188229
-San Francisco County,06075,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,15520,2.517588241305642
-San Joaquin County,06077,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,45991,10.214139134915206
-San Joaquin County,06077,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,12003,2.6657457336519585
-San Luis Obispo County,06079,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,11725,6.215147467294277
-San Luis Obispo County,06079,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,3060,1.6220342217416195
-San Mateo County,06081,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,39140,7.927233103995819
-San Mateo County,06081,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,10215,2.0688984710607383
-Santa Barbara County,06083,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,19531,6.951028542956794
-Santa Barbara County,06083,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,5097,1.814008114456545
-Santa Clara County,06085,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,90269,7.393298863104925
-Santa Clara County,06085,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,23559,1.9295519825841532
-Santa Cruz County,06087,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,13045,7.29908628532741
-Santa Cruz County,06087,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,3405,1.9052042009612749
-Shasta County,06089,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7099,6.223044286265297
-Shasta County,06089,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1853,1.6243556926960974
-Sierra County,06091,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,105,5.182625863770977
-Sierra County,06091,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,27,1.332675222112537
-Siskiyou County,06093,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1687,6.002490660024907
-Siskiyou County,06093,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,440,1.5655577299412915
-Solano County,06095,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,24682,8.752978892419428
-Solano County,06095,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,6442,2.284526781661371
-Sonoma County,06097,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,22684,7.043101895837602
-Sonoma County,06097,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,5920,1.8380868992840156
-Stanislaus County,06099,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,30460,9.377616866164228
-Stanislaus County,06099,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,7950,2.4475395300724103
-Sutter County,06101,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,5293,9.104043757202566
-Sutter County,06101,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1381,2.375341853145049
-Tehama County,06103,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2512,6.268872750867211
-Tehama County,06103,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,656,1.637094157869781
-Trinity County,06105,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,363,4.426829268292683
-Trinity County,06105,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,95,1.1585365853658536
-Tulare County,06107,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,29141,11.13458863806569
-Tulare County,06107,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,7605,2.9058215775879197
-Tuolumne County,06109,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2323,6.346647724168078
-Tuolumne County,06109,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,606,1.6556472323916727
-Ventura County,06111,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,42727,8.07666279786321
-Ventura County,06111,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,11151,2.107867785217138
-Yolo County,06113,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,9255,6.559270861387121
-Yolo County,06113,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2415,1.7115763511885356
-Yuba County,06115,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3727,8.08617734481786
-Yuba County,06115,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,973,2.1110412011021675
-Alameda County,06001,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,80770,7.0630682941076675
-Alameda County,06001,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,26438,2.311915309639947
-Alpine County,06003,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,53,6.641604010025063
-Alpine County,06003,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,17,2.130325814536341
-Amador County,06005,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1324,4.567879937898914
-Amador County,06005,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,434,1.4973262032085561
-Butte County,06007,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,8602,5.728899574428409
-Butte County,06007,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2816,1.875445384979121
-Calaveras County,06009,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1626,4.971108869118591
-Calaveras County,06009,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,532,1.6264636644348651
-Colusa County,06011,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1126,8.345686332641565
-Colusa County,06011,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,369,2.7349540468425735
-Contra Costa County,06013,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,53688,6.984086512756937
-Contra Costa County,06013,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,17573,2.286010883040487
-Del Norte County,06015,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,869,4.6003176283748015
-Del Norte County,06015,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,285,1.5087347803070408
-El Dorado County,06017,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,7160,5.386415100017302
-El Dorado County,06017,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2344,1.763373881905106
-Fresno County,06019,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,49535,8.039686365399566
-Fresno County,06019,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,16214,2.6315832185038572
-Glenn County,06021,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,995,5.559901654000894
-Glenn County,06021,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,326,1.821636119803308
-Humboldt County,06023,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,4891,5.1796625965031184
-Humboldt County,06023,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1601,1.6954896374977495
-Imperial County,06025,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,15707,14.10698568374917
-Imperial County,06025,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,5141,4.617305239711879
-Inyo County,06027,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,641,5.213925492109972
-Inyo County,06027,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,210,1.708150317227916
-Kern County,06029,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,49245,8.941751962391804
-Kern County,06029,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,16119,2.926837239959254
-Kings County,06031,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6144,6.409079529333222
-Kings County,06031,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2011,2.0977634982892432
-Lake County,06033,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2672,6.128159258749599
-Lake County,06033,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,875,2.006788679418375
-Lassen County,06035,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,617,2.8400460299194474
-Lassen County,06035,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,202,0.9298043728423475
-Los Angeles County,06037,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,819754,12.087946440815728
-Los Angeles County,06037,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,268320,3.956598917479727
-Madera County,06039,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6255,6.377316938887869
-Madera County,06039,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2047,2.0870292204481964
-Marin County,06041,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,9318,5.227724105429696
-Marin County,06041,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3050,1.7111567419575633
-Mariposa County,06043,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,698,5.633120813493664
-Mariposa County,06043,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,228,1.8400451940924865
-Mendocino County,06045,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3288,5.5935490456262125
-Mendocino County,06045,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1076,1.8304923275832738
-Merced County,06047,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,13044,7.729548754110989
-Merced County,06047,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,4270,2.5302953986548546
-Modoc County,06049,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,212,3.4651847008826415
-Modoc County,06049,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,70,1.1441647597254005
-Mono County,06051,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,796,7.8031565532790905
-Mono County,06051,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,261,2.5585726889520637
-Monterey County,06053,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,18429,6.676133790749992
-Monterey County,06053,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,6032,2.1851668037226086
-Napa County,06055,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,5871,6.216250555873198
-Napa County,06055,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1922,2.035025305465557
-Nevada County,06057,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3659,5.142005930381259
-Nevada County,06057,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1198,1.683553731783752
-Orange County,06059,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,153374,7.181984118287757
-Orange County,06059,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,50203,2.3508361827324076
-Placer County,06061,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,13837,5.189705352856457
-Placer County,06061,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,4529,1.6986467834853576
-Plumas County,06063,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,637,4.772608076721361
-Plumas County,06063,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,209,1.5658949576683898
-Riverside County,06065,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,123161,7.723247123715807
-Riverside County,06065,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,40313,2.5279695788305987
-Sacramento County,06067,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,74326,7.27743774973784
-Sacramento County,06067,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,24329,2.382111011131662
-San Benito County,06069,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2859,7.108227045573208
-San Benito County,06069,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,936,2.327142537480421
-San Bernardino County,06071,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,105885,7.653929754584153
-San Bernardino County,06071,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,34659,2.505336462805234
-San Diego County,06073,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,152008,6.744912407278975
-San Diego County,06073,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,49756,2.207777628391747
-San Francisco County,06075,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,51258,7.816603076134793
-San Francisco County,06075,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,16778,2.5585658123881068
-San Joaquin County,06077,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,39643,8.27671879240871
-San Joaquin County,06077,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,12976,2.7091467106499363
-San Luis Obispo County,06079,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,10106,5.035928203390506
-San Luis Obispo County,06079,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3308,1.6484118837142088
-San Mateo County,06081,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,33737,6.423476906556185
-San Mateo County,06081,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,11043,2.102571523226723
-Santa Barbara County,06083,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,16835,5.632506942353374
-Santa Barbara County,06083,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,5511,1.843822141925123
-Santa Clara County,06085,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,77810,5.990983881088864
-Santa Clara County,06085,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,25469,1.960986614412701
-Santa Cruz County,06087,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,11244,5.914377238800082
-Santa Cruz County,06087,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3681,1.9362168815388743
-Shasta County,06089,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6119,5.042522332465307
-Shasta County,06089,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2003,1.6506246497676105
-Sierra County,06091,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,91,4.2227378190255225
+Alameda County,06001,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,104511,9.30605506645783
+Alameda County,06001,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,17657,1.5722461205848752
+Alpine County,06003,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,72,9.195402298850574
+Alpine County,06003,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,12,1.5325670498084292
+Amador County,06005,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1796,6.309502898296153
+Amador County,06005,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,303,1.0644651326190058
+Butte County,06007,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,11402,7.73242368961799
+Butte County,06007,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1926,1.3061434858975838
+Calaveras County,06009,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,2189,6.814644169105286
+Calaveras County,06009,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,370,1.151858539318847
+Colusa County,06011,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1486,11.215094339622642
+Colusa County,06011,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,251,1.8943396226415095
+Contra Costa County,06013,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,69744,9.238460203647751
+Contra Costa County,06013,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,11783,1.5608048947519708
+Del Norte County,06015,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1196,6.447091800981079
+Del Norte County,06015,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,202,1.0888900867877742
+El Dorado County,06017,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,9387,7.190734087618639
+El Dorado County,06017,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1586,1.214925350267728
+Fresno County,06019,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,66529,10.995093202705762
+Fresno County,06019,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,11240,1.8576086758919084
+Glenn County,06021,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1327,7.55049786628734
+Glenn County,06021,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,224,1.2745376955903271
+Humboldt County,06023,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,6509,7.019076272740017
+Humboldt County,06023,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1100,1.186201244432942
+Imperial County,06025,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,20682,18.914618086040388
+Imperial County,06025,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,3494,3.1954199590283876
+Inyo County,06027,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,875,7.246976975318867
+Inyo County,06027,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,148,1.225774391253934
+Kern County,06029,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,64380,11.903441237159148
+Kern County,06029,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,10877,2.0110862121245736
+Kings County,06031,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,8393,8.914971586382707
+Kings County,06031,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1418,1.5061872643263052
+Lake County,06033,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,3653,8.53106025221859
+Lake County,06033,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,617,1.44091546006539
+Lassen County,06035,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,838,3.9278181392078744
+Lassen County,06035,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,142,0.6655730021092102
+Los Angeles County,06037,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,979253,14.70359563937059
+Los Angeles County,06037,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,165445,2.4841755711298994
+Madera County,06039,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,8357,8.676107223687216
+Madera County,06039,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1412,1.4659164053902536
+Marin County,06041,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,11878,6.785683681339084
+Marin County,06041,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,2007,1.1465623125482018
+Mariposa County,06043,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,899,7.387624291231819
+Mariposa County,06043,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,152,1.249075519763333
+Mendocino County,06045,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,4381,7.589038248337029
+Mendocino County,06045,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,740,1.2818736141906875
+Merced County,06047,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,17325,10.453876230932613
+Merced County,06047,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,2927,1.7661469395636222
+Modoc County,06049,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,300,4.993342210386152
+Modoc County,06049,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,51,0.8488681757656458
+Mono County,06051,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1145,11.429427031343582
+Mono County,06051,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,193,1.926532241964464
+Monterey County,06053,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,24437,9.014316225916758
+Monterey County,06053,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,4129,1.523104787691218
+Napa County,06055,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,7797,8.406287735035363
+Napa County,06055,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1317,1.4199154735207866
+Nevada County,06057,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,4810,6.88303139578146
+Nevada County,06057,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,813,1.1633897140894651
+Orange County,06059,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,195865,9.339205830155338
+Orange County,06059,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,33091,1.577840145639447
+Placer County,06061,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,17831,6.809831883349501
+Placer County,06061,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,3012,1.1503120202259378
+Plumas County,06063,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,880,6.713969634546426
+Plumas County,06063,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,149,1.1367971313038834
+Riverside County,06065,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,161391,10.305438561091544
+Riverside County,06065,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,27267,1.741103241477425
+Sacramento County,06067,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,96930,9.663988705904874
+Sacramento County,06067,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,16376,1.6326986386866627
+San Benito County,06069,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,3785,9.58252107648295
+San Benito County,06069,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,640,1.6202941846629029
+San Bernardino County,06071,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,142912,10.519110197748555
+San Bernardino County,06071,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,24145,1.7772049633665392
+San Diego County,06073,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,198681,8.976905414038928
+San Diego County,06073,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,33567,1.5166411686726193
+San Francisco County,06075,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,63973,9.93375735253014
+San Francisco County,06075,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,10808,1.6782712936105193
+San Joaquin County,06077,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,52595,11.181409033991738
+San Joaquin County,06077,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,8886,1.889114947733636
+San Luis Obispo County,06079,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,12963,6.577598717259156
+San Luis Obispo County,06079,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,2190,1.1112351454753955
+San Mateo County,06081,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,43286,8.392126298728366
+San Mateo County,06081,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,7313,1.4178168373746833
+Santa Barbara County,06083,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,22087,7.524639814123987
+Santa Barbara County,06083,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,3732,1.271424629252987
+Santa Clara County,06085,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,100426,7.87352928955091
+Santa Clara County,06085,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,16967,1.3302349138252074
+Santa Cruz County,06087,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,14930,7.996657793393786
+Santa Cruz County,06087,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,2522,1.3508085033448847
+Shasta County,06089,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,8310,6.9731730034991735
+Shasta County,06089,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1404,1.1781389767644812
+Sierra County,06091,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,117,5.52930056710775
+Sierra County,06091,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,20,0.945179584120983
+Siskiyou County,06093,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,1927,6.563127958856987
+Siskiyou County,06093,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,326,1.110316406116958
+Solano County,06095,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,28284,9.601531682610378
+Solano County,06095,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,4779,1.622320743572161
+Sonoma County,06097,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,25631,7.617867258715029
+Sonoma County,06097,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,4330,1.2869324345611204
+Stanislaus County,06099,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,34938,10.296353927220002
+Stanislaus County,06099,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,5903,1.7396352748405655
+Sutter County,06101,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,6062,9.980900948366703
+Sutter County,06101,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1024,1.6859852476290833
+Tehama County,06103,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,2907,6.944411265856047
+Tehama County,06103,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,491,1.1729294570124937
+Trinity County,06105,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,441,5.148260565024516
+Trinity County,06105,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,74,0.8638804576231613
+Tulare County,06107,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,33816,12.368464366050365
+Tulare County,06107,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,5713,2.0895740750900678
+Tuolumne County,06109,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,2671,6.985563343445967
+Tuolumne County,06109,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,451,1.1795166858457997
+Ventura County,06111,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,47826,8.654002743166512
+Ventura County,06111,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,8080,1.4620570853674866
+Yolo County,06113,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,10573,7.1729986431478965
+Yolo County,06113,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,1786,1.2116689280868385
+Yuba County,06115,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,4304,8.938918772975555
+Yuba County,06115,2020-11-25,2020-12-07,curfoodsuf,4,Often not enough to eat,727,1.5098963633720326
+Alameda County,06001,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,68625,6.136178910858421
+Alameda County,06001,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,27675,2.4745901837232323
+Alpine County,06003,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,47,6.0256410256410255
+Alpine County,06003,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,19,2.4358974358974357
+Amador County,06005,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1179,4.159317011218514
+Amador County,06005,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,476,1.679249276793904
+Butte County,06007,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,7487,5.098642768126503
+Butte County,06007,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3019,2.0559372935720464
+Calaveras County,06009,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1437,4.49230961610604
+Calaveras County,06009,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,580,1.8131799424784294
+Colusa County,06011,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,976,7.396741189844638
+Colusa County,06011,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,394,2.9859795377036757
+Contra Costa County,06013,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,45796,6.091610932869373
+Contra Costa County,06013,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,18468,2.456543600057463
+Del Norte County,06015,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,785,4.249215113131969
+Del Norte County,06015,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,317,1.7159250839016997
+El Dorado County,06017,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,6164,4.741574935191809
+El Dorado County,06017,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2486,1.9123224024800192
+Fresno County,06019,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,43685,7.249900424853957
+Fresno County,06019,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,17617,2.923692246415295
+Glenn County,06021,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,871,4.9765741058164785
+Glenn County,06021,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,351,2.0054850874185806
+Humboldt County,06023,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,4274,4.628195826610502
+Humboldt County,06023,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1724,1.8668716904718075
+Imperial County,06025,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,13580,12.471415845494036
+Imperial County,06025,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,5477,5.029892826639973
+Inyo County,06027,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,574,4.773785761809714
+Inyo County,06027,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,232,1.9294743845642048
+Kern County,06029,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,42274,7.848867434088377
+Kern County,06029,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,17048,3.1652432231711845
+Kings County,06031,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5511,5.878211897219289
+Kings County,06031,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2222,2.3700574914936055
+Lake County,06033,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2398,5.623563622719384
+Lake County,06033,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,967,2.2677172740490597
+Lassen County,06035,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,550,2.5886007436343954
+Lassen County,06035,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,222,1.0448533910669742
+Los Angeles County,06037,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,643015,9.69532072217146
+Los Angeles County,06037,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,259307,3.9098069726275666
+Madera County,06039,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5488,5.721374881412829
+Madera County,06039,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2213,2.307106890044933
+Marin County,06041,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,7799,4.474058606209413
+Marin County,06041,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3145,1.8041946809242984
+Mariposa County,06043,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,590,4.868790229410794
+Mariposa County,06043,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,238,1.964020465423337
+Mendocino County,06045,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2876,5.002783189535207
+Mendocino County,06045,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1160,2.017812413025327
+Merced County,06047,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,11376,6.892957985433657
+Merced County,06047,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,4588,2.779965826052182
+Modoc County,06049,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,197,3.2926625438743105
+Modoc County,06049,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,79,1.3204078221627946
+Mono County,06051,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,752,7.538091419406576
+Mono County,06051,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,303,3.03728949478749
+Monterey County,06053,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,16046,5.943777480617714
+Monterey County,06053,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,6471,2.3969951437789625
+Napa County,06055,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5120,5.543165233960548
+Napa County,06055,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2065,2.235671134400104
+Nevada County,06057,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,3158,4.5379431248293605
+Nevada County,06057,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1274,1.830696498110388
+Orange County,06059,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,128611,6.158050123964449
+Orange County,06059,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,51866,2.483406767146979
+Placer County,06061,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,11708,4.490090200650426
+Placer County,06061,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,4722,1.810916119531202
+Plumas County,06063,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,578,4.428100819734927
+Plumas County,06063,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,233,1.7850302612426263
+Riverside County,06065,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,105974,6.795143486443248
+Riverside County,06065,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,42737,2.74033297959995
+Sacramento County,06067,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,63647,6.372180940424058
+Sacramento County,06067,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,25667,2.5697168475790577
+San Benito County,06069,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2485,6.317528918266175
+San Benito County,06069,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1002,2.547349688572518
+San Bernardino County,06071,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,93841,6.936095324468176
+San Bernardino County,06071,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,37844,2.7971738521453697
+San Diego County,06073,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,130460,5.919154494650937
+San Diego County,06073,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,52611,2.3870353910630113
+San Francisco County,06075,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,42007,6.5501352689396
+San Francisco County,06075,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,16940,2.6414476505305506
+San Joaquin County,06077,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,34535,7.3726412778248624
+San Joaquin County,06077,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,13927,2.97318010934608
+San Luis Obispo County,06079,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,8512,4.337148039825128
+San Luis Obispo County,06079,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3433,1.7492280569454493
+San Mateo County,06081,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,28423,5.533577600137059
+San Mateo County,06081,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,11462,2.23149795773743
+Santa Barbara County,06083,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,14503,4.961564382652485
+Santa Barbara County,06083,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,5849,2.00097842336995
+Santa Clara County,06085,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,65943,5.191630470980861
+Santa Clara County,06085,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,26593,2.0936419197609157
+Santa Cruz County,06087,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,9803,5.27252777986941
+Santa Cruz County,06087,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,3953,2.12611469079096
+Shasta County,06089,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,5456,4.597429955761534
+Shasta County,06089,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2200,1.8538024015167474
+Sierra County,06091,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,77,3.654485049833887
+Sierra County,06091,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,31,1.4712861888941624
+Siskiyou County,06093,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1265,4.326561324303988
+Siskiyou County,06093,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,510,1.7443053560435051
+Solano County,06095,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,18572,6.3309607570427335
+Solano County,06095,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,7490,2.5532466115792634
+Sonoma County,06097,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,16830,5.023010941389252
+Sonoma County,06097,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,6787,2.025619444991613
+Stanislaus County,06099,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,22942,6.7893616958311505
+Stanislaus County,06099,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,9252,2.7379990589237995
+Sutter County,06101,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,3980,6.58036142387117
+Sutter County,06101,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1605,2.653638212390258
+Tehama County,06103,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1909,4.579475123542676
+Tehama County,06103,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,770,1.8471429256824834
+Trinity County,06105,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,289,3.388042203985932
+Trinity County,06105,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,117,1.3716295427901524
+Tulare County,06107,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,22205,8.155597262980823
+Tulare County,06107,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,8955,3.2890508214363106
+Tuolumne County,06109,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1754,4.606455340494262
+Tuolumne County,06109,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,707,1.856763925729443
+Ventura County,06111,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,31404,5.7062388138349585
+Ventura County,06111,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,12665,2.3012837401993296
+Yolo County,06113,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,6943,4.729982900393087
+Yolo County,06113,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,2800,1.907525870819623
+Yuba County,06115,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,2826,5.893762122254896
+Yuba County,06115,2020-11-11,2020-11-23,curfoodsuf,4,Often not enough to eat,1140,2.377526121504098
+Alameda County,06001,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,95822,8.913442254527324
+Alameda County,06001,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,25008,2.326264990307229
+Alpine County,06003,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,66,8.8
+Alpine County,06003,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,17,2.2666666666666666
+Amador County,06005,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1647,6.044480328831474
+Amador County,06005,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,430,1.57809747504404
+Butte County,06007,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,10454,7.406147938761486
+Butte County,06007,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2728,1.9326546371667623
+Calaveras County,06009,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2007,6.527041529805848
+Calaveras County,06009,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,524,1.7041204592019252
+Colusa County,06011,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1363,10.746668769218639
+Colusa County,06011,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,356,2.80690688322952
+Contra Costa County,06013,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,63945,8.848632955743689
+Contra Costa County,06013,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,16689,2.309403947117154
+Del Norte County,06015,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1096,6.171866201148778
+Del Norte County,06015,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,286,1.610541727672035
+El Dorado County,06017,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,8607,6.887748977681037
+El Dorado County,06017,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2246,1.7973607765622874
+Fresno County,06019,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,60997,10.531068179071493
+Fresno County,06019,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,15919,2.748398680962
+Glenn County,06021,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1216,7.228199488795102
+Glenn County,06021,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,317,1.8843250312072757
+Humboldt County,06023,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,5968,6.723067737611103
+Humboldt County,06023,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1557,1.7539906949498136
+Imperial County,06025,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,18962,18.115983567402314
+Imperial County,06025,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,4949,4.72819336963791
+Inyo County,06027,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,802,6.938916767606853
+Inyo County,06027,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,209,1.808271327219242
+Kern County,06029,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,59027,11.401138433427526
+Kern County,06029,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,15405,2.9754949017729353
+Kings County,06031,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7695,8.538615179760319
+Kings County,06031,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2008,2.2281402574345317
+Lake County,06033,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3349,8.17048476420503
+Lake County,06033,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,874,2.1322793920320087
+Lassen County,06035,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,768,3.7604661411154092
+Lassen County,06035,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,201,0.9841844978700485
+Los Angeles County,06037,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,897842,14.083340993216533
+Los Angeles County,06037,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,234323,3.6755361316951953
+Madera County,06039,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7663,8.310919265975446
+Madera County,06039,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2000,2.1691032926987983
+Marin County,06041,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,10890,6.4991256915392
+Marin County,06041,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2842,1.696098734192324
+Mariposa County,06043,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,824,7.073568546656365
+Mariposa County,06043,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,215,1.8456519872950468
+Mendocino County,06045,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,4016,7.267462902642055
+Mendocino County,06045,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1048,1.8964893231994209
+Merced County,06047,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,15884,10.012417818624206
+Merced County,06047,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,4146,2.6134150261908813
+Modoc County,06049,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,275,4.781777082246566
+Modoc County,06049,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,72,1.2519561815336464
+Mono County,06051,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1049,10.938477580813347
+Mono County,06051,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,274,2.857142857142857
+Monterey County,06053,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,22405,8.633878096808875
+Monterey County,06053,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,5847,2.2531705080134565
+Napa County,06055,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7149,8.051854438149729
+Napa County,06055,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1866,2.1016590266593083
+Nevada County,06057,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,4410,6.592519508476096
+Nevada County,06057,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1151,1.7206326426884324
+Orange County,06059,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,179580,8.945147090834736
+Orange County,06059,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,46868,2.3345648393654215
+Placer County,06061,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,16348,6.522320235231222
+Placer County,06061,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,4267,1.7023942038005642
+Plumas County,06063,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,807,6.431816370447119
+Plumas County,06063,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,210,1.673706862198135
+Riverside County,06065,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,147973,9.870664036677542
+Riverside County,06065,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,38619,2.576113037057098
+Sacramento County,06067,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,88871,9.25624844420327
+Sacramento County,06067,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,23194,2.4157422152878967
+San Benito County,06069,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3470,9.17722355928169
+San Benito County,06069,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,906,2.396128110867208
+San Bernardino County,06071,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,131030,10.075293654479633
+San Bernardino County,06071,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,34197,2.629510929575212
+San Diego County,06073,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,182162,8.598144074916691
+San Diego County,06073,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,47542,2.244007891929652
+San Francisco County,06075,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,58654,9.514601849583835
+San Francisco County,06075,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,15308,2.483198505019766
+San Joaquin County,06077,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,48222,10.709621825224088
+San Joaquin County,06077,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,12585,2.79500208764558
+San Luis Obispo County,06079,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,11885,6.299959714182728
+San Luis Obispo County,06079,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,3102,1.6442974365498377
+San Mateo County,06081,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,39687,8.038019933527902
+San Mateo County,06081,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,10358,2.0978610243022153
+Santa Barbara County,06083,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,20250,7.2069186418962206
+Santa Barbara County,06083,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,5285,1.8809167912306926
+Santa Clara County,06085,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,92076,7.541297523172397
+Santa Clara County,06085,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,24031,1.9682101826681857
+Santa Cruz County,06087,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,13689,7.659424466067222
+Santa Cruz County,06087,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,3573,1.9992054655020954
+Shasta County,06089,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,7619,6.67888074616922
+Shasta County,06089,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1988,1.7426978505557698
+Sierra County,06091,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,107,5.281342546890424
+Sierra County,06091,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,28,1.3820335636722607
+Siskiyou County,06093,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,1767,6.287137520014232
+Siskiyou County,06093,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,461,1.6402775306884896
+Solano County,06095,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,25933,9.19662108488425
+Solano County,06095,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,6768,2.400136177939174
+Sonoma County,06097,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,23500,7.296459819792966
+Sonoma County,06097,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,6133,1.9042207691400113
+Stanislaus County,06099,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,32033,9.861891039850253
+Stanislaus County,06099,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,8360,2.5737648391704844
+Sutter County,06101,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,5558,9.559847950601146
+Sutter County,06101,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1450,2.494022945011094
+Tehama County,06103,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2665,6.650695016345986
+Tehama County,06103,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,696,1.736916972374036
+Trinity County,06105,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,404,4.926829268292683
+Trinity County,06105,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,105,1.2804878048780488
+Tulare County,06107,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,31004,11.846428953522139
+Tulare County,06107,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,8092,3.091901144752327
+Tuolumne County,06109,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2449,6.6908912081307035
+Tuolumne County,06109,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,639,1.7458062400961696
+Ventura County,06111,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,43850,8.288942909314995
+Ventura County,06111,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,11444,2.1632534242691177
+Yolo County,06113,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,9694,6.870402131851621
+Yolo County,06113,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,2530,1.7930799869594183
+Yuba County,06115,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,3946,8.561324336638389
+Yuba County,06115,2020-10-28,2020-11-09,curfoodsuf,4,Often not enough to eat,1030,2.234709596233538
+Alameda County,06001,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,82596,7.222745930668775
+Alameda County,06001,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,27036,2.3642084239135186
+Alpine County,06003,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,57,7.142857142857143
+Alpine County,06003,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,19,2.380952380952381
+Amador County,06005,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1419,4.895635673624288
+Amador County,06005,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,465,1.6042780748663101
+Butte County,06007,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,9011,6.001292032687095
+Butte County,06007,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2949,1.9640228836304787
+Calaveras County,06009,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1730,5.289064171940445
+Calaveras County,06009,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,566,1.730410590357394
+Colusa County,06011,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1175,8.708864512303588
+Colusa County,06011,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,384,2.8461310406166618
+Contra Costa County,06013,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,55119,7.170240360912115
+Contra Costa County,06013,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,18042,2.347021473386244
+Del Norte County,06015,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,945,5.002646903123345
+Del Norte County,06015,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,309,1.6357861302276338
+El Dorado County,06017,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,7419,5.581258886456476
+El Dorado County,06017,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2428,1.8265664612907837
+Fresno County,06019,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,52578,8.533574840415431
+Fresno County,06019,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,17210,2.7932371524886754
+Glenn County,06021,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1048,5.856057219490389
+Glenn County,06021,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,343,1.9166294143942781
+Humboldt County,06023,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,5144,5.447594438031495
+Humboldt County,06023,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1684,1.7833882258252407
+Imperial County,06025,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,16345,14.679994970451402
+Imperial County,06025,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,5350,4.805015178459162
+Inyo County,06027,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,691,5.6206279485928095
+Inyo County,06027,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,226,1.838295103302424
+Kern County,06029,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,50880,9.23863011161529
+Kern County,06029,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,16654,3.02398085453697
+Kings County,06031,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6633,6.919177167654177
+Kings County,06031,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2171,2.264666611032296
+Lake County,06033,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2887,6.6212559056924
+Lake County,06033,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,945,2.167331773771845
+Lassen County,06035,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,662,3.047180667433832
+Lassen County,06035,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,217,0.998849252013809
+Los Angeles County,06037,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,773913,11.411983221614072
+Los Angeles County,06037,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,253319,3.735396843981242
+Madera County,06039,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6605,6.734161212047063
+Madera County,06039,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2162,2.204278053057646
+Marin County,06041,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,9387,5.266435520247753
+Marin County,06041,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3073,1.7240605468969155
+Mariposa County,06043,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,710,5.729965297393269
+Mariposa County,06043,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,233,1.8803970623839883
+Mendocino County,06045,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3462,5.8895580279677455
+Mendocino County,06045,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1133,1.927460787315845
+Merced County,06047,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,13692,8.11353737667032
+Merced County,06047,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,4482,2.655921306035377
+Modoc County,06049,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,237,3.8738149722131414
+Modoc County,06049,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,78,1.2749264465511605
+Mono County,06051,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,905,8.871679247132635
+Mono County,06051,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,296,2.901676306244486
+Monterey County,06053,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,19313,6.996373753364512
+Monterey County,06053,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,6321,2.2898606376542787
+Napa County,06055,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6162,6.524363128136713
+Napa County,06055,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2017,2.135611884039557
+Nevada County,06057,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3801,5.3415590438314196
+Nevada County,06057,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1244,1.7481976981126772
+Orange County,06059,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,154793,7.248431074511434
+Orange County,06059,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,50667,2.372563728671651
+Placer County,06061,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,14092,5.285345655304849
+Placer County,06061,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,4613,1.7301518242918867
+Plumas County,06063,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,695,5.2071626582752675
+Plumas County,06063,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,228,1.7082490447291525
+Riverside County,06065,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,127548,7.998349511092828
+Riverside County,06065,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,41750,2.6180817581469373
+Sacramento County,06067,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,76604,7.500482218616869
+Sacramento County,06067,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,25074,2.4550557562215993
+San Benito County,06069,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2991,7.436413813679422
+San Benito County,06069,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,979,2.4340518634544144
+San Bernardino County,06071,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,112944,8.164191738223098
+San Bernardino County,06071,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,36969,2.6723155224745865
+San Diego County,06073,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,157018,6.9672165699577
+San Diego County,06073,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,51396,2.2805478533005514
+San Francisco County,06075,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,50558,7.709856379945041
+San Francisco County,06075,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,16549,2.5236443932060304
+San Joaquin County,06077,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,41566,8.678205315573
+San Joaquin County,06077,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,13606,2.840678956928409
+San Luis Obispo County,06079,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,10245,5.105193394393008
+San Luis Obispo County,06079,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3353,1.6708358664128604
+San Mateo County,06081,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,34209,6.513345036499408
+San Mateo County,06081,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,11197,2.131892904606503
+Santa Barbara County,06083,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,17455,5.839941115460538
+Santa Barbara County,06083,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,5714,1.9117401050553715
+Santa Clara County,06085,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,79367,6.110865154740777
+Santa Clara County,06085,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,25979,2.0002540836243106
+Santa Cruz County,06087,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,11799,6.206308879455903
+Santa Cruz County,06087,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,3862,2.0314234165996012
+Shasta County,06089,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,6567,5.41170847479975
+Shasta County,06089,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2150,1.7717638527210997
+Sierra County,06091,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,92,4.269141531322505
 Sierra County,06091,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,30,1.3921113689095128
-Siskiyou County,06093,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1454,4.863364217145533
-Siskiyou County,06093,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,476,1.5921329899321002
-Solano County,06095,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,21275,7.09263599358579
-Solano County,06095,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,6964,2.3216506255854967
-Sonoma County,06097,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,19553,5.707172128755064
-Sonoma County,06097,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,6400,1.86804590722817
-Stanislaus County,06099,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,26256,7.598959252838467
-Stanislaus County,06099,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,8594,2.4872583721394648
-Sutter County,06101,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,4562,7.376505780580484
-Sutter County,06101,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1493,2.4140997655428893
-Tehama County,06103,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2166,5.081524926686217
-Tehama County,06103,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,709,1.6633431085043988
-Trinity County,06105,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,313,3.5882150636248995
-Trinity County,06105,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,102,1.1693224807978906
-Tulare County,06107,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,25119,9.022661719330888
-Tulare County,06107,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,8222,2.9533152058735843
-Tuolumne County,06109,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2003,5.144471555156029
-Tuolumne County,06109,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,656,1.6848593810196482
-Ventura County,06111,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,36829,6.544597051208465
-Ventura County,06111,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,12055,2.1422009137450932
-Yolo County,06113,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,7978,5.315371136561998
-Yolo County,06113,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2611,1.7395881220310074
-Yuba County,06115,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3213,6.553264394542006
-Yuba County,06115,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1052,2.1456688898407066
-Alameda County,06001,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,80652,7.1320875849926555
-Alameda County,06001,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,21032,1.8598679026876648
-Alpine County,06003,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,53,6.717363751584284
-Alpine County,06003,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,14,1.7743979721166032
-Amador County,06005,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1322,4.612378759332914
-Amador County,06005,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,345,1.2036843207033703
-Butte County,06007,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,8589,5.784617456896552
-Butte County,06007,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2240,1.5086206896551724
-Calaveras County,06009,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1624,5.0208687586953165
-Calaveras County,06009,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,423,1.307775544906477
-Colusa County,06011,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1124,8.424524059361415
-Colusa County,06011,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,293,2.1960725528406537
-Contra Costa County,06013,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,53610,7.0523884194020265
-Contra Costa County,06013,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,13980,1.839067153576578
-Del Norte County,06015,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,868,4.646680942184155
-Del Norte County,06015,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,226,1.2098501070663812
-El Dorado County,06017,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,7150,5.439413304120261
-El Dorado County,06017,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1864,1.4180512445986246
-Fresno County,06019,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,49462,8.118146590138803
-Fresno County,06019,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,12898,2.116935318418388
-Glenn County,06021,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,994,5.616771204158897
-Glenn County,06021,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,259,1.4635248912245014
-Humboldt County,06023,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,4884,5.230410058151365
-Humboldt County,06023,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1274,1.3643616736455444
-Imperial County,06025,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,15684,14.244843464755728
-Imperial County,06025,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,4090,3.7147035048999575
-Inyo County,06027,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,640,5.2640236881065965
-Inyo County,06027,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,167,1.373581181115315
-Kern County,06029,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,49173,9.029129422479453
-Kern County,06029,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,12823,2.35455486922608
-Kings County,06031,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6135,6.471655520158653
-Kings County,06031,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1600,1.6877993206607735
-Lake County,06033,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2669,6.190133821926386
-Lake County,06033,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,696,1.6142124915926432
-Lassen County,06035,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,616,2.867383512544803
-Lassen County,06035,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,161,0.7494297816878462
-Los Angeles County,06037,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,818555,12.206038399391126
-Los Angeles County,06037,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,213456,3.1829896984080874
-Madera County,06039,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6246,6.4397727624212555
-Madera County,06039,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1629,1.679537276654535
-Marin County,06041,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,9305,5.279163049830079
-Marin County,06041,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2426,1.3763836172904647
-Mariposa County,06043,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,697,5.688402840120787
-Mariposa County,06043,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,182,1.4853505264016975
-Mendocino County,06045,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3283,5.647880539499036
-Mendocino County,06045,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,856,1.4726121662537848
-Merced County,06047,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,13025,7.805103129232133
-Merced County,06047,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,3397,2.0356188353168183
-Modoc County,06049,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,212,3.5041322314049586
-Modoc County,06049,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,55,0.9090909090909091
-Mono County,06051,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,795,7.8806502775574945
-Mono County,06051,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,207,2.051942902458366
-Monterey County,06053,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,18402,6.741350761250238
-Monterey County,06053,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,4799,1.7580557712878977
-Napa County,06055,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,5863,6.277570773908947
-Napa County,06055,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1529,1.6371150798749412
-Nevada County,06057,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3654,5.1927750223826505
-Nevada County,06057,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,953,1.354328023079
-Orange County,06059,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,153150,7.2521690212342
-Orange County,06059,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,39937,1.8911516434935045
-Placer County,06061,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,13817,5.240500951990836
-Placer County,06061,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,3603,1.366543021641672
-Plumas County,06063,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,636,4.818911956357024
-Plumas County,06063,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,166,1.2577663282315503
-Riverside County,06065,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,122981,7.798716373937102
-Riverside County,06065,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,32070,2.0336867817968862
-Sacramento County,06067,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,74217,7.348516127882419
-Sacramento County,06067,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,19354,1.9163154147841646
-San Benito County,06069,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2855,7.178236492092625
-San Benito County,06069,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,744,1.8706157443491815
-San Bernardino County,06071,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,105730,7.728699476176483
-San Bernardino County,06071,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,27571,2.015397458220579
-San Diego County,06073,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,151786,6.810825994268148
-San Diego County,06073,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,39582,1.7760934111520288
-San Francisco County,06075,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,51183,7.892959362431839
-San Francisco County,06075,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,13347,2.058248414715389
-San Joaquin County,06077,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,39585,8.35757808640281
-San Joaquin County,06077,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,10323,2.1794942171513507
-San Luis Obispo County,06079,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,10092,5.08554007407594
-San Luis Obispo County,06079,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2632,1.326312076393963
-San Mateo County,06081,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,33688,6.48630747577358
-San Mateo County,06081,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,8785,1.6914691039738452
-Santa Barbara County,06083,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,16811,5.687750579398779
-Santa Barbara County,06083,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,4384,1.4832608732427723
-Santa Clara County,06085,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,77696,6.049502583823404
-Santa Clara County,06085,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,20261,1.5775454573059875
-Santa Cruz County,06087,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,11228,5.9724039617442735
-Santa Cruz County,06087,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2928,1.5574633772699709
-Shasta County,06089,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6110,5.091751529192154
-Shasta County,06089,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1593,1.3275221253687561
-Sierra County,06091,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,90,4.2233693101830125
+Siskiyou County,06093,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,1523,5.094156604341573
+Siskiyou County,06093,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,498,1.6657189684583737
+Solano County,06095,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,22353,7.452018442520478
+Solano County,06095,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,7317,2.439333375561327
+Sonoma County,06097,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,20256,5.912365296377159
+Sonoma County,06097,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,6630,1.9351788070191824
+Stanislaus County,06099,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,27612,7.991410073483233
+Stanislaus County,06099,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,9038,2.6157599682797863
+Sutter County,06101,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,4791,7.74678632064031
+Sutter County,06101,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1568,2.535370684776457
+Tehama County,06103,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2298,5.391202346041056
+Tehama County,06103,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,752,1.7642228739002932
+Trinity County,06105,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,348,3.9894531697810387
+Trinity County,06105,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,114,1.3068898314799955
+Tulare County,06107,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,26725,9.599531607512958
+Tulare County,06107,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,8748,3.14225266613745
+Tuolumne County,06109,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2111,5.421856941055606
+Tuolumne County,06109,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,691,1.774752793116733
+Ventura County,06111,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,37797,6.7166128524946735
+Ventura County,06111,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,12372,2.1985325346208455
+Yolo County,06113,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,8356,5.567214993370777
+Yolo County,06113,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,2735,1.8222035671217178
+Yuba County,06115,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,3401,6.936710926186542
+Yuba County,06115,2020-10-14,2020-10-26,curfoodsuf,4,Often not enough to eat,1113,2.2700850517040934
+Alameda County,06001,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,82475,7.293296180780009
+Alameda County,06001,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,21507,1.9018723365872767
+Alpine County,06003,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,57,7.224334600760456
+Alpine County,06003,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,15,1.9011406844106464
+Amador County,06005,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1417,4.943828065033843
+Amador County,06005,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,370,1.2909078222036146
+Butte County,06007,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,8998,6.060075431034483
+Butte County,06007,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2346,1.580010775862069
+Calaveras County,06009,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1727,5.339310558046066
+Calaveras County,06009,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,450,1.3912505796877415
+Colusa County,06011,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1173,8.791785339529305
+Colusa County,06011,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,306,2.293509219007645
+Contra Costa County,06013,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,55038,7.240241630797403
+Contra Costa County,06013,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,14353,1.8881352543122047
+Del Norte County,06015,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,944,5.053533190578158
+Del Norte County,06015,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,246,1.316916488222698
+El Dorado County,06017,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,7408,5.635688637331873
+El Dorado County,06017,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1932,1.4697827277706774
+Fresno County,06019,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,52501,8.61693449777359
+Fresno County,06019,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,13691,2.2470895832273334
+Glenn County,06021,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1047,5.916256992710629
+Glenn County,06021,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,273,1.5426343448042041
+Humboldt County,06023,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,5136,5.500283795795538
+Humboldt County,06023,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1339,1.4339719631172558
+Imperial County,06025,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,16321,14.823392641435747
+Imperial County,06025,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,4256,3.865471422213745
+Inyo County,06027,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,690,5.675275538739925
+Inyo County,06027,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,180,1.4805066622799803
+Kern County,06029,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,50805,9.328796703659908
+Kern County,06029,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,13249,2.4327768433577424
+Kings County,06031,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6623,6.986434312960189
+Kings County,06031,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1727,1.8217683917382224
+Lake County,06033,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2883,6.686457777674699
+Lake County,06033,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,752,1.744091657582856
+Lassen County,06035,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,661,3.076851463948238
+Lassen County,06035,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,172,0.8006330586975748
+Los Angeles County,06037,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,772782,11.523485613499732
+Los Angeles County,06037,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,201518,3.0049739433129123
+Madera County,06039,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6595,6.799599962883154
+Madera County,06039,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1720,1.773360414883855
+Marin County,06041,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,9373,5.3177426400921375
+Marin County,06041,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2444,1.3865958617715974
+Mariposa County,06043,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,709,5.786338039663756
+Mariposa County,06043,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,185,1.5098343262874399
+Mendocino County,06045,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3457,5.947219928433801
+Mendocino County,06045,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,901,1.5500275254610514
+Merced County,06047,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,13672,8.192811514998981
+Merced County,06047,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,3565,2.1362911827802344
+Modoc County,06049,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,237,3.9173553719008263
+Modoc County,06049,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,62,1.024793388429752
+Mono County,06051,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,903,8.951229183187946
+Mono County,06051,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,236,2.3394131641554323
+Monterey County,06053,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,19284,7.064460823820758
+Monterey County,06053,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,5029,1.8423134973550401
+Napa County,06055,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6153,6.588076577155339
+Napa County,06055,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1605,1.718489014518823
+Nevada County,06057,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3796,5.39457416118351
+Nevada County,06057,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,990,1.4069094888228857
+Orange County,06059,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,154567,7.3192687502782015
+Orange County,06059,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,40307,1.908672391373731
+Placer County,06061,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,14071,5.33683787330557
+Placer County,06061,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,3669,1.3915754500147919
+Plumas County,06063,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,694,5.258372480678891
+Plumas County,06063,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,181,1.3714199121078952
+Riverside County,06065,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,127362,8.076533080861086
+Riverside County,06065,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,33212,2.1061055627389518
+Sacramento County,06067,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,76492,7.57377279671749
+Sacramento County,06067,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,19947,1.9750306695618336
+San Benito County,06069,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2987,7.51011993060619
+San Benito County,06069,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,779,1.9586151409247479
+San Bernardino County,06071,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,112779,8.243970474072709
+San Bernardino County,06071,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,29410,2.149825513991775
+San Diego County,06073,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,156789,7.035316806657456
+San Diego County,06073,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,40886,1.8346055077651924
+San Francisco County,06075,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,50484,7.78516617730514
+San Francisco County,06075,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,13165,2.030182091835476
+San Joaquin County,06077,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,41505,8.762947542658802
+San Joaquin County,06077,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,10823,2.285059179718015
+San Luis Obispo County,06079,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,10230,5.1550807528534355
+San Luis Obispo County,06079,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2668,1.3444531230315704
+San Mateo County,06081,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,34159,6.576994094780032
+San Mateo County,06081,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,8908,1.7151515968354027
+Santa Barbara County,06083,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,17430,5.897179977331551
+Santa Barbara County,06083,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,4545,1.5377328168084854
+Santa Clara County,06085,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,79251,6.170576725579034
+Santa Clara County,06085,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,20667,1.609157098175946
+Santa Cruz County,06087,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,11782,6.267087947744125
+Santa Cruz County,06087,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,3072,1.6340599368078383
+Shasta County,06089,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,6557,5.4642577376289605
+Shasta County,06089,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1710,1.4250237503958398
+Sierra County,06091,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,92,4.317221961520413
 Sierra County,06091,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,24,1.1262318160488034
-Siskiyou County,06093,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1452,4.911378703828981
-Siskiyou County,06093,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,379,1.2819645514815317
-Solano County,06095,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,21244,7.161977196566674
-Solano County,06095,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,5540,1.867696934145141
-Sonoma County,06097,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,19524,5.7628109199422655
-Sonoma County,06097,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,5091,1.5026874817366356
-Stanislaus County,06099,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,26217,7.673013773201669
-Stanislaus County,06099,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,6837,2.001006795872137
-Sutter County,06101,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,4555,7.448043560017659
-Sutter County,06101,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1188,1.9425413280572952
-Tehama County,06103,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2162,5.129178429930488
-Tehama County,06103,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,564,1.3380465469383882
-Trinity County,06105,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,312,3.617391304347826
-Trinity County,06105,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,81,0.9391304347826087
-Tulare County,06107,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,25082,9.110722043428671
-Tulare County,06107,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,6541,2.3759362445605188
-Tuolumne County,06109,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2000,5.194535348813049
-Tuolumne County,06109,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,521,1.3531764583657993
-Ventura County,06111,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,36775,6.608515325825413
-Ventura County,06111,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,9590,1.7233354717788092
-Yolo County,06113,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,7966,5.367092701265976
-Yolo County,06113,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2077,1.399378802476705
-Yuba County,06115,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3208,6.616752263680053
-Yuba County,06115,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,837,1.7263783181733803
-Alameda County,06001,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,80331,6.931354302295783
-Alameda County,06001,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,14139,1.219982553188185
-Alpine County,06003,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,53,6.5594059405940595
+Siskiyou County,06093,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,1521,5.1447706670274655
+Siskiyou County,06093,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,397,1.3428494114463536
+Solano County,06095,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,22320,7.524728442259846
+Solano County,06095,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,5821,1.96243029849438
+Sonoma County,06097,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,20227,5.970312255566083
+Sonoma County,06097,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,5275,1.5569979308899535
+Stanislaus County,06099,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,27571,8.06929331124626
+Stanislaus County,06099,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,7190,2.1043204420536292
+Sutter County,06101,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,4784,7.822489657766077
+Sutter County,06101,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,1247,2.0390143401409486
+Tehama County,06103,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2294,5.4423382600650045
+Tehama County,06103,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,598,1.4187089274275817
+Trinity County,06105,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,348,4.034782608695652
+Trinity County,06105,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,91,1.055072463768116
+Tulare County,06107,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,26686,9.693354933854458
+Tulare County,06107,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,6959,2.527769504035568
+Tuolumne County,06109,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2108,5.475040257648954
+Tuolumne County,06109,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,550,1.4284972209235884
+Ventura County,06111,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,37742,6.7822864834072805
+Ventura County,06111,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,9842,1.7686201995043838
+Yolo County,06113,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,8344,5.621770210816383
+Yolo County,06113,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,2176,1.466080054978002
+Yuba County,06115,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,3397,7.006579625848236
+Yuba County,06115,2020-09-30,2020-10-12,curfoodsuf,4,Often not enough to eat,886,1.8274446713280943
+Alameda County,06001,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,80273,6.926349776651472
+Alameda County,06001,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,14128,1.2190334190142638
+Alpine County,06003,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,51,6.311881188118812
 Alpine County,06003,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,9,1.113861386138614
-Amador County,06005,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1317,4.483404255319149
-Amador County,06005,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,232,0.7897872340425532
-Butte County,06007,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,8555,5.621927818521147
-Butte County,06007,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1506,0.9896695844176326
-Calaveras County,06009,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1618,4.88099188512474
-Calaveras County,06009,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,285,0.8597544420646174
-Colusa County,06011,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1120,8.190726927014772
-Colusa County,06011,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,197,1.4406903612695627
-Contra Costa County,06013,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,53396,6.853821676898965
-Contra Costa County,06013,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,9398,1.2063116360681787
-Del Norte County,06015,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,865,4.518150953251502
-Del Norte County,06015,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,152,0.7939409767563332
-El Dorado County,06017,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,7121,5.285895618221902
-El Dorado County,06017,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1253,0.9300979089498727
-Fresno County,06019,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,49266,7.889805997828406
-Fresno County,06019,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8671,1.3886353226803496
-Glenn County,06021,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,990,5.45845509180129
-Glenn County,06021,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,174,0.9593648343165904
-Humboldt County,06023,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,4864,5.0826558548767995
-Humboldt County,06023,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,856,0.8944805534075947
-Imperial County,06025,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,15622,13.844258735743214
-Imperial County,06025,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2749,2.436171249811682
-Inyo County,06027,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,637,5.112359550561798
-Inyo County,06027,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,112,0.898876404494382
-Kern County,06029,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,48977,8.774944190229796
-Kern County,06029,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8620,1.5443987773808288
-Kings County,06031,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,6111,6.289949050486336
-Kings County,06031,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1076,1.1075086202459987
-Lake County,06033,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2658,6.015071624159859
-Lake County,06033,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,468,1.0590871031252123
-Lassen County,06035,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,614,2.788627486601871
-Lassen County,06035,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,108,0.49050776637296756
-Los Angeles County,06037,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,815298,11.862513811503568
-Los Angeles County,06037,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,143497,2.087868662022141
-Madera County,06039,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,6221,6.258425383795094
-Madera County,06039,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1095,1.101587493209392
-Marin County,06041,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,9267,5.130036204205002
-Marin County,06041,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1631,0.9028908005890103
-Mariposa County,06043,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,694,5.526357700270744
-Mariposa County,06043,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,122,0.9714922758401019
-Mendocino County,06045,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3270,5.48897169906335
-Mendocino County,06045,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,576,0.9668647396515259
-Merced County,06047,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,12973,7.585352020441217
-Merced County,06047,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2283,1.3348769492536265
-Modoc County,06049,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,211,3.403225806451613
-Modoc County,06049,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,37,0.5967741935483871
-Mono County,06051,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,792,7.661056297156123
-Mono County,06051,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,139,1.3445540723544205
-Monterey County,06053,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,18329,6.5517105794630375
-Monterey County,06053,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3226,1.1531353772354063
-Napa County,06055,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,5839,6.10021103658664
-Napa County,06055,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1028,1.0739881735932635
-Nevada County,06057,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3639,5.045966970339864
-Nevada County,06057,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,641,0.8888334234646478
-Orange County,06059,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,152540,7.0480323357476715
-Orange County,06059,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,26848,1.2404980473984102
-Placer County,06061,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,13762,5.093000362675509
-Placer County,06061,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2422,0.8963266152012849
-Plumas County,06063,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,634,4.686922451393509
-Plumas County,06063,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,112,0.8279736822650994
-Riverside County,06065,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,122492,7.579246975837639
-Riverside County,06065,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,21559,1.333972712928874
-Sacramento County,06067,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,73922,7.1417254065417675
-Sacramento County,06067,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,13011,1.2570140048228529
-San Benito County,06069,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2844,6.977086502134341
-San Benito County,06069,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,500,1.2266326480545606
-San Bernardino County,06071,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,105309,7.511164145209135
-San Bernardino County,06071,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,18535,1.3220088257551712
-San Diego County,06073,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,151182,6.619139208051793
-San Diego County,06073,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,26609,1.1650108821622294
-San Francisco County,06075,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,50980,7.670917922081049
-San Francisco County,06075,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8973,1.3501597982509463
-San Joaquin County,06077,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,39428,8.1224673941481491
-San Joaquin County,06077,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,6939,1.429486690879426
-San Luis Obispo County,06079,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,10052,4.942472219490608
-San Luis Obispo County,06079,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1769,0.8698003736847281
-San Mateo County,06081,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,33554,6.303765839728717
-San Mateo County,06081,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,5906,1.1095559709554093
-Santa Barbara County,06083,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,16744,5.527623260650677
-Santa Barbara County,06083,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2947,0.9728801809088358
-Santa Clara County,06085,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,77387,5.879255959254622
-Santa Clara County,06085,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,13620,1.0347405399491898
-Santa Cruz County,06087,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,11183,5.804134466168067
-Santa Cruz County,06087,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1968,1.0214197111167627
-Shasta County,06089,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,6086,4.948731917938543
-Shasta County,06089,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1071,0.8708662313690733
-Sierra County,06091,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,90,4.1208791208791204
-Sierra County,06091,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,16,0.7326007326007326
-Siskiyou County,06093,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1446,4.772434733819598
-Siskiyou County,06093,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,254,0.838311495428892
-Solano County,06095,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,21160,6.9605950058717685
-Solano County,06095,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3724,1.2250120889350882
-Sonoma County,06097,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,19447,5.600820236336355
-Sonoma County,06097,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3423,0.9858388270159584
-Stanislaus County,06099,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,26113,7.457149874062609
-Stanislaus County,06099,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,4596,1.3124903619343526
-Sutter County,06101,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,4537,7.238700001595482
-Sutter County,06101,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,799,1.2747897952997111
-Tehama County,06103,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2154,4.986226533021598
-Tehama County,06103,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,379,0.8773351234982292
-Trinity County,06105,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,311,3.518099547511312
+Amador County,06005,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1312,4.466382978723404
+Amador County,06005,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,231,0.7863829787234042
+Butte County,06007,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,8521,5.599584680493126
+Butte County,06007,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1500,0.9857266777068054
+Calaveras County,06009,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1600,4.82669160457329
+Calaveras County,06009,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,282,0.8507043953060424
+Colusa County,06011,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1089,7.964019306713471
+Colusa County,06011,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,192,1.4041246160596752
+Contra Costa County,06013,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,53215,6.83058881819197
+Contra Costa County,06013,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,9366,1.2022041693354504
+Del Norte County,06015,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,858,4.481587881953513
+Del Norte County,06015,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,151,0.7887176808566205
+El Dorado County,06017,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,7046,5.230223357111575
+El Dorado County,06017,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1240,0.920448050357416
+Fresno County,06019,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,48542,7.77385951257635
+Fresno County,06019,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8544,1.3682966436375168
+Glenn County,06021,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,976,5.3812648177758176
+Glenn County,06021,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,172,0.9483376523129514
+Humboldt County,06023,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,4895,5.115049426320299
+Humboldt County,06023,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,862,0.9007502769127882
+Imperial County,06025,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,15488,13.725507572602156
+Imperial County,06025,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2726,2.4157885874815004
+Inyo County,06027,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,640,5.136436597110754
+Inyo County,06027,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,113,0.9069020866773676
+Kern County,06029,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,47982,8.596675421843031
+Kern County,06029,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8445,1.513044973895719
+Kings County,06031,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,5962,6.136585867942978
+Kings County,06031,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1049,1.079717976429417
+Lake County,06033,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2634,5.960759465025233
+Lake County,06033,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,464,1.0500350766027744
+Lassen County,06035,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,604,2.7432101008265963
+Lassen County,06035,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,106,0.48142428921791264
+Los Angeles County,06037,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,825558,12.011795904316289
+Los Angeles County,06037,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,145303,2.114145802335959
+Madera County,06039,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,6133,6.16989597794813
+Madera County,06039,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1079,1.0854912376008532
+Marin County,06041,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,9307,5.152179448854641
+Marin County,06041,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1638,0.906765868402697
+Mariposa County,06043,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,685,5.454690237298933
+Mariposa County,06043,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,121,0.9635292243987896
+Mendocino County,06045,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3287,5.517507637560009
+Mendocino County,06045,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,578,0.970221908886427
+Merced County,06047,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,12699,7.4251433984107775
+Merced County,06047,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2235,1.306811205248294
+Modoc County,06049,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,204,3.2903225806451615
+Modoc County,06049,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,36,0.5806451612903226
+Mono County,06051,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,800,7.738440704198104
+Mono County,06051,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,141,1.363900174114916
+Monterey County,06053,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,18123,6.478075772361211
+Monterey County,06053,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3190,1.140267158518582
+Napa County,06055,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,5830,6.0908084163898115
+Napa County,06055,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1026,1.0718987024384128
+Nevada County,06057,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3650,5.061219962006184
+Nevada County,06057,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,642,0.8902200590706768
+Orange County,06059,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,151401,6.995405425885232
+Orange County,06059,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,26647,1.2312109456579796
+Placer County,06061,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,13659,5.054882426521202
+Placer County,06061,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2404,0.8896652283005322
+Plumas County,06063,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,630,4.657351962741184
+Plumas County,06063,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,111,0.8205810601020181
+Riverside County,06065,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,121421,7.512978374532067
+Riverside County,06065,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,21371,1.3223401293196795
+Sacramento County,06067,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,73166,7.068687009212885
+Sacramento County,06067,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,12878,1.2441646571446237
+San Benito County,06069,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2824,6.928021196212159
+San Benito County,06069,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,497,1.2192728521662333
+San Bernardino County,06071,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,104359,7.443405397733149
+San Bernardino County,06071,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,18368,1.3100975511988662
+San Diego County,06073,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,150390,6.584463398413232
+San Diego County,06073,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,26469,1.1588813198523826
+San Francisco County,06075,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,50656,7.622165913317724
+San Francisco County,06075,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,8916,1.3415830559685098
+San Joaquin County,06077,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,38989,8.032030060628035
+San Joaquin County,06077,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,6862,1.413624106184554
+San Luis Obispo County,06079,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,10034,4.933621791719933
+San Luis Obispo County,06079,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1766,0.8683253023896155
+San Mateo County,06081,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,33428,6.280094310378838
+San Mateo County,06081,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,5883,1.1052349775026538
+Santa Barbara County,06083,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,16701,5.513427859300464
+Santa Barbara County,06083,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,2940,0.9705693016192661
+Santa Clara County,06085,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,76988,5.848943075595318
+Santa Clara County,06085,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,13550,1.0294224901843996
+Santa Cruz County,06087,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,11244,5.83579432510004
+Santa Cruz County,06087,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1979,1.0271288660061348
+Shasta County,06089,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,6019,4.89425195761947
+Shasta County,06089,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1059,0.8611086265358063
+Sierra County,06091,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,88,4.029304029304029
+Sierra County,06091,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,15,0.6868131868131868
+Siskiyou County,06093,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1422,4.693224198818442
+Siskiyou County,06093,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,250,0.8251097395953662
+Solano County,06095,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,21031,6.918160376582664
+Solano County,06095,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3701,1.2174462247982711
+Sonoma County,06097,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,19530,5.624724595857922
+Sonoma County,06097,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,3437,0.9898708876581503
+Stanislaus County,06099,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,25714,7.343206520187107
+Stanislaus County,06099,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,4526,1.2925002998509312
+Sutter County,06101,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,4447,7.095106657944701
+Sutter County,06101,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,783,1.2492620897617945
+Tehama County,06103,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2128,4.926039954628579
+Tehama County,06103,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,374,0.8657607814995717
+Trinity County,06105,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,313,3.5407239819004523
 Trinity County,06105,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,55,0.6221719457013575
-Tulare County,06107,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,24983,8.85460416024271
-Tulare County,06107,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,4397,1.5584074968013129
-Tuolumne County,06109,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1992,5.048277959400897
-Tuolumne County,06109,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,351,0.8895309054968449
-Ventura County,06111,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,36629,6.4225797627981684
-Ventura County,06111,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,6447,1.1304259393038245
-Yolo County,06113,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,7934,5.215859262521941
-Yolo County,06113,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1396,0.9177387862970292
-Yuba County,06115,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3195,6.429994566201775
-Yuba County,06115,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,562,1.1310350379359617
-Alameda County,06001,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,83276,7.372265035389103
-Alameda County,06001,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,17656,1.5630519172970605
-Alpine County,06003,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,54,6.852791878172589
-Alpine County,06003,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,12,1.5228426395939085
-Amador County,06005,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1365,4.767559638154448
-Amador County,06005,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,290,1.0128881282525934
-Butte County,06007,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,8869,5.979799886728337
-Butte County,06007,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1880,1.2675638501577713
-Calaveras County,06009,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1677,5.190504193877866
-Calaveras County,06009,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,356,1.101860162802934
-Colusa County,06011,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1161,8.71163802806333
-Colusa County,06011,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,246,1.845876791475951
-Contra Costa County,06013,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,55354,7.28985722921158
-Contra Costa County,06013,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,11736,1.545575106442662
-Del Norte County,06015,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,896,4.801972238597996
-Del Norte County,06015,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,190,1.018275363095557
-El Dorado County,06017,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,7382,5.622110690540201
-El Dorado County,06017,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1565,1.1918996519500697
-Fresno County,06019,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,51072,8.391663544768026
-Fresno County,06019,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,10828,1.7791536039855145
-Glenn County,06021,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1026,5.804152288284211
-Glenn County,06021,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,218,1.2332409345477173
-Humboldt County,06023,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,5043,5.406651371228852
-Humboldt County,06023,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1069,1.146085725925767
-Imperial County,06025,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,16194,14.724361480619379
-Imperial County,06025,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3433,3.121448250152299
-Inyo County,06027,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,660,5.434782608695652
-Inyo County,06027,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,140,1.152832674571805
-Kern County,06029,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,50772,9.333036766341362
-Kern County,06029,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,10765,1.9788493813453234
-Kings County,06031,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6335,6.690040446495517
-Kings County,06031,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1343,1.4182674537716622
-Lake County,06033,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2755,6.396712252432144
-Lake County,06033,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,584,1.3559636861779933
-Lassen County,06035,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,636,2.9636533084808945
-Lassen County,06035,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,135,0.6290773532152842
-Los Angeles County,06037,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,845183,12.61703498192572
-Los Angeles County,06037,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,179190,2.674978671377997
-Madera County,06039,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6449,6.656482561440088
-Madera County,06039,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1367,1.410980254533819
-Marin County,06041,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,9607,5.45650753982904
-Marin County,06041,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2037,1.1569590776133813
-Mariposa County,06043,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,719,5.874183006535947
-Mariposa County,06043,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,153,1.25
-Mendocino County,06045,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3390,5.8383852300909345
-Mendocino County,06045,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,719,1.2382887847891981
-Merced County,06047,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,13449,8.068076835398994
-Merced County,06047,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2851,1.7103195076007536
-Modoc County,06049,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,219,3.6240278007612114
-Modoc County,06049,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,46,0.7612113188813503
-Mono County,06051,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,821,8.14807463279079
-Mono County,06051,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,174,1.7268757443429932
-Monterey County,06053,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,19001,6.968471161216264
-Monterey County,06053,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,4028,1.477238136802227
-Napa County,06055,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6053,6.488160955269956
-Napa County,06055,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1283,1.3752371560567245
-Nevada County,06057,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3773,5.367838495354892
-Nevada County,06057,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,800,1.1381581755324446
-Orange County,06059,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,158132,7.4963580571437785
-Orange County,06059,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,33526,1.5893234780044665
-Placer County,06061,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,14266,5.416775829925541
-Placer County,06061,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3025,1.148587332505591
-Plumas County,06063,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,657,4.983313106796117
-Plumas County,06063,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,139,1.0543082524271845
-Riverside County,06065,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,126982,8.06133578127956
-Riverside County,06065,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,26922,1.7091184727253337
-Sacramento County,06067,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,76632,7.596013262691494
-Sacramento County,06067,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,16247,1.610455520917485
-San Benito County,06069,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2948,7.420272345138312
-San Benito County,06069,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,625,1.5731581464421456
-San Bernardino County,06071,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,109169,7.988903101921101
-San Bernardino County,06071,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,23146,1.6938064028897013
-San Diego County,06073,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,156724,7.040171345994118
-San Diego County,06073,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,33228,1.4926291664626512
-San Francisco County,06075,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,52848,8.15872839437559
-San Francisco County,06075,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,11205,1.7298393819818818
-San Joaquin County,06077,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,40873,8.63905275416967
-San Joaquin County,06077,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,8666,1.831674483586582
-San Luis Obispo County,06079,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,10420,5.25662627505978
-San Luis Obispo County,06079,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2209,1.1143845913250532
-San Mateo County,06081,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,34784,6.704729008207433
-San Mateo County,06081,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,7375,1.4215552103130698
-Santa Barbara County,06083,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,17357,5.878965854782058
-Santa Barbara County,06083,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3680,1.2464477931438598
-Santa Clara County,06085,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,80223,6.253161735074467
-Santa Clara County,06085,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,17009,1.325804668884006
-Santa Cruz County,06087,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,11593,6.1733522905783556
-Santa Cruz County,06087,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2458,1.3089019175572845
-Shasta County,06089,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6309,5.263421349017645
-Shasta County,06089,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1338,1.1162557877612314
-Sierra County,06091,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,93,4.368248003757633
-Sierra County,06091,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,20,0.9394081728511038
-Siskiyou County,06093,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1499,5.075849925504538
-Siskiyou County,06093,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,318,1.0767980495733442
-Solano County,06095,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,21935,7.4031198741790245
-Solano County,06095,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,4651,1.5697246653661565
-Sonoma County,06097,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,20160,5.957112337073273
-Sonoma County,06097,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,4274,1.2629314547942048
-Stanislaus County,06099,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,27070,7.931415378214538
-Stanislaus County,06099,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,5739,1.6815069396222102
-Sutter County,06101,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,4704,7.700240632519766
-Sutter County,06101,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,997,1.6320450490268297
-Tehama County,06103,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2233,5.303408146300915
-Tehama County,06103,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,473,1.1233820211376322
-Trinity County,06105,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,322,3.737233054781801
-Trinity County,06105,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,68,0.7892293407613742
-Tulare County,06107,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,25898,9.417523036531176
-Tulare County,06107,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,5491,1.9967417944857782
-Tuolumne County,06109,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2065,5.369354377388908
-Tuolumne County,06109,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,438,1.1388751657609402
-Ventura County,06111,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,37972,6.831155046639022
-Ventura County,06111,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,8051,1.4483732560963543
-Yolo County,06113,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,8225,5.547723915580167
-Yolo County,06113,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1744,1.176319818695661
-Yuba County,06115,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3312,6.838736320462523
-Yuba County,06115,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,702,1.4495147635762957
+Tulare County,06107,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,24721,8.761744764254095
+Tulare County,06107,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,4351,1.5421039387269757
+Tuolumne County,06109,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,1969,4.989989609468055
+Tuolumne County,06109,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,347,0.8793938011606984
+Ventura County,06111,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,36526,6.404519599660539
+Ventura County,06111,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,6429,1.1272697942894816
+Yolo County,06113,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,7832,5.148803849769579
+Yolo County,06113,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,1378,0.9059054781642595
+Yuba County,06115,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,3144,6.327356155285878
+Yuba County,06115,2020-09-16,2020-09-28,curfoodsuf,4,Often not enough to eat,553,1.1129223771860974
+Alameda County,06001,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,83216,7.36695335012416
+Alameda County,06001,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,17643,1.5619010521563228
+Alpine County,06003,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,53,6.725888324873097
+Alpine County,06003,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,11,1.3959390862944163
+Amador County,06005,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1360,4.7500960497363
+Amador County,06005,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,288,1.005902692885334
+Butte County,06007,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,8833,5.9555273874699965
+Butte County,06007,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1873,1.262844197524205
+Calaveras County,06009,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1659,5.134792163174348
+Calaveras County,06009,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,352,1.0894797115354855
+Colusa County,06011,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1129,8.471523973887596
+Colusa County,06011,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,239,1.7933518421250094
+Contra Costa County,06013,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,55165,7.264966832558746
+Contra Costa County,06013,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,11696,1.5403072976272472
+Del Norte County,06015,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,889,4.764456830483949
+Del Norte County,06015,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,189,1.0129160190792648
+El Dorado County,06017,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,7304,5.562706107248121
+El Dorado County,06017,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1549,1.1797140964029764
+Fresno County,06019,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,50321,8.26826639325407
+Fresno County,06019,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,10669,1.7530282416809617
+Glenn County,06021,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1012,5.7249533291848165
+Glenn County,06021,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,215,1.2162697290264186
+Humboldt County,06023,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,5075,5.440958895297725
+Humboldt County,06023,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1076,1.153590496815833
+Imperial County,06025,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,16056,14.5988852619998
+Imperial County,06025,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3404,3.0950800592829673
+Inyo County,06027,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,663,5.459486166007905
+Inyo County,06027,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,141,1.1610671936758894
+Kern County,06029,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,49740,9.143331930154798
+Kern County,06029,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,10546,1.9385922504103839
+Kings County,06031,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6180,6.526353584742273
+Kings County,06031,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1310,1.3834179928822616
+Lake County,06033,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2730,6.3386658617567155
+Lake County,06033,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,579,1.344354408042908
+Lassen County,06035,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,626,2.9170549860205033
+Lassen County,06035,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,133,0.6197576887232059
+Los Angeles County,06037,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,855819,12.775810991461833
+Los Angeles County,06037,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,181447,2.7086715496708713
+Madera County,06039,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6358,6.5625548341814355
+Madera County,06039,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1348,1.3913689708204742
+Marin County,06041,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,9648,5.479794394115809
+Marin County,06041,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2046,1.1620708261153552
+Mariposa County,06043,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,710,5.800653594771242
+Mariposa County,06043,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,151,1.2336601307189543
+Mendocino County,06045,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3407,5.867663268117939
+Mendocino County,06045,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,722,1.243455497382199
+Merced County,06047,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,13164,7.897104874800533
+Merced County,06047,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2791,1.6743254106326562
+Modoc County,06049,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,212,3.5081912957140493
+Modoc County,06049,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,45,0.7446632467317558
+Mono County,06051,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,830,8.237395791980944
+Mono County,06051,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,176,1.7467248908296944
+Monterey County,06053,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,18787,6.889988300919423
+Monterey County,06053,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3983,1.46073473159962
+Napa County,06055,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6044,6.478513929233705
+Napa County,06055,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1281,1.3730933724931131
+Nevada County,06057,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3784,5.383488170268463
+Nevada County,06057,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,802,1.1410035709712758
+Orange County,06059,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,156950,7.440324520455796
+Orange County,06059,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,33276,1.5774720531550626
+Placer County,06061,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,14160,5.376527811001378
+Placer County,06061,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3002,1.1398542717956313
+Plumas County,06063,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,653,4.952973300970874
+Plumas County,06063,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,138,1.0467233009708738
+Riverside County,06065,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,125872,7.990868449553643
+Riverside County,06065,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,26687,1.6941997133058828
+Sacramento County,06067,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,75848,7.518300630919517
+Sacramento County,06067,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,16081,1.5940010606188264
+San Benito County,06069,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2927,7.367414231417856
+San Benito County,06069,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,621,1.5630899343049158
+San Bernardino County,06071,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,108184,7.916821562698499
+San Bernardino County,06071,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,22937,1.678511944313535
+San Diego County,06073,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,155903,7.003291348833114
+San Diego County,06073,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,33054,1.484812942947408
+San Francisco County,06075,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,52513,8.107010751094561
+San Francisco County,06075,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,11133,1.7187239482020786
+San Joaquin County,06077,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,40418,8.542882446065367
+San Joaquin County,06077,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,8569,1.8111722420786314
+San Luis Obispo County,06079,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,10401,5.247041255940189
+San Luis Obispo County,06079,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2205,1.1123666925630342
+San Mateo County,06081,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,34653,6.679478332607296
+San Mateo County,06081,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,7347,1.4161581193451016
+Santa Barbara County,06083,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,17314,5.864401383286084
+Santa Barbara County,06083,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,3671,1.2433994153888883
+Santa Clara County,06085,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,79810,6.220969523407168
+Santa Clara County,06085,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,16921,1.318945311434315
+Santa Cruz County,06087,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,11656,6.206900224185397
+Santa Cruz County,06087,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,2471,1.3158245070317534
+Shasta County,06089,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,6240,5.205856588662245
+Shasta County,06089,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1323,1.103741709423101
+Sierra County,06091,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,91,4.274307186472522
+Sierra County,06091,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,19,0.8924377642085486
+Siskiyou County,06093,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,1474,4.9911959907896515
+Siskiyou County,06093,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,312,1.0564811052417717
+Solano County,06095,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,21801,7.357894523682559
+Solano County,06095,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,4622,1.5599370895124438
+Sonoma County,06097,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,20245,5.982229130161132
+Sonoma County,06097,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,4292,1.268250305095163
+Stanislaus County,06099,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,26657,7.810407821834685
+Stanislaus County,06099,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,5652,1.6560162437262123
+Sutter County,06101,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,4610,7.546366776342713
+Sutter County,06101,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,977,1.5993059306912865
+Tehama County,06103,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2206,5.239282745517159
+Tehama County,06103,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,468,1.1115069469184182
+Trinity County,06105,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,324,3.7604456824512535
+Trinity County,06105,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,69,0.8008356545961003
+Tulare County,06107,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,25627,9.318976865286293
+Tulare County,06107,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,5433,1.9756507320053236
+Tuolumne County,06109,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2041,5.306950258717075
+Tuolumne County,06109,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,433,1.1258743077043085
+Ventura County,06111,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,37865,6.811905768486953
+Ventura County,06111,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,8028,1.4442355607926385
+Yolo County,06113,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,8119,5.476227412838344
+Yolo County,06113,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,1721,1.160806426591303
+Yuba County,06115,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,3260,6.731364856493909
+Yuba County,06115,2020-09-02,2020-09-14,curfoodsuf,4,Often not enough to eat,691,1.4268015692752427
 Alameda County,06001,2020-08-19,2020-08-31,curfoodsuf,3,Sometimes not enough to eat,77464,7.007323568575233
 Alameda County,06001,2020-08-19,2020-08-31,curfoodsuf,4,Often not enough to eat,26178,2.368038267816824
 Alpine County,06003,2020-08-19,2020-08-31,curfoodsuf,3,Sometimes not enough to eat,48,6.22568093385214
