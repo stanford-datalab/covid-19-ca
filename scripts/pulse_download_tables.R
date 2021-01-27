@@ -106,7 +106,7 @@ read_cell <- function(data, category_, response_, curfoodsuf_) {
 read_sheet <- function(week, sheet) {
   v <-
     read_excel(
-      path = str_glue("{dir_tmp}/{week}/food2b.xlsx"),
+      path = str_glue("{dir_tmp}/{week}/food2.xlsx"),
       col_types = "text",
       sheet = sheet,
       skip = if_else(parse_number(week) <= 12, 4, 5)
@@ -212,9 +212,9 @@ download <- function(week) {
     html_table() %>%
     pluck(2) %>%
     unlist() %>%
-    keep(~ str_detect(., "^food2b") & !str_detect(., "_se_"))
+    keep(~ str_detect(., "^food2") & !str_detect(., "_se_"))
   url <- str_glue(url_pulse, "/{week}/{file}")
-  dest <- str_glue("{dir_tmp}/{week}/food2b.xlsx")
+  dest <- str_glue("{dir_tmp}/{week}/food2.xlsx")
   fs::dir_create(str_glue("{dir_tmp}/{week}"))
   result <- download.file(url = url, destfile = dest, quiet = TRUE)
   assertthat::assert_that(
