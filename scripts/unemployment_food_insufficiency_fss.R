@@ -128,7 +128,7 @@ unemployment_us <-
 unemployment_fss <-
   unemployment_us %>%
   bind_rows(unemployment_states) %>%
-  arrange(year, month, fips)%>%
+  arrange(year, month, fips) %>%
   mutate(
     date = make_date(year = year, month = month),
     unemployment_rate = 100 * unemployment / labor_force
