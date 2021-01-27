@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2020-07-31
+# Version: 2021-01-26
 
 # Libraries
 library(tidyverse)
@@ -180,16 +180,27 @@ process_puf <- function(file) {
     ) %>%
     ungroup()
 
-  # Estimate number of food insecure adults for state
-  state_food_insecure_total_n <-
+  # Estimate number of adults for each variable response who responded to the
+  # food insecurity question
+  state_food_insecure_1234 <-
     data %>%
-    filter(curfoodsuf %in% 3:4) %>%
-    estimate(week, est_st) %>%
-    pull(n)
+    filter(curfoodsuf %in% 1:4) %>%
+    pivot_longer(
+      cols = all_of(intersect(vars_data, vars_curfoodsuf_34)),
+      names_to = "variable",
+      values_to = "code"
+    ) %>%
+    mutate(
+      variable = variable %>% str_replace("$", "_curfoodsuf_1234"),
+      code = code %>% na_if(-88) %>% na_if(-99)
+    ) %>%
+    estimate(week, est_st, variable, code) %>%
+    rename(fips = est_st) %>%
+    mutate(area_type = "State") %>%
+    mutate(pct = 100)
 
-  # Estimate number of food insecure adults for each variable response for
-  # state and calculate percentages
-  state_food_insecure <-
+  # Estimate number of food insecure adults for each variable response
+  state_food_insecure_34 <-
     data %>%
     filter(curfoodsuf %in% 3:4) %>%
     pivot_longer(
@@ -203,12 +214,32 @@ process_puf <- function(file) {
     ) %>%
     estimate(week, est_st, variable, code) %>%
     rename(fips = est_st) %>%
-    mutate(area_type = "State") %>%
-    mutate(pct = 100 * n / state_food_insecure_total_n)
+    mutate(area_type = "State")
+
+  # Calculate percentage of food insecure adults for each variable response
+  state_food_insecure_34_pct <-
+    state_food_insecure_34 %>%
+    select(variable, code, n) %>%
+    left_join(
+      state_food_insecure_1234 %>%
+        mutate(
+          variable = str_replace(variable, "_curfoodsuf_1234", "_curfoodsuf_34")
+        ) %>%
+        select(variable, code, n_total = n),
+      by = c("variable", "code")
+    ) %>%
+    mutate(pct = 100 * n / n_total) %>%
+    select(!c(n, n_total))
+
+  # Add percentage to number of food insecure adults for each variable response
+  state_food_insecure_34 <-
+    state_food_insecure_34 %>%
+    left_join(state_food_insecure_34_pct, by = c("variable", "code"))
 
   # Combine estimates and recode
   state %>%
-    bind_rows(state_food_insecure) %>%
+    bind_rows(state_food_insecure_1234) %>%
+    bind_rows(state_food_insecure_34) %>%
     left_join(
       recodes %>%
         filter(variable %in% c("est_st", "est_msa")) %>%
@@ -220,7 +251,11 @@ process_puf <- function(file) {
         filter(!variable %in% c("est_st", "est_msa")) %>%
         bind_rows(
           .,
-          mutate(., variable = variable %>% str_replace("$", "_curfoodsuf_34"))
+          mutate(., variable = variable %>% str_replace("$", "_curfoodsuf_34")),
+          mutate(
+            .,
+            variable = variable %>% str_replace("$", "_curfoodsuf_1234")
+          )
         ) %>%
         transmute(
           variable,
@@ -255,6 +290,7 @@ process_puf <- function(file) {
 # Calculate estimates for all PUF files
 puf <-
   files_puf %>%
+  str_sort(numeric = TRUE) %>%
   map_dfr(process_puf)
 
 # Read in table data and restrict to dates not in PUF data
