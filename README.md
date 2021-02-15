@@ -1,6 +1,7 @@
-# California Weekly Pulse
+# California Pulse
 
-This repository contains the data and code for the [California Weekly Pulse](https://stanford-datalab.github.io/covid-19-ca) site.
+This repository contains the data and code for the [California
+Pulse](https://stanford-datalab.github.io/covid-19-ca) site.
 
 * [data](data): Contains all of the data used in the report.
 * [scripts](scripts): Contains all of the code used to download and process the raw data and to generate the site.
