@@ -1,6 +1,6 @@
 area_type,area,fips,date,status,labor_force,employment,unemployment,unemployment_rate
-State,California,06,2020-12-01,Preliminary,18916444,17246819,1669625,8.8
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-12-01,Preliminary,6494897,5854205,640692,9.9
+State,California,06,2020-12-01,Final,18660835,16958587,1702248,9.1
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-12-01,NA,6466729,5750299,716430,11.1
 Region,Riverside-San Bernardino-Ontario,40140,2020-12-01,Preliminary,2086402,1896009,190393,9.1
 Region,San Francisco-Oakland-Berkeley,41860,2020-12-01,Preliminary,2510304,2335290,175014,7
 Region,Balance,NA,2020-12-01,Preliminary,7824846,7161318,663528,8.5
@@ -22,7 +22,7 @@ County,Kern County,06029,2020-12-01,Preliminary,377530,334904,42626,11.3
 County,Kings County,06031,2020-12-01,Preliminary,56006,49855,6151,11
 County,Lake County,06033,2020-12-01,Preliminary,28609,26047,2562,9
 County,Lassen County,06035,2020-12-01,Preliminary,9287,8631,656,7.1
-County,Los Angeles County,06037,2020-12-01,Preliminary,4896159,4374541,521618,10.7
+County,Los Angeles County,06037,2020-12-01,Final,4867991,4270635,597356,12.3
 County,Madera County,06039,2020-12-01,Preliminary,61480,55405,6075,9.9
 County,Marin County,06041,2020-12-01,Preliminary,134147,126754,7393,5.5
 County,Mariposa County,06043,2020-12-01,Preliminary,7164,6424,740,10.3
@@ -62,8 +62,8 @@ County,Tuolumne County,06109,2020-12-01,Preliminary,19677,17812,1865,9.5
 County,Ventura County,06111,2020-12-01,Preliminary,413838,382718,31120,7.5
 County,Yolo County,06113,2020-12-01,Preliminary,106549,99092,7457,7
 County,Yuba County,06115,2020-12-01,Preliminary,28795,25792,3003,10.4
-State,California,06,2020-11-01,Final,18938160,17442469,1495691,7.9
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-11-01,Final,6592637,5957480,635157,9.6
+State,California,06,2020-11-01,Final,18667576,17123477,1544099,8.3
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-11-01,Final,6524718,5834191,690527,10.6
 Region,Riverside-San Bernardino-Ontario,40140,2020-11-01,Final,2068819,1906225,162594,7.9
 Region,San Francisco-Oakland-Berkeley,41860,2020-11-01,Final,2501158,2347943,153215,6.1
 Region,Balance,NA,2020-11-01,Final,7775552,7230826,544726,7
@@ -85,7 +85,7 @@ County,Kern County,06029,2020-11-01,Final,370187,335478,34709,9.4
 County,Kings County,06031,2020-11-01,Final,54769,49945,4824,8.8
 County,Lake County,06033,2020-11-01,Final,28703,26636,2067,7.2
 County,Lassen County,06035,2020-11-01,Final,9642,9141,501,5.2
-County,Los Angeles County,06037,2020-11-01,Final,4999284,4465674,533610,10.7
+County,Los Angeles County,06037,2020-11-01,Final,4931365,4342385,588980,11.9
 County,Madera County,06039,2020-11-01,Final,59928,55091,4837,8.1
 County,Marin County,06041,2020-11-01,Final,134651,128308,6343,4.7
 County,Mariposa County,06043,2020-11-01,Final,7239,6684,555,7.7
@@ -125,8 +125,8 @@ County,Tuolumne County,06109,2020-11-01,Final,19663,18212,1451,7.4
 County,Ventura County,06111,2020-11-01,Final,412507,386561,25946,6.3
 County,Yolo County,06113,2020-11-01,Final,105655,99569,6086,5.8
 County,Yuba County,06115,2020-11-01,Final,28399,25936,2463,8.7
-State,California,06,2020-10-01,Final,19289337,17606781,1682556,8.7
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-10-01,Final,6698362,5980060,718302,10.7
+State,California,06,2020-10-01,Final,18887681,17129910,1757771,9.3
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-10-01,Final,6566876,5857183,709693,10.8
 Region,Riverside-San Bernardino-Ontario,40140,2020-10-01,Final,2103030,1919801,183229,8.7
 Region,San Francisco-Oakland-Berkeley,41860,2020-10-01,Final,2551436,2373685,177751,7
 Region,Balance,NA,2020-10-01,Final,7936511,7333236,603275,7.6
@@ -148,7 +148,7 @@ County,Kern County,06029,2020-10-01,Final,378798,340278,38520,10.2
 County,Kings County,06031,2020-10-01,Final,56079,51044,5035,9
 County,Lake County,06033,2020-10-01,Final,29603,27403,2200,7.4
 County,Lassen County,06035,2020-10-01,Final,10077,9569,508,5
-County,Los Angeles County,06037,2020-10-01,Final,5077090,4477098,599992,11.8
+County,Los Angeles County,06037,2020-10-01,Final,4945604,4354221,591383,12
 County,Madera County,06039,2020-10-01,Final,61648,56605,5043,8.2
 County,Marin County,06041,2020-10-01,Final,137489,130272,7217,5.2
 County,Mariposa County,06043,2020-10-01,Final,7683,7124,559,7.3
@@ -188,8 +188,8 @@ County,Tuolumne County,06109,2020-10-01,Final,20124,18513,1611,8
 County,Ventura County,06111,2020-10-01,Final,419394,390453,28941,6.9
 County,Yolo County,06113,2020-10-01,Final,107511,101118,6393,5.9
 County,Yuba County,06115,2020-10-01,Final,29037,26442,2595,8.9
-State,California,06,2020-09-01,Final,18730849,16724880,2005969,10.7
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-09-01,Final,6525145,5625656,899489,13.8
+State,California,06,2020-09-01,Final,18494445,16561306,1933139,10.5
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-09-01,Final,6367697,5596449,771248,12.1
 Region,Riverside-San Bernardino-Ontario,40140,2020-09-01,Final,2030368,1822491,207877,10.2
 Region,San Francisco-Oakland-Berkeley,41860,2020-09-01,Final,2472848,2263960,208888,8.4
 Region,Balance,NA,2020-09-01,Final,7702488,7012770,689718,9
@@ -211,7 +211,7 @@ County,Kern County,06029,2020-09-01,Final,365929,321752,44177,12.1
 County,Kings County,06031,2020-09-01,Final,54897,49408,5489,10
 County,Lake County,06033,2020-09-01,Final,28555,26130,2425,8.5
 County,Lassen County,06035,2020-09-01,Final,9108,8552,556,6.1
-County,Los Angeles County,06037,2020-09-01,Final,4962393,4202299,760094,15.3
+County,Los Angeles County,06037,2020-09-01,Final,4804945,4173092,631853,13.2
 County,Madera County,06039,2020-09-01,Final,61378,55731,5647,9.2
 County,Marin County,06041,2020-09-01,Final,132642,124073,8569,6.5
 County,Mariposa County,06043,2020-09-01,Final,7621,6990,631,8.3
@@ -251,8 +251,8 @@ County,Tuolumne County,06109,2020-09-01,Final,19307,17494,1813,9.4
 County,Ventura County,06111,2020-09-01,Final,405955,372325,33630,8.3
 County,Yolo County,06113,2020-09-01,Final,103691,96480,7211,7
 County,Yuba County,06115,2020-09-01,Final,27960,25065,2895,10.4
-State,California,06,2020-08-01,Final,18678585,16558705,2119880,11.3
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-08-01,Final,6485387,5510132,975255,15
+State,California,06,2020-08-01,Final,18690463,16390576,2299887,12.3
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-08-01,Final,6488200,5479013,1009187,15.6
 Region,Riverside-San Bernardino-Ontario,40140,2020-08-01,Final,2023269,1810878,212391,10.5
 Region,San Francisco-Oakland-Berkeley,41860,2020-08-01,Final,2471727,2256946,214781,8.7
 Region,Balance,NA,2020-08-01,Final,7698196,6980748,717448,9.3
@@ -274,7 +274,7 @@ County,Kern County,06029,2020-08-01,Final,368318,322645,45673,12.4
 County,Kings County,06031,2020-08-01,Final,55010,49449,5561,10.1
 County,Lake County,06033,2020-08-01,Final,28517,26096,2421,8.5
 County,Lassen County,06035,2020-08-01,Final,8937,8367,570,6.4
-County,Los Angeles County,06037,2020-08-01,Final,4935680,4107503,828177,16.8
+County,Los Angeles County,06037,2020-08-01,Final,4938493,4076384,862109,17.5
 County,Madera County,06039,2020-08-01,Final,61477,55649,5828,9.5
 County,Marin County,06041,2020-08-01,Final,132825,123848,8977,6.8
 County,Mariposa County,06043,2020-08-01,Final,7769,7127,642,8.3
@@ -314,8 +314,8 @@ County,Tuolumne County,06109,2020-08-01,Final,19462,17551,1911,9.8
 County,Ventura County,06111,2020-08-01,Final,404632,369299,35333,8.7
 County,Yolo County,06113,2020-08-01,Final,103606,96164,7442,7.2
 County,Yuba County,06115,2020-08-01,Final,27897,25016,2881,10.3
-State,California,06,2020-07-01,Final,18919860,16295254,2624606,13.9
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-07-01,Final,6547231,5433790,1113441,17
+State,California,06,2020-07-01,Final,18789689,16240775,2548914,13.6
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-07-01,Final,6525421,5428711,1096710,16.8
 Region,Riverside-San Bernardino-Ontario,40140,2020-07-01,Final,2066063,1788486,277577,13.4
 Region,San Francisco-Oakland-Berkeley,41860,2020-07-01,Final,2515020,2231741,283279,11.3
 Region,Balance,NA,2020-07-01,Final,7791547,6841238,950309,12.2
@@ -337,7 +337,7 @@ County,Kern County,06029,2020-07-01,Final,370501,309579,60922,16.4
 County,Kings County,06031,2020-07-01,Final,56774,49415,7359,13
 County,Lake County,06033,2020-07-01,Final,26961,23799,3162,11.7
 County,Lassen County,06035,2020-07-01,Final,8874,8113,761,8.6
-County,Los Angeles County,06037,2020-07-01,Final,4956745,4040079,916666,18.5
+County,Los Angeles County,06037,2020-07-01,Final,4934935,4035000,899935,18.2
 County,Madera County,06039,2020-07-01,Final,61219,53334,7885,12.9
 County,Marin County,06041,2020-07-01,Final,133824,121809,12015,9
 County,Mariposa County,06043,2020-07-01,Final,7975,7115,860,10.8
@@ -377,8 +377,8 @@ County,Tuolumne County,06109,2020-07-01,Final,19814,17303,2511,12.7
 County,Ventura County,06111,2020-07-01,Final,412738,365714,47024,11.4
 County,Yolo County,06113,2020-07-01,Final,104473,94543,9930,9.5
 County,Yuba County,06115,2020-07-01,Final,28264,24446,3818,13.5
-State,California,06,2020-06-01,Final,18928353,16076206,2852147,15.1
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-06-01,Final,6519105,5335945,1183160,18.1
+State,California,06,2020-06-01,Final,18743309,16103517,2639792,14.1
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-06-01,Final,6433841,5351217,1082624,16.8
 Region,Riverside-San Bernardino-Ontario,40140,2020-06-01,Final,2059311,1765284,294027,14.3
 Region,San Francisco-Oakland-Berkeley,41860,2020-06-01,Final,2515621,2198736,316885,12.6
 Region,Balance,NA,2020-06-01,Final,7834321,6776246,1058075,13.5
@@ -400,7 +400,7 @@ County,Kern County,06029,2020-06-01,Final,375049,309572,65477,17.5
 County,Kings County,06031,2020-06-01,Final,57031,48836,8195,14.4
 County,Lake County,06033,2020-06-01,Final,25853,22179,3674,14.2
 County,Lassen County,06035,2020-06-01,Final,8861,8027,834,9.4
-County,Los Angeles County,06037,2020-06-01,Final,4924463,3958922,965541,19.6
+County,Los Angeles County,06037,2020-06-01,Final,4839199,3974194,865005,17.9
 County,Madera County,06039,2020-06-01,Final,62205,53564,8641,13.9
 County,Marin County,06041,2020-06-01,Final,132971,119545,13426,10.1
 County,Mariposa County,06043,2020-06-01,Final,7872,6760,1112,14.1
@@ -440,8 +440,8 @@ County,Tuolumne County,06109,2020-06-01,Final,20568,17620,2948,14.3
 County,Ventura County,06111,2020-06-01,Final,412869,360985,51884,12.6
 County,Yolo County,06113,2020-06-01,Final,104298,93378,10920,10.5
 County,Yuba County,06115,2020-06-01,Final,28714,24618,4096,14.3
-State,California,06,2020-05-01,Final,18423388,15473941,2949447,16
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-05-01,Final,6263730,5056075,1207655,19.3
+State,California,06,2020-05-01,Final,18348132,15513264,2834868,15.5
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-05-01,Final,6213444,5108066,1105378,17.8
 Region,Riverside-San Bernardino-Ontario,40140,2020-05-01,Final,2020628,1716354,304274,15.1
 Region,San Francisco-Oakland-Berkeley,41860,2020-05-01,Final,2448078,2132271,315807,12.9
 Region,Balance,NA,2020-05-01,Final,7690953,6569244,1121709,14.6
@@ -463,7 +463,7 @@ County,Kern County,06029,2020-05-01,Final,368270,301716,66554,18.1
 County,Kings County,06031,2020-05-01,Final,56984,48072,8912,15.6
 County,Lake County,06033,2020-05-01,Final,25479,21534,3945,15.5
 County,Lassen County,06035,2020-05-01,Final,8880,7992,888,10
-County,Los Angeles County,06037,2020-05-01,Final,4716091,3735533,980558,20.8
+County,Los Angeles County,06037,2020-05-01,Final,4665805,3787524,878281,18.8
 County,Madera County,06039,2020-05-01,Final,62377,52965,9412,15.1
 County,Marin County,06041,2020-05-01,Final,127663,114239,13424,10.5
 County,Mariposa County,06043,2020-05-01,Final,7749,6389,1360,17.6
@@ -503,8 +503,8 @@ County,Tuolumne County,06109,2020-05-01,Final,20830,17377,3453,16.6
 County,Ventura County,06111,2020-05-01,Final,405527,350099,55428,13.7
 County,Yolo County,06113,2020-05-01,Final,101640,90879,10761,10.6
 County,Yuba County,06115,2020-05-01,Final,28553,24162,4391,15.4
-State,California,06,2020-04-01,Final,18518277,15524485,2993792,16.2
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-04-01,Final,6297229,5115269,1181960,18.8
+State,California,06,2020-04-01,Final,18451970,15507446,2944524,16
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-04-01,Final,6299595,5220041,1079554,17.1
 Region,Riverside-San Bernardino-Ontario,40140,2020-04-01,Final,2019053,1722298,296755,14.7
 Region,San Francisco-Oakland-Berkeley,41860,2020-04-01,Final,2453579,2129728,323851,13.2
 Region,Balance,NA,2020-04-01,Final,7748411,6557186,1191225,15.4
@@ -526,7 +526,7 @@ County,Kern County,06029,2020-04-01,Final,370837,301605,69232,18.7
 County,Kings County,06031,2020-04-01,Final,57120,47407,9713,17
 County,Lake County,06033,2020-04-01,Final,25957,21616,4341,16.7
 County,Lassen County,06035,2020-04-01,Final,9034,7990,1044,11.6
-County,Los Angeles County,06037,2020-04-01,Final,4756891,3787557,969334,20.4
+County,Los Angeles County,06037,2020-04-01,Final,4759257,3892329,866928,18.2
 County,Madera County,06039,2020-04-01,Final,62100,51730,10370,16.7
 County,Marin County,06041,2020-04-01,Final,128079,113713,14366,11.2
 County,Mariposa County,06043,2020-04-01,Final,7843,6416,1427,18.2
@@ -566,8 +566,8 @@ County,Tuolumne County,06109,2020-04-01,Final,21979,18184,3795,17.3
 County,Ventura County,06111,2020-04-01,Final,412295,354886,57409,13.9
 County,Yolo County,06113,2020-04-01,Final,101299,89524,11775,11.6
 County,Yuba County,06115,2020-04-01,Final,29686,24896,4790,16.1
-State,California,06,2020-03-01,Final,19192116,18085711,1106405,5.8
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-03-01,Final,6584222,6197702,386520,5.9
+State,California,06,2020-03-01,Final,19167207,18193046,974161,5.1
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-03-01,Final,6528974,6193577,335397,5.1
 Region,Riverside-San Bernardino-Ontario,40140,2020-03-01,Final,2062891,1955578,107313,5.2
 Region,San Francisco-Oakland-Berkeley,41860,2020-03-01,Final,2563856,2473308,90548,3.5
 Region,Balance,NA,2020-03-01,Final,7981148,7459123,522025,6.5
@@ -589,7 +589,7 @@ County,Kern County,06029,2020-03-01,Final,391631,344173,47458,12.1
 County,Kings County,06031,2020-03-01,Final,59193,51848,7345,12.4
 County,Lake County,06033,2020-03-01,Final,29029,26924,2105,7.3
 County,Lassen County,06035,2020-03-01,Final,9311,8606,705,7.6
-County,Los Angeles County,06037,2020-03-01,Final,4996564,4669061,327503,6.6
+County,Los Angeles County,06037,2020-03-01,Final,4941316,4664936,276380,5.6
 County,Madera County,06039,2020-03-01,Final,63367,56618,6749,10.7
 County,Marin County,06041,2020-03-01,Final,137710,133428,4282,3.1
 County,Mariposa County,06043,2020-03-01,Final,7217,6648,569,7.9
@@ -629,8 +629,8 @@ County,Tuolumne County,06109,2020-03-01,Final,20942,19588,1354,6.5
 County,Ventura County,06111,2020-03-01,Final,422108,402081,20027,4.7
 County,Yolo County,06113,2020-03-01,Final,108875,102368,6507,6
 County,Yuba County,06115,2020-03-01,Final,31192,28502,2690,8.6
-State,California,06,2020-02-01,Final,19528486,18686124,842362,4.3
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-02-01,Final,6846736,6562974,283762,4.1
+State,California,06,2020-02-01,Final,19514077,18669865,844212,4.3
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-02-01,Final,6842407,6550876,291531,4.3
 Region,Riverside-San Bernardino-Ontario,40140,2020-02-01,Final,2074360,1991606,82754,4
 Region,San Francisco-Oakland-Berkeley,41860,2020-02-01,Final,2589037,2520241,68796,2.7
 Region,Balance,NA,2020-02-01,Final,8018352,7611303,407049,5.1
@@ -652,7 +652,7 @@ County,Kern County,06029,2020-02-01,Final,395841,359859,35982,9.1
 County,Kings County,06031,2020-02-01,Final,58494,52756,5738,9.8
 County,Lake County,06033,2020-02-01,Final,29115,27429,1686,5.8
 County,Lassen County,06035,2020-02-01,Final,9786,9217,569,5.8
-County,Los Angeles County,06037,2020-02-01,Final,5222823,4984604,238219,4.6
+County,Los Angeles County,06037,2020-02-01,Final,5218494,4972506,245988,4.7
 County,Madera County,06039,2020-02-01,Final,63995,58857,5138,8
 County,Marin County,06041,2020-02-01,Final,139759,136481,3278,2.3
 County,Mariposa County,06043,2020-02-01,Final,7204,6753,451,6.3
@@ -692,8 +692,8 @@ County,Tuolumne County,06109,2020-02-01,Final,21572,20504,1068,5
 County,Ventura County,06111,2020-02-01,Final,424746,408975,15771,3.7
 County,Yolo County,06113,2020-02-01,Final,109234,103947,5287,4.8
 County,Yuba County,06115,2020-02-01,Final,30855,28712,2143,6.9
-State,California,06,2020-01-01,Final,19477354,18637368,839986,4.3
-Region,Los Angeles-Long Beach-Anaheim,31080,2020-01-01,Final,6811212,6532415,278797,4.1
+State,California,06,2020-01-01,Final,19438620,18565165,873455,4.5
+Region,Los Angeles-Long Beach-Anaheim,31080,2020-01-01,Final,6832634,6532532,300102,4.4
 Region,Riverside-San Bernardino-Ontario,40140,2020-01-01,Final,2076114,1991354,84760,4.1
 Region,San Francisco-Oakland-Berkeley,41860,2020-01-01,Final,2589578,2519165,70413,2.7
 Region,Balance,NA,2020-01-01,Final,8000450,7594433,406017,5.1
@@ -715,7 +715,7 @@ County,Kern County,06029,2020-01-01,Final,396113,362164,33949,8.6
 County,Kings County,06031,2020-01-01,Final,58130,52666,5464,9.4
 County,Lake County,06033,2020-01-01,Final,29119,27369,1750,6
 County,Lassen County,06035,2020-01-01,Final,9890,9333,557,5.6
-County,Los Angeles County,06037,2020-01-01,Final,5189152,4956929,232223,4.5
+County,Los Angeles County,06037,2020-01-01,Final,5210574,4957046,253528,4.9
 County,Madera County,06039,2020-01-01,Final,63353,58229,5124,8.1
 County,Marin County,06041,2020-01-01,Final,139813,136458,3355,2.4
 County,Mariposa County,06043,2020-01-01,Final,7037,6595,442,6.3
