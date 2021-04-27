@@ -120,7 +120,7 @@ v %>%
     limits = c(0, NA)
   ) +
   theme(
-    axis.text.x = element_text(angle = -45, hjust = 0),
+    axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0),
     legend.position = "bottom"
   ) +
   labs(
