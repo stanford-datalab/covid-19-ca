@@ -1,4 +1,22 @@
 area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
+State,California,06,2021-04-14,2021-04-26,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16738285,NA,68.03231760512111
+State,California,06,2021-04-14,2021-04-26,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",5929189,NA,24.099032200060545
+State,California,06,2021-04-14,2021-04-26,curfoodsuf,3,Sometimes not enough to eat,1406137,NA,5.715206724005009
+State,California,06,2021-04-14,2021-04-26,curfoodsuf,4,Often not enough to eat,529821,NA,2.15344347081334
+State,California,06,2021-04-14,2021-04-26,curfoodsuf,NA,Did not report,5204225,NA,17.4593567504939
+State,California,06,2021-04-14,2021-04-26,freefood,1,Yes,2752730,NA,9.234976410087395
+State,California,06,2021-04-14,2021-04-26,freefood,2,No,21849042,NA,73.30010115521999
+State,California,06,2021-04-14,2021-04-26,freefood,NA,Did not report,5205884,NA,17.464922434692618
+State,California,06,2021-04-14,2021-04-26,mortconf,1,No confidence,919590,NA,NA
+State,California,06,2021-04-14,2021-04-26,mortconf,2,Slight confidence,2116327,NA,NA
+State,California,06,2021-04-14,2021-04-26,mortconf,3,Moderate confidence,2681473,NA,NA
+State,California,06,2021-04-14,2021-04-26,mortconf,4,High confidence,10454863,NA,NA
+State,California,06,2021-04-14,2021-04-26,mortconf,5,Payment is/will be deferred,178197,NA,NA
+State,California,06,2021-04-14,2021-04-26,mortconf,NA,Did not report,13457207,NA,45.14681395947404
+State,California,06,2021-04-14,2021-04-26,total,NA,Total,29807656,NA,100
+State,California,06,2021-04-14,2021-04-26,wrkloss,1,Yes,7754592,NA,26.015437107835652
+State,California,06,2021-04-14,2021-04-26,wrkloss,2,No,21877208,NA,73.39459365741473
+State,California,06,2021-04-14,2021-04-26,wrkloss,NA,Did not report,175856,NA,0.5899692347496227
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15649210,455640,63.25825352482429
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",6620230,329888,26.76072286700944
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,3,Sometimes not enough to eat,1942631,226769,7.852629527133698
