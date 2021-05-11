@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2021-02-10
+# Version: 2021-05-17
 
 # Libraries
 library(tidyverse)
@@ -40,6 +40,7 @@ fs::dir_create(str_glue(dir_pulse))
 
 # Determine weeks that have not been downloaded
 if (httr::http_error(str_glue(url_pulse))) {
+  message("HTTP error: ", str_glue(url_pulse))
   weeks <- NULL
 } else {
   weeks_pulse <-
