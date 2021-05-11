@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2020-10-07
+# Version: 2021-05-05
 
 # Libraries
 library(tidyverse)
@@ -47,7 +47,7 @@ weeks <- read_csv(file_weeks)
 # Household Pulse table sheets for state
 sheets <-
   read_csv(file_sheets) %>%
-  filter(fips_state == params$state_fips) %>%
+  filter(fips_state == params$state_fips, str_length(fips) == 2) %>%
   select(-fips_state)
 
 # Household Pulse table variables
@@ -97,7 +97,7 @@ read_cell <- function(data, category_, response_, curfoodsuf_) {
     pull(n)
   assertthat::assert_that(
     length(v) == 1,
-    msg = message("Invalid query to read_cell()")
+    msg = "Invalid query to read_cell()"
   )
   v
 }

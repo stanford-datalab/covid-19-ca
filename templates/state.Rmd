@@ -836,45 +836,6 @@ v %>%
 <br>
 <br>
 
-```{r fig.asp=0.8}
-v <- 
-  hps %>% 
-  filter(str_detect(variable, "^wherefree"), code == 1) %>% 
-  mutate(response = str_wrap(response, width = 50))
-
-v %>% 
-  ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
-  geom_line() +
-  geom_point() +
-  scale_x_date(
-    breaks = v$date_end %>% unique() %>% sort(),
-    minor_breaks = NULL,
-    date_labels = "%b %e"
-  ) +
-  scale_y_continuous(
-    breaks = scales::breaks_width(10),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
-  ) +
-  guides(color = guide_legend(ncol = 2)) +
-  theme(
-    axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0),
-    legend.position = "bottom"
-  ) +
-  labs(
-    title = "Where did you get free groceries or free meals?",
-    x = "Survey end date",
-    y = 
-      "Percentage who received free food from this source",
-    color = NULL,
-    caption = "Source: Census Bureau, Household Pulse Survey."
-  )
-```
-
-Since respondents can choose more than one source of free groceries or free meals, the sources sum to greater than 100%.
-<br>
-<br>
-
 ## Unemployment
 
 ### Rate over time
