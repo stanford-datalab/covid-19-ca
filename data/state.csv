@@ -7,20 +7,7 @@ State,California,06,2021-04-28,2021-05-10,curfoodsuf,NA,Did not report,4970973,N
 State,California,06,2021-04-28,2021-05-10,freefood,1,Yes,3308732,NA,11.100275714400354
 State,California,06,2021-04-28,2021-05-10,freefood,2,No,21381727,NA,71.73233279396408
 State,California,06,2021-04-28,2021-05-10,freefood,NA,Did not report,5117196,NA,17.167388136792777
-State,California,06,2021-04-28,2021-05-10,mortconf,1,No confidence,849860,NA,NA
-State,California,06,2021-04-28,2021-05-10,mortconf,2,Slight confidence,1853262,NA,NA
-State,California,06,2021-04-28,2021-05-10,mortconf,3,Moderate confidence,3313711,NA,NA
-State,California,06,2021-04-28,2021-05-10,mortconf,4,High confidence,10292709,NA,NA
-State,California,06,2021-04-28,2021-05-10,mortconf,5,Payment is/will be deferred,271010,NA,NA
-State,California,06,2021-04-28,2021-05-10,mortconf,NA,Did not report,13227104,NA,44.37485456756479
 State,California,06,2021-04-28,2021-05-10,total,NA,Total,29807656,NA,100
-State,California,06,2021-04-28,2021-05-10,wrkloss,1,Yes,7819675,NA,26.23378034153373
-State,California,06,2021-04-28,2021-05-10,wrkloss,2,No,21851815,NA,73.30940413429356
-State,California,06,2021-04-28,2021-05-10,wrkloss,NA,Did not report,136166,NA,0.45681552417271587
-State,California,06,2021-04-14,2021-04-26,childfood,1,Often true,319428,136820,8.016274695879295
-State,California,06,2021-04-14,2021-04-26,childfood,2,Sometimes true,1310982,212468,32.90002468513451
-State,California,06,2021-04-14,2021-04-26,childfood,3,Never true,2354335,335737,59.0837006189862
-State,California,06,2021-04-14,2021-04-26,childfood,NA,Did not report,25822911,366239,86.63180638007962
 State,California,06,2021-04-14,2021-04-26,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16738285,417245,68.03231754299429
 State,California,06,2021-04-14,2021-04-26,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",5929189,413084,24.099032316712705
 State,California,06,2021-04-14,2021-04-26,curfoodsuf,3,Sometimes not enough to eat,1406137,180178,5.715205261699661
@@ -32,14 +19,14 @@ State,California,06,2021-04-14,2021-04-26,egender_curfoodsuf_1234,1,Male,1177245
 State,California,06,2021-04-14,2021-04-26,egender_curfoodsuf_1234,2,Female,12830975,192369,100
 State,California,06,2021-04-14,2021-04-26,egender_curfoodsuf_34,1,Male,759537,104738,6.4518117561248305
 State,California,06,2021-04-14,2021-04-26,egender_curfoodsuf_34,2,Female,1176421,230487,9.168603316638274
-State,California,06,2021-04-14,2021-04-26,foodrsnrv1,1,Couldn’t afford to buy more food,3762562,340095,41.43173273238197
-State,California,06,2021-04-14,2021-04-26,foodrsnrv1,NA,Did not report,26045094,340095,87.37719469369209
-State,California,06,2021-04-14,2021-04-26,foodrsnrv2,1,Couldn’t get to store to buy food,1156396,253493,12.733736350278217
-State,California,06,2021-04-14,2021-04-26,foodrsnrv2,NA,Did not report,28651260,253493,96.12047423143878
-State,California,06,2021-04-14,2021-04-26,foodrsnrv3,1,Couldn’t go to store due to safety concerns,2069046,296316,22.783447359272998
-State,California,06,2021-04-14,2021-04-26,foodrsnrv3,NA,Did not report,27738610,296316,93.05867746154279
-State,California,06,2021-04-14,2021-04-26,foodrsnrv4,1,None of the above,2093351,184902,23.051083558066825
-State,California,06,2021-04-14,2021-04-26,foodrsnrv4,NA,Did not report,27714305,184902,92.97713803735031
+State,California,06,2021-04-14,2021-04-26,foodrsnrv1_special,1,Couldn’t afford to buy more food,1369251,253191,71.33909192671936
+State,California,06,2021-04-14,2021-04-26,foodrsnrv1_special,NA,Did not report,566707,116230,NA
+State,California,06,2021-04-14,2021-04-26,foodrsnrv2_special,1,Couldn’t get to store to buy food,669606,189893,34.88704609558271
+State,California,06,2021-04-14,2021-04-26,foodrsnrv2_special,NA,Did not report,1266351,156656,NA
+State,California,06,2021-04-14,2021-04-26,foodrsnrv3_special,1,Couldn’t go to store due to safety concerns,601317,164498,31.32911743677119
+State,California,06,2021-04-14,2021-04-26,foodrsnrv3_special,NA,Did not report,1334641,175369,NA
+State,California,06,2021-04-14,2021-04-26,foodrsnrv4_special,1,None of the above,149274,52556,7.777287944777451
+State,California,06,2021-04-14,2021-04-26,foodrsnrv4_special,NA,Did not report,1786684,267303,NA
 State,California,06,2021-04-14,2021-04-26,freefood,1,Yes,2752730,316829,11.189153308532552
 State,California,06,2021-04-14,2021-04-26,freefood,2,No,21849042,425122,88.81084669146745
 State,California,06,2021-04-14,2021-04-26,freefood,NA,Did not report,5205884,348750,17.464920929601917
@@ -288,10 +275,6 @@ State,California,06,2021-04-14,2021-04-26,tbirth_year_curfoodsuf_34,1997,NA,1018
 State,California,06,2021-04-14,2021-04-26,tbirth_year_curfoodsuf_34,1999,NA,109804,71355,25.10266236793994
 State,California,06,2021-04-14,2021-04-26,tbirth_year_curfoodsuf_34,2000,NA,11247,12470,3.9924739530714737
 State,California,06,2021-04-14,2021-04-26,total,NA,Total,29807656,0,100.00000000000001
-State,California,06,2021-03-17,2021-03-29,childfood,1,Often true,313015,101330,8.41139526624658
-State,California,06,2021-03-17,2021-03-29,childfood,2,Sometimes true,1250171,177776,33.59483207474866
-State,California,06,2021-03-17,2021-03-29,childfood,3,Never true,2158134,201557,57.99377265900476
-State,California,06,2021-03-17,2021-03-29,childfood,NA,Did not report,26217701,277245,87.57033632048649
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15649210,455640,63.25825352482429
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",6620230,329888,26.76072286700944
 State,California,06,2021-03-17,2021-03-29,curfoodsuf,3,Sometimes not enough to eat,1942631,226769,7.852629527133698
@@ -552,10 +535,6 @@ State,California,06,2021-03-17,2021-03-29,tbirth_year_curfoodsuf_34,1997,NA,4841
 State,California,06,2021-03-17,2021-03-29,tbirth_year_curfoodsuf_34,1999,NA,66538,45113,15.210128759425823
 State,California,06,2021-03-17,2021-03-29,tbirth_year_curfoodsuf_34,2001,NA,3011,3503,0.7172158868279017
 State,California,06,2021-03-17,2021-03-29,total,NA,Total,29939021,0,100
-State,California,06,2021-03-03,2021-03-15,childfood,1,Often true,581787,151091,12.144981201630797
-State,California,06,2021-03-03,2021-03-15,childfood,2,Sometimes true,1273010,157134,26.574482400043756
-State,California,06,2021-03-03,2021-03-15,childfood,3,Never true,2935551,242113,61.280536398325445
-State,California,06,2021-03-03,2021-03-15,childfood,NA,Did not report,25148674,287099,83.99965271474322
 State,California,06,2021-03-03,2021-03-15,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15715638,361587,60.628438196377765
 State,California,06,2021-03-03,2021-03-15,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7336581,355802,28.303363790458523
 State,California,06,2021-03-03,2021-03-15,curfoodsuf,3,Sometimes not enough to eat,2334820,208595,9.007364078603212
@@ -818,10 +797,6 @@ State,California,06,2021-03-03,2021-03-15,tbirth_year_curfoodsuf_34,2001,NA,1595
 State,California,06,2021-03-03,2021-03-15,tbirth_year_curfoodsuf_34,2002,NA,84225,78521,16.615523679252775
 State,California,06,2021-03-03,2021-03-15,tbirth_year_curfoodsuf_34,2003,NA,33795,34442,12.075784948266866
 State,California,06,2021-03-03,2021-03-15,total,NA,Total,29939021,0,100
-State,California,06,2021-02-17,2021-03-01,childfood,1,Often true,178694,53206,3.942024058451432
-State,California,06,2021-02-17,2021-03-01,childfood,2,Sometimes true,1271776,154326,28.05563591965658
-State,California,06,2021-02-17,2021-03-01,childfood,3,Never true,3082579,308160,68.00234002189198
-State,California,06,2021-02-17,2021-03-01,childfood,NA,Did not report,25405972,354943,84.85906046261117
 State,California,06,2021-02-17,2021-03-01,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15998470,426510,62.442321015054326
 State,California,06,2021-02-17,2021-03-01,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7316240,454517,28.555416126267904
 State,California,06,2021-02-17,2021-03-01,curfoodsuf,3,Sometimes not enough to eat,2035190,223500,7.943383475556435
@@ -1084,10 +1059,6 @@ State,California,06,2021-02-17,2021-03-01,tbirth_year_curfoodsuf_34,1997,NA,8671
 State,California,06,2021-02-17,2021-03-01,tbirth_year_curfoodsuf_34,1998,NA,45930,27816,8.58117820524097
 State,California,06,2021-02-17,2021-03-01,tbirth_year_curfoodsuf_34,1999,NA,13393,13824,3.6811108986185386
 State,California,06,2021-02-17,2021-03-01,total,NA,Total,29939021,0,100
-State,California,06,2021-02-03,2021-02-15,childfood,1,Often true,349994,88584,6.641327882060612
-State,California,06,2021-02-03,2021-02-15,childfood,2,Sometimes true,1461600,197129,27.734662522750742
-State,California,06,2021-02-03,2021-02-15,childfood,3,Never true,3458346,325684,65.62400959518864
-State,California,06,2021-02-03,2021-02-15,childfood,NA,Did not report,24669081,365899,82.39775453224293
 State,California,06,2021-02-03,2021-02-15,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15219260,391402,58.31965152471505
 State,California,06,2021-02-03,2021-02-15,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7440370,332276,28.51122763990367
 State,California,06,2021-02-03,2021-02-15,curfoodsuf,3,Sometimes not enough to eat,2843075,333841,10.894560848927027
@@ -1349,10 +1320,6 @@ State,California,06,2021-02-03,2021-02-15,tbirth_year_curfoodsuf_34,1999,NA,3342
 State,California,06,2021-02-03,2021-02-15,tbirth_year_curfoodsuf_34,2001,NA,78126,61683,12.565154615857836
 State,California,06,2021-02-03,2021-02-15,tbirth_year_curfoodsuf_34,2003,NA,6705,6965,1.6781007701995656
 State,California,06,2021-02-03,2021-02-15,total,NA,Total,29939021,0,100
-State,California,06,2021-01-20,2021-02-01,childfood,1,Often true,563796,135550,11.077920932873862
-State,California,06,2021-01-20,2021-02-01,childfood,2,Sometimes true,1383628,187548,27.18661861048718
-State,California,06,2021-01-20,2021-02-01,childfood,3,Never true,3141946,303064,61.73546045663897
-State,California,06,2021-01-20,2021-02-01,childfood,NA,Did not report,24849651,331618,83.00087969242232
 State,California,06,2021-01-20,2021-02-01,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14512029,351985,56.6304563839368
 State,California,06,2021-01-20,2021-02-01,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7976803,339382,31.12797160129435
 State,California,06,2021-01-20,2021-02-01,curfoodsuf,3,Sometimes not enough to eat,2459480,225287,9.597657182207671
@@ -1616,10 +1583,6 @@ State,California,06,2021-01-20,2021-02-01,tbirth_year_curfoodsuf_34,2000,NA,7617
 State,California,06,2021-01-20,2021-02-01,tbirth_year_curfoodsuf_34,2001,NA,31546,31034,8.480456594892612
 State,California,06,2021-01-20,2021-02-01,tbirth_year_curfoodsuf_34,2002,NA,4696,5453,0.9364537587853764
 State,California,06,2021-01-20,2021-02-01,total,NA,Total,29939021,0,100
-State,California,06,2021-01-06,2021-01-18,childfood,1,Often true,275389,74147,5.899057374956074
-State,California,06,2021-01-06,2021-01-18,childfood,2,Sometimes true,1318641,203998,28.24633697913935
-State,California,06,2021-01-06,2021-01-18,childfood,3,Never true,3074332,241643,65.85460564590457
-State,California,06,2021-01-06,2021-01-18,childfood,NA,Did not report,25270658,315420,84.40709656166192
 State,California,06,2021-01-06,2021-01-18,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14571434,339506,58.026499622699156
 State,California,06,2021-01-06,2021-01-18,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7569345,304402,30.14271805108592
 State,California,06,2021-01-06,2021-01-18,curfoodsuf,3,Sometimes not enough to eat,2538193,270221,10.107614318589631
@@ -1885,10 +1848,6 @@ State,California,06,2021-01-06,2021-01-18,tbirth_year_curfoodsuf_34,2000,NA,3099
 State,California,06,2021-01-06,2021-01-18,tbirth_year_curfoodsuf_34,2001,NA,2914,2961,0.6514735792094611
 State,California,06,2021-01-06,2021-01-18,tbirth_year_curfoodsuf_34,2002,NA,96270,72341,23.47866173638698
 State,California,06,2021-01-06,2021-01-18,total,NA,Total,29939021,0,100.00000000000001
-State,California,06,2020-12-09,2020-12-21,childfood,1,Often true,593620,121366,10.803174762118203
-State,California,06,2020-12-09,2020-12-21,childfood,2,Sometimes true,1406918,192091,25.604238291677458
-State,California,06,2020-12-09,2020-12-21,childfood,3,Never true,3494325,322169,63.59258694620434
-State,California,06,2020-12-09,2020-12-21,childfood,NA,Did not report,24444158,349468,81.64648545327576
 State,California,06,2020-12-09,2020-12-21,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,13478542,357990,53.17988805584255
 State,California,06,2020-12-09,2020-12-21,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8212744,353747,32.40356391008494
 State,California,06,2020-12-09,2020-12-21,curfoodsuf,3,Sometimes not enough to eat,2651303,304924,10.460774705535338
@@ -2153,10 +2112,6 @@ State,California,06,2020-12-09,2020-12-21,tbirth_year_curfoodsuf_34,1999,NA,2592
 State,California,06,2020-12-09,2020-12-21,tbirth_year_curfoodsuf_34,2000,NA,12297,8258,4.038235771301305
 State,California,06,2020-12-09,2020-12-21,tbirth_year_curfoodsuf_34,2002,NA,33021,36999,20.168239439385854
 State,California,06,2020-12-09,2020-12-21,total,NA,Total,29939021,0,100
-State,California,06,2020-11-25,2020-12-07,childfood,1,Often true,134052,45992,2.869697261427111
-State,California,06,2020-11-25,2020-12-07,childfood,2,Sometimes true,1519407,228119,32.52637041366325
-State,California,06,2020-11-25,2020-12-07,childfood,3,Never true,3017849,301393,64.60393232490964
-State,California,06,2020-11-25,2020-12-07,childfood,NA,Did not report,25267713,331735,84.39725762764665
 State,California,06,2020-11-25,2020-12-07,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14304099,385575,55.37919055454497
 State,California,06,2020-11-25,2020-12-07,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8285074,343842,32.076168437614896
 State,California,06,2020-11-25,2020-12-07,curfoodsuf,3,Sometimes not enough to eat,2771893,263916,10.731553290197565
@@ -2418,10 +2373,6 @@ State,California,06,2020-11-25,2020-12-07,tbirth_year_curfoodsuf_34,1997,NA,6061
 State,California,06,2020-11-25,2020-12-07,tbirth_year_curfoodsuf_34,1999,NA,65662,36721,21.71237175785036
 State,California,06,2020-11-25,2020-12-07,tbirth_year_curfoodsuf_34,2000,NA,36376,27933,16.74891761434929
 State,California,06,2020-11-25,2020-12-07,total,NA,Total,29939021,0,100
-State,California,06,2020-11-11,2020-11-23,childfood,1,Often true,170432,45383,3.7947001201286965
-State,California,06,2020-11-11,2020-11-23,childfood,2,Sometimes true,1235077,188156,27.499225691911406
-State,California,06,2020-11-11,2020-11-23,childfood,3,Never true,3085806,305299,68.7060741879599
-State,California,06,2020-11-11,2020-11-23,childfood,NA,Did not report,25447706,362272,84.99845747158848
 State,California,06,2020-11-11,2020-11-23,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14606595,381084,56.78675993154021
 State,California,06,2020-11-11,2020-11-23,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8561120,424766,33.28347758509183
 State,California,06,2020-11-11,2020-11-23,curfoodsuf,3,Sometimes not enough to eat,1820112,164971,7.07613510827575
@@ -2685,10 +2636,6 @@ State,California,06,2020-11-11,2020-11-23,tbirth_year_curfoodsuf_34,1998,NA,4333
 State,California,06,2020-11-11,2020-11-23,tbirth_year_curfoodsuf_34,1999,NA,56797,46634,28.65433139130118
 State,California,06,2020-11-11,2020-11-23,tbirth_year_curfoodsuf_34,2000,NA,29170,30546,11.262756876346248
 State,California,06,2020-11-11,2020-11-23,total,NA,Total,29939021,0,100
-State,California,06,2020-10-28,2020-11-09,childfood,1,Often true,363824,120489,7.5545827795231375
-State,California,06,2020-10-28,2020-11-09,childfood,2,Sometimes true,1453549,266447,30.182039550215514
-State,California,06,2020-10-28,2020-11-09,childfood,3,Never true,2998567,320845,62.26337767026135
-State,California,06,2020-10-28,2020-11-09,childfood,NA,Did not report,25123081,477942,83.9141702164865
 State,California,06,2020-10-28,2020-11-09,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14127388,516556,57.13793578096935
 State,California,06,2020-10-28,2020-11-09,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7392963,425310,29.900689615099402
 State,California,06,2020-10-28,2020-11-09,curfoodsuf,3,Sometimes not enough to eat,2541431,282744,10.278767903948127
@@ -2952,10 +2899,6 @@ State,California,06,2020-10-28,2020-11-09,tbirth_year_curfoodsuf_34,2000,NA,1448
 State,California,06,2020-10-28,2020-11-09,tbirth_year_curfoodsuf_34,2001,NA,11877,12538,2.5082709072265983
 State,California,06,2020-10-28,2020-11-09,tbirth_year_curfoodsuf_34,2002,NA,11132,14031,4.424635788836263
 State,California,06,2020-10-28,2020-11-09,total,NA,Total,29939021,0,100
-State,California,06,2020-10-14,2020-10-26,childfood,1,Often true,514416,156122,11.29909819409933
-State,California,06,2020-10-14,2020-10-26,childfood,2,Sometimes true,1028571,134599,22.592450470371393
-State,California,06,2020-10-14,2020-10-26,childfood,3,Never true,3009732,247822,66.10845133552928
-State,California,06,2020-10-14,2020-10-26,childfood,NA,Did not report,25386303,296880,84.7933630142042
 State,California,06,2020-10-14,2020-10-26,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15099920,408973,57.41169297477548
 State,California,06,2020-10-14,2020-10-26,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8293516,469251,31.532933610746102
 State,California,06,2020-10-14,2020-10-26,curfoodsuf,3,Sometimes not enough to eat,2190640,258559,8.329072796547765
@@ -3221,10 +3164,6 @@ State,California,06,2020-10-14,2020-10-26,tbirth_year_curfoodsuf_34,2000,NA,1168
 State,California,06,2020-10-14,2020-10-26,tbirth_year_curfoodsuf_34,2001,NA,4955,5469,2.868300538841101
 State,California,06,2020-10-14,2020-10-26,tbirth_year_curfoodsuf_34,2002,NA,10285,10721,2.4701484768751416
 State,California,06,2020-10-14,2020-10-26,total,NA,Total,29939021,0,100
-State,California,06,2020-09-30,2020-10-12,childfood,1,Often true,343970,85956,6.765322664158262
-State,California,06,2020-09-30,2020-10-12,childfood,2,Sometimes true,1551393,170797,30.513354222253298
-State,California,06,2020-09-30,2020-10-12,childfood,3,Never true,3188945,250135,62.721323113588426
-State,California,06,2020-09-30,2020-10-12,childfood,NA,Did not report,24854713,259586,83.01778777466535
 State,California,06,2020-09-30,2020-10-12,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15000800,367230,57.6764255963988
 State,California,06,2020-09-30,2020-10-12,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8249884,359715,31.719895339795052
 State,California,06,2020-09-30,2020-10-12,curfoodsuf,3,Sometimes not enough to eat,2187438,193962,8.410460144509523
@@ -3491,10 +3430,6 @@ State,California,06,2020-09-30,2020-10-12,tbirth_year_curfoodsuf_34,2000,NA,542,
 State,California,06,2020-09-30,2020-10-12,tbirth_year_curfoodsuf_34,2001,NA,10695,11686,7.788235145447808
 State,California,06,2020-09-30,2020-10-12,tbirth_year_curfoodsuf_34,2002,NA,33367,34155,17.38507624472385
 State,California,06,2020-09-30,2020-10-12,total,NA,Total,29939021,0,100
-State,California,06,2020-09-16,2020-09-28,childfood,1,Often true,227498,61850,4.767205973313124
-State,California,06,2020-09-16,2020-09-28,childfood,2,Sometimes true,1423338,148727,29.82599757024405
-State,California,06,2020-09-16,2020-09-28,childfood,3,Never true,3121304,220991,65.40679645644282
-State,California,06,2020-09-16,2020-09-28,childfood,NA,Did not report,25166881,256774,84.06046648671733
 State,California,06,2020-09-16,2020-09-28,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15736203,388836,59.03604559676511
 State,California,06,2020-09-16,2020-09-28,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8356837,368071,31.35156714299013
 State,California,06,2020-09-16,2020-09-28,curfoodsuf,3,Sometimes not enough to eat,2178738,194047,8.173767951629252
@@ -3758,10 +3693,6 @@ State,California,06,2020-09-16,2020-09-28,tbirth_year_curfoodsuf_34,1997,NA,7022
 State,California,06,2020-09-16,2020-09-28,tbirth_year_curfoodsuf_34,1999,NA,11609,12620,3.643184543434246
 State,California,06,2020-09-16,2020-09-28,tbirth_year_curfoodsuf_34,2001,NA,36573,26487,5.631304560105263
 State,California,06,2020-09-16,2020-09-28,total,NA,Total,29939021,0,100
-State,California,06,2020-09-02,2020-09-14,childfood,1,Often true,496479,103397,9.534529806650136
-State,California,06,2020-09-02,2020-09-14,childfood,2,Sometimes true,1294808,154952,24.86588660518528
-State,California,06,2020-09-02,2020-09-14,childfood,3,Never true,3415880,182232,65.59958358816459
-State,California,06,2020-09-02,2020-09-14,childfood,NA,Did not report,24731854,240286,82.60742392170062
 State,California,06,2020-09-02,2020-09-14,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15047636,377177,57.92043933716355
 State,California,06,2020-09-02,2020-09-14,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",8194747,274185,31.542719901004645
 State,California,06,2020-09-02,2020-09-14,curfoodsuf,3,Sometimes not enough to eat,2258596,194720,8.693648038779475
@@ -4025,10 +3956,6 @@ State,California,06,2020-09-02,2020-09-14,tbirth_year_curfoodsuf_34,2000,NA,7208
 State,California,06,2020-09-02,2020-09-14,tbirth_year_curfoodsuf_34,2001,NA,22566,15464,5.69970047823643
 State,California,06,2020-09-02,2020-09-14,tbirth_year_curfoodsuf_34,2002,NA,7963,8558,2.54435960591783
 State,California,06,2020-09-02,2020-09-14,total,NA,Total,29939021,0,100
-State,California,06,2020-08-19,2020-08-31,childfood,1,Often true,333318,79637,6.653760674582272
-State,California,06,2020-08-19,2020-08-31,childfood,2,Sometimes true,1368128,138546,27.310809655280213
-State,California,06,2020-08-19,2020-08-31,childfood,3,Never true,3308027,219235,66.03542967013753
-State,California,06,2020-08-19,2020-08-31,childfood,NA,Did not report,24929548,266887,83.26774653699867
 State,California,06,2020-08-19,2020-08-31,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,14898364,277357,58.59667978782638
 State,California,06,2020-08-19,2020-08-31,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",7637247,246318,30.038018670982748
 State,California,06,2020-08-19,2020-08-31,curfoodsuf,3,Sometimes not enough to eat,2159785,167062,8.494641112928921
@@ -4294,10 +4221,6 @@ State,California,06,2020-08-19,2020-08-31,tbirth_year_curfoodsuf_34,2000,NA,1026
 State,California,06,2020-08-19,2020-08-31,tbirth_year_curfoodsuf_34,2001,NA,3048,3122,0.7557232815638828
 State,California,06,2020-08-19,2020-08-31,tbirth_year_curfoodsuf_34,2002,NA,5360,4340,2.381132805173226
 State,California,06,2020-08-19,2020-08-31,total,NA,Total,29939021,0,100
-State,California,06,2020-07-16,2020-07-21,childfood,1,Often true,583720,139668,9.724822525589792
-State,California,06,2020-07-16,2020-07-21,childfood,2,Sometimes true,2284874,301714,38.06619561583781
-State,California,06,2020-07-16,2020-07-21,childfood,3,Never true,3133777,266008,52.20898185857239
-State,California,06,2020-07-16,2020-07-21,childfood,NA,Did not report,23936649,365359,79.9513432475048
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15278253,417404,52.98120266385538
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9431458,416483,32.705962575915706
 State,California,06,2020-07-16,2020-07-21,curfoodsuf,3,Sometimes not enough to eat,3546345,332186,12.297847855637372
@@ -4560,10 +4483,6 @@ State,California,06,2020-07-16,2020-07-21,tbirth_year_curfoodsuf_34,2000,NA,3953
 State,California,06,2020-07-16,2020-07-21,tbirth_year_curfoodsuf_34,2001,NA,245149,162547,35.3806340824651
 State,California,06,2020-07-16,2020-07-21,tbirth_year_curfoodsuf_34,2002,NA,9566,9726,4.703702406023363
 State,California,06,2020-07-16,2020-07-21,total,NA,Total,29939021,0,100
-State,California,06,2020-07-09,2020-07-14,childfood,1,Often true,718384,145516,11.440092403044062
-State,California,06,2020-07-09,2020-07-14,childfood,2,Sometimes true,1917036,238473,30.52833150428906
-State,California,06,2020-07-09,2020-07-14,childfood,3,Never true,3644111,275708,58.03157609266688
-State,California,06,2020-07-09,2020-07-14,childfood,NA,Did not report,23659490,325590,79.02559707541421
 State,California,06,2020-07-09,2020-07-14,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15723280,479405,54.233503392894924
 State,California,06,2020-07-09,2020-07-14,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9821353,452061,33.876290029598664
 State,California,06,2020-07-09,2020-07-14,curfoodsuf,3,Sometimes not enough to eat,2757990,264815,9.512992559642504
@@ -4825,10 +4744,6 @@ State,California,06,2020-07-09,2020-07-14,tbirth_year_curfoodsuf_34,2000,NA,2221
 State,California,06,2020-07-09,2020-07-14,tbirth_year_curfoodsuf_34,2001,NA,65459,36569,12.099519012634874
 State,California,06,2020-07-09,2020-07-14,tbirth_year_curfoodsuf_34,2002,NA,40223,30552,11.91990134047923
 State,California,06,2020-07-09,2020-07-14,total,NA,Total,29939021,0,100
-State,California,06,2020-07-02,2020-07-07,childfood,1,Often true,570524,157836,9.631302332699443
-State,California,06,2020-07-02,2020-07-07,childfood,2,Sometimes true,2095052,211020,35.36764651337833
-State,California,06,2020-07-02,2020-07-07,childfood,3,Never true,3258065,296358,55.001051153922226
-State,California,06,2020-07-02,2020-07-07,childfood,NA,Did not report,24015380,381517,80.21431384313489
 State,California,06,2020-07-02,2020-07-07,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16643852,427964,56.40513206711651
 State,California,06,2020-07-02,2020-07-07,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9379640,382884,31.787103532534616
 State,California,06,2020-07-02,2020-07-07,curfoodsuf,3,Sometimes not enough to eat,3048485,274267,10.331154729718044
@@ -5089,10 +5004,6 @@ State,California,06,2020-07-02,2020-07-07,tbirth_year_curfoodsuf_34,2000,NA,2591
 State,California,06,2020-07-02,2020-07-07,tbirth_year_curfoodsuf_34,2001,NA,77166,53102,29.751228551277936
 State,California,06,2020-07-02,2020-07-07,tbirth_year_curfoodsuf_34,2002,NA,22726,23741,5.071105857160088
 State,California,06,2020-07-02,2020-07-07,total,NA,Total,29939021,0,100
-State,California,06,2020-06-25,2020-06-30,childfood,1,Often true,675457,172208,10.714239895955076
-State,California,06,2020-06-25,2020-06-30,childfood,2,Sometimes true,1888357,195964,29.953511896303457
-State,California,06,2020-06-25,2020-06-30,childfood,3,Never true,3740479,279962,59.33224820774147
-State,California,06,2020-06-25,2020-06-30,childfood,NA,Did not report,23634728,335160,78.94288834257254
 State,California,06,2020-06-25,2020-06-30,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15710314,361186,54.098915702685346
 State,California,06,2020-06-25,2020-06-30,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9512001,402080,32.754845415827575
 State,California,06,2020-06-25,2020-06-30,curfoodsuf,3,Sometimes not enough to eat,2922938,321723,10.065221300032032
@@ -5355,10 +5266,6 @@ State,California,06,2020-06-25,2020-06-30,tbirth_year_curfoodsuf_34,2000,NA,1150
 State,California,06,2020-06-25,2020-06-30,tbirth_year_curfoodsuf_34,2001,NA,5422,6968,2.7148000625914794
 State,California,06,2020-06-25,2020-06-30,tbirth_year_curfoodsuf_34,2002,NA,8036,8777,3.5442733392274355
 State,California,06,2020-06-25,2020-06-30,total,NA,Total,29939021,0,100
-State,California,06,2020-06-18,2020-06-23,childfood,1,Often true,270412,70137,4.635023794202933
-State,California,06,2020-06-18,2020-06-23,childfood,2,Sometimes true,1923897,229040,32.97680075530426
-State,California,06,2020-06-18,2020-06-23,childfood,3,Never true,3639785,292627,62.38817545049282
-State,California,06,2020-06-18,2020-06-23,childfood,NA,Did not report,24104927,317903,80.51341221443813
 State,California,06,2020-06-18,2020-06-23,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,16279948,382509,55.84024439523613
 State,California,06,2020-06-18,2020-06-23,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9985020,368073,34.248632518758555
 State,California,06,2020-06-18,2020-06-23,curfoodsuf,3,Sometimes not enough to eat,2563482,303703,8.792746029211786
@@ -5619,10 +5526,6 @@ State,California,06,2020-06-18,2020-06-23,tbirth_year_curfoodsuf_34,1999,NA,1277
 State,California,06,2020-06-18,2020-06-23,tbirth_year_curfoodsuf_34,2000,NA,59309,53800,17.344957522464593
 State,California,06,2020-06-18,2020-06-23,tbirth_year_curfoodsuf_34,2001,NA,10656,11796,4.9658230444719145
 State,California,06,2020-06-18,2020-06-23,total,NA,Total,29939021,0,100
-State,California,06,2020-06-11,2020-06-16,childfood,1,Often true,699917,200382,11.82633484193273
-State,California,06,2020-06-11,2020-06-16,childfood,2,Sometimes true,1808333,245661,30.55497487561852
-State,California,06,2020-06-11,2020-06-16,childfood,3,Never true,3410043,357467,57.618690282448746
-State,California,06,2020-06-11,2020-06-16,childfood,NA,Did not report,24020728,441132,80.23217686488864
 State,California,06,2020-06-11,2020-06-16,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,15669159,463997,53.42611746662905
 State,California,06,2020-06-11,2020-06-16,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",10162512,502606,34.650459953162226
 State,California,06,2020-06-11,2020-06-16,curfoodsuf,3,Sometimes not enough to eat,2979201,347835,10.157990824346317
@@ -5883,10 +5786,6 @@ State,California,06,2020-06-11,2020-06-16,tbirth_year_curfoodsuf_34,2000,NA,3373
 State,California,06,2020-06-11,2020-06-16,tbirth_year_curfoodsuf_34,2001,NA,12535,12875,4.495550099791005
 State,California,06,2020-06-11,2020-06-16,tbirth_year_curfoodsuf_34,2002,NA,12797,12924,6.041610733503757
 State,California,06,2020-06-11,2020-06-16,total,NA,Total,29939021,0,100
-State,California,06,2020-06-04,2020-06-09,childfood,1,Often true,375058,78933,6.999177159873723
-State,California,06,2020-06-04,2020-06-09,childfood,2,Sometimes true,1799385,186710,33.579417367502494
-State,California,06,2020-06-04,2020-06-09,childfood,3,Never true,3184153,287082,59.42140547262379
-State,California,06,2020-06-04,2020-06-09,childfood,NA,Did not report,24580426,299829,82.10163477746336
 State,California,06,2020-06-04,2020-06-09,curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat,17009995,445393,58.32479033441298
 State,California,06,2020-06-04,2020-06-09,curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat",9295231,349754,31.871989262535514
 State,California,06,2020-06-04,2020-06-09,curfoodsuf,3,Sometimes not enough to eat,2322954,246495,7.965071356363547
