@@ -1,7 +1,7 @@
 # Calculate estimates from raw Household Pulse data.
 
 # Author: Bill Behrman
-# Version: 2021-01-26
+# Version: 2021-05-20
 
 # Libraries
 library(tidyverse)
@@ -19,9 +19,11 @@ dir_pulse_table <- here::here("data-raw/pulse/tables")
 file_vars <- str_c(dir_pulse_puf, "/metadata/vars.txt")
   # Household Pulse PUF variables to estimate for all respondents
 file_vars_all <- str_c(dir_pulse_puf, "/metadata/vars_all.txt")
-  # Household Pulse PUF variables to estimate for food insecure respondents
+  # Household Pulse PUF variables to estimate for food insufficient respondents
 file_vars_curfoodsuf_34 <-
   str_c(dir_pulse_puf, "/metadata/vars_curfoodsuf_34.txt")
+  # Household Pulse PUF variables requiring special processing
+file_vars_special <- str_c(dir_pulse_puf, "/metadata/vars_special.txt")
   # Data recodes
 file_recodes <- str_c(dir_pulse_puf, "/metadata/recodes.csv")
   # Output file
@@ -53,8 +55,12 @@ vars <- read_lines(file_vars)
 # Household Pulse PUF variables to estimate for all respondents
 vars_all <- read_lines(file_vars_all)
 
-# Household Pulse PUF variables to estimate for food insecure respondents
+# Household Pulse PUF variables to estimate for food insufficient respondents
+# with percentage relative to all curfoodsuf respondents
 vars_curfoodsuf_34 <- read_lines(file_vars_curfoodsuf_34)
+
+# Household Pulse PUF variables requiring special processing
+vars_special <- read_lines(file_vars_special)
 
 # Data recodes
 recodes <- read_csv(file_recodes, col_types = cols(.default = col_character()))
@@ -106,11 +112,11 @@ process_puf <- function(file) {
     select(all_of(intersect(vars_data, vars)))
   assertthat::assert_that(
     n_distinct(data$week) == 1,
-    msg = message("Data does not contain one week")
+    msg = "Data does not contain one week"
   )
   assertthat::assert_that(
     n_distinct(data$est_st) == 1,
-    msg = message("Data does not contain one state")
+    msg = "Data does not contain one state"
   )
   assertthat::assert_that(
     "curfoodsuf" %in% names(data),
@@ -122,7 +128,7 @@ process_puf <- function(file) {
         filter(year == year_, week == unique(data$week)) %>%
         nrow()
     ) == 1,
-    msg = message("Survey week not in weeks metadata")
+    msg = "Survey week not in weeks metadata"
   )
 
   # Estimate number of total adults for state
@@ -159,12 +165,6 @@ process_puf <- function(file) {
     mutate(
       pct =
         case_when(
-          str_detect(variable, "^wherefree\\d$") & code %in% 1 ~
-            100 * n / n[variable == "freefood" & code %in% 1],
-          str_detect(variable, "^mortlmth$") & code %in% 1:3 ~
-            100 * n / sum(n[variable == "tenure" & code %in% 2:3]),
-          str_detect(variable, "^mortconf$") & code %in% 1:5 ~
-            100 * n / sum(n[variable == "tenure" & code %in% 2:3]),
           is.na(code) ~ 100 * n / state_total_n,
           TRUE ~ NA_real_
         )
@@ -181,8 +181,8 @@ process_puf <- function(file) {
     ungroup()
 
   # Estimate number of adults for each variable response who responded to the
-  # food insecurity question
-  state_food_insecure_1234 <-
+  # food insufficiency question
+  state_food_insufficient_1234 <-
     data %>%
     filter(curfoodsuf %in% 1:4) %>%
     pivot_longer(
@@ -199,8 +199,8 @@ process_puf <- function(file) {
     mutate(area_type = "State") %>%
     mutate(pct = 100)
 
-  # Estimate number of food insecure adults for each variable response
-  state_food_insecure_34 <-
+  # Estimate number of food insufficient adults for each variable response
+  state_food_insufficient_34 <-
     data %>%
     filter(curfoodsuf %in% 3:4) %>%
     pivot_longer(
@@ -216,12 +216,12 @@ process_puf <- function(file) {
     rename(fips = est_st) %>%
     mutate(area_type = "State")
 
-  # Calculate percentage of food insecure adults for each variable response
-  state_food_insecure_34_pct <-
-    state_food_insecure_34 %>%
+  # Calculate percentage of food insufficient adults for each variable response
+  state_food_insufficient_34_pct <-
+    state_food_insufficient_34 %>%
     select(variable, code, n) %>%
     left_join(
-      state_food_insecure_1234 %>%
+      state_food_insufficient_1234 %>%
         mutate(
           variable = str_replace(variable, "_curfoodsuf_1234", "_curfoodsuf_34")
         ) %>%
@@ -231,15 +231,57 @@ process_puf <- function(file) {
     mutate(pct = 100 * n / n_total) %>%
     select(!c(n, n_total))
 
-  # Add percentage to number of food insecure adults for each variable response
-  state_food_insecure_34 <-
-    state_food_insecure_34 %>%
-    left_join(state_food_insecure_34_pct, by = c("variable", "code"))
+  # Add percentage to number of food insufficient adults for each variable
+  # response
+  state_food_insufficient_34 <-
+    state_food_insufficient_34 %>%
+    left_join(state_food_insufficient_34_pct, by = c("variable", "code"))
+
+  # Special processing for variable foodrsnrv
+  foodrsnrv <- function() {
+    vars <- c("foodrsnrv1", "foodrsnrv2", "foodrsnrv3", "foodrsnrv4")
+    if (!all(vars %in% names(data))) {
+      return(NULL)
+    }
+
+    total <-
+      data %>%
+      filter(
+        foodrsnrv1 == 1 | foodrsnrv2 == 1 | foodrsnrv3 == 1 | foodrsnrv4 == 1,
+        curfoodsuf %in% 3:4
+      )  %>%
+      pull(pweight) %>%
+      sum()
+
+    data %>%
+      filter(curfoodsuf %in% 3:4) %>%
+      pivot_longer(
+        cols = all_of(vars),
+        names_to = "variable",
+        values_to = "code"
+      ) %>%
+      mutate(
+        variable = variable %>% str_replace("$", "_special"),
+        code = code %>% na_if(-88) %>% na_if(-99)
+      ) %>%
+      estimate(week, est_st, variable, code) %>%
+      rename(fips = est_st) %>%
+      mutate(
+        area_type = "State",
+        pct = 100 * if_else(!is.na(code), n / total, NA_real_)
+      )
+  }
+
+  # Process special variables
+  state_special <-
+    vars_special %>%
+    map_dfr(~ get(.)())
 
   # Combine estimates and recode
   state %>%
-    bind_rows(state_food_insecure_1234) %>%
-    bind_rows(state_food_insecure_34) %>%
+    bind_rows(state_food_insufficient_1234) %>%
+    bind_rows(state_food_insufficient_34) %>%
+    bind_rows(state_special) %>%
     left_join(
       recodes %>%
         filter(variable %in% c("est_st", "est_msa")) %>%
@@ -251,10 +293,17 @@ process_puf <- function(file) {
         filter(!variable %in% c("est_st", "est_msa")) %>%
         bind_rows(
           .,
-          mutate(., variable = variable %>% str_replace("$", "_curfoodsuf_34")),
           mutate(
             .,
             variable = variable %>% str_replace("$", "_curfoodsuf_1234")
+          ),
+          mutate(
+            .,
+            variable = variable %>% str_replace("$", "_curfoodsuf_34")
+          ),
+          mutate(
+            .,
+            variable = variable %>% str_replace("$", "_special")
           )
         ) %>%
         transmute(

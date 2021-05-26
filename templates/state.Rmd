@@ -19,7 +19,6 @@ library(leaflet)
 library(leaflet.extras)
 library(lubridate)
 library(reactable)
-library(rstanarm)
 library(sf)
 
 # Parameters
@@ -387,7 +386,8 @@ v <-
   mutate(
     child_pct = child_model$intercept + child_model$slope * adult_pct,
     child_n = (child_pct / 100) * population_0_17
-  )
+  ) %>% 
+  filter(date_end > hps_date_end - years(1))
 
 v %>% 
   ggplot(aes(date_end, adult_pct)) +
@@ -403,6 +403,7 @@ v %>%
     hjust = 0,
     vjust = 1.5
   ) +
+  coord_cartesian(ylim = c(0, NA)) +
   scale_x_date(
     breaks = v$date_end,
     minor_breaks = NULL,
@@ -410,8 +411,7 @@ v %>%
   ) +
   scale_y_continuous(
     breaks = scales::breaks_width(1),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
+    labels = scales::label_percent(accuracy = 1, scale = 1)
   ) +
   theme(axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0)) +
   labs(
@@ -733,12 +733,28 @@ In the above, _Hispanic_ refers to individuals of any race. _White_, _Black_, an
 ```{r fig.asp=0.8}
 v <- 
   hps %>% 
-  filter(str_detect(variable, "^foodsufrsn\\d_curfoodsuf_34$"), !is.na(code))
+  filter(
+    str_detect(variable, "^foodrsnrv[1-4]_special$"), !is.na(code)
+  ) %>% 
+  filter(date_end > hps_date_end - years(1))
+
+date_min <- 
+  hps$date_end %>% 
+  unique() %>% 
+  keep(~ . > hps_date_end - years(1)) %>% 
+  min() %>% 
+  min(., min(v$date_end))
+  
+
+series_start <- 
+  v$date_end %>% 
+  min()
 
 v %>% 
   ggplot(aes(date_end, pct, color = fct_reorder2(response, date_end, pct))) +
-    geom_line() +
+  geom_line() +
   geom_point() +
+  coord_cartesian(xlim = c(date_min, NA), ylim = c(0, NA)) +
   scale_x_date(
     breaks = v$date_end %>% unique() %>% sort(),
     minor_breaks = NULL,
@@ -746,8 +762,7 @@ v %>%
   ) +
   scale_y_continuous(
     breaks = scales::breaks_width(10),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
+    labels = scales::label_percent(accuracy = 1, scale = 1)
   ) +
   guides(color = guide_legend(ncol = 2)) +
   theme(
@@ -757,13 +772,13 @@ v %>%
   labs(
     title = "Reasons for food insufficiency in adults",
     x = "Survey end date",
-    y = "",
+    y = "Percentage reporting reason",
     color = NULL,
     caption = "Source: Census Bureau, Household Pulse Survey."
   )
 ```
 
-The above plot contains the reasons respondents gave for selecting "Sometimes not enough to eat" or "Often not enough to eat". Respondents can choose more than one reason, so the percentages sum to greater than 100%.
+The above plot contains the reasons respondents gave for their household's food insufficiency. Respondents can choose more than one reason, so the percentages sum to greater than 100%. This question was first asked in the survey that ended `r format(series_start, format = "%Y %b %e")`.
 
 ### Severity
 
@@ -772,12 +787,14 @@ v <-
   hps %>% 
   filter(variable == "curfoodsuf", code %in% 3:4) %>% 
   group_by(date_end) %>% 
-  mutate(prop = n / sum(n))
+  mutate(prop = n / sum(n)) %>% 
+  filter(date_end > hps_date_end - years(1))
 
 v %>% 
   ggplot(aes(date_end, prop, color = fct_inorder(response))) +
   geom_line() +
   geom_point() +
+  coord_cartesian(ylim = c(0, NA)) +
   scale_x_date(
     breaks = v$date_end %>% unique() %>% sort(),
     minor_breaks = NULL,
@@ -785,8 +802,7 @@ v %>%
   ) +
   scale_y_continuous(
     breaks = scales::breaks_width(0.1),
-    labels = scales::label_percent(accuracy = 1),
-    limits = c(0, NA)
+    labels = scales::label_percent(accuracy = 1)
   ) +
   scale_color_discrete(direction = -1) +
   theme(
@@ -802,17 +818,32 @@ v %>%
   )
 ```
 
-### Free groceries or meals
+### Supplemental Nutrition Assitance Program (SNAP)
 
 ```{r}
 v <- 
   hps %>% 
-  filter(variable == "freefood", code == 1)
+  filter(
+    variable == "snap_yn",
+    response == "Yes",
+    date_end > hps_date_end - years(1)
+  )
+
+date_min <- 
+  hps$date_end %>% 
+  unique() %>% 
+  keep(~ . > hps_date_end - years(1)) %>% 
+  min()
+
+series_start <- 
+  v$date_end %>% 
+  min()
 
 v %>% 
   ggplot(aes(date_end, pct)) +
   geom_line() +
   geom_point() +
+  coord_cartesian(xlim = c(date_min, NA), ylim = c(0, NA)) +
   scale_x_date(
     breaks = v$date_end,
     minor_breaks = NULL,
@@ -820,8 +851,46 @@ v %>%
   ) +
   scale_y_continuous(
     breaks = scales::breaks_width(1),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
+    labels = scales::label_percent(accuracy = 1, scale = 1)
+  ) +
+  guides(color = guide_legend(ncol = 2)) +
+  theme(
+    axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0),
+    legend.position = "bottom",
+    plot.title = element_text(size = rel(1.1))
+  ) +
+  labs(
+    title = 
+    "Do you or does anyone in your household receive benefits from the\nSupplemental Nutrition Assistance Program (SNAP) or the Food Stamp Program?",
+    x = "Survey end date",
+    y = "Percentage reporting Yes",
+    caption = "Source: Census Bureau, Household Pulse Survey."
+  )
+```
+
+This question was first asked in the survey that ended `r format(series_start, format = "%Y %b %e")`.
+
+### Free groceries or meals
+
+```{r}
+v <- 
+  hps %>% 
+  filter(variable == "freefood", code == 1) %>% 
+  filter(date_end > hps_date_end - years(1))
+
+v %>% 
+  ggplot(aes(date_end, pct)) +
+  geom_line() +
+  geom_point() +
+  coord_cartesian(ylim = c(0, NA)) +
+  scale_x_date(
+    breaks = v$date_end,
+    minor_breaks = NULL,
+    date_labels = "%b %e"
+  ) +
+  scale_y_continuous(
+    breaks = scales::breaks_width(1),
+    labels = scales::label_percent(accuracy = 1, scale = 1)
   ) +
   theme(axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0)) +
   labs(
@@ -851,6 +920,7 @@ v %>%
   ggplot(aes(date, unemployment_rate)) +
   geom_line() +
   geom_point() +
+  coord_cartesian(ylim = c(0, NA)) +
   scale_x_date(
     breaks = v$date,
     minor_breaks = NULL,
@@ -858,8 +928,7 @@ v %>%
   ) +
   scale_y_continuous(
     breaks = scales::breaks_width(2),
-    labels = scales::label_percent(accuracy = 1, scale = 1),
-    limits = c(0, NA)
+    labels = scales::label_percent(accuracy = 1, scale = 1)
   ) +
   labs(
     title = "Unemployment rate",
@@ -952,10 +1021,9 @@ Source: Bureau of Labor Statistics, Local Area Unemployment Statistics.
 
 ```{r}
 model <- 
-  stan_glm(
+  lm(
     formula = food_insufficiency_pct ~ unemployment_rate, 
-    data = unemployment_fi_fss,
-    refresh = 0
+    data = unemployment_fi_fss
   )
 ```
 

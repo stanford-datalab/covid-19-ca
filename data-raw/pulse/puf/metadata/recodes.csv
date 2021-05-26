@@ -11,6 +11,10 @@ ahispanic_arace,21,Not imputed_Imputed
 ahispanic_arace,22,Not imputed_Not Imputed
 arace,1,Imputed
 arace,2,Not imputed
+childfood,1,Often true
+childfood,2,Sometimes true
+childfood,3,Never true
+childfood,NA,Did not report
 curfoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
 curfoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
 curfoodsuf,3,Sometimes not enough to eat
@@ -85,42 +89,17 @@ est_st,53,Washington
 est_st,54,West Virginia
 est_st,55,Wisconsin
 est_st,56,Wyoming
-expctloss,1,Yes
-expctloss,2,No
-expctloss,NA,Did not report
-foodconf,1,Not at all confident
-foodconf,2,Somewhat confident
-foodconf,3,Moderately confident
-foodconf,4,Very confident 
-foodconf,NA,Did not report
-foodsufrsn1,1,Couldn't afford to buy more food
-foodsufrsn1,NA,Did not report
-foodsufrsn2,1,Couldn’t get out to buy food
-foodsufrsn2,NA,Did not report
-foodsufrsn3,1,Afraid to go or didn’t want to go out to buy food
-foodsufrsn3,NA,Did not report
-foodsufrsn4,1,Couldn’t get groceries or meals delivered to me
-foodsufrsn4,NA,Did not report
-foodsufrsn5,1,The stores didn’t have the food I wanted
-foodsufrsn5,NA,Did not report
+foodrsnrv1,1,Couldn’t afford to buy more food
+foodrsnrv1,NA,Did not report
+foodrsnrv2,1,Couldn’t get to store to buy food
+foodrsnrv2,NA,Did not report
+foodrsnrv3,1,Couldn’t go to store due to safety concerns
+foodrsnrv3,NA,Did not report
+foodrsnrv4,1,None of the above
+foodrsnrv4,NA,Did not report
 freefood,1,Yes
 freefood,2,No
 freefood,NA,Did not report
-mortlmth,1,Yes
-mortlmth,2,No
-mortlmth,3,Payment was deferred
-mortlmth,NA,Did not report
-mortconf,1,No confidence
-mortconf,2,Slight confidence
-mortconf,3,Moderate confidence
-mortconf,4,High confidence 
-mortconf,5,Payment is/will be deferred
-mortconf,NA,Did not report
-prifoodsuf,1,Enough of the kinds of food (I/we) wanted to eat
-prifoodsuf,2,"Enough, but not always the kinds of food (I/we) wanted to eat"
-prifoodsuf,3,Sometimes not enough to eat
-prifoodsuf,4,Often not enough to eat
-prifoodsuf,NA,Did not report
 rhispanic,1,"No, not of Hispanic, Latino, or Spanish origin"
 rhispanic,2,"Yes, of Hispanic, Latino, or Spanish origin"
 rhispanic_rrace,11,Non-hispanic White
@@ -135,26 +114,7 @@ rrace,1,"White, Alone"
 rrace,2,"Black, Alone"
 rrace,3,"Asian, Alone"
 rrace,4,"Any other race alone, or race in combination"
-tenure,1,Owned free and clear
-tenure,2,Owned with a mortgage or loan (including home equity loans)
-tenure,3,Rented
-tenure,4,Occupied without payment of rent
-tenure,NA,Did not report
+snap_yn,1,Yes
+snap_yn,2,No
+snap_yn,NA,Did not report
 total,NA,Total
-wherefree1,1,Free meals through the school or other programs aimed at children
-wherefree1,NA,Did not report
-wherefree2,1,Food pantry or food bank
-wherefree2,NA,Did not report
-wherefree3,1,Home-delivered meal service like Meals on Wheels
-wherefree3,NA,Did not report
-wherefree4,1,"Church, synagogue, temple, mosque or other religious organization"
-wherefree4,NA,Did not report
-wherefree5,1,Shelter or soup kitchen
-wherefree5,NA,Did not report
-wherefree6,1,Other community program
-wherefree6,NA,Did not report
-wherefree7,1,"Family, friends, or neighbors"
-wherefree7,NA,Did not report
-wrkloss,1,Yes
-wrkloss,2,No
-wrkloss,NA,Did not report

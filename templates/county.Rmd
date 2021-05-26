@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r message=FALSE, warning=FALSE}
 # Libraries
 library(tidyverse)
+library(lubridate)
 library(reactable)
 
 # Parameters
@@ -61,6 +62,10 @@ hps <-
   read_csv(file_hps) %>% 
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4)
 
+# Last dates for Household Pulse data
+hps_date_start <- max(hps$date_start)
+hps_date_end <- max(hps$date_end)
+
 # Unemployment data
 unemployment <- 
   read_csv(file_unemployment) %>% 
@@ -103,7 +108,8 @@ v <-
       ) %>% 
       ungroup()
   ) %>% 
-  mutate(area = factor(area, levels = c(params$area, state)))
+  mutate(area = factor(area, levels = c(params$area, state))) %>% 
+  filter(date_end > hps_date_end - years(1))
 
 v %>% 
   ggplot(aes(date_end, adult_pct, color = area)) +
