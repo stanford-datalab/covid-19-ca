@@ -1,8 +1,5 @@
 variable,code,category,response,curfoodsuf
 total,NA,Total,Total,Total
-wrkloss,1,Respondent or household member experienced loss of employment income,Yes,Total
-wrkloss,2,Respondent or household member experienced loss of employment income,No,Total
-wrkloss,NA,Respondent or household member experienced loss of employment income,Did not report,Total
 curfoodsuf,1,Total,Total,1
 curfoodsuf,2,Total,Total,2
 curfoodsuf,3,Total,Total,3
@@ -11,9 +8,3 @@ curfoodsuf,NA,Total,Total,NA
 freefood,1,Free groceries or free meal in last 7 days,Yes,Total
 freefood,2,Free groceries or free meal in last 7 days,No,Total
 freefood,NA,Free groceries or free meal in last 7 days,Did not report,Total
-mortconf,1,Confidence in paying next rent or mortgage,No confidence,Total
-mortconf,2,Confidence in paying next rent or mortgage,Slight confidence,Total
-mortconf,3,Confidence in paying next rent or mortgage,Moderate confidence,Total
-mortconf,4,Confidence in paying next rent or mortgage,High confidence,Total
-mortconf,5,Confidence in paying next rent or mortgage,Payment is/will be deferred,Total
-mortconf,NA,Confidence in paying next rent or mortgage,Did not report,Total
