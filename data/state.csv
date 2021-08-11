@@ -1,13 +1,13 @@
 area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
-State,California,06,2021-07-21,2021-08-02,curfoodsuf,1,Enough of the kinds of food wanted,5960626,NA,64.88247708343403
-State,California,06,2021-07-21,2021-08-02,curfoodsuf,2,"Enough food, but not always the kinds wanted",2249182,NA,24.482747210019937
-State,California,06,2021-07-21,2021-08-02,curfoodsuf,3,Sometimes not enough to eat,740826,NA,8.064023135793471
-State,California,06,2021-07-21,2021-08-02,curfoodsuf,4,Often not enough to eat,236170,NA,2.5707525707525707
-State,California,06,2021-07-21,2021-08-02,curfoodsuf,NA,Did not report,2362569,NA,20.456255110667488
-State,California,06,2021-07-21,2021-08-02,freefood,1,Yes,1062110,NA,9.196257597382784
-State,California,06,2021-07-21,2021-08-02,freefood,2,No,7992906,NA,69.20641226206932
-State,California,06,2021-07-21,2021-08-02,freefood,NA,Did not report,2494357,NA,21.59733879902734
-State,California,06,2021-07-21,2021-08-02,total,NA,Total,11549372,NA,100
+State,California,06,2021-07-21,2021-08-02,curfoodsuf,1,Enough of the kinds of food wanted,18113336,NA,71.82517253305352
+State,California,06,2021-07-21,2021-08-02,curfoodsuf,2,"Enough food, but not always the kinds wanted",5081944,NA,20.151533908680108
+State,California,06,2021-07-21,2021-08-02,curfoodsuf,3,Sometimes not enough to eat,1576210,NA,6.250176952402599
+State,California,06,2021-07-21,2021-08-02,curfoodsuf,4,Often not enough to eat,447156,NA,1.7731166058637724
+State,California,06,2021-07-21,2021-08-02,curfoodsuf,NA,Did not report,4589010,NA,15.395407139695923
+State,California,06,2021-07-21,2021-08-02,freefood,1,Yes,2087035,NA,7.001674334942674
+State,California,06,2021-07-21,2021-08-02,freefood,2,No,23041026,NA,77.29902009067737
+State,California,06,2021-07-21,2021-08-02,freefood,NA,Did not report,4679595,NA,15.69930557437995
+State,California,06,2021-07-21,2021-08-02,total,NA,Total,29807656,NA,100
 State,California,06,2021-06-23,2021-07-05,curfoodsuf,1,Enough of the kinds of food wanted,16825576,425584,68.79523581539415
 State,California,06,2021-06-23,2021-07-05,curfoodsuf,2,"Enough food, but not always the kinds wanted",5161682,311560,21.104723528845323
 State,California,06,2021-06-23,2021-07-05,curfoodsuf,3,Sometimes not enough to eat,1934952,265903,7.9114975074616245
