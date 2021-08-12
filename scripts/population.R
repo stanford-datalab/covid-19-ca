@@ -7,7 +7,7 @@
 # https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html
 
 # Author: Sara Altman, Bill Behrman
-# Version: 2020-07-26
+# Version: 2021-08-11
 
 # Libraries
 library(tidyverse)
@@ -97,7 +97,7 @@ dest <- str_c(dir_tmp, "/file.zip")
 result <- download.file(url = url_hps, destfile = dest, quiet = TRUE)
 assertthat::assert_that(
   result == 0L,
-  msg = message("Download failed")
+  msg = "Download failed"
 )
 unzip(zipfile = dest, exdir = dir_tmp)
 

@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2021-05-19
+# Version: 2021-08-11
 
 # Libraries
 library(tidyverse)
@@ -111,7 +111,7 @@ read_cell <- function(data, category_, response_, curfoodsuf_) {
 read_sheet <- function(week, sheet) {
   v <-
     read_excel(
-      path = str_glue("{dir_tmp}/{week}/food2.xlsx"),
+      path = str_glue("{dir_tmp}/{week}/food1.xlsx"),
       col_types = "text",
       sheet = sheet,
       skip = if_else(parse_number(week) <= 12, 4, 5)
@@ -119,8 +119,8 @@ read_sheet <- function(week, sheet) {
     rename(
       response = "...1",
       Total = "...2",
-      `1` = "Enough of the types of food wanted",
-      `2` = "Enough food, but not always the types wanted",
+      `1` = "Enough of the kinds of food wanted",
+      `2` = "Enough food, but not always the kinds wanted",
       `3` = "Sometimes not enough to eat",
       `4` = "Often not enough to eat",
       `NA` = "Did not report"
@@ -222,14 +222,14 @@ download <- function(week) {
     files %>%
     pluck(2) %>%
     unlist() %>%
-    keep(~ str_detect(., "^food2") & !str_detect(., "_se_"))
+    keep(~ str_detect(., "^food1") & !str_detect(., "_se_"))
   url <- str_glue(url_pulse, "/{week}/{file}")
-  dest <- str_glue("{dir_tmp}/{week}/food2.xlsx")
+  dest <- str_glue("{dir_tmp}/{week}/food1.xlsx")
   fs::dir_create(str_glue("{dir_tmp}/{week}"))
   result <- download.file(url = url, destfile = dest, quiet = TRUE)
   assertthat::assert_that(
     result == 0L,
-    msg = message("Download failed")
+    msg = "Download failed"
   )
 
   # Read sheets for state, combine, and save

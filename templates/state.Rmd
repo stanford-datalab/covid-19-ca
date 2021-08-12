@@ -870,7 +870,7 @@ v %>%
 
 This question was first asked in the survey that ended `r format(series_start, format = "%Y %b %e")`.
 
-### Free groceries or meals
+### Free groceries
 
 ```{r}
 v <- 
@@ -895,7 +895,7 @@ v %>%
   theme(axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0)) +
   labs(
     title = 
-      "During the last 7 days, did you or anyone in\nyour household get free groceries or a free meal?",
+      "During the last 7 days, did you or anyone in your household get free groceries\nfrom a food pantry, food bank, church, or other place that provides free food?",
     x = "Survey end date",
     y = "Percentage of adults in households that received free food",
     caption = "Source: Census Bureau, Household Pulse Survey."

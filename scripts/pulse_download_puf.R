@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2021-05-19
+# Version: 2021-08-11
 
 # Libraries
 library(tidyverse)
@@ -88,7 +88,7 @@ download <- function(week) {
   result <- download.file(url = url, destfile = dest, quiet = TRUE)
   assertthat::assert_that(
     result == 0L,
-    msg = message("Download failed")
+    msg = "Download failed"
   )
   unzip(zipfile = dest, exdir = str_glue("{dir_tmp}/{file_pulse}"))
 
@@ -139,7 +139,7 @@ download <- function(week) {
 
   assertthat::assert_that(
     all(data$scram %in% weights$scram),
-    msg = message("Not all respondents have replication weights")
+    msg = "Not all respondents have replication weights"
   )
 
   # Combine data and replication weights and save
