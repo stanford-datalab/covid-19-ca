@@ -3,7 +3,7 @@
 # Source: https://www.census.gov/programs-surveys/household-pulse-survey/datasets.html
 
 # Author: Bill Behrman
-# Version: 2021-08-11
+# Version: 2021-08-25
 
 # Libraries
 library(tidyverse)
@@ -114,6 +114,11 @@ download <- function(week) {
       ahispanic_arace = 10L * ahispanic + arace
     ) %>%
     relocate(rhispanic_rrace, ahispanic_arace, .after = arace)
+  if ("egenid_birth" %in% names(data)) {
+    data <-
+      data %>%
+      rename(egender = egenid_birth)
+  }
   vars_integer <-
     names(data) %>%
     setdiff(c("scram", "est_st", "est_msa", "hweight", "pweight"))
