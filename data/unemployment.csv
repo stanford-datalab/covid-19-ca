@@ -1,6 +1,9 @@
 area_type,area,fips,date,status,labor_force,employment,unemployment,unemployment_rate
-State,California,06,2021-07-01,Preliminary,19164565,17659070,1505495,7.9
-Region,Los Angeles-Long Beach-Anaheim,31080,2021-07-01,Preliminary,6689348,6068492,620856,9.3
+State,California,06,2021-08-01,Preliminary,19024443,17600191,1424252,7.5
+Region,Los Angeles-Long Beach-Anaheim,31080,2021-08-01,Preliminary,5023764,4538346,485418,9.7
+County,Los Angeles County,06037,2021-08-01,Preliminary,5023764,4538346,485418,9.7
+State,California,06,2021-07-01,Final,19162864,17657462,1505402,7.9
+Region,Los Angeles-Long Beach-Anaheim,31080,2021-07-01,NA,6687536,6066702,620834,9.3
 Region,Riverside-San Bernardino-Ontario,40140,2021-07-01,Preliminary,2109271,1942460,166811,7.9
 Region,San Francisco-Oakland-Berkeley,41860,2021-07-01,Preliminary,2490026,2345038,144988,5.8
 Region,Balance,NA,2021-07-01,Preliminary,7875924,7303083,572841,7.3
@@ -22,7 +25,7 @@ County,Kern County,06029,2021-07-01,Preliminary,380835,340080,40755,10.7
 County,Kings County,06031,2021-07-01,Preliminary,56584,51101,5483,9.7
 County,Lake County,06033,2021-07-01,Preliminary,29362,27175,2187,7.4
 County,Lassen County,06035,2021-07-01,Preliminary,9684,9128,556,5.7
-County,Los Angeles County,06037,2021-07-01,Preliminary,5102664,4581330,521334,10.2
+County,Los Angeles County,06037,2021-07-01,Final,5100852,4579540,521312,10.2
 County,Madera County,06039,2021-07-01,Preliminary,61781,56137,5644,9.1
 County,Marin County,06041,2021-07-01,Preliminary,134987,128934,6053,4.5
 County,Mariposa County,06043,2021-07-01,Preliminary,7970,7425,545,6.8
