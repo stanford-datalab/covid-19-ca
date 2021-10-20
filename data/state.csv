@@ -1,13 +1,548 @@
 area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
-State,California,06,2021-09-15,2021-09-27,curfoodsuf,1,Enough of the kinds of food wanted,16984394,NA,66.35540566985662
-State,California,06,2021-09-15,2021-09-27,curfoodsuf,2,"Enough food, but not always the kinds wanted",6266655,NA,24.482853772588843
-State,California,06,2021-09-15,2021-09-27,curfoodsuf,3,Sometimes not enough to eat,1548483,NA,6.049684059253252
-State,California,06,2021-09-15,2021-09-27,curfoodsuf,4,Often not enough to eat,796565,NA,3.112056498301284
-State,California,06,2021-09-15,2021-09-27,curfoodsuf,NA,Did not report,4211558,NA,14.129115016625258
-State,California,06,2021-09-15,2021-09-27,freefood,1,Yes,2318885,NA,7.779494637216693
-State,California,06,2021-09-15,2021-09-27,freefood,2,No,23009181,NA,77.19218512183582
-State,California,06,2021-09-15,2021-09-27,freefood,NA,Did not report,4479590,NA,15.028320240947494
-State,California,06,2021-09-15,2021-09-27,total,NA,Total,29807656,NA,100
+State,California,06,2021-09-29,2021-10-11,curfoodsuf,1,Enough of the kinds of food wanted,16717417,391390,67.89962352888087
+State,California,06,2021-09-29,2021-10-11,curfoodsuf,2,"Enough food, but not always the kinds wanted",5401319,309098,21.938051553286954
+State,California,06,2021-09-29,2021-10-11,curfoodsuf,3,Sometimes not enough to eat,1928541,253822,7.832980292350618
+State,California,06,2021-09-29,2021-10-11,curfoodsuf,4,Often not enough to eat,573503,116935,2.3293446254815526
+State,California,06,2021-09-29,2021-10-11,curfoodsuf,NA,Did not report,5186876,332372,17.40115247735176
+State,California,06,2021-09-29,2021-10-11,egender,1,Male,14590412,0,48.948538590194524
+State,California,06,2021-09-29,2021-10-11,egender,2,Female,15217244,0,51.05146140980547
+State,California,06,2021-09-29,2021-10-11,egender_curfoodsuf_1234,1,Male,12079887,242252,100
+State,California,06,2021-09-29,2021-10-11,egender_curfoodsuf_1234,2,Female,12540894,228929,100
+State,California,06,2021-09-29,2021-10-11,egender_curfoodsuf_34,1,Male,1327275,192481,10.987480509066971
+State,California,06,2021-09-29,2021-10-11,egender_curfoodsuf_34,2,Female,1174769,169587,9.367502303285097
+State,California,06,2021-09-29,2021-10-11,foodrsnrv1_special,1,Couldn’t afford to buy more food,1851020,218757,74.36108315170468
+State,California,06,2021-09-29,2021-10-11,foodrsnrv1_special,NA,Did not report,651023,169720,NA
+State,California,06,2021-09-29,2021-10-11,foodrsnrv2_special,1,Couldn’t get to store to buy food,308933,74583,12.410757072100775
+State,California,06,2021-09-29,2021-10-11,foodrsnrv2_special,NA,Did not report,2193111,243240,NA
+State,California,06,2021-09-29,2021-10-11,foodrsnrv3_special,1,Couldn’t go to store due to safety concerns,296624,100309,11.916279275033254
+State,California,06,2021-09-29,2021-10-11,foodrsnrv3_special,NA,Did not report,2205420,225464,NA
+State,California,06,2021-09-29,2021-10-11,foodrsnrv4_special,1,None of the above,485618,150071,19.508743508000464
+State,California,06,2021-09-29,2021-10-11,foodrsnrv4_special,NA,Did not report,2016426,213711,NA
+State,California,06,2021-09-29,2021-10-11,freefood,1,Yes,1796406,260691,7.329275469230274
+State,California,06,2021-09-29,2021-10-11,freefood,2,No,22713603,411047,92.6707245307697
+State,California,06,2021-09-29,2021-10-11,freefood,NA,Did not report,5297647,342150,17.772774035940383
+State,California,06,2021-09-29,2021-10-11,rhispanic,1,"No, not of Hispanic, Latino, or Spanish origin",18823534,0,63.149997436904826
+State,California,06,2021-09-29,2021-10-11,rhispanic,2,"Yes, of Hispanic, Latino, or Spanish origin",10984122,0,36.85000256309517
+State,California,06,2021-09-29,2021-10-11,rhispanic_curfoodsuf_1234,1,"No, not of Hispanic, Latino, or Spanish origin",15706310,271128,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_curfoodsuf_1234,2,"Yes, of Hispanic, Latino, or Spanish origin",8914470,256382,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_curfoodsuf_34,1,"No, not of Hispanic, Latino, or Spanish origin",972353,127980,6.19084536681585
+State,California,06,2021-09-29,2021-10-11,rhispanic_curfoodsuf_34,2,"Yes, of Hispanic, Latino, or Spanish origin",1529690,217514,17.159632652370334
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,11,Non-hispanic White,11431394,0,38.35052981018596
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,12,Non-hispanic Black,1649037,0,5.532259899918771
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,13,Non-hispanic Asian,4470687,136036,14.998450693963434
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,14,Non-hispanic Other,1272416,136036,4.2687570328366595
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,21,Hispanic White,9161907,291632,30.736758939567586
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,22,Hispanic Black,252530,86825,0.8471987262013249
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,23,Hispanic Asian,251989,74707,0.8453851126563341
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace,24,Hispanic Other,1317695,254988,4.420659784669921
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,11,Non-hispanic White,9976095,209411,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,12,Non-hispanic Black,1304856,107670,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,13,Non-hispanic Asian,3287001,163936,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,14,Non-hispanic Other,1138359,124577,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,21,Hispanic White,7403601,323426,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,22,Hispanic Black,177318,58960,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,23,Hispanic Asian,170226,58623,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_1234,24,Hispanic Other,1163325,243858,100
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,11,Non-hispanic White,509086,107609,5.103059432241089
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,12,Non-hispanic Black,158956,40749,12.181866785998617
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,13,Non-hispanic Asian,103362,39200,3.144583084104859
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,14,Non-hispanic Other,200949,66377,17.652521932902577
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,21,Hispanic White,1196130,184332,16.156062506486293
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,22,Hispanic Black,55739,34866,31.434423638451747
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,23,Hispanic Asian,6466,4651,3.7981958147768498
+State,California,06,2021-09-29,2021-10-11,rhispanic_rrace_curfoodsuf_34,24,Hispanic Other,271356,118647,23.32585881120302
+State,California,06,2021-09-29,2021-10-11,rrace,1,"White, Alone",20593301,291632,69.08728874975354
+State,California,06,2021-09-29,2021-10-11,rrace,2,"Black, Alone",1901567,86825,6.379458626120096
+State,California,06,2021-09-29,2021-10-11,rrace,3,"Asian, Alone",4722676,146716,15.84383580661977
+State,California,06,2021-09-29,2021-10-11,rrace,4,"Any other race alone, or race in combination",2590111,277273,8.68941681750658
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_1234,1,"White, Alone",17379696,403200,100
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_1234,2,"Black, Alone",1482173,123900,100
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_1234,3,"Asian, Alone",3457227,163622,100
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_1234,4,"Any other race alone, or race in combination",2301684,260907,100
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_34,1,"White, Alone",1705216,218507,9.811543827991219
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_34,2,"Black, Alone",214695,52433,14.485118394144132
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_34,3,"Asian, Alone",109828,40123,3.176765506996874
+State,California,06,2021-09-29,2021-10-11,rrace_curfoodsuf_34,4,"Any other race alone, or race in combination",472305,133833,20.519959255564817
+State,California,06,2021-09-29,2021-10-11,snap_yn,1,Yes,3076411,254905,12.586268834721643
+State,California,06,2021-09-29,2021-10-11,snap_yn,2,No,21366186,350728,87.41373116527835
+State,California,06,2021-09-29,2021-10-11,snap_yn,NA,Did not report,5365059,346470,17.998928810071305
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1933,NA,211075,102881,0.7081240801073141
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1934,NA,167922,121065,0.5633526717939568
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1935,NA,29223,11538,0.09803804872551604
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1936,NA,30154,16439,0.10116158125742816
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1937,NA,21290,8675,0.07142465380656014
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1938,NA,67245,32958,0.22559736380587153
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1939,NA,206418,69413,0.6924991824719808
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1940,NA,50059,16487,0.16793960122142557
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1941,NA,56221,16784,0.18861193591984332
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1942,NA,150278,39848,0.5041586805969682
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1943,NA,178196,54648,0.5978208569501293
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1944,NA,137712,41432,0.4620021962018313
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1945,NA,238999,45815,0.8018027623617442
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1946,NA,300562,99775,1.0083392670990838
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1947,NA,269428,47118,0.903889684913671
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1948,NA,257471,49298,0.8637744292155853
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1949,NA,386785,76421,1.2976021330038767
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1950,NA,259637,50500,0.8710415975587152
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1951,NA,323522,59603,1.0853646704117803
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1952,NA,640049,120414,2.147263286299772
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1953,NA,548144,91944,1.8389358263509097
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1954,NA,447531,79147,1.5013944935861363
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1955,NA,604188,147472,2.0269547433683273
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1956,NA,437641,85808,1.4682178198910467
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1957,NA,471980,98358,1.5834183330750309
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1958,NA,463906,79381,1.556331513938384
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1959,NA,565020,79504,1.8955531006845514
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1960,NA,513912,89131,1.724092776257247
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1961,NA,536878,116290,1.801141533941384
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1962,NA,518514,114319,1.7395326195316132
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1963,NA,423592,70363,1.4210838065369378
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1964,NA,454914,69790,1.5261659062856576
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1965,NA,446641,89657,1.498408674689674
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1966,NA,293435,65498,0.9844267466157441
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1967,NA,454721,84404,1.525516595120566
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1968,NA,416741,79070,1.3980998196662715
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1969,NA,531766,93294,1.783990391692116
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1970,NA,549373,89791,1.8430593687818226
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1971,NA,506039,103060,1.6976804469159066
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1972,NA,476646,92936,1.5990739802535017
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1973,NA,416223,65535,1.3963622679721925
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1974,NA,337507,74000,1.132284347299278
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1975,NA,477431,83576,1.6017042807428137
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1976,NA,578770,99475,1.9416828805761557
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1977,NA,595096,89734,1.9964527846636424
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1978,NA,666541,108130,2.236140075378467
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1979,NA,568654,91386,1.9077435647785135
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1980,NA,415609,74388,1.3943018771020843
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1981,NA,377448,60573,1.2662783983273074
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1982,NA,597264,107062,2.003727633256504
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1983,NA,614035,81303,2.059990326823513
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1984,NA,599905,100299,2.01258683714349
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1985,NA,664279,120756,2.228550019451657
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1986,NA,284412,61641,0.9541565964901375
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1987,NA,590053,109966,1.9795356070091419
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1988,NA,395375,96599,1.326421469359054
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1989,NA,796139,117578,2.6709206370174394
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1990,NA,620408,90090,2.081372319501344
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1991,NA,491423,86775,1.6486461919251179
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1992,NA,912883,194977,3.062578135799889
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1993,NA,734005,128293,2.462472064949209
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1994,NA,444420,94355,1.4909585212000436
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1995,NA,435829,100357,1.462136939599383
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1996,NA,434928,105442,1.459114675918702
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1997,NA,382854,102713,1.2844157498331505
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1998,NA,454135,122900,1.5235520399749674
+State,California,06,2021-09-29,2021-10-11,tbirth_year,1999,NA,527436,117082,1.7694640477995198
+State,California,06,2021-09-29,2021-10-11,tbirth_year,2000,NA,380738,104540,1.27731576235644
+State,California,06,2021-09-29,2021-10-11,tbirth_year,2001,NA,696661,218553,2.337188763356765
+State,California,06,2021-09-29,2021-10-11,tbirth_year,2002,NA,278085,93556,0.9329320578264698
+State,California,06,2021-09-29,2021-10-11,tbirth_year,2003,NA,395287,140121,1.3261259456617192
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1933,NA,203949,102396,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1934,NA,164306,121080,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1935,NA,29223,11538,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1936,NA,30154,16439,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1937,NA,21290,8675,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1938,NA,66540,32941,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1939,NA,159542,61714,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1940,NA,50059,16487,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1941,NA,49864,15413,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1942,NA,125654,31148,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1943,NA,164388,54369,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1944,NA,130059,39535,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1945,NA,226078,46219,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1946,NA,288155,98995,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1947,NA,259992,47334,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1948,NA,222088,46926,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1949,NA,317089,65183,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1950,NA,200548,42199,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1951,NA,311464,59764,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1952,NA,590069,113501,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1953,NA,510012,90840,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1954,NA,433430,79139,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1955,NA,360147,57204,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1956,NA,397426,82831,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1957,NA,422656,96099,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1958,NA,407586,76295,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1959,NA,516937,77267,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1960,NA,385305,58787,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1961,NA,479401,111866,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1962,NA,389054,75993,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1963,NA,357225,58602,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1964,NA,384580,63319,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1965,NA,383353,90245,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1966,NA,231704,56774,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1967,NA,346975,73566,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1968,NA,396040,78691,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1969,NA,434065,78279,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1970,NA,499851,89078,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1971,NA,457593,105358,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1972,NA,402318,85829,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1973,NA,387442,63268,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1974,NA,254009,52856,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1975,NA,336142,74748,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1976,NA,496329,101538,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1977,NA,541192,89440,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1978,NA,568591,95982,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1979,NA,559328,91552,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1980,NA,351257,60499,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1981,NA,354891,60211,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1982,NA,576678,106418,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1983,NA,531204,74004,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1984,NA,527867,85476,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1985,NA,430839,92816,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1986,NA,189204,43483,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1987,NA,483639,93207,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1988,NA,367902,94438,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1989,NA,533742,110409,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1990,NA,554263,84478,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1991,NA,400180,68524,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1992,NA,823713,199207,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1993,NA,505768,109392,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1994,NA,400874,92986,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1995,NA,349110,91766,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1996,NA,279634,81111,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1997,NA,248935,83888,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1998,NA,252586,66154,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,1999,NA,382550,90685,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,2000,NA,277268,82676,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,2001,NA,432033,162850,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,2002,NA,154786,57978,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_1234,2003,NA,262655,117180,100
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1933,NA,15997,12815,7.843756069841288
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1935,NA,5882,6159,20.129332557279266
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1940,NA,910,920,1.8178348634172081
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1942,NA,7438,7237,5.919370741383279
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1943,NA,2241,2323,1.3635167588859833
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1944,NA,31710,36781,24.38117300902666
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1946,NA,28801,25672,9.995015875989171
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1947,NA,486,481,0.18676919271926537
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1948,NA,8581,6940,3.863830417677791
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1949,NA,26255,20011,8.279936030147084
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1950,NA,455,452,0.22687572056274785
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1951,NA,1393,1395,0.44739209464917257
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1952,NA,3230,2768,0.547364351990049
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1953,NA,32996,30068,6.469575910974795
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1954,NA,17155,10252,3.957972106336683
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1955,NA,45437,35834,12.616381347939887
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1956,NA,41603,30733,10.46816699154707
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1957,NA,15486,10384,3.6640315823728704
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1958,NA,6042,6155,1.4822680219465516
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1959,NA,10983,7024,2.1246524264074966
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1960,NA,32973,20770,8.557708631876253
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1961,NA,22058,15960,4.601070729341134
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1962,NA,8230,5281,2.1153758798843745
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1963,NA,46655,24753,13.060350243499116
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1964,NA,69947,43118,18.187919143182405
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1965,NA,41368,15940,10.79120381590802
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1966,NA,2113,1594,0.9121338740924881
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1967,NA,13386,11628,3.857957912769123
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1968,NA,58153,31474,14.683695017569683
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1969,NA,19416,9110,4.472991132867991
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1970,NA,21569,17861,4.314987033998952
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1971,NA,73242,34556,16.005886531752584
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1972,NA,68146,43018,16.93847080938467
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1973,NA,61827,35017,15.957658367876828
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1974,NA,7407,6180,2.9158680540074307
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1975,NA,9033,4781,2.687371029637962
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1976,NA,185610,102001,37.396578081869684
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1977,NA,102846,49784,19.00353325773288
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1978,NA,41231,18894,7.251395435010933
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1979,NA,25126,20772,4.492176485667923
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1980,NA,137055,51541,39.01838845193055
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1981,NA,11092,6673,3.125469124467151
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1982,NA,117289,80928,20.338715175555233
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1983,NA,49039,31202,9.23160460014834
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1984,NA,50826,28305,9.628507425463344
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1985,NA,162016,98724,37.604638900941765
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1986,NA,28393,16450,15.006522704759606
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1987,NA,7871,9039,1.6274670502879813
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1988,NA,75604,67727,20.54989754412709
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1989,NA,27095,16336,5.0764682883270416
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1990,NA,47473,31504,8.56510267603635
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1991,NA,42843,31544,10.705948417082578
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1992,NA,73760,40516,8.954565654435127
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1993,NA,71943,56264,14.224418465389155
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1994,NA,110827,86652,27.646456148136686
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1995,NA,44406,32460,12.719898053663552
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1996,NA,10145,9182,3.627907629706483
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1997,NA,33534,20079,13.470974106843977
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,1998,NA,50911,33251,20.155955348312446
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,2000,NA,35028,21495,12.633082323657703
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,2001,NA,57444,47137,13.296253025746674
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,2002,NA,15280,16456,9.871587864213918
+State,California,06,2021-09-29,2021-10-11,tbirth_year_curfoodsuf_34,2003,NA,28753,33167,10.947143925813423
+State,California,06,2021-09-29,2021-10-11,total,NA,Total,29807656,0,100
+State,California,06,2021-09-15,2021-09-27,curfoodsuf,1,Enough of the kinds of food wanted,16984394,432404,66.35540437493287
+State,California,06,2021-09-15,2021-09-27,curfoodsuf,2,"Enough food, but not always the kinds wanted",6266655,437447,24.482854735768104
+State,California,06,2021-09-15,2021-09-27,curfoodsuf,3,Sometimes not enough to eat,1548483,238814,6.049683627187808
+State,California,06,2021-09-15,2021-09-27,curfoodsuf,4,Often not enough to eat,796565,208380,3.1120572621112177
+State,California,06,2021-09-15,2021-09-27,curfoodsuf,NA,Did not report,4211558,354187,14.129116295525245
+State,California,06,2021-09-15,2021-09-27,egender,1,Male,14590412,0,48.948538590190935
+State,California,06,2021-09-15,2021-09-27,egender,2,Female,15217244,0,51.051461409809065
+State,California,06,2021-09-15,2021-09-27,egender_curfoodsuf_1234,1,Male,12797620,294416,100
+State,California,06,2021-09-15,2021-09-27,egender_curfoodsuf_1234,2,Female,12798478,241271,100
+State,California,06,2021-09-15,2021-09-27,egender_curfoodsuf_34,1,Male,1455257,234309,11.371306841461706
+State,California,06,2021-09-15,2021-09-27,egender_curfoodsuf_34,2,Female,889792,153702,6.952323158924424
+State,California,06,2021-09-15,2021-09-27,foodrsnrv1_special,1,Couldn’t afford to buy more food,1291224,205248,62.45824563940911
+State,California,06,2021-09-15,2021-09-27,foodrsnrv1_special,NA,Did not report,1053824,243537,NA
+State,California,06,2021-09-15,2021-09-27,foodrsnrv2_special,1,Couldn’t get to store to buy food,185756,71125,8.985253260847669
+State,California,06,2021-09-15,2021-09-27,foodrsnrv2_special,NA,Did not report,2159292,286419,NA
+State,California,06,2021-09-15,2021-09-27,foodrsnrv3_special,1,Couldn’t go to store due to safety concerns,470953,182755,22.7806538101146
+State,California,06,2021-09-15,2021-09-27,foodrsnrv3_special,NA,Did not report,1874095,302106,NA
+State,California,06,2021-09-15,2021-09-27,foodrsnrv4_special,1,None of the above,335941,156667,16.24990661606143
+State,California,06,2021-09-15,2021-09-27,foodrsnrv4_special,NA,Did not report,2009107,259766,NA
+State,California,06,2021-09-15,2021-09-27,freefood,1,Yes,2318885,249504,9.155397803929686
+State,California,06,2021-09-15,2021-09-27,freefood,2,No,23009181,404213,90.84460219607031
+State,California,06,2021-09-15,2021-09-27,freefood,NA,Did not report,4479590,389847,15.028320026540984
+State,California,06,2021-09-15,2021-09-27,rhispanic,1,"No, not of Hispanic, Latino, or Spanish origin",18823534,0,63.149997436923975
+State,California,06,2021-09-15,2021-09-27,rhispanic,2,"Yes, of Hispanic, Latino, or Spanish origin",10984122,0,36.850002563076025
+State,California,06,2021-09-15,2021-09-27,rhispanic_curfoodsuf_1234,1,"No, not of Hispanic, Latino, or Spanish origin",16870840,176540,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_curfoodsuf_1234,2,"Yes, of Hispanic, Latino, or Spanish origin",8725258,271494,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_curfoodsuf_34,1,"No, not of Hispanic, Latino, or Spanish origin",1065662,209916,6.3165923429598605
+State,California,06,2021-09-15,2021-09-27,rhispanic_curfoodsuf_34,2,"Yes, of Hispanic, Latino, or Spanish origin",1279386,227915,14.663015965654907
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,11,Non-hispanic White,11431394,0,38.350529810227
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,12,Non-hispanic Black,1649037,0,5.532259899943424
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,13,Non-hispanic Asian,4389456,161232,14.725934361405558
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,14,Non-hispanic Other,1353647,161232,4.541273365347987
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,21,Hispanic White,8484922,330883,28.465579255236683
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,22,Hispanic Black,288509,103334,0.9679036617860122
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,23,Hispanic Asian,722764,170019,2.4247595812517093
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace,24,Hispanic Other,1487927,263018,4.99176006480162
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,11,Non-hispanic White,10417518,117005,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,12,Non-hispanic Black,1387883,81030,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,13,Non-hispanic Asian,3901549,160035,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,14,Non-hispanic Other,1163890,155345,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,21,Hispanic White,6923662,283891,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,22,Hispanic Black,216587,90813,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,23,Hispanic Asian,362694,103228,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_1234,24,Hispanic Other,1222315,240203,100
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,11,Non-hispanic White,569498,162941,5.466732379100792
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,12,Non-hispanic Black,196912,74139,14.187969015142007
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,13,Non-hispanic Asian,244746,78346,6.273040963353467
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,14,Non-hispanic Other,54506,29422,4.683106638571074
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,21,Hispanic White,921455,204369,13.308777186353947
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,22,Hispanic Black,5957,6120,2.7502678624597685
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,23,Hispanic Asian,4895,3236,1.3495296848001026
+State,California,06,2021-09-15,2021-09-27,rhispanic_rrace_curfoodsuf_34,24,Hispanic Other,347080,175594,28.395282712880565
+State,California,06,2021-09-15,2021-09-27,rrace,1,"White, Alone",19916316,330883,66.81610906546368
+State,California,06,2021-09-15,2021-09-27,rrace,2,"Black, Alone",1937546,103334,6.500163561729436
+State,California,06,2021-09-15,2021-09-27,rrace,3,"Asian, Alone",5112220,254023,17.15069394265727
+State,California,06,2021-09-15,2021-09-27,rrace,4,"Any other race alone, or race in combination",2841574,296497,9.53303343014961
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_1234,1,"White, Alone",17341181,313403,100
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_1234,2,"Black, Alone",1604470,114715,100
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_1234,3,"Asian, Alone",4264243,203860,100
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_1234,4,"Any other race alone, or race in combination",2386205,269989,100
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_34,1,"White, Alone",1490953,279344,8.597757366448425
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_34,2,"Black, Alone",202869,73906,12.643995804446247
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_34,3,"Asian, Alone",249640,78571,5.854273435615457
+State,California,06,2021-09-15,2021-09-27,rrace_curfoodsuf_34,4,"Any other race alone, or race in combination",401586,177894,16.829487046855025
+State,California,06,2021-09-15,2021-09-27,snap_yn,1,Yes,3125313,346737,12.402601677753337
+State,California,06,2021-09-15,2021-09-27,snap_yn,2,No,22073535,424260,87.59739832224666
+State,California,06,2021-09-15,2021-09-27,snap_yn,NA,Did not report,4608809,381359,15.46182904317601
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1933,NA,120655,30108,0.40477906126383
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1934,NA,71431,31099,0.2396392573008321
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1935,NA,33288,19576,0.1116764539782438
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1936,NA,57270,17933,0.19213197291258177
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1937,NA,57625,17628,0.19332208216978075
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1938,NA,190500,90206,0.6390979253418264
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1939,NA,96443,34720,0.32355118183620124
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1940,NA,69850,17906,0.23433652654186152
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1941,NA,149445,50606,0.5013637054205285
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1942,NA,153551,45273,0.515141090619319
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1943,NA,173218,61133,0.5811204924535723
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1944,NA,156802,40851,0.5260460028272778
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1945,NA,206996,39203,0.6944382344817052
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1946,NA,202299,42837,0.6786825540704361
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1947,NA,188406,28433,0.6320727352834731
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1948,NA,336957,99498,1.1304366873413083
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1949,NA,219911,40535,0.7377652278346252
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1950,NA,304312,74666,1.0209205463533582
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1951,NA,303725,51091,1.018948033918398
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1952,NA,475394,106463,1.5948715800886055
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1953,NA,665652,153597,2.2331566559921874
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1954,NA,467530,105079,1.568488526915083
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1955,NA,617055,101924,2.0701215184068142
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1956,NA,676515,149517,2.269601810969288
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1957,NA,386121,66479,1.2953762596839127
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1958,NA,588267,82137,1.9735449206253153
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1959,NA,382768,60001,1.2841261651989582
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1960,NA,529239,91767,1.7755137413147526
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1961,NA,463590,92234,1.5552731010074894
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1962,NA,511112,102595,1.7147008408546098
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1963,NA,443719,63394,1.4886073984811588
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1964,NA,525141,88779,1.7617656147887675
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1965,NA,314165,54252,1.0539747540554363
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1966,NA,554949,113338,1.8617674264795054
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1967,NA,619785,109087,2.079280192342867
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1968,NA,573578,85352,1.9242656784051575
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1969,NA,398377,72666,1.3364923718870367
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1970,NA,503450,96847,1.6889954464640187
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1971,NA,325445,75368,1.0918165247651193
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1972,NA,435225,96057,1.4601105268005383
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1973,NA,548428,85463,1.839890498302158
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1974,NA,508619,96742,1.7063364476285197
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1975,NA,480475,123776,1.6119182278782558
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1976,NA,408767,80792,1.371349925483673
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1977,NA,557866,94055,1.8715513394068428
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1978,NA,524418,106885,1.7593388022442988
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1979,NA,332028,55125,1.1139033488085486
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1980,NA,473501,83158,1.5885230769352876
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1981,NA,625484,84567,2.0984018786288017
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1982,NA,560218,74659,1.8794429675475801
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1983,NA,616568,159553,2.0684875273536765
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1984,NA,701412,178677,2.3531255606893677
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1985,NA,420246,66920,1.4098589517985942
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1986,NA,527890,86408,1.7709871649430642
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1987,NA,912433,135845,3.0610676210351744
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1988,NA,376954,75881,1.2646206398040039
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1989,NA,584100,104439,1.9595628556938414
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1990,NA,449002,81557,1.5063313663806828
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1991,NA,594181,83618,1.9933829249026411
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1992,NA,542230,174315,1.8190955106410671
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1993,NA,656778,149035,2.2033882402040055
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1994,NA,727740,172677,2.44145273027772
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1995,NA,475611,115893,1.5955985734651061
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1996,NA,316544,95260,1.061954436638462
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1997,NA,397212,105725,1.332583783181873
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1998,NA,523210,145877,1.7552885008477377
+State,California,06,2021-09-15,2021-09-27,tbirth_year,1999,NA,168901,64798,0.566637679218441
+State,California,06,2021-09-15,2021-09-27,tbirth_year,2000,NA,767816,290785,2.5759004511853414
+State,California,06,2021-09-15,2021-09-27,tbirth_year,2001,NA,700747,237071,2.350894402084377
+State,California,06,2021-09-15,2021-09-27,tbirth_year,2002,NA,403994,171244,1.3553373917346576
+State,California,06,2021-09-15,2021-09-27,tbirth_year,2003,NA,374523,145505,1.2564663475804212
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1933,NA,96560,20634,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1934,NA,48279,23276,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1935,NA,21428,16486,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1936,NA,57270,17933,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1937,NA,56787,17627,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1938,NA,185681,91632,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1939,NA,92649,34699,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1940,NA,67688,17792,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1941,NA,143269,50662,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1942,NA,150483,45434,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1943,NA,156075,59748,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1944,NA,135186,31527,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1945,NA,170485,41599,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1946,NA,173592,38883,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1947,NA,178971,28156,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1948,NA,254275,66203,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1949,NA,192168,35029,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1950,NA,239159,66662,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1951,NA,298912,51274,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1952,NA,348976,57372,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1953,NA,377151,80540,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1954,NA,406676,98912,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1955,NA,533122,101687,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1956,NA,666069,148751,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1957,NA,358669,65711,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1958,NA,557687,81153,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1959,NA,302074,48512,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1960,NA,476924,94957,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1961,NA,389194,87547,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1962,NA,483966,100751,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1963,NA,430628,64374,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1964,NA,443089,79938,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1965,NA,269267,51848,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1966,NA,484482,110813,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1967,NA,592503,108180,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1968,NA,520343,80230,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1969,NA,381906,74035,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1970,NA,383487,78676,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1971,NA,289229,74464,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1972,NA,345100,68371,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1973,NA,484777,67288,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1974,NA,429072,78258,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1975,NA,431970,124695,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1976,NA,383688,81273,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1977,NA,533155,91663,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1978,NA,394803,103276,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1979,NA,281307,51555,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1980,NA,433258,80912,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1981,NA,500820,80054,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1982,NA,509849,75627,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1983,NA,417199,72999,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1984,NA,654680,177925,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1985,NA,389829,65789,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1986,NA,479570,78263,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1987,NA,835620,134131,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1988,NA,338607,72014,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1989,NA,547928,99182,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1990,NA,432834,82539,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1991,NA,500961,77948,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1992,NA,456438,159331,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1993,NA,458759,107439,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1994,NA,658016,171488,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1995,NA,338481,87529,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1996,NA,231569,77831,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1997,NA,387583,104693,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1998,NA,381287,126933,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,1999,NA,157497,64746,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,2000,NA,679795,286734,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,2001,NA,576569,201668,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,2002,NA,248136,135200,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_1234,2003,NA,282585,147158,100
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1933,NA,13859,10082,14.352822250023754
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1937,NA,4208,4356,7.4109302712257605
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1941,NA,1500,1589,1.047081995383943
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1942,NA,38460,32219,25.557888633433624
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1944,NA,9712,8628,7.184221836686916
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1946,NA,11653,11533,6.712772022740874
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1947,NA,750,777,0.41910285984607487
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1949,NA,2857,1805,1.4866064514176323
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1950,NA,828,840,0.3460778051760021
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1951,NA,1988,1334,0.6651700391364631
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1952,NA,2517,1989,0.7213095737163923
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1953,NA,4351,2938,1.1537716158118703
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1954,NA,4605,3108,1.132381903040536
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1955,NA,15181,11130,2.847621773012722
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1956,NA,10785,6437,1.619256667851694
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1957,NA,10695,7813,2.981797530468668
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1958,NA,25688,18989,4.6060987304171865
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1959,NA,30242,23395,10.011582175354748
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1960,NA,62935,45533,13.196075238528286
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1961,NA,5199,3186,1.3359546072662736
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1962,NA,31185,21691,6.443640487683795
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1963,NA,25861,10635,6.005402203646913
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1964,NA,42017,32582,9.48272469878951
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1965,NA,12256,6462,4.551750890402759
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1966,NA,30981,15250,6.394569662885253
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1967,NA,50836,27881,8.579917063063235
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1968,NA,1663,1780,0.3195315115692189
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1969,NA,6140,5634,1.607695714940361
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1970,NA,62962,52882,16.418181325320077
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1971,NA,22789,16975,7.879240956529733
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1972,NA,10537,7690,3.053419876652811
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1973,NA,36150,18849,7.457012542832094
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1974,NA,11314,10673,2.6369086454803083
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1975,NA,161723,104985,37.43836759077975
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1976,NA,37997,20813,9.903139371633413
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1977,NA,8920,6026,1.6730160533139373
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1978,NA,18112,9607,4.587703498583044
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1979,NA,25993,13685,9.240158548339151
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1980,NA,6784,4751,1.5658544777241425
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1981,NA,16533,9184,3.301223293037441
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1982,NA,37951,26226,7.443564195098606
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1983,NA,1691,1719,0.4053449935612994
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1984,NA,31716,18647,4.844571868992722
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1985,NA,78840,34696,20.22420896243525
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1986,NA,34676,34288,7.230721796383268
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1987,NA,80637,42484,9.649921329913653
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1988,NA,27360,16444,8.080232864213455
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1989,NA,106553,55869,19.446500664994552
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1990,NA,29950,17874,6.919531514312619
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1991,NA,77124,42949,15.395230107883242
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1992,NA,113156,105399,24.79101185127122
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1993,NA,37890,20844,8.25922253125297
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1994,NA,160873,124460,24.448257146870493
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1995,NA,85985,60851,25.40332760259143
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1996,NA,17324,15862,7.481349364807712
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1997,NA,43687,39666,11.27162621621501
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1998,NA,87470,79895,22.94083827904821
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,1999,NA,54332,46319,34.49704797192739
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,2000,NA,166310,143662,24.464758260049578
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,2001,NA,64977,56426,11.269571481377268
+State,California,06,2021-09-15,2021-09-27,tbirth_year_curfoodsuf_34,2002,NA,127776,116921,51.494264493066886
+State,California,06,2021-09-15,2021-09-27,total,NA,Total,29807656,0,100
 State,California,06,2021-09-01,2021-09-13,curfoodsuf,1,Enough of the kinds of food wanted,17843845,415110,70.41858371675114
 State,California,06,2021-09-01,2021-09-13,curfoodsuf,2,"Enough food, but not always the kinds wanted",4896746,284931,19.324419428476418
 State,California,06,2021-09-01,2021-09-13,curfoodsuf,3,Sometimes not enough to eat,1953907,299005,7.710859197203381
