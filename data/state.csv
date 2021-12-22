@@ -1,4 +1,13 @@
 area_type,area,fips,date_start,date_end,variable,code,response,n,n_error,pct
+State,California,06,2021-12-01,2021-12-13,curfoodsuf,1,Enough of the kinds of food wanted,17670231,NA,67.78538453432414
+State,California,06,2021-12-01,2021-12-13,curfoodsuf,2,"Enough food, but not always the kinds wanted",6347526,NA,24.349964114878883
+State,California,06,2021-12-01,2021-12-13,curfoodsuf,3,Sometimes not enough to eat,1663682,NA,6.382108084089758
+State,California,06,2021-12-01,2021-12-13,curfoodsuf,4,Often not enough to eat,386468,NA,1.4825432667072198
+State,California,06,2021-12-01,2021-12-13,curfoodsuf,NA,Did not report,3739749,NA,12.546269991843706
+State,California,06,2021-12-01,2021-12-13,freefood,1,Yes,1951779,NA,6.547911717714402
+State,California,06,2021-12-01,2021-12-13,freefood,2,No,23999864,NA,80.51577084759701
+State,California,06,2021-12-01,2021-12-13,freefood,NA,Did not report,3856013,NA,12.936317434688592
+State,California,06,2021-12-01,2021-12-13,total,NA,Total,29807656,NA,100
 State,California,06,2021-09-29,2021-10-11,curfoodsuf,1,Enough of the kinds of food wanted,16717417,391390,67.89962352888087
 State,California,06,2021-09-29,2021-10-11,curfoodsuf,2,"Enough food, but not always the kinds wanted",5401319,309098,21.938051553286954
 State,California,06,2021-09-29,2021-10-11,curfoodsuf,3,Sometimes not enough to eat,1928541,253822,7.832980292350618
