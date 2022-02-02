@@ -425,12 +425,19 @@ v %>%
 <br>
 
 ```{r}
-v %>% 
-  arrange(desc(date_end)) %>% 
-  mutate(
-    date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " ")
+hps %>% 
+  group_by(date_end) %>% 
+  summarize(
+    adult_pct = sum(pct[variable == "curfoodsuf" & code %in% 3:4]),
+    adult_n = sum(n[variable == "curfoodsuf" & code %in% 3:4])
   ) %>% 
   mutate(
+    child_pct = child_model$intercept + child_model$slope * adult_pct,
+    child_n = (child_pct / 100) * population_0_17
+  ) %>% 
+  arrange(desc(date_end)) %>%
+  mutate(
+    date_end = format(date_end, "%Y %b %e") %>% str_replace("  ", " "),
     across(ends_with("_pct"), ~ format(round(., digits = 1), nsmall = 1)),
     across(ends_with("_n"), ~ signif(round(.), digits = 3))
   ) %>% 
@@ -438,7 +445,8 @@ v %>%
     "Survey end date" = date_end, 
     "Percentage of adults reporting food insufficiency" = adult_pct,
     "Number of adults reporting food insufficiency" = adult_n,
-    "Estimated percentage of children experiencing food insufficiency" = child_pct,
+    "Estimated percentage of children experiencing food insufficiency" =
+      child_pct,
     "Estimated number of children experiencing food insufficiency" = child_n
   ) %>% 
   reactable(
@@ -1047,8 +1055,8 @@ labels_hps <-
   filter(date == min(date) | date == max(date)) %>% 
   mutate(
     label = format(date, "%Y %b"),
-    hjust = c(1.1, 1.1),
-    vjust = c(0.5, 0.5)
+    hjust = c(0.1, 1.1),
+    vjust = c(1.8, 0.5)
   )
 
 ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
