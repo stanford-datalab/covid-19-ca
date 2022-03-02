@@ -418,7 +418,7 @@ v %>%
     title = "Food insufficiency during the prior 7 days",
     x = "Survey end date",
     y = "Percentage of adults reporting food insufficiency",
-    caption = "Sources: Census Bureau, Household Pulse Survey.\nCurrent Population Survey, Food Security Supplement."
+    caption = "Sources: 2020 May and later: Census Bureau, Household Pulse Survey.\n2019 Dec: Current Population Survey, Food Security Supplement."
   )
 ```
 
@@ -474,6 +474,8 @@ v <-
 In the most recent survey period that ended `r month_day(v$date_end)`, an estimated `r format(round(v$adult_pct, digits = 1), nsmall = 1)`% of `r params$area` adults, or approximately `r format(signif(round(v$adult_n), digits = 3), big.mark = ",")` adults, lived in households with food insufficiency.
 
 Using a model based upon data from the Food Security Supplement of the Current Population Survey, we estimate that in the most recent survey period, `r format(round(v$child_pct, digits = 1), nsmall = 1)`% of children, or approximately `r format(signif(round(v$child_n), digits = 3), big.mark = ",")` children, experienced food insufficiency.
+
+The percentages and numbers of adults in the above table are based upon those who answered the survey question on food insufficiency. Even if the percentage of adults reporting food insufficiency is the same in two surveys, the number of adults reporting food insufficiency in the two surveys could vary depending upon the number who answered the question.
 
 ### Geography
 
@@ -1095,8 +1097,8 @@ ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
     y = "Percentage of adults reporting food insufficiency",
     caption = 
       str_c(
-        "Sources: Census Bureau, Household Pulse Survey.\n",
-        "Current Population Survey, Food Security Supplement.\n",
+        "Sources: 2020 May and later: Census Bureau, Household Pulse Survey.\n",
+        "2019 Dec and earlier: Current Population Survey, Food Security Supplement.\n",
         "Bureau of Labor Statistics, Local Area Unemployment Statistics."
       )
   )
