@@ -924,16 +924,33 @@ v <-
   unemployment %>% 
   filter(area_type == "State") %>% 
   arrange(date)
+
+years <- 
+  v$date %>% 
+  keep(~ lubridate::month(.) == 1)
+
+year_labels <- 
+  tibble(
+    date = years,
+    unemployment_rate = max(v$unemployment_rate),
+    label = year(date)
+  )
+
+breaks <- 
+  v$date %>% 
+  keep(~ lubridate::month(.) %% 2 == 1)
   
 v %>% 
   filter(area_type == "State") %>% 
   ggplot(aes(date, unemployment_rate)) +
+  geom_vline(xintercept = years, color = "grey60") +
+  geom_text(aes(label = label), data = year_labels, hjust = -0.1) +
   geom_line() +
   geom_point() +
   coord_cartesian(ylim = c(0, NA)) +
   scale_x_date(
-    breaks = v$date,
-    minor_breaks = NULL,
+    breaks = breaks,
+    minor_breaks = v$date,
     date_labels = "%b"
   ) +
   scale_y_continuous(

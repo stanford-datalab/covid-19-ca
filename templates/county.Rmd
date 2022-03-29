@@ -193,14 +193,41 @@ Because the Household Pulse Survey does not provide data at the county level, we
 ## Unemployment
 
 ```{r}
+v <- 
+  unemployment %>% 
+  filter(area_type == "State") %>% 
+  arrange(date)
+
+years <- 
+  v$date %>% 
+  keep(~ lubridate::month(.) == 1)
+
+year_labels <- 
+  tibble(
+    date = years,
+    unemployment_rate = max(v$unemployment_rate),
+    label = year(date)
+  )
+
+breaks <- 
+  v$date %>% 
+  keep(~ lubridate::month(.) %% 2 == 1)
+
 unemployment %>% 
   mutate(area = factor(area, levels = c(params$area, state))) %>% 
   ggplot(aes(date, unemployment_rate, color = area)) +
+  geom_vline(xintercept = years, color = "grey60") +
+  geom_text(
+    aes(label = label),
+    data = year_labels,
+    color = "black",
+    hjust = -0.1
+  ) +
   geom_line() +
   geom_point() +
   scale_x_date(
-    breaks = unemployment$date,
-    minor_breaks = NULL,
+    breaks = breaks,
+    minor_breaks = v$date,
     date_labels = "%b"
   ) +
   scale_y_continuous(
