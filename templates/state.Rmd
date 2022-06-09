@@ -349,7 +349,7 @@ choropleth <- function(data, var, population, tooltip, legend_title) {
 
 ## Overview
 
-The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is currently released every two weeks, and new LAUS data is released once a month. The most recent data used for this report are:
+The data on this site is derived from the U.S. Census Bureau [Household Pulse Survey (HPS)](https://www.census.gov/householdpulsedata) and the U.S. Bureau of Labor Statistics [Local Area Unemployment Statistics (LAUS)](https://www.bls.gov/lau/home.htm). New HPS data is currently released every four weeks, and new LAUS data is released once a month. The most recent data used for this report are:
 
 * Household Pulse Survey: 
   * Summary data: `r month_day(hps_date_start)` - `r month_day(hps_date_end)`
