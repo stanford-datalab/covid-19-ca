@@ -1,67 +1,133 @@
 area_type,area,fips,date,status,labor_force,employment,unemployment,unemployment_rate
-State,California,06,2022-03-01,Preliminary,19374110,18551090,823020,4.2
-Region,Los Angeles-Long Beach-Anaheim,31080,2022-03-01,Preliminary,6669835,6372329,297506,4.5
-Region,Riverside-San Bernardino-Ontario,40140,2022-03-01,Preliminary,2186022,2092353,93669,4.3
-Region,San Francisco-Oakland-Berkeley,41860,2022-03-01,Preliminary,2546066,2471915,74151,2.9
-Region,Balance,NA,2022-03-01,Preliminary,7972184,7614491,357693,4.5
-County,Alameda County,06001,2022-03-01,Preliminary,832756,805912,26844,3.2
-County,Alpine County,06003,2022-03-01,Preliminary,561,531,30,5.3
-County,Amador County,06005,2022-03-01,Preliminary,14517,13862,655,4.5
-County,Butte County,06007,2022-03-01,Preliminary,93025,88898,4127,4.4
-County,Calaveras County,06009,2022-03-01,Preliminary,21701,20936,765,3.5
-County,Colusa County,06011,2022-03-01,Preliminary,10846,9494,1352,12.5
-County,Contra Costa County,06013,2022-03-01,Preliminary,556712,537385,19327,3.5
-County,Del Norte County,06015,2022-03-01,Preliminary,9393,8915,478,5.1
-County,El Dorado County,06017,2022-03-01,Preliminary,93907,90813,3094,3.3
-County,Fresno County,06019,2022-03-01,Preliminary,453937,422842,31095,6.9
-County,Glenn County,06021,2022-03-01,Preliminary,12688,12049,639,5
-County,Humboldt County,06023,2022-03-01,Preliminary,59945,57753,2192,3.7
-County,Imperial County,06025,2022-03-01,Preliminary,70267,61605,8662,12.3
-County,Inyo County,06027,2022-03-01,Preliminary,8309,8008,301,3.6
-County,Kern County,06029,2022-03-01,Preliminary,380129,350961,29168,7.7
-County,Kings County,06031,2022-03-01,Preliminary,56643,52388,4255,7.5
-County,Lake County,06033,2022-03-01,Preliminary,28789,27339,1450,5
-County,Lassen County,06035,2022-03-01,Preliminary,8835,8438,397,4.5
-County,Los Angeles County,06037,2022-03-01,Preliminary,5072344,4824634,247710,4.9
-County,Madera County,06039,2022-03-01,Preliminary,63587,59519,4068,6.4
-County,Marin County,06041,2022-03-01,Preliminary,131955,128838,3117,2.4
-County,Mariposa County,06043,2022-03-01,Preliminary,6363,6001,362,5.7
-County,Mendocino County,06045,2022-03-01,Preliminary,37602,36147,1455,3.9
-County,Merced County,06047,2022-03-01,Preliminary,116833,107140,9693,8.3
-County,Modoc County,06049,2022-03-01,Preliminary,3170,2984,186,5.9
-County,Mono County,06051,2022-03-01,Preliminary,9549,9201,348,3.6
-County,Monterey County,06053,2022-03-01,Preliminary,207698,191918,15780,7.6
-County,Napa County,06055,2022-03-01,Preliminary,70133,67857,2276,3.2
-County,Nevada County,06057,2022-03-01,Preliminary,48118,46514,1604,3.3
-County,Orange County,06059,2022-03-01,Preliminary,1597491,1547695,49796,3.1
-County,Placer County,06061,2022-03-01,Preliminary,194397,189035,5362,2.8
-County,Plumas County,06063,2022-03-01,Preliminary,6980,6377,603,8.6
-County,Riverside County,06065,2022-03-01,Preliminary,1165776,1116176,49600,4.3
-County,Sacramento County,06067,2022-03-01,Preliminary,732324,702919,29405,4
-County,San Benito County,06069,2022-03-01,Preliminary,32718,30983,1735,5.3
-County,San Bernardino County,06071,2022-03-01,Preliminary,1020246,976177,44069,4.3
-County,San Diego County,06073,2022-03-01,Preliminary,1596838,1542091,54747,3.4
-County,San Francisco County,06075,2022-03-01,Preliminary,572062,557599,14463,2.5
-County,San Joaquin County,06077,2022-03-01,Preliminary,339154,319942,19212,5.7
-County,San Luis Obispo County,06079,2022-03-01,Preliminary,138990,135121,3869,2.8
-County,San Mateo County,06081,2022-03-01,Preliminary,452581,442181,10400,2.3
-County,Santa Barbara County,06083,2022-03-01,Preliminary,221700,213914,7786,3.5
-County,Santa Clara County,06085,2022-03-01,Preliminary,1047818,1022106,25712,2.5
-County,Santa Cruz County,06087,2022-03-01,Preliminary,134665,127602,7063,5.2
-County,Shasta County,06089,2022-03-01,Preliminary,74095,70715,3380,4.6
-County,Sierra County,06091,2022-03-01,Preliminary,1318,1255,63,4.8
-County,Siskiyou County,06093,2022-03-01,Preliminary,16069,15027,1042,6.5
-County,Solano County,06095,2022-03-01,Preliminary,202580,193349,9231,4.6
-County,Sonoma County,06097,2022-03-01,Preliminary,249089,241668,7421,3
-County,Stanislaus County,06099,2022-03-01,Preliminary,241927,228247,13680,5.7
-County,Sutter County,06101,2022-03-01,Preliminary,45917,42682,3235,7
-County,Tehama County,06103,2022-03-01,Preliminary,25338,24133,1205,4.8
-County,Trinity County,06105,2022-03-01,Preliminary,4318,4115,203,4.7
-County,Tulare County,06107,2022-03-01,Preliminary,203592,186502,17090,8.4
-County,Tuolumne County,06109,2022-03-01,Preliminary,20011,19079,932,4.7
-County,Ventura County,06111,2022-03-01,Preliminary,414745,400322,14423,3.5
-County,Yolo County,06113,2022-03-01,Preliminary,109528,105458,4070,3.7
-County,Yuba County,06115,2022-03-01,Preliminary,31528,29736,1792,5.7
+State,California,06,2022-05-01,Preliminary,19191171,18530488,660683,3.4
+Region,Los Angeles-Long Beach-Anaheim,31080,2022-05-01,Preliminary,5007371,4784439,222932,4.5
+County,Los Angeles County,06037,2022-05-01,Preliminary,5007371,4784439,222932,4.5
+State,California,06,2022-04-01,Final,19193263,18454163,739100,3.9
+Region,Los Angeles-Long Beach-Anaheim,31080,2022-04-01,NA,6609494,6327795,281699,4.3
+Region,Riverside-San Bernardino-Ontario,40140,2022-04-01,Preliminary,2159467,2077877,81590,3.8
+Region,San Francisco-Oakland-Berkeley,41860,2022-04-01,Preliminary,2514022,2450218,63804,2.5
+Region,Balance,NA,2022-04-01,Preliminary,7907607,7597737,309870,3.9
+County,Alameda County,06001,2022-04-01,Preliminary,820943,797697,23246,2.8
+County,Alpine County,06003,2022-04-01,Preliminary,510,486,24,4.7
+County,Amador County,06005,2022-04-01,Preliminary,14311,13754,557,3.9
+County,Butte County,06007,2022-04-01,Preliminary,92557,88996,3561,3.8
+County,Calaveras County,06009,2022-04-01,Preliminary,21587,20938,649,3
+County,Colusa County,06011,2022-04-01,Preliminary,10995,9882,1113,10.1
+County,Contra Costa County,06013,2022-04-01,Preliminary,548312,531462,16850,3.1
+County,Del Norte County,06015,2022-04-01,Preliminary,9295,8875,420,4.5
+County,El Dorado County,06017,2022-04-01,Preliminary,92628,90036,2592,2.8
+County,Fresno County,06019,2022-04-01,Preliminary,453324,425900,27424,6
+County,Glenn County,06021,2022-04-01,Preliminary,12580,12008,572,4.5
+County,Humboldt County,06023,2022-04-01,Preliminary,59405,57459,1946,3.3
+County,Imperial County,06025,2022-04-01,Preliminary,67590,59663,7927,11.7
+County,Inyo County,06027,2022-04-01,Preliminary,8160,7903,257,3.1
+County,Kern County,06029,2022-04-01,Preliminary,382898,356945,25953,6.8
+County,Kings County,06031,2022-04-01,Preliminary,56082,52399,3683,6.6
+County,Lake County,06033,2022-04-01,Preliminary,28413,27146,1267,4.5
+County,Lassen County,06035,2022-04-01,Preliminary,8885,8575,310,3.5
+County,Los Angeles County,06037,2022-04-01,Final,5029473,4791038,238435,4.7
+County,Madera County,06039,2022-04-01,Preliminary,62172,58621,3551,5.7
+County,Marin County,06041,2022-04-01,Preliminary,128749,126090,2659,2.1
+County,Mariposa County,06043,2022-04-01,Preliminary,6569,6269,300,4.6
+County,Mendocino County,06045,2022-04-01,Preliminary,37069,35776,1293,3.5
+County,Merced County,06047,2022-04-01,Preliminary,115538,107087,8451,7.3
+County,Modoc County,06049,2022-04-01,Preliminary,3214,3068,146,4.5
+County,Mono County,06051,2022-04-01,Preliminary,9279,9010,269,2.9
+County,Monterey County,06053,2022-04-01,Preliminary,215057,202626,12431,5.8
+County,Napa County,06055,2022-04-01,Preliminary,69620,67718,1902,2.7
+County,Nevada County,06057,2022-04-01,Preliminary,47219,45865,1354,2.9
+County,Orange County,06059,2022-04-01,Preliminary,1580021,1536757,43264,2.7
+County,Placer County,06061,2022-04-01,Preliminary,192253,187645,4608,2.4
+County,Plumas County,06063,2022-04-01,Preliminary,7081,6629,452,6.4
+County,Riverside County,06065,2022-04-01,Preliminary,1151299,1107969,43330,3.8
+County,Sacramento County,06067,2022-04-01,Preliminary,723782,698282,25500,3.5
+County,San Benito County,06069,2022-04-01,Preliminary,32701,31198,1503,4.6
+County,San Bernardino County,06071,2022-04-01,Preliminary,1008168,969908,38260,3.8
+County,San Diego County,06073,2022-04-01,Preliminary,1575086,1527467,47619,3
+County,San Francisco County,06075,2022-04-01,Preliminary,567386,555076,12310,2.2
+County,San Joaquin County,06077,2022-04-01,Preliminary,333487,316682,16805,5
+County,San Luis Obispo County,06079,2022-04-01,Preliminary,136637,133334,3303,2.4
+County,San Mateo County,06081,2022-04-01,Preliminary,448632,439893,8739,1.9
+County,Santa Barbara County,06083,2022-04-01,Preliminary,222575,216250,6325,2.8
+County,Santa Clara County,06085,2022-04-01,Preliminary,1040087,1018261,21826,2.1
+County,Santa Cruz County,06087,2022-04-01,Preliminary,133611,127561,6050,4.5
+County,Shasta County,06089,2022-04-01,Preliminary,73398,70499,2899,3.9
+County,Sierra County,06091,2022-04-01,Preliminary,1297,1246,51,3.9
+County,Siskiyou County,06093,2022-04-01,Preliminary,16077,15240,837,5.2
+County,Solano County,06095,2022-04-01,Preliminary,199388,191411,7977,4
+County,Sonoma County,06097,2022-04-01,Preliminary,245797,239430,6367,2.6
+County,Stanislaus County,06099,2022-04-01,Preliminary,239759,227521,12238,5.1
+County,Sutter County,06101,2022-04-01,Preliminary,45661,42815,2846,6.2
+County,Tehama County,06103,2022-04-01,Preliminary,25122,24058,1064,4.2
+County,Trinity County,06105,2022-04-01,Preliminary,4295,4127,168,3.9
+County,Tulare County,06107,2022-04-01,Preliminary,205236,190111,15125,7.4
+County,Tuolumne County,06109,2022-04-01,Preliminary,19839,19054,785,4
+County,Ventura County,06111,2022-04-01,Preliminary,409582,397096,12486,3
+County,Yolo County,06113,2022-04-01,Preliminary,108821,105288,3533,3.2
+County,Yuba County,06115,2022-04-01,Preliminary,31078,29527,1551,5
+State,California,06,2022-03-01,Final,19379086,18551536,827550,4.3
+Region,Los Angeles-Long Beach-Anaheim,31080,2022-03-01,Final,6672701,6374163,298538,4.5
+Region,Riverside-San Bernardino-Ontario,40140,2022-03-01,Final,2186531,2092471,94060,4.3
+Region,San Francisco-Oakland-Berkeley,41860,2022-03-01,Final,2547324,2472924,74400,2.9
+Region,Balance,NA,2022-03-01,Final,7972529,7611978,360551,4.5
+County,Alameda County,06001,2022-03-01,Final,833224,806288,26936,3.2
+County,Alpine County,06003,2022-03-01,Final,564,534,30,5.3
+County,Amador County,06005,2022-03-01,Final,14502,13843,659,4.5
+County,Butte County,06007,2022-03-01,Final,93163,89012,4151,4.5
+County,Calaveras County,06009,2022-03-01,Final,21694,20924,770,3.5
+County,Colusa County,06011,2022-03-01,Final,10871,9494,1377,12.7
+County,Contra Costa County,06013,2022-03-01,Final,557041,537631,19410,3.5
+County,Del Norte County,06015,2022-03-01,Final,9401,8914,487,5.2
+County,El Dorado County,06017,2022-03-01,Final,93903,90808,3095,3.3
+County,Fresno County,06019,2022-03-01,Final,453887,422464,31423,6.9
+County,Glenn County,06021,2022-03-01,Final,12703,12049,654,5.1
+County,Humboldt County,06023,2022-03-01,Final,59980,57746,2234,3.7
+County,Imperial County,06025,2022-03-01,Final,69393,60650,8743,12.6
+County,Inyo County,06027,2022-03-01,Final,8312,8007,305,3.7
+County,Kern County,06029,2022-03-01,Final,379919,350473,29446,7.8
+County,Kings County,06031,2022-03-01,Final,56680,52365,4315,7.6
+County,Lake County,06033,2022-03-01,Final,28798,27336,1462,5.1
+County,Lassen County,06035,2022-03-01,Final,8835,8437,398,4.5
+County,Los Angeles County,06037,2022-03-01,Final,5072950,4824344,248606,4.9
+County,Madera County,06039,2022-03-01,Final,63667,59542,4125,6.5
+County,Marin County,06041,2022-03-01,Final,131647,128522,3125,2.4
+County,Mariposa County,06043,2022-03-01,Final,6365,6001,364,5.7
+County,Mendocino County,06045,2022-03-01,Final,37621,36143,1478,3.9
+County,Merced County,06047,2022-03-01,Final,117002,107165,9837,8.4
+County,Modoc County,06049,2022-03-01,Final,3171,2984,187,5.9
+County,Mono County,06051,2022-03-01,Final,9551,9200,351,3.7
+County,Monterey County,06053,2022-03-01,Final,207616,191614,16002,7.7
+County,Napa County,06055,2022-03-01,Final,70275,67995,2280,3.2
+County,Nevada County,06057,2022-03-01,Final,48129,46509,1620,3.4
+County,Orange County,06059,2022-03-01,Final,1599751,1549819,49932,3.1
+County,Placer County,06061,2022-03-01,Final,194405,189025,5380,2.8
+County,Plumas County,06063,2022-03-01,Final,6978,6377,601,8.6
+County,Riverside County,06065,2022-03-01,Final,1166010,1116237,49773,4.3
+County,Sacramento County,06067,2022-03-01,Final,732460,702886,29574,4
+County,San Benito County,06069,2022-03-01,Final,32836,31081,1755,5.3
+County,San Bernardino County,06071,2022-03-01,Final,1020521,976234,44287,4.3
+County,San Diego County,06073,2022-03-01,Final,1594932,1539994,54938,3.4
+County,San Francisco County,06075,2022-03-01,Final,572530,557987,14543,2.5
+County,San Joaquin County,06077,2022-03-01,Final,339031,319610,19421,5.7
+County,San Luis Obispo County,06079,2022-03-01,Final,140061,136185,3876,2.8
+County,San Mateo County,06081,2022-03-01,Final,452882,442496,10386,2.3
+County,Santa Barbara County,06083,2022-03-01,Final,221989,214104,7885,3.6
+County,Santa Clara County,06085,2022-03-01,Final,1048883,1023123,25760,2.5
+County,Santa Cruz County,06087,2022-03-01,Final,134763,127642,7121,5.3
+County,Shasta County,06089,2022-03-01,Final,74068,70662,3406,4.6
+County,Sierra County,06091,2022-03-01,Final,1311,1248,63,4.8
+County,Siskiyou County,06093,2022-03-01,Final,16080,15025,1055,6.6
+County,Solano County,06095,2022-03-01,Final,202510,193234,9276,4.6
+County,Sonoma County,06097,2022-03-01,Final,249049,241585,7464,3
+County,Stanislaus County,06099,2022-03-01,Final,241826,227976,13850,5.7
+County,Sutter County,06101,2022-03-01,Final,45877,42593,3284,7.2
+County,Tehama County,06103,2022-03-01,Final,25347,24129,1218,4.8
+County,Trinity County,06105,2022-03-01,Final,4316,4111,205,4.7
+County,Tulare County,06107,2022-03-01,Final,203613,186352,17261,8.5
+County,Tuolumne County,06109,2022-03-01,Final,20014,19076,938,4.7
+County,Ventura County,06111,2022-03-01,Final,415125,400625,14500,3.5
+County,Yolo County,06113,2022-03-01,Final,109565,105453,4112,3.8
+County,Yuba County,06115,2022-03-01,Final,31488,29673,1815,5.8
 State,California,06,2022-02-01,Final,19336327,18395730,940597,4.9
 Region,Los Angeles-Long Beach-Anaheim,31080,2022-02-01,Final,6672975,6341806,331169,5
 Region,Riverside-San Bernardino-Ontario,40140,2022-02-01,Final,2180311,2071417,108894,5
