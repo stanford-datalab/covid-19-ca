@@ -14,6 +14,8 @@ script_pulse_download_tables <- here::here("scripts/pulse_download_tables.R")
 script_state <- here::here("scripts/state.R")
   # Script to calculate county data
 script_counties <- here::here("scripts/counties.R")
+  # Suppress `summarize()` messages
+options(dplyr.summarise.inform = FALSE)
 
 #===============================================================================
 
