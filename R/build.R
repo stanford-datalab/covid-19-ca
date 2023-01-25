@@ -25,7 +25,7 @@ dir_output <- here::here("content")
 # Counties
 counties <-
   file_counties %>%
-  read_csv() %>%
+  read_csv(show_col_types = FALSE) %>%
   pull(area) %>%
   unique()
 
