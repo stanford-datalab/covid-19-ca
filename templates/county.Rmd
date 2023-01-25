@@ -59,7 +59,7 @@ population_0_17 <-
 
 # Household Pulse data for state
 hps <- 
-  read_csv(file_hps) %>% 
+  read_csv(file_hps, show_col_types = FALSE) %>% 
   filter(area_type == "State", variable == "curfoodsuf", code %in% 3:4)
 
 # Last dates for Household Pulse data
@@ -68,7 +68,7 @@ hps_date_end <- max(hps$date_end)
 
 # Unemployment data
 unemployment <- 
-  read_csv(file_unemployment) %>% 
+  read_csv(file_unemployment, show_col_types = FALSE) %>% 
   filter(area_type == "State" | area == params$area)
 
 # State
@@ -80,7 +80,7 @@ state <-
 
 # Food insufficiency estimates for county
 county <- 
-  read_csv(file_counties) %>% 
+  read_csv(file_counties, show_col_types = FALSE) %>% 
   filter(area == params$area)
 ```
 
