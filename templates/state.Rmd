@@ -828,57 +828,57 @@ v %>%
   )
 ```
 
-### Supplemental Nutrition Assitance Program (SNAP)
+<!-- ### Supplemental Nutrition Assitance Program (SNAP) -->
 
-```{r}
-v <- 
-  hps %>% 
-  filter(
-    variable == "snap_yn",
-    response == "Yes",
-    date_end > hps_date_end - years(1)
-  )
+<!-- ```{r} -->
+<!-- v <-  -->
+<!--   hps %>%  -->
+<!--   filter( -->
+<!--     variable == "snap_yn", -->
+<!--     response == "Yes", -->
+<!--     date_end > hps_date_end - years(1) -->
+<!--   ) -->
 
-date_min <- 
-  hps$date_end %>% 
-  unique() %>% 
-  keep(~ . > hps_date_end - years(1)) %>% 
-  min()
+<!-- date_min <-  -->
+<!--   hps$date_end %>%  -->
+<!--   unique() %>%  -->
+<!--   keep(~ . > hps_date_end - years(1)) %>%  -->
+<!--   min() -->
 
-series_start <- 
-  v$date_end %>% 
-  min()
+<!-- series_start <-  -->
+<!--   v$date_end %>%  -->
+<!--   min() -->
 
-v %>% 
-  ggplot(aes(date_end, pct)) +
-  geom_line() +
-  geom_point() +
-  coord_cartesian(xlim = c(date_min, NA), ylim = c(0, NA)) +
-  scale_x_date(
-    breaks = v$date_end,
-    minor_breaks = NULL,
-    date_labels = "%b %e"
-  ) +
-  scale_y_continuous(
-    breaks = scales::breaks_width(1),
-    labels = scales::label_percent(accuracy = 1, scale = 1)
-  ) +
-  guides(color = guide_legend(ncol = 2)) +
-  theme(
-    axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0),
-    legend.position = "bottom",
-    plot.title = element_text(size = rel(1.1))
-  ) +
-  labs(
-    title = 
-    "Do you or does anyone in your household receive benefits from the\nSupplemental Nutrition Assistance Program (SNAP) or the Food Stamp Program?",
-    x = "Survey end date",
-    y = "Percentage reporting Yes",
-    caption = "Source: Census Bureau, Household Pulse Survey."
-  )
-```
+<!-- v %>%  -->
+<!--   ggplot(aes(date_end, pct)) + -->
+<!--   geom_line() + -->
+<!--   geom_point() + -->
+<!--   coord_cartesian(xlim = c(date_min, NA), ylim = c(0, NA)) + -->
+<!--   scale_x_date( -->
+<!--     breaks = v$date_end, -->
+<!--     minor_breaks = NULL, -->
+<!--     date_labels = "%b %e" -->
+<!--   ) + -->
+<!--   scale_y_continuous( -->
+<!--     breaks = scales::breaks_width(1), -->
+<!--     labels = scales::label_percent(accuracy = 1, scale = 1) -->
+<!--   ) + -->
+<!--   guides(color = guide_legend(ncol = 2)) + -->
+<!--   theme( -->
+<!--     axis.text.x = element_text(size = rel(0.75), angle = -45, hjust = 0), -->
+<!--     legend.position = "bottom", -->
+<!--     plot.title = element_text(size = rel(1.1)) -->
+<!--   ) + -->
+<!--   labs( -->
+<!--     title =  -->
+<!--     "Do you or does anyone in your household receive benefits from the\nSupplemental Nutrition Assistance Program (SNAP) or the Food Stamp Program?", -->
+<!--     x = "Survey end date", -->
+<!--     y = "Percentage reporting Yes", -->
+<!--     caption = "Source: Census Bureau, Household Pulse Survey." -->
+<!--   ) -->
+<!-- ``` -->
 
-This question was first asked in the survey that ended `r format(series_start, format = "%Y %b %e")`.
+<!-- This question was first asked in the survey that ended `r format(series_start, format = "%Y %b %e")`. -->
 
 ### Free groceries
 
