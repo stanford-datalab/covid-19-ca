@@ -273,7 +273,9 @@ month_day <- function(date) {
 }
 
 # Choropleth map
-choropleth <- function(data, var, population, tooltip, legend_title) {
+choropleth <- function(
+    data, var, population, tooltip, legend_title, breaks = NULL
+  ) {
   
   values <- 
     data %>% 
@@ -1102,84 +1104,84 @@ v %>%
 
 Source: Bureau of Labor Statistics, Local Area Unemployment Statistics.
 
-## Unemployment and food insufficiency
+<!-- ## Unemployment and food insufficiency -->
 
-```{r}
-model <- 
-  lm(
-    formula = food_insufficiency_pct ~ unemployment_rate, 
-    data = unemployment_fi_fss
-  )
-```
+<!-- ```{r} -->
+<!-- model <-  -->
+<!--   lm( -->
+<!--     formula = food_insufficiency_pct ~ unemployment_rate,  -->
+<!--     data = unemployment_fi_fss -->
+<!--   ) -->
+<!-- ``` -->
 
-```{r, message=FALSE}
-labels_fss <- 
-  unemployment_fi_fss %>% 
-  filter(
-    date == min(date) | 
-      unemployment == max(unemployment) |
-      food_insufficiency_pct == max(food_insufficiency_pct) |
-      date == max(date)
-  ) %>% 
-  mutate(
-    label = format(date, "%Y %b"), 
-    hjust = c(0.1, -0.1, -0.1, 0.1),
-    vjust = c(1.8, 0.5, 0.5, 1.8)
-  )
+<!-- ```{r, message=FALSE} -->
+<!-- labels_fss <-  -->
+<!--   unemployment_fi_fss %>%  -->
+<!--   filter( -->
+<!--     date == min(date) |  -->
+<!--       unemployment == max(unemployment) | -->
+<!--       food_insufficiency_pct == max(food_insufficiency_pct) | -->
+<!--       date == max(date) -->
+<!--   ) %>%  -->
+<!--   mutate( -->
+<!--     label = format(date, "%Y %b"),  -->
+<!--     hjust = c(0.1, -0.1, -0.1, 0.1), -->
+<!--     vjust = c(1.8, 0.5, 0.5, 1.8) -->
+<!--   ) -->
 
-labels_hps <- 
-  unemployment_fi_hps %>% 
-  filter(date == min(date) | date == max(date)) %>% 
-  mutate(
-    label = format(date, "%Y %b"),
-    hjust = c(0.1, 1.1),
-    vjust = c(1.8, 0.5)
-  )
+<!-- labels_hps <-  -->
+<!--   unemployment_fi_hps %>%  -->
+<!--   filter(date == min(date) | date == max(date)) %>%  -->
+<!--   mutate( -->
+<!--     label = format(date, "%Y %b"), -->
+<!--     hjust = c(0.1, 1.1), -->
+<!--     vjust = c(1.8, 0.5) -->
+<!--   ) -->
 
-ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) +
-  geom_path(aes(alpha = date), data = unemployment_fi_fss) +
-  geom_point(aes(alpha = date), data = unemployment_fi_fss) +
-  geom_text(
-    aes(label = label, hjust = hjust, vjust = vjust),
-    data = labels_fss
-  ) +
-  geom_path(data = unemployment_fi_hps) +
-  geom_point(data = unemployment_fi_hps) +
-  geom_text(
-    aes(label = label, hjust = hjust, vjust = vjust),
-    data = labels_hps
-  ) +
-  geom_abline(
-    slope = coef(model)[["unemployment_rate"]],
-    intercept = coef(model)[["(Intercept)"]],
-    color = "blue"
-  ) +
-  expand_limits(y = 3) +
-  coord_fixed() +
-  scale_x_continuous(
-    breaks = scales::breaks_width(1),
-    labels = scales::label_percent(accuracy = 1, scale = 1)
-  ) +
-  scale_y_continuous(
-    breaks = scales::breaks_width(1),
-    labels = scales::label_percent(accuracy = 1, scale = 1)
-  ) +
-  theme(legend.position = "none") +
-  labs(
-    title = 
-      str_glue("{params$area} unemployment and food insufficiency over time"),
-    x = "Unemployment rate",
-    y = "Percentage of adults reporting food insufficiency",
-    caption = 
-      str_c(
-        "Sources: 2020 May and later: Census Bureau, Household Pulse Survey.\n",
-        "2019 Dec and earlier: Current Population Survey, Food Security Supplement.\n",
-        "Bureau of Labor Statistics, Local Area Unemployment Statistics."
-      )
-  )
-```
+<!-- ggplot(mapping = aes(unemployment_rate, food_insufficiency_pct)) + -->
+<!--   geom_path(aes(alpha = date), data = unemployment_fi_fss) + -->
+<!--   geom_point(aes(alpha = date), data = unemployment_fi_fss) + -->
+<!--   geom_text( -->
+<!--     aes(label = label, hjust = hjust, vjust = vjust), -->
+<!--     data = labels_fss -->
+<!--   ) + -->
+<!--   geom_path(data = unemployment_fi_hps) + -->
+<!--   geom_point(data = unemployment_fi_hps) + -->
+<!--   geom_text( -->
+<!--     aes(label = label, hjust = hjust, vjust = vjust), -->
+<!--     data = labels_hps -->
+<!--   ) + -->
+<!--   geom_abline( -->
+<!--     slope = coef(model)[["unemployment_rate"]], -->
+<!--     intercept = coef(model)[["(Intercept)"]], -->
+<!--     color = "blue" -->
+<!--   ) + -->
+<!--   expand_limits(y = 3) + -->
+<!--   coord_fixed() + -->
+<!--   scale_x_continuous( -->
+<!--     breaks = scales::breaks_width(1), -->
+<!--     labels = scales::label_percent(accuracy = 1, scale = 1) -->
+<!--   ) + -->
+<!--   scale_y_continuous( -->
+<!--     breaks = scales::breaks_width(1), -->
+<!--     labels = scales::label_percent(accuracy = 1, scale = 1) -->
+<!--   ) + -->
+<!--   theme(legend.position = "none") + -->
+<!--   labs( -->
+<!--     title =  -->
+<!--       str_glue("{params$area} unemployment and food insufficiency over time"), -->
+<!--     x = "Unemployment rate", -->
+<!--     y = "Percentage of adults reporting food insufficiency", -->
+<!--     caption =  -->
+<!--       str_c( -->
+<!--         "Sources: 2020 May and later: Census Bureau, Household Pulse Survey.\n", -->
+<!--         "2019 Dec and earlier: Current Population Survey, Food Security Supplement.\n", -->
+<!--         "Bureau of Labor Statistics, Local Area Unemployment Statistics." -->
+<!--       ) -->
+<!--   ) -->
+<!-- ``` -->
 
-We modeled food insufficiency on the state unemployment rate to understand how the current situation relates to the past. The blue line shows our model. 
+<!-- We modeled food insufficiency on the state unemployment rate to understand how the current situation relates to the past. The blue line shows our model.  -->
 
-The relationship between food insufficiency and unemployment that held between 2001 and 2019 appears to have changed during the pandemic. Since the outbreak of the pandemic, food insufficiency is much higher than it was in the past for the same levels of unemployment.
+<!-- The relationship between food insufficiency and unemployment that held between 2001 and 2019 appears to have changed during the pandemic. Since the outbreak of the pandemic, food insufficiency is much higher than it was in the past for the same levels of unemployment. -->
 
