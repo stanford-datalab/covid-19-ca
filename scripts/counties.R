@@ -158,7 +158,12 @@ distribute_state <- function(date_end_, data) {
   )
 
   data %>%
-    left_join(v, by = "date_start", multiple = "all") %>%
+    left_join(
+      v,
+      by = "date_start",
+      multiple = "all",
+      relationship = "many-to-many"
+    ) %>%
     group_by(variable, code) %>%
     mutate(
       n =

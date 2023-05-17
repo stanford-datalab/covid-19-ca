@@ -288,6 +288,17 @@ choropleth <- function(
       probs = seq(0, 1, length.out = N_BINS + 1)
     )
   
+  if (length(bins) != length(unique(bins))) {
+    while ((length(bins) > 3) & (length(bins) != length(unique(bins)))) {
+      bins <-
+        Hmisc::wtd.quantile(
+          values,
+          weights = data %>% pull({{population}}),
+          probs = seq(0, 1, length.out = length(bins) - 1)
+        )
+    }
+  }
+  
   values[near(values, min(bins))] <- min(bins)
   values[near(values, max(bins))] <- max(bins)
 
