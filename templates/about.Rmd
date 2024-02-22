@@ -1,7 +1,0 @@
----
-title: "About"
-date: "`r Sys.Date()`"
-output: blogdown::html_page
----
-
-The California Weekly Pulse site was created and is maintained by the [Stanford Data Lab](https://datalab.stanford.edu). If you have any feedback, comments, or suggestions for improvements to this site, please [email us](mailto:datalab@stanford.edu).
